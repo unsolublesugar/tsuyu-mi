@@ -7,7 +7,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup, escape
 
-from src.models import ArticleState, Priority, ProcessedArticle
+from src.models import Priority, ProcessedArticle
 from src.utils.time import format_display
 
 logger = logging.getLogger("raindrop_summarizer")

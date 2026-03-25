@@ -34,6 +34,7 @@ def fetch_url(url: str, config: Config) -> FetchResult:
             timeout=config.request_timeout_seconds,
             headers={"User-Agent": config.user_agent},
             follow_redirects=True,
+            max_redirects=10,
         ) as client:
             response = client.get(url)
             response.raise_for_status()
