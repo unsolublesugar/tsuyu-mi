@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1656889278,
+  "collection_id": 56182051,
+  "title": "『実践Claude Code入門』を読みながらDev Container環境でPlaywright MCPを動かしてみた",
+  "url": "https://zenn.dev/unsoluble_sugar/articles/c1002e60e2fb8b",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-25T08:54:46.660000Z",
+  "fetched_at": "2026-03-25T08:56:00.532687Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8479,
+  "content_hash": "sha256:3102b4e36db1873a1c336aff3a6d37f9af6eb291325966bfd63efe4ab4152bda",
+  "summary_input_type": "fulltext",
+  "topic": "Dev Container環境におけるClaude CodeとPlaywright MCPによるブラウザ自動操作と課題解決",
+  "summary_3lines": [
+    "『実践Claude Code入門』を参考に、Dev Container環境でPlaywright MCPを動かし、ブラウザ操作を行う手順を解説しています。",
+    "ブラウザの未インストールや日本語フォントの文字化けといった環境課題に対し、Claude CodeがPlaywright MCPを介して自律的にインストールや設定を行い解決する過程が紹介されています。",
+    "AIエージェントによる自然言語でのブラウザ操作の可能性を示し、簡易的なE2Eテストへの活用や、環境構築におけるAIの有用性を提示しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude CodeとPlaywright MCPを組み合わせたAIエージェントによるブラウザ自動操作や環境課題の自律的解決の具体例が、実践的な手順と共に詳細に記述されているため。",
+  "defer_reason": "Claude CodeやAIエージェント、Dev Containerに関心が低い場合、現時点での優先度は低いかもしれません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Playwright MCP",
+    "AIエージェント",
+    "Dev Container",
+    "ブラウザ自動操作"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:56:07.460591Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
