@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: summarize
@@ -43,3 +45,19 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/ data/ state/
           git diff --cached --quiet && echo "No changes to commit" || (git commit -m "🤖 記事を要約・HTML を更新 $(date -u +'%Y-%m-%d')" && git push)
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+  deploy:
+    needs: summarize
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
