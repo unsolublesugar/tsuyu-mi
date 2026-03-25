@@ -310,8 +310,7 @@ footer a:hover {
   }
 
   .stats {
-    flex-direction: column;
-    gap: 4px;
+    gap: 12px;
     font-size: 0.8rem;
   }
 
