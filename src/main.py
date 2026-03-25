@@ -77,6 +77,8 @@ def run(dry_run: bool, verbose: bool) -> None:
         _print_targets(targets)
         return
 
+    repo = ArticleRepository(config.data_dir)
+
     if not targets:
         console.print("[green]新規記事なし。終了します。[/green]")
         state.mark_run_completed()
@@ -87,7 +89,6 @@ def run(dry_run: bool, verbose: bool) -> None:
     # 3. 各記事を処理
     console.print(f"[bold]3/4 記事を処理中... (最大 {len(targets)} 件)[/bold]")
     provider = create_provider(config)
-    repo = ArticleRepository(config.data_dir)
     stats = {"summarized": 0, "skipped": 0, "failed": 0}
     results: list[tuple[str, str, str]] = []  # (タイトル, 結果, 詳細)
     start_time = time.time()
