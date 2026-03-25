@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1656597383,
+  "collection_id": 56182051,
+  "title": "【2026年版】Claude Code フロントエンド特化の設定・ツールまとめ",
+  "url": "https://zenn.dev/enechange_blog/articles/9288d67beed7b4",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-25T02:20:35.590000Z",
+  "fetched_at": "2026-03-25T09:30:46.689491Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 27077,
+  "content_hash": "sha256:76f0790c37ad56e5605ffbb8c91d36be448d13b8ccbf662271b85b2e41cb8119",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeをフロントエンド開発に最適化するための設定と周辺ツールまとめ",
+  "summary_3lines": [
+    "Claude Codeのモデル、環境変数、フック、ステータスライン設定をフロントエンド開発向けに最適化する方法を解説。",
+    "CLAUDE.mdにNext.jsドキュメントのインデックスを静的に配置し、AIの参照精度を高める手法を紹介。",
+    "トークン消費を抑え、効率的な開発を支援する`cmux`、`Raycast`、`context7 CLI`、`agent-browser`、`difit`、`React Grab`、`React Doctor`といったツール群を網羅しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Codeを用いたフロントエンド開発の具体的な効率化手法や最新の推奨設定・ツールが網羅されており、即座に自身の開発環境に適用できる情報が豊富にあるため。",
+  "defer_reason": "現在Claude CodeやAI Agentを積極的に利用していない場合、またはフロントエンド開発に関心が薄い場合は、情報がすぐに役立たない可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "フロントエンド",
+    "AI Agent",
+    "開発効率化",
+    "Next.js"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T09:30:54.248331Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
