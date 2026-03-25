@@ -1,7 +1,7 @@
 [project]
-name = "raindrop-collection-summarizer"
+name = "tsuyu-mi"
 version = "0.1.0"
-description = "Raindrop.io コレクションの記事を取得・要約し HTML 一覧として出力するバッチツール"
+description = "Raindrop.io コレクションの記事を取得・要約し HTML 一覧として出力するバッチツール — Tsuyu-mi"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.27",
