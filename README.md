@@ -161,6 +161,33 @@ python -m src reprocess-failed
 | `STATE_DIR` | 状態管理ディレクトリ | `state` |
 | `LOG_LEVEL` | ログレベル | `INFO` |
 
+## GitHub Actions による自動運用
+
+### 1. GitHub Secrets の設定
+
+リポジトリの Settings → Secrets and variables → Actions で以下を設定:
+
+| Secret 名 | 値 |
+|---|---|
+| `RAINDROP_TOKEN` | Raindrop.io API テストトークン |
+| `RAINDROP_COLLECTION_ID` | 対象コレクション ID |
+| `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` |
+| `LLM_API_KEY` | LLM の API キー |
+| `LLM_MODEL` | モデル名（例: `gemini-2.5-flash`） |
+
+### 2. GitHub Pages の有効化
+
+Settings → Pages → Source を **Deploy from a branch** に設定:
+- Branch: `main`
+- Folder: `/docs`
+
+### 3. 実行スケジュール
+
+- **自動実行**: 3 日おき JST 7:00（UTC 22:00）
+- **手動実行**: Actions タブから「Run workflow」で即時実行可能
+
+変更があった場合のみ自動コミット・プッシュされます。
+
 ## テスト
 
 ```bash

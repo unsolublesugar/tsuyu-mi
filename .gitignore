@@ -15,9 +15,10 @@ env/
 # Environment variables
 .env
 
-# Data and state (generated at runtime)
-data/
-state/
+# Data and state (generated at runtime, but tracked for GitHub Actions)
+# Uncomment below to exclude from git in local-only usage:
+# data/
+# state/
 
 # IDE
 .vscode/
