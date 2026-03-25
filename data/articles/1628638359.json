@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1628638359,
+  "collection_id": 56182051,
+  "title": "Anthropic公式「skill-creator」完全ガイド 〜 Skillsを作れるSkillsで脱・ゼロから設計〜",
+  "url": "https://zenn.dev/yamato_snow/articles/30e8dcf9490c88",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-04T13:15:06.868000Z",
+  "fetched_at": "2026-03-25T08:42:13.163464Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 16864,
+  "content_hash": "sha256:31a12be6a51e51e25df7509caa530aed6ca41f802b14b449112dea90f67123ae",
+  "summary_input_type": "fulltext",
+  "topic": "AnthropicのClaude向け「skill-creator」を用いたAgent Skills開発ガイド",
+  "summary_3lines": [
+    "Anthropic公式の「skill-creator」は、Claude向けカスタムSkillを効率的に作成するための支援ツールです。",
+    "自然言語での対話を通じてSKILL.mdやディレクトリ構造を自動生成し、バリデーションやパッケージング機能も提供します。",
+    "Progressive Disclosure原則に基づいた設計を促し、Skill作成の課題を解決して開発効率とナレッジ共有を向上させます。"
+  ],
+  "priority": "high",
+  "read_now_reason": "ClaudeでカスタムSkillの作成に課題を感じている開発者にとって、具体的な解決策と実践的な手順が詳述されているため、すぐに役立ちます。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Skills",
+    "skill-creator",
+    "Agent Skills",
+    "Progressive Disclosure",
+    "Claude Code"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:42:19.788571Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

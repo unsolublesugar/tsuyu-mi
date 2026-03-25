@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1626822405,
+  "collection_id": 56182051,
+  "title": "DeepWikiのDeepWikiを見る",
+  "url": "https://zenn.dev/churadata/articles/b2274a8868188f",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-03T01:49:15.900000Z",
+  "fetched_at": "2026-03-25T08:42:31.397556Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2864,
+  "content_hash": "sha256:faea7e1255a7dcd198984bfcfb60df9514d445eef2a10d85777325d44a874b9a",
+  "summary_input_type": "fulltext",
+  "topic": "DeepWiki（OSS版）によるGitHubドキュメント自動生成とセキュリティ検証",
+  "summary_3lines": [
+    "DeepWikiはGitHubリポジトリのURLを変更するだけでソースコードからドキュメントを自動生成するツールで、本記事で検証されているのは本家を模倣したOSS版です。",
+    "セキュリティ面では、公開リポジトリが対象ながら、悪意あるユーザーによる脆弱性発見リスクやLLMの不正確さなど潜在的危険があり、機密情報での利用は避けるべきと結論付けられています。",
+    "個人利用では、多様なUML図が自動生成されるなどメリットがあり、筆者はリスクを理解した上での活用を提案しています。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "GitHubリポジトリのドキュメント自動生成に興味があり、ツールの潜在的なリスクとメリットを知りたい開発者にとって参考になる情報が含まれているため。",
+  "defer_reason": "検証対象がDevin社のDeepWikiではなく、本家を模倣したOSS版であるため、Devin DeepWiki自体の正確な情報を求めている場合は、別の情報源を参照するのが優先される可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "DeepWiki",
+    "ドキュメント自動生成",
+    "GitHub",
+    "セキュリティ",
+    "OSS"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:42:40.455768Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

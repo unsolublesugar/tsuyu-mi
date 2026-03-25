@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1637348273,
+  "collection_id": 56182051,
+  "title": "予測市場の構造──集合知・市場設計・規制で理解する未来予測",
+  "url": "https://zenn.dev/barabara/books/prediction-markets-structure",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-10T14:04:52.175000Z",
+  "fetched_at": "2026-03-25T08:41:45.314627Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 369,
+  "content_hash": "sha256:c4e3032a58922dde8c7598e4db4fdcb1380435c4d8acf5b447e983429d56ca52",
+  "summary_input_type": "metadata",
+  "topic": "予測市場の構造、仕組み、歴史、規制、課題、そして未来を体系的に解説する本「予測市場の構造」の紹介",
+  "summary_3lines": [
+    "「予測市場の構造」は、予測市場とは何か、PolymarketやKalshiの違い、なぜ市場が未来を予測できるのかを解説します。",
+    "その歴史的経緯、基本的なメカニズム、市場設計、Polymarketの技術構造を深く掘り下げて説明しています。",
+    "また、Kalshiに代表される規制型予測市場、CFTCと日本の法的位置づけ、インサイダー問題、ユースケース、主要プレイヤー比較、そして予測市場の未来についても考察します。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "予測市場の基礎から応用、規制、課題、未来まで体系的に理解したい場合に、包括的な情報源として価値が高いです。",
+  "defer_reason": "予測市場に関する特定の最新ニュースや速報のみを求めている場合、本書の広範な内容は一度に消化するには時間がかかる可能性があります。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "予測市場",
+    "集合知",
+    "市場設計",
+    "規制",
+    "未来予測"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:41:51.972004Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

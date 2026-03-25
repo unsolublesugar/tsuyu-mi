@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1491341765,
+  "collection_id": 56182051,
+  "title": "[対談] 任天堂と歩んだ「ゼルダ」開発の15年をふりかえって | インタビュー | RECRUIT | モノリスソフト",
+  "url": "https://www.monolithsoft.co.jp/interview/dev01/collab-talk.html",
+  "domain": "monolithsoft.co.jp",
+  "created_at": "2025-12-16T04:36:09.372000Z",
+  "fetched_at": "2026-03-25T08:45:37.094117Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6430,
+  "content_hash": "sha256:63b2e19cd06b224937a247ebcd8c1964fc0bc2ee9cd3aabdc74da189d1a2865f",
+  "summary_input_type": "fulltext",
+  "topic": "任天堂とモノリスソフト、『ゼルダの伝説』シリーズ開発における協力関係の変遷と展望",
+  "summary_3lines": [
+    "モノリスソフトは『ゼルダの伝説 スカイウォードソード』から『ティアーズ オブ ザ キングダム』まで15年間、任天堂と「ゼルダ」シリーズ開発に携わってきた経緯を両社の担当者が対談。",
+    "当初は部分受託だったが、『ブレス オブ ザ ワイルド』以降は「一緒に考え、一緒に作る」関係へと深化し、よりクリエイティブな部分に関わるようになる。",
+    "『ティアーズ オブ ザ キングダム』ではモノリスソフトの3職種が最初から参加し、両社の開発スタイルの融合と「横軸連携」を通じて開発を成功させ、今後の更なる連携を展望している。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "任天堂とモノリスソフトの長年にわたるゲーム開発における協力関係の深化、チームビルディング、そして両社の企業文化の融合プロセスを具体的に知ることができるため。",
+  "defer_reason": "特定のゲームシリーズ開発における企業間連携の事例であり、関連分野への関心が低い場合は後回しでも問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ゼルダの伝説シリーズ",
+    "モノリスソフト",
+    "任天堂",
+    "共同開発",
+    "チームビルディング"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:45:46.764115Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

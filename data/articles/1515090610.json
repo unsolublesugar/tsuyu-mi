@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1515090610,
+  "collection_id": 56182051,
+  "title": "【インタビュー】「なぜ韓国行きの飛行機に乗ったのか？」 携帯電話1800台を集めたベテラン記者が“トライフォールド”に熱狂した理由",
+  "url": "https://news.samsung.com/jp/interview1229",
+  "domain": "news.samsung.com",
+  "created_at": "2025-12-29T02:06:29.330000Z",
+  "fetched_at": "2026-03-25T08:44:55.184952Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 3847,
+  "content_hash": "sha256:be9f3e5f11b48686ad2dbec7149296a0aae0da378761ba94592169ea882b39d4",
+  "summary_input_type": "fulltext",
+  "topic": "携帯電話研究家が語るSamsung Galaxy Z TriFoldへの熱狂とその魅力",
+  "summary_3lines": [
+    "携帯電話研究家の山根康宏氏が、Samsung初の三つ折りスマートフォン「Galaxy Z TriFold」を求めて韓国へ渡航し、その熱い思いを語りました。",
+    "山根氏は本製品を「スマートフォンとタブレットの境界を打ち破る、全く新しい形の製品」と評価し、その完成度の高さを強調しています。",
+    "10インチ大画面がもたらす高い生産性やマルチタスク体験、そして将来のディスプレイ技術への期待を詳細に述べています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "最新の革新的なスマートフォン技術とその将来性について、専門家の詳細な見解と具体的な使用感が得られるため、今読む価値があります。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Samsung Galaxy Z TriFold",
+    "三つ折りスマートフォン",
+    "山根康宏",
+    "フォルダブル端末",
+    "携帯電話研究家"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:45:00.458051Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
