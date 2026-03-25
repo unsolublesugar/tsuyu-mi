@@ -13,7 +13,7 @@ class Config(BaseSettings):
     llm_model: str = ""
     max_summarize_per_run: int = 10
     request_timeout_seconds: int = 20
-    user_agent: str = "RaindropSummarizer/0.1"
+    user_agent: str = "Tsuyu-mi/0.1"
     output_dir: str = "docs"
     data_dir: str = "data"
     state_dir: str = "state"

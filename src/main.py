@@ -40,7 +40,7 @@ console = Console()
 
 @click.group()
 def cli() -> None:
-    """Raindrop Collection Summarizer"""
+    """Tsuyu-mi — Raindrop 記事要約ツール"""
     pass
 
 
