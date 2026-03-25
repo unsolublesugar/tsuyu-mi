@@ -1,6 +1,11 @@
 """CLI エントリポイント。全モジュールを統合するオーケストレーション層。"""
 
 import logging
+import time
+import warnings
+
+# requests の RequestsDependencyWarning を抑制
+warnings.filterwarnings("ignore", message="urllib3.*doesn't match a supported version")
 
 import click
 from rich.console import Console
@@ -95,6 +100,10 @@ def run(dry_run: bool, verbose: bool) -> None:
             logger.error(f"記事処理エラー ({raindrop.raindrop_id}): {e}")
             state.update_status(raindrop.raindrop_id, ArticleState.failed, reason=str(e))
             stats["failed"] += 1
+
+        # レートリミット対策: 記事間に 2 秒待機
+        if i < len(targets):
+            time.sleep(2)
 
     state.mark_run_completed()
     state.save()
@@ -280,7 +289,8 @@ def _process_article(
             content_status="fetch_failed",
         )
         repo.save(article)
-        state.update_status(rid, ArticleState.skipped, reason="fetch_failed")
+        reason = f"fetch_failed: {fetch_result.error}"
+        state.update_status(rid, ArticleState.skipped, reason=reason)
         logger.warning(f"取得失敗: {raindrop.title} - {fetch_result.error}")
         return article
 
