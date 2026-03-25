@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1637349945,
+  "collection_id": 56182051,
+  "title": "ノア・スミス「誰も語っていないAIバブル崩壊の第三シナリオ」（2025年12月9日）｜経済学101",
+  "url": "https://note.com/econ101_/n/n3a9a87ab3c7f",
+  "domain": "note.com",
+  "created_at": "2026-03-10T14:05:49.761000Z",
+  "fetched_at": "2026-03-25T08:24:46.230447Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 11019,
+  "content_hash": "sha256:3355fae10a92f54f9fb1078f17c6ad6289cb640017d404742196285c41bd6d7d",
+  "summary_input_type": "fulltext",
+  "topic": "ノア・スミス氏が提唱するAIバブル崩壊の第三シナリオ「航空会社シナリオ」",
+  "summary_3lines": [
+    "筆者はAIバブル崩壊の第三の可能性として「航空会社シナリオ」を提唱し、AI技術自体は成功するものの、その恩恵をAIモデル開発企業が享受できないと分析します。",
+    "AIモデル間の激しい競争やネットワーク効果の欠如、継続的な訓練費用により、航空会社のように利益率が低迷し、巨額の投資を回収できなくなる可能性を指摘。",
+    "その結果、AI企業が倒産や事業縮小に追い込まれ、金融システムに悪影響が及んでAIバブルが崩壊する可能性があると予測しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIバブル崩壊に関する一般的な議論とは異なる、競争構造に着目した独自のシナリオが提示されており、現在のAI産業の動向を多角的に理解する上で有益な視点を提供します。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIバブル",
+    "バブル崩壊",
+    "航空会社シナリオ",
+    "競争構造",
+    "AI利益"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:24:53.227682Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

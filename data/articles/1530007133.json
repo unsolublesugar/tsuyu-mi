@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1530007133,
+  "collection_id": 56182051,
+  "title": "現場で使い倒すDify：導入から本番運用・社内展開までの実践バイブル",
+  "url": "https://zenn.dev/kentaichimura/books/e48a042e40c657",
+  "domain": "zenn.dev",
+  "created_at": "2026-01-07T12:44:02.544000Z",
+  "fetched_at": "2026-03-25T08:27:04.956625Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 1450,
+  "content_hash": "sha256:9fa5fcf5902b4470a368f023999b2966759b4240840befb0c92d4f677eb6f2a9",
+  "summary_input_type": "shorttext",
+  "topic": "Difyの導入から本番運用・社内展開までの実践ノウハウをまとめた無料ガイドブック",
+  "summary_3lines": [
+    "Difyの公式パートナーが提供する無料の実践バイブルで、導入から本番運用・社内展開までのノウハウを網羅。",
+    "RAG、AIエージェント、外部連携、各種ノード、トリガーなど、現場でつまずきやすい論点を一冊に整理。",
+    "Difyの基礎から開発知識、ナレッジベース構築、詳細な機能設定まで、実践的な活用方法を体系的に学べる構成。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Difyの導入・活用を検討している読者にとって、実践的なノウハウが網羅されており、無料で今すぐ学習を始められるため。",
+  "defer_reason": "Difyに特化した詳細な内容であるため、現状でDifyの利用や学習の必要性が低い場合は後回しでよい。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Dify",
+    "RAG",
+    "AIエージェント",
+    "本番運用",
+    "ワークフロー"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:27:10.380780Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

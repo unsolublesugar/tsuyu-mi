@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1578146742,
+  "collection_id": 56182051,
+  "title": "得意や経験を資産に変える実践的キャリア設計講座 ～埋もれたスキルを「選ばれる価値」に再構築する実装プログラム～｜MASH Co., Ltd.",
+  "url": "https://mash.ltd/portfolio_curriculum/",
+  "domain": "mash.ltd",
+  "created_at": "2026-02-05T03:44:38.446000Z",
+  "fetched_at": "2026-03-25T08:26:09.376742Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 23616,
+  "content_hash": "sha256:77de525bb90a46e3cf6b0944416977d980e9def6c56a48f5b7147560ef2684c4",
+  "summary_input_type": "fulltext",
+  "topic": "得意や経験を「選ばれる価値」に変える実践的キャリア設計講座の案内",
+  "summary_3lines": [
+    "本記事は、自身の得意や経験を「選ばれる価値」に変え、資産とする実践的キャリア設計講座の概要を紹介する。",
+    "『LIFE SHIFT』で提示されるポートフォリオワーカーの考え方に基づき、特別なスキルでなくとも身近な経験を価値化する重要性を強調。",
+    "発信力、文章力、ブランディング、案件獲得、コミュニティ構築、商業出版など、スキルを資産に変える具体的な全6回の講座内容とプランが説明される。"
+  ],
+  "priority": "high",
+  "read_now_reason": "現代の不安定な社会において、自身の経験やスキルを資産に変え、将来に備えるキャリア構築の具体的な方法論と必要性が提示されているため。",
+  "defer_reason": "自身のキャリア設計や副業・複業について、現時点で具体的な検討や行動を求めていない場合は後回しで良い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ポートフォリオキャリア",
+    "複業",
+    "スキル再構築",
+    "キャリア設計",
+    "実践講座"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:26:17.089333Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

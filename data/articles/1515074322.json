@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1515074322,
+  "collection_id": 56182051,
+  "title": "2025年を代表するスマートフォンは？ 「スマホ・オブ・ザ・イヤー2025」結果発表",
+  "url": "https://www.itmedia.co.jp/mobile/spv/2512/29/news039.html",
+  "domain": "itmedia.co.jp",
+  "created_at": "2025-12-29T01:37:52.763000Z",
+  "fetched_at": "2026-03-25T08:28:58.640831Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5785,
+  "content_hash": "sha256:95398f5cc8a2402ab25fd313c7d8068cebff61b6f299f7c02552a88387f69116",
+  "summary_input_type": "fulltext",
+  "topic": "ITmedia Mobileによる「スマートフォン・オブ・ザ・イヤー2025」の結果発表",
+  "summary_3lines": [
+    "ITmedia Mobileが主催する「スマートフォン・オブ・ザ・イヤー2025」の結果が発表されました。",
+    "2025年発売のスマホを対象に、ハイエンドとミッドレンジの各部門で5機種がノミネートされ、8名の審査員が採点しました。",
+    "記事には審査員の採点結果とコメントが掲載されていますが、文字化けのため詳細な内容把握は困難で、総合結果は本稿では未発表のようです。"
+  ],
+  "priority": "low",
+  "read_now_reason": "(文字化けしていなければ) 2025年登場予定の注目スマートフォン候補とその評価をいち早く確認できます。",
+  "defer_reason": "記事本文のほとんどが文字化けしており、内容が判読できないため、正常に表示される続報や別の記事を参照すべきです。",
+  "drop_candidate": true,
+  "drop_reason": "記事本文の大部分が文字化けしており、重要な情報が読み取れないため、情報源として機能していません。",
+  "keywords": [
+    "スマートフォン",
+    "オブザイヤー",
+    "2025年",
+    "ハイエンド",
+    "ミッドレンジ"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:29:16.580860Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

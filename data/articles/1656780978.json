@@ -5,7 +5,7 @@
   "url": "https://zenn.dev/unsoluble_sugar/articles/4878a6d01b7305",
   "domain": "zenn.dev",
   "created_at": "2026-03-25T06:43:15.672000Z",
-  "fetched_at": "2026-03-25T07:12:53.438505Z",
+  "fetched_at": "2026-03-25T08:23:53.213047Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,27 @@
   "content_chars": 4250,
   "content_hash": "sha256:8d670eb270c64216def8155ffc755c780546ee7d913dd2ff7caf7bc7ecea54a7",
   "summary_input_type": "fulltext",
-  "topic": "『実践Claude Code入門』を参考にDev Container環境でClaude Codeを導入・操作した記録",
+  "topic": "『実践Claude Code入門』に基づきDev Container環境でClaude Codeを動かす手順と特徴",
   "summary_3lines": [
-    "書籍『実践Claude Code入門』を読みながら、Dev Container環境にClaude Codeを導入する手順を詳細に解説。",
-    "Dev Containerの準備、Claude Codeのインストール、認証・初期設定、ヘッドレスモードでの質問やJSON出力までを紹介。",
-    "ローカル環境を汚さずに手軽にClaude Codeを試せる点が強調され、導入検討者にとって有用なハンズオン記録となっている。"
+    "『実践Claude Code入門』の第2章を参考に、Dev Container環境でClaude Codeを導入・設定する手順を記録しています。",
+    "VSCode拡張機能とDockerによる環境準備からClaude Codeのインストール、認証、初期設定までが詳細に解説されています。",
+    "ヘッドレスモードでの質問やJSON形式での応答取得を確認し、Claude Codeの主な機能（エージェント型、ツールシステムなど）も紹介されています。"
   ],
   "priority": "medium",
-  "read_now_reason": "Claude Codeの導入を検討しており、特にDev Container環境で手軽に試したい人にとって、具体的なセットアップ手順をすぐに確認できるため。",
-  "defer_reason": "すでにClaude Codeの環境構築が完了している場合や、本書籍を自身で読み進める予定がある場合は、この導入部分の記事を読む緊急性は低い。",
+  "read_now_reason": "Claude Codeに興味がある開発者が、ローカル環境を汚さずにDev Containerで効率的に導入・利用する具体的な手順を把握できるため。",
+  "defer_reason": "すでにClaude Codeの環境構築経験がある場合や、Dev Containerを利用しない場合は優先度が低い可能性があります。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "Claude Code",
     "Dev Container",
     "環境構築",
-    "AIエージェント",
-    "CLI"
+    "VSCode",
+    "AIエージェント"
   ],
   "model_provider": "gemini",
   "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-03-25T07:12:59.807172Z",
+  "summarized_at": "2026-03-25T08:24:01.089505Z",
   "manual_status": "untriaged",
   "notes": ""
 }
