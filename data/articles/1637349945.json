@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1637349945,
+  "collection_id": 56182051,
+  "title": "ノア・スミス「誰も語っていないAIバブル崩壊の第三シナリオ」（2025年12月9日）｜経済学101",
+  "url": "https://note.com/econ101_/n/n3a9a87ab3c7f",
+  "domain": "note.com",
+  "created_at": "2026-03-10T14:05:49.761000Z",
+  "fetched_at": "2026-03-25T09:31:22.836107Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 11019,
+  "content_hash": "sha256:3355fae10a92f54f9fb1078f17c6ad6289cb640017d404742196285c41bd6d7d",
+  "summary_input_type": "fulltext",
+  "topic": "ノア・スミスによるAIバブル崩壊の第三シナリオ「航空会社シナリオ」とその根拠",
+  "summary_3lines": [
+    "AIバブル崩壊のシナリオとして、「AIが有用でない仮想現実シナリオ」と「AIの価値創出が債務返済に間に合わない鉄道シナリオ」が語られるが、筆者はAIの有用性を肯定しつつ後者の金融リスクは認めている。",
+    "筆者は、AI技術自体は成功し急速に普及するものの、AIモデル開発企業間の激しい競争により利益率がゼロに近づくという第三のシナリオ「航空会社シナリオ」を提唱する。",
+    "従来のソフトウェア企業のようなネットワーク効果がAIには見られず、モデル訓練コストが継続的に発生するため、OpenAIなどの企業が借入金を返済できずに破綻し、金融システムに影響を与える可能性が指摘されている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIバブル崩壊に関する一般的な議論に加え、AI技術の成功とAI企業の低収益性という、これまであまり語られてこなかった第三のシナリオとその根拠が詳細に解説されているため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIバブル",
+    "航空会社シナリオ",
+    "ネットワーク効果",
+    "競争",
+    "低利益率"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T09:31:29.115237Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

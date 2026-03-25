@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1628638359,
+  "collection_id": 56182051,
+  "title": "Anthropic公式「skill-creator」完全ガイド 〜 Skillsを作れるSkillsで脱・ゼロから設計〜",
+  "url": "https://zenn.dev/yamato_snow/articles/30e8dcf9490c88",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-04T13:15:06.868000Z",
+  "fetched_at": "2026-03-25T09:31:59.589397Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 16864,
+  "content_hash": "sha256:31a12be6a51e51e25df7509caa530aed6ca41f802b14b449112dea90f67123ae",
+  "summary_input_type": "fulltext",
+  "topic": "Anthropic公式「skill-creator」を用いたClaude向けカスタムSkillの効率的な作成ガイド",
+  "summary_3lines": [
+    "Anthropicの「skill-creator」は、Claudeの能力を拡張する「Skill」を自然言語対話で自動生成するツールです。",
+    "SKILL.mdの設計、ディレクトリ構成、バリデーション、パッケージングなどを自動化し、従来のSkill作成の課題を解決します。",
+    "導入から使い方、効果的な設計原則「Progressive Disclosure」、セキュリティ上の注意点、日本語版リポジトリの活用までを体系的に解説しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude CodeでカスタムSkillを作成・活用したいと考えている場合、初期設計から運用までの具体的な手順と注意点が網羅されており、すぐに実践に役立つため。",
+  "defer_reason": "Claude CodeやAgent Skillsの利用を現時点では考えていない、または既にSkill作成のノウハウがある場合。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Anthropic Claude",
+    "Agent Skills",
+    "skill-creator",
+    "SKILL.md",
+    "Progressive Disclosure"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T09:32:05.450521Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
