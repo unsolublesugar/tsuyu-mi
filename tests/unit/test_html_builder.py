@@ -3,7 +3,9 @@
 import tempfile
 from datetime import UTC, datetime
 
-from src.html_builder import HtmlBuilder
+from markupsafe import Markup
+
+from src.html_builder import HtmlBuilder, _render_inline_code
 from src.models import ContentType, Priority, ProcessedArticle, SummaryInputType
 
 
@@ -26,6 +28,27 @@ def _make_article(rid: int, priority: Priority = Priority.medium, **kwargs) -> P
     }
     defaults.update(kwargs)
     return ProcessedArticle(**defaults)
+
+
+class TestRenderInlineCode:
+    def test_backtick_to_code_tag(self):
+        result = _render_inline_code("ツール `cmux` を紹介")
+        assert "<code>cmux</code>" in result
+        assert isinstance(result, Markup)
+
+    def test_multiple_backticks(self):
+        result = _render_inline_code("`Raycast` と `context7 CLI` の比較")
+        assert "<code>Raycast</code>" in result
+        assert "<code>context7 CLI</code>" in result
+
+    def test_no_backticks(self):
+        result = _render_inline_code("普通のテキスト")
+        assert result == "普通のテキスト"
+
+    def test_html_escaped(self):
+        result = _render_inline_code("`<script>` タグ")
+        assert "<script>" not in result
+        assert "<code>&lt;script&gt;</code>" in result
 
 
 class TestHtmlBuilder:
@@ -90,3 +113,11 @@ class TestHtmlBuilder:
             assert "drop-candidate" in html
             assert "DROP" in html
             assert "価値薄い" in html
+
+    def test_inline_code_in_summary(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            articles = [_make_article(1, summary_3lines=["`cmux` はターミナルツール", "普通の行", "行3"])]
+            path = builder.build(articles)
+            html = path.read_text()
+            assert "<code>cmux</code>" in html

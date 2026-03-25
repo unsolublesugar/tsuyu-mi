@@ -40,7 +40,7 @@
         {% if article.summary_3lines %}
         <ul class="summary">
           {% for line in article.summary_3lines %}
-          <li>{{ line }}</li>
+          <li>{{ line | inline_code }}</li>
           {% endfor %}
         </ul>
         {% endif %}
@@ -50,12 +50,12 @@
           <div class="reasons">
             {% if article.read_now_reason %}
             <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> {{ article.read_now_reason }}
+              <span class="reason-label">今読む理由:</span> {{ article.read_now_reason | inline_code }}
             </div>
             {% endif %}
             {% if article.defer_reason %}
             <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> {{ article.defer_reason }}
+              <span class="reason-label">後回し理由:</span> {{ article.defer_reason | inline_code }}
             </div>
             {% endif %}
             {% if article.drop_candidate %}
