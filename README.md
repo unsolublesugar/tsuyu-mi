@@ -2,6 +2,8 @@
 
 Raindrop.io の特定コレクションを定期取得し、保存記事の本文を抽出して AI で短く要約し、HTML 一覧として出力するバッチツールです。
 
+![Raindrop Collection Summary](assets/images/screenshot.png)
+
 ## 目的
 
 Raindrop に溜めた「あとで読む」記事を、全文を読む前に一次判定できる状態にします。
