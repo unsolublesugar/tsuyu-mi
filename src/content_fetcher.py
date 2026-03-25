@@ -42,7 +42,7 @@ def fetch_url(url: str, config: Config) -> FetchResult:
             if "text/html" not in content_type and "application/xhtml" not in content_type:
                 return FetchResult(error=f"非 HTML コンテンツ: {content_type}")
 
-            html = response.text
+            html = _decode_response(response)
             og_desc = _extract_og_description(html)
 
             return FetchResult(html=html, ok=True, og_description=og_desc)
@@ -55,6 +55,32 @@ def fetch_url(url: str, config: Config) -> FetchResult:
         return FetchResult(error=f"リクエストエラー: {e}")
     except Exception as e:
         return FetchResult(error=f"予期しないエラー: {e}")
+
+
+def _decode_response(response: httpx.Response) -> str:
+    """レスポンスを適切なエンコーディングでデコードする。"""
+    # Content-Type ヘッダーに charset があればそれを使う
+    content_type = response.headers.get("content-type", "")
+    ct_match = re.search(r"charset=([^\s;]+)", content_type, re.IGNORECASE)
+    if ct_match:
+        encoding = ct_match.group(1).strip().strip("'\"")
+        try:
+            return response.content.decode(encoding)
+        except (UnicodeDecodeError, LookupError):
+            pass
+
+    # HTML 内の meta charset を探す
+    raw = response.content
+    meta_match = re.search(rb'<meta[^>]+charset=["\']?([^"\'\s;>]+)', raw[:4096], re.IGNORECASE)
+    if meta_match:
+        encoding = meta_match.group(1).decode("ascii", errors="ignore")
+        try:
+            return raw.decode(encoding)
+        except (UnicodeDecodeError, LookupError):
+            pass
+
+    # デフォルト: httpx の判定に任せる
+    return response.text
 
 
 def should_skip_url(url: str, raindrop_type: str) -> str | None:
