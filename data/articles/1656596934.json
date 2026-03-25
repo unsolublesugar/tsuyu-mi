@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1656596934,
+  "collection_id": 56182051,
+  "title": "Claude Codeに長期記憶を持たせたら、壁打ちの質が変わった",
+  "url": "https://zenn.dev/noprogllama/articles/7c24b2c2410213",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-25T02:19:12.005000Z",
+  "fetched_at": "2026-03-25T16:12:21.345444Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4145,
+  "content_hash": "sha256:ffff3f88b61bdd2b4b2df0d6a3d1aa90c1ccd25aae9cd042d712f591487b2846",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeに長期記憶を持たせる自作システムの開発と効果",
+  "summary_3lines": [
+    "筆者はClaude Codeを壁打ち相手として使う際、過去の会話文脈が引き継がれない課題を解決するため、自作の長期記憶エンジン「sui-memory」を開発した。",
+    "sui-memoryは、LLMを使わずに会話履歴をQ&A形式でチャンク化し、日本語特化の埋め込みモデルでベクトル化してSQLiteに保存、キーワード検索とベクトル検索を組み合わせる。",
+    "約2,000セッション分の記憶蓄積により、壁打ちの精度と質が大幅に向上し、同じ議論を繰り返さずに深い思考が可能になったと報告されている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude CodeなどのLLMを壁打ち相手として活用する際の具体的な課題と、それを解決するための実践的な長期記憶エンジンの自作アプローチが詳細に解説されており、自身のAI活用に役立つ可能性があるため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "長期記憶",
+    "sui-memory",
+    "RAG",
+    "壁打ち"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T16:12:29.172283Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
