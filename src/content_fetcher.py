@@ -90,6 +90,54 @@ def should_skip_url(url: str, raindrop_type: str) -> str | None:
     return None
 
 
+def is_x_url(url: str) -> bool:
+    """X（Twitter）の URL かどうかを判定する。"""
+    from urllib.parse import urlparse
+
+    try:
+        host = urlparse(url).hostname or ""
+        return host in ("x.com", "www.x.com", "twitter.com", "www.twitter.com")
+    except Exception:
+        return False
+
+
+def fetch_x_post(url: str) -> dict | None:
+    """vxtwitter API で X ポストの情報を取得する。"""
+    from urllib.parse import urlparse
+
+    try:
+        parsed = urlparse(url)
+        # /user/status/id のパスから user と id を抽出
+        parts = [p for p in parsed.path.split("/") if p]
+        if len(parts) < 3 or parts[1] != "status":
+            return None
+
+        user = parts[0]
+        status_id = parts[2]
+        api_url = f"https://api.vxtwitter.com/{user}/status/{status_id}"
+        resp = httpx.get(api_url, timeout=15)
+        if resp.status_code != 200:
+            logger.warning(f"vxtwitter API エラー: {resp.status_code}")
+            return None
+
+        data = resp.json()
+        result: dict = {
+            "user_name": data.get("user_name", ""),
+            "text": data.get("text", ""),
+        }
+
+        # 記事形式ポストの場合
+        article = data.get("article")
+        if isinstance(article, dict):
+            result["article_title"] = article.get("title", "")
+            result["article_preview"] = article.get("preview_text", "")
+
+        return result
+    except Exception as e:
+        logger.warning(f"X ポスト取得失敗: {e}")
+        return None
+
+
 def _extract_og_description(html: str) -> str:
     """HTML から og:description を正規表現で抽出する。"""
     match = re.search(

@@ -15,7 +15,7 @@ from rich.table import Table
 from src.article_repository import ArticleRepository
 from src.config import Config
 from src.content_extractor import extract_body
-from src.content_fetcher import FetchResult, fetch_url, should_skip_url
+from src.content_fetcher import FetchResult, fetch_url, fetch_x_post, is_x_url, should_skip_url
 from src.html_builder import HtmlBuilder
 from src.logging_util import setup_logger
 from src.models import (
@@ -273,6 +273,61 @@ def _process_article(
 ) -> ProcessedArticle | None:
     """1 記事を処理する。fetch → extract → summarize → save。"""
     rid = raindrop.raindrop_id
+
+    # X（Twitter）ポスト対応
+    if is_x_url(raindrop.url):
+        x_data = fetch_x_post(raindrop.url)
+        fallback_input: dict = {"url": raindrop.url, "domain": raindrop.domain}
+        if raindrop.title:
+            fallback_input["title"] = raindrop.title
+        if x_data:
+            if x_data.get("article_title"):
+                fallback_input["title"] = x_data["article_title"]
+            if x_data.get("article_preview"):
+                fallback_input["excerpt"] = x_data["article_preview"]
+            elif x_data.get("text"):
+                fallback_input["excerpt"] = x_data["text"]
+            if x_data.get("user_name"):
+                fallback_input["author"] = x_data["user_name"]
+
+        now = now_utc()
+        article = ProcessedArticle(
+            raindrop_id=rid,
+            collection_id=raindrop.collection_id,
+            title=fallback_input.get("title", raindrop.title or raindrop.url),
+            url=raindrop.url,
+            domain=raindrop.domain,
+            created_at=raindrop.created_at,
+            fetched_at=now,
+            fetch_status="ok",
+            extract_method="x_api",
+            content_status="fallback",
+            summary_input_type=SummaryInputType.metadata,
+        )
+        state.update_status(rid, ArticleState.fallback_ready)
+
+        result = summarize_fallback(provider, fallback_input)
+        if result:
+            article.topic = result.topic
+            article.summary_3lines = result.summary_3lines
+            article.priority = result.priority
+            article.read_now_reason = result.read_now_reason
+            article.defer_reason = result.defer_reason
+            article.drop_candidate = result.drop_candidate
+            article.drop_reason = result.drop_reason
+            article.keywords = result.keywords
+            article.model_provider = config.llm_provider
+            article.model_name = config.llm_model
+            article.summarized_at = now_utc()
+            state.update_status(rid, ArticleState.summarized)
+            logger.info(f"要約完了 (X): {article.title}")
+        else:
+            article.content_status = "llm_failed"
+            state.update_status(rid, ArticleState.failed, reason="llm_failed")
+            logger.error(f"要約失敗 (X): {article.title}")
+
+        repo.save(article)
+        return article
 
     # 動画スキップ
     skip_reason = should_skip_url(raindrop.url, raindrop.type)
