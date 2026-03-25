@@ -12,6 +12,8 @@
 
 Periodically fetches articles from a Raindrop.io collection, extracts their content, summarizes them with AI, and outputs a priority-ranked HTML dashboard.
 
+> The name **Tsuyu-mi** comes from: Raindrop &rarr; *shizuku* (雫, droplet) &rarr; *tsuyu* (露, dew) &rarr; *tsuyu-mi* (露見, "seeing the dew").
+
 ## Purpose
 
 Triage your "read later" articles saved in Raindrop — before reading the full text.
