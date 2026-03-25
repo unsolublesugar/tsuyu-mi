@@ -1,0 +1,18 @@
+"""時刻ユーティリティ。"""
+
+from datetime import UTC, datetime
+
+
+def now_utc() -> datetime:
+    """現在の UTC 時刻を返す。"""
+    return datetime.now(UTC)
+
+
+def to_iso(dt: datetime) -> str:
+    """datetime を ISO 8601 文字列に変換する。"""
+    return dt.isoformat()
+
+
+def format_display(dt: datetime) -> str:
+    """表示用の日時文字列を返す（YYYY-MM-DD HH:MM）。"""
+    return dt.strftime("%Y-%m-%d %H:%M")
