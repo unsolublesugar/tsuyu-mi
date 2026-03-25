@@ -53,7 +53,13 @@ class RaindropClient:
                 break
 
             response.raise_for_status()
-            data = response.json()
+
+            try:
+                data = response.json()
+            except ValueError:
+                logger.error("Raindrop API: JSON パースエラー")
+                break
+
             items = data.get("items", [])
 
             if not items:
@@ -126,7 +132,13 @@ class RaindropClient:
                 break
 
             response.raise_for_status()
-            data = response.json()
+
+            try:
+                data = response.json()
+            except ValueError:
+                logger.error("Raindrop API: JSON パースエラー")
+                break
+
             items = data.get("items", [])
 
             if not items:
