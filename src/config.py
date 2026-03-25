@@ -11,7 +11,7 @@ class Config(BaseSettings):
     llm_provider: str = "openai"
     llm_api_key: str = ""
     llm_model: str = ""
-    max_summarize_per_run: int = 30
+    max_summarize_per_run: int = 10
     request_timeout_seconds: int = 20
     user_agent: str = "RaindropSummarizer/0.1"
     output_dir: str = "docs"

@@ -167,7 +167,7 @@ python -m src reprocess-failed
 | `LLM_PROVIDER` | `openai` / `gemini` / `anthropic` | `openai` |
 | `LLM_API_KEY` | LLM の API キー | （必須） |
 | `LLM_MODEL` | 使用するモデル名 | （必須） |
-| `MAX_SUMMARIZE_PER_RUN` | 1 回の要約件数上限 | `30` |
+| `MAX_SUMMARIZE_PER_RUN` | 1 回の要約件数上限 | `10` |
 | `REQUEST_TIMEOUT_SECONDS` | HTTP リクエストタイムアウト | `20` |
 | `USER_AGENT` | HTTP リクエストの User-Agent | `RaindropSummarizer/0.1` |
 | `OUTPUT_DIR` | HTML 出力先ディレクトリ | `docs` |
