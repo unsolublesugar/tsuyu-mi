@@ -4,7 +4,7 @@
 
 ## Project
 
-Raindrop Collection Summarizer — Raindrop.io コレクションの記事を取得・本文抽出・AI 要約し、HTML 一覧を出力するバッチツール。
+Tsuyu-mi — Raindrop.io コレクションの記事を取得・本文抽出・AI 要約し、HTML 一覧を出力するバッチツール。
 
 ## Tech Stack
 
