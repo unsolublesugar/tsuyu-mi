@@ -9,6 +9,7 @@ warnings.filterwarnings("ignore", message="urllib3.*doesn't match a supported ve
 
 import click
 from rich.console import Console
+from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn
 from rich.table import Table
 
 from src.article_repository import ArticleRepository
@@ -87,24 +88,42 @@ def run(dry_run: bool, verbose: bool) -> None:
     provider = create_provider(config)
     repo = ArticleRepository(config.data_dir)
     stats = {"summarized": 0, "skipped": 0, "failed": 0}
+    results: list[tuple[str, str, str]] = []  # (タイトル, 結果, 詳細)
+    start_time = time.time()
 
-    for i, raindrop in enumerate(targets, 1):
-        console.print(f"  [{i}/{len(targets)}] {raindrop.title[:50]}...")
-        try:
-            article = _process_article(raindrop, config, provider, state, repo, logger)
-            if article and article.summary_3lines:
-                stats["summarized"] += 1
-            else:
-                stats["skipped"] += 1
-        except Exception as e:
-            logger.error(f"記事処理エラー ({raindrop.raindrop_id}): {e}")
-            state.update_status(raindrop.raindrop_id, ArticleState.failed, reason=str(e))
-            stats["failed"] += 1
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TaskProgressColumn(),
+        console=console,
+    ) as progress:
+        task = progress.add_task("処理中", total=len(targets))
+        for i, raindrop in enumerate(targets, 1):
+            title_short = raindrop.title[:40] if raindrop.title else raindrop.url[:40]
+            progress.update(task, description=f"[{i}/{len(targets)}] {title_short}")
+            try:
+                article = _process_article(raindrop, config, provider, state, repo, logger)
+                if article and article.summary_3lines:
+                    stats["summarized"] += 1
+                    results.append((title_short, "[green]要約[/green]", article.priority.value))
+                else:
+                    stats["skipped"] += 1
+                    status = article.content_status if article else "unknown"
+                    results.append((title_short, "[yellow]スキップ[/yellow]", status))
+            except Exception as e:
+                logger.error(f"記事処理エラー ({raindrop.raindrop_id}): {e}")
+                state.update_status(raindrop.raindrop_id, ArticleState.failed, reason=str(e))
+                stats["failed"] += 1
+                results.append((title_short, "[red]失敗[/red]", str(e)[:30]))
 
-        # レートリミット対策: 記事間に 2 秒待機
-        if i < len(targets):
-            time.sleep(2)
+            progress.advance(task)
 
+            # レートリミット対策: 記事間に 2 秒待機
+            if i < len(targets):
+                time.sleep(2)
+
+    elapsed = time.time() - start_time
     state.mark_run_completed()
     state.save()
 
@@ -112,7 +131,7 @@ def run(dry_run: bool, verbose: bool) -> None:
     console.print("[bold]4/4 HTML を生成中...[/bold]")
     _build_html(config, repo, state)
 
-    _print_summary(stats, len(targets))
+    _print_summary(stats, len(targets), elapsed, results)
 
 
 @cli.command("fetch-only")
@@ -377,14 +396,30 @@ def _print_targets(targets) -> None:
     console.print(table)
 
 
-def _print_summary(stats: dict, total: int) -> None:
-    """処理結果サマリーを表示する。"""
+def _print_summary(
+    stats: dict, total: int, elapsed: float = 0, results: list[tuple[str, str, str]] | None = None
+) -> None:
+    """処理結果サマリーをテーブル形式で表示する。"""
+    # 各記事の結果テーブル
+    if results:
+        console.print()
+        table = Table(title="処理結果")
+        table.add_column("記事", max_width=45)
+        table.add_column("結果", justify="center")
+        table.add_column("詳細")
+        for title, status, detail in results:
+            table.add_row(title, status, detail)
+        console.print(table)
+
+    # サマリー
     console.print()
-    console.print("[bold]処理結果:[/bold]")
-    console.print(f"  対象: {total} 件")
-    console.print(f"  要約: [green]{stats['summarized']}[/green] 件")
-    console.print(f"  スキップ: [yellow]{stats['skipped']}[/yellow] 件")
-    console.print(f"  失敗: [red]{stats['failed']}[/red] 件")
+    minutes, seconds = divmod(int(elapsed), 60)
+    time_str = f"{minutes}分{seconds}秒" if minutes else f"{seconds}秒"
+    console.print(f"[bold]完了[/bold] — 対象: {total} 件 | "
+                  f"[green]要約: {stats['summarized']}[/green] | "
+                  f"[yellow]スキップ: {stats['skipped']}[/yellow] | "
+                  f"[red]失敗: {stats['failed']}[/red] | "
+                  f"処理時間: {time_str}")
 
 
 if __name__ == "__main__":
