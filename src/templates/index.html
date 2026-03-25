@@ -31,14 +31,14 @@
 
   <header>
     <div class="stats">
-      <span>{{ total }} 件</span>
+      <span id="stats-count">{{ total }} / {{ total }} 件</span>
       {% if last_run_at %}<span>最終実行: {{ last_run_at }}</span>{% endif %}
     </div>
     <div class="filters">
-      <button class="filter-btn active" data-filter="all">すべて</button>
-      <button class="filter-btn" data-filter="high">High</button>
+      <button class="filter-btn active" data-filter="high">High</button>
       <button class="filter-btn" data-filter="medium">Medium</button>
       <button class="filter-btn" data-filter="low">Low</button>
+      <button class="filter-btn" data-filter="all">All</button>
     </div>
   </header>
 
