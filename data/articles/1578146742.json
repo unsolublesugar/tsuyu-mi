@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1578146742,
+  "collection_id": 56182051,
+  "title": "得意や経験を資産に変える実践的キャリア設計講座 ～埋もれたスキルを「選ばれる価値」に再構築する実装プログラム～｜MASH Co., Ltd.",
+  "url": "https://mash.ltd/portfolio_curriculum/",
+  "domain": "mash.ltd",
+  "created_at": "2026-02-05T03:44:38.446000Z",
+  "fetched_at": "2026-03-25T08:42:43.686431Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 23616,
+  "content_hash": "sha256:77de525bb90a46e3cf6b0944416977d980e9def6c56a48f5b7147560ef2684c4",
+  "summary_input_type": "fulltext",
+  "topic": "得意や経験を資産に変えるポートフォリオ型キャリア設計講座の紹介",
+  "summary_3lines": [
+    "現代の不確実なキャリア環境において、自身の得意や経験を「選ばれる価値」に変え、複数の役割や収入源を持つ「ポートフォリオ型キャリア」を築く重要性を提示。",
+    "副業は特別なスキルや時間を切り売りするものではなく、既存のスキルを資産化し、スキルアップ、人脈構築、リスクマネジメントに繋げる実践的なキャリア設計を提案。",
+    "本講座は、発信力・文章力・セルフプロモーション・案件獲得・コミュニティ構築・商業出版といった6つの実践的スキルを習得し、自由で豊かなキャリアの実現を目指す。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "現代のキャリアの不確実性に不安を感じ、自身のスキルや経験を活かした新しい働き方に関心がある場合、具体的なキャリア設計の考え方や実践的な方法を学ぶきっかけになるため。",
+  "defer_reason": "すでにポートフォリオ型キャリアに関する知識があり、具体的な行動計画が明確な場合や、今すぐキャリア設計の方向性を検討する必要がない場合は、後回しにしても良い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ポートフォリオ型キャリア",
+    "複業",
+    "スキル資産化",
+    "キャリア設計",
+    "情報発信"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:42:50.858856Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
