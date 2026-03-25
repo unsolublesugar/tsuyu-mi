@@ -1,9 +1,11 @@
 """HTML 出力。Jinja2 テンプレートで docs/index.html を生成する。"""
 
 import logging
+import re
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
+from markupsafe import Markup, escape
 
 from src.models import ArticleState, Priority, ProcessedArticle
 from src.utils.time import format_display
@@ -11,6 +13,15 @@ from src.utils.time import format_display
 logger = logging.getLogger("raindrop_summarizer")
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
+
+_INLINE_CODE_RE = re.compile(r"`([^`]+)`")
+
+
+def _render_inline_code(text: str) -> Markup:
+    """テキスト中の `code` をインラインコード表示用の <code> タグに変換する。"""
+    escaped = escape(text)
+    result = _INLINE_CODE_RE.sub(r"<code>\1</code>", str(escaped))
+    return Markup(result)
 
 
 class HtmlBuilder:
@@ -22,6 +33,7 @@ class HtmlBuilder:
             loader=FileSystemLoader(str(TEMPLATE_DIR)),
             autoescape=True,
         )
+        self.env.filters["inline_code"] = _render_inline_code
 
     def build(self, articles: list[ProcessedArticle], last_run_at: str = "") -> Path:
         """記事一覧 HTML を生成する。"""

@@ -155,6 +155,16 @@ h1 {
   margin-bottom: 3px;
 }
 
+.summary code,
+.reasons code {
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #d6336c;
+}
+
 /* Reasons toggle */
 
 .reasons-toggle {
