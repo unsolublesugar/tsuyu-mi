@@ -300,6 +300,13 @@ h1 {
   padding: 40px;
 }
 
+.filter-empty {
+  text-align: center;
+  color: #aaa;
+  padding: 40px;
+  display: none;
+}
+
 /* Footer */
 
 footer {
