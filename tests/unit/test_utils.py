@@ -70,7 +70,7 @@ class TestTime:
         iso = to_iso(dt)
         assert "2026-03-25" in iso
 
-    def test_format_display(self):
+    def test_format_display_jst(self):
         dt = datetime(2026, 3, 25, 8, 30, 0, tzinfo=UTC)
         display = format_display(dt)
-        assert display == "2026-03-25 08:30"
+        assert display == "2026-03-25 17:30"  # UTC+9 = JST
