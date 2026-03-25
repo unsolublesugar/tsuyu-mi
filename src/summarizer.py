@@ -43,13 +43,16 @@ class GeminiProvider:
     """Google Gemini API プロバイダー。"""
 
     def __init__(self, config: Config) -> None:
-        import google.generativeai as genai
+        from google import genai
 
-        genai.configure(api_key=config.llm_api_key)
-        self.model = genai.GenerativeModel(config.llm_model)
+        self.client = genai.Client(api_key=config.llm_api_key)
+        self.model_name = config.llm_model
 
     def generate(self, prompt: str) -> str:
-        response = self.model.generate_content(prompt)
+        response = self.client.models.generate_content(
+            model=self.model_name,
+            contents=prompt,
+        )
         return response.text or ""
 
 
