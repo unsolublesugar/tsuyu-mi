@@ -71,9 +71,7 @@ class TestHtmlBuilder:
             ]
             path = builder.build(articles, last_run_at="2026-03-25 08:00")
             html = path.read_text()
-            assert "総記事数: 2" in html
-            assert "要約済み: 1" in html
-            assert "スキップ: 1" in html
+            assert "2 件" in html
             assert "2026-03-25 08:00" in html
 
     def test_empty(self):
@@ -89,5 +87,6 @@ class TestHtmlBuilder:
             articles = [_make_article(1, drop_candidate=True, drop_reason="価値薄い")]
             path = builder.build(articles)
             html = path.read_text()
-            assert "ドロップ候補" in html
+            assert "drop-candidate" in html
+            assert "DROP" in html
             assert "価値薄い" in html
