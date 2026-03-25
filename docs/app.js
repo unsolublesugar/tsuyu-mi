@@ -1,4 +1,3 @@
-// 優先度フィルタ
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".filter-btn");
   const cards = document.querySelectorAll(".card");

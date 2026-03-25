@@ -10,9 +10,7 @@
   <header>
     <h1>Raindrop Collection Summary</h1>
     <div class="stats">
-      <span>総記事数: {{ total }}</span>
-      <span>要約済み: {{ summarized_count }}</span>
-      <span>スキップ: {{ skipped_count }}</span>
+      <span>{{ total }} 件</span>
       {% if last_run_at %}<span>最終実行: {{ last_run_at }}</span>{% endif %}
     </div>
     <div class="filters">
@@ -27,9 +25,10 @@
     {% if articles %}
     <section class="articles">
       {% for article in articles %}
-      <article class="card priority-{{ article.priority.value }}" data-priority="{{ article.priority.value }}">
+      <article class="card priority-{{ article.priority.value }}{% if article.drop_candidate %} drop-candidate{% endif %}" data-priority="{{ article.priority.value }}">
         <div class="card-header">
           <span class="priority-badge priority-{{ article.priority.value }}">{{ article.priority.value | upper }}</span>
+          {% if article.drop_candidate %}<span class="drop-badge">DROP</span>{% endif %}
           <span class="domain">{{ article.domain }}</span>
           <span class="date">{{ format_display(article.created_at) }}</span>
         </div>
@@ -37,10 +36,6 @@
         <h2 class="card-title">
           <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
         </h2>
-
-        {% if article.topic %}
-        <p class="topic">{{ article.topic }}</p>
-        {% endif %}
 
         {% if article.summary_3lines %}
         <ul class="summary">
@@ -50,23 +45,26 @@
         </ul>
         {% endif %}
 
-        <div class="reasons">
-          {% if article.read_now_reason %}
-          <div class="reason read-now">
-            <span class="reason-label">今読む理由:</span> {{ article.read_now_reason }}
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            {% if article.read_now_reason %}
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> {{ article.read_now_reason }}
+            </div>
+            {% endif %}
+            {% if article.defer_reason %}
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> {{ article.defer_reason }}
+            </div>
+            {% endif %}
+            {% if article.drop_candidate %}
+            <div class="reason drop">
+              <span class="reason-label">ドロップ理由:</span> {{ article.drop_reason if article.drop_reason else "該当" }}
+            </div>
+            {% endif %}
           </div>
-          {% endif %}
-          {% if article.defer_reason %}
-          <div class="reason defer">
-            <span class="reason-label">後回し理由:</span> {{ article.defer_reason }}
-          </div>
-          {% endif %}
-          {% if article.drop_candidate %}
-          <div class="reason drop">
-            <span class="reason-label">ドロップ候補:</span> {{ article.drop_reason if article.drop_reason else "該当" }}
-          </div>
-          {% endif %}
-        </div>
+        </details>
 
         {% if article.keywords %}
         <div class="keywords">
@@ -76,13 +74,6 @@
         </div>
         {% endif %}
 
-        <div class="card-footer">
-          <span class="status">取得: {{ article.fetch_status if article.fetch_status else "-" }}</span>
-          <span class="status">手動: {{ article.manual_status.value }}</span>
-          {% if article.summary_input_type %}
-          <span class="status">入力: {{ article.summary_input_type.value }}</span>
-          {% endif %}
-        </div>
       </article>
       {% endfor %}
     </section>
@@ -92,17 +83,19 @@
 
     {% if skipped %}
     <section class="skipped-section">
-      <h2>スキップ・未処理 ({{ skipped_count }} 件)</h2>
-      {% for article in skipped %}
-      <div class="skipped-item">
-        <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title if article.title else article.url }}</a>
-        <span class="domain">{{ article.domain }}</span>
-        {% if article.content_type.value == "video" %}
-        <span class="badge video">動画</span>
-        {% endif %}
-        <span class="badge skip-reason">{{ article.content_status if article.content_status else "未処理" }}</span>
-      </div>
-      {% endfor %}
+      <details>
+        <summary>スキップ・未処理 ({{ skipped_count }} 件)</summary>
+        {% for article in skipped %}
+        <div class="skipped-item">
+          <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title if article.title else article.url }}</a>
+          <span class="domain">{{ article.domain }}</span>
+          {% if article.content_type.value == "video" %}
+          <span class="badge video">動画</span>
+          {% endif %}
+          <span class="badge skip-reason">{{ article.content_status if article.content_status else "未処理" }}</span>
+        </div>
+        {% endfor %}
+      </details>
     </section>
     {% endif %}
   </main>
