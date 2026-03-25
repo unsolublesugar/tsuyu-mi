@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/ data/ state/
+          git add docs/ data/articles/ data/output/ state/
           git diff --cached --quiet && echo "No changes to commit" || (git commit -m "🤖 記事を要約・HTML を更新 $(date -u +'%Y-%m-%d')" && git push)
 
       - name: Upload Pages artifact

@@ -20,6 +20,9 @@ env/
 # data/
 # state/
 
+# Raindrop API raw data (contains personal bookmarks)
+data/raw/
+
 # Claude Code (local settings)
 .claude/settings.local.json
 
