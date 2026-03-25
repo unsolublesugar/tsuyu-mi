@@ -1,6 +1,5 @@
 ---
 description: Git 運用規範（daily-tech-news 準拠）
-globs: *
 ---
 
 # Git 運用規範
