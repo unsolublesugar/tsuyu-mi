@@ -1,0 +1,31 @@
+{
+  "result": true,
+  "items": [
+    {
+      "_id": 123456789,
+      "collection": {"$id": 111111},
+      "title": "Sample Article",
+      "link": "https://example.com/sample",
+      "domain": "example.com",
+      "created": "2026-03-25T00:00:00.000Z",
+      "tags": ["python", "ai"],
+      "excerpt": "This is a sample article",
+      "type": "link",
+      "cover": "",
+      "note": ""
+    },
+    {
+      "_id": 987654321,
+      "collection": {"$id": 111111},
+      "title": "YouTube Video",
+      "link": "https://youtube.com/watch?v=abc",
+      "domain": "youtube.com",
+      "created": "2026-03-24T00:00:00.000Z",
+      "tags": [],
+      "excerpt": "A video",
+      "type": "video",
+      "cover": "",
+      "note": ""
+    }
+  ]
+}
