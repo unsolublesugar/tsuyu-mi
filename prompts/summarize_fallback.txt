@@ -1,0 +1,36 @@
+あなたは記事要約アシスタントです。以下の記事のメタデータから、日本語で簡易要約を生成してください。
+
+**注意: 本文は取得できていません。メタデータのみに基づく簡易要約です。**
+
+## メタデータ
+
+{metadata}
+
+## 指示
+
+以下の JSON 形式で出力してください。JSON 以外は出力しないでください。
+本文未取得のため、断定的な表現を避け、メタデータから読み取れる範囲で要約してください。
+
+- topic: 推定される主題を1行で
+- summary_3lines: 3行の簡易要約（メタデータから推測できる範囲で）
+- priority: "high" / "medium" / "low"
+- read_now_reason: 今読む価値がある理由（1文）
+- defer_reason: 後回しでよい理由（1文）
+- drop_candidate: true/false
+- drop_reason: ドロップ候補の理由（該当しなければ空文字）
+- keywords: キーワード3〜5個
+
+## 出力例
+
+```json
+{{
+  "topic": "主題",
+  "summary_3lines": ["1行目", "2行目", "3行目"],
+  "priority": "medium",
+  "read_now_reason": "理由",
+  "defer_reason": "理由",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": ["キーワード1", "キーワード2", "キーワード3"]
+}}
+```
