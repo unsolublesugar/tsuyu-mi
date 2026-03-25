@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1526217530,
+  "collection_id": 56182051,
+  "title": "2026年は「AIとデバイス」の年に 今年の流れを予測する【西田宗千佳のイマトミライ】",
+  "url": "https://www.watch.impress.co.jp/docs/series/nishida/2075331.html",
+  "domain": "watch.impress.co.jp",
+  "created_at": "2026-01-04T23:17:13.810000Z",
+  "fetched_at": "2026-03-25T08:27:57.626706Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4154,
+  "content_hash": "sha256:3363d564f0fa6e66c4fae8cc145aec3912925db045712700d2e6a4f673a851c3",
+  "summary_input_type": "fulltext",
+  "topic": "2026年のAIとデバイス技術のトレンド予測",
+  "summary_3lines": [
+    "2026年はAIが社会に定着し、企業でのエージェント活用やユーザー接点拡大競争が加速すると予測されている。",
+    "AI向けデータセンター投資の過熱によるメモリ高騰は、デジタルガジェットの値上げや品不足を引き起こす可能性が指摘されている。",
+    "スマートフォンAIの進化に加え、スマートグラスやスマートホーム、OpenAIの独自デバイスなど、AIアシスタントを介した音声とデバイスの連携が本格化する。"
+  ],
+  "priority": "high",
+  "read_now_reason": "2026年のAIとデバイスに関するテクノロジー業界の主要なトレンド予測が網羅されており、今後の動向を理解する上で非常に有用であるため。",
+  "defer_reason": "特定の技術や製品の詳細な情報が必要な場合は、別途個別の記事を参照する必要があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI",
+    "デバイス",
+    "スマートグラス",
+    "スマホAI",
+    "音声アシスタント"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:28:06.712779Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

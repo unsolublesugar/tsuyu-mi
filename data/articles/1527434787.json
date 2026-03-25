@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1527434787,
+  "collection_id": 56182051,
+  "title": "IT業界に蔓延する『ナンニデモPM』 それ、本当にプロジェクトマネジメント？ - Qiita",
+  "url": "https://qiita.com/katohiro_fi/items/b91a11cbcdd0e4967b8c",
+  "domain": "qiita.com",
+  "created_at": "2026-01-05T15:45:51.599000Z",
+  "fetched_at": "2026-03-25T08:27:37.785906Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6861,
+  "content_hash": "sha256:2bc3e497d2d0eca7024e79702e604d262cbedf6bd9828ea23923e1c2e2feca4e",
+  "summary_input_type": "fulltext",
+  "topic": "IT業界における「ナンニデモPM」問題と、PMに求められる真の技術力および役割の明確化",
+  "summary_3lines": [
+    "IT業界に蔓延する「ナンニデモPM」は、PMがエンジニア業務まで兼務し、本来のプロジェクト管理業務が疎かになる課題を指摘。",
+    "PMに求められる技術力は、実装スキルではなく、専門家の発言を理解し、技術的な判断や意思決定を適切に行うリテラシーであり、IPA応用情報レベルが目安となる。",
+    "PMがチームの力を引き出し、管理業務に専念することでプロジェクトは健全化し、採用においては役割と期待値を明確にした求人への是正が重要である。"
+  ],
+  "priority": "high",
+  "read_now_reason": "ITプロジェクトマネジメントの現状課題とPMのあるべき姿について具体的な提言がされており、自身のPM像や組織運営を考える上で示唆に富む。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "プロジェクトマネジメント",
+    "ナンニデモPM",
+    "技術リテラシー",
+    "IPA応用情報",
+    "IT業界の課題"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:27:46.825118Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

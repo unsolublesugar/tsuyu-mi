@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1527437046,
+  "collection_id": 56182051,
+  "title": "PublickeyのIT業界予想2026。メモリ高騰による消極的なクラウド選択、AIエージェントを前提とした開発方法論、Rust採用の広がりなど",
+  "url": "https://www.publickey1.jp/blog/26/publickeyit2026airust.html",
+  "domain": "publickey1.jp",
+  "created_at": "2026-01-05T15:49:09.750000Z",
+  "fetched_at": "2026-03-25T08:27:26.507230Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5765,
+  "content_hash": "sha256:b32bb2295d9ea75a6880c7b2b03263f91a624711f1605da32e2f4ef7555c19dc",
+  "summary_input_type": "fulltext",
+  "topic": "2026年のIT業界における主要動向と技術トレンド予測",
+  "summary_3lines": [
+    "2026年は、メモリ価格高騰によるオンプレミス調達の不透明さから、クラウドへの消極的な移行が増加すると予測。",
+    "AIエージェントを前提とした新たな開発方法論が模索され、巧妙化するサイバー攻撃は継続的に発生する見込み。",
+    "米政府推奨や主要プラットフォーム採用を背景に、メモリ安全性や高速性を持つプログラミング言語Rustの利用が本格的に拡大すると予想。"
+  ],
+  "priority": "high",
+  "read_now_reason": "2026年のIT業界の主要トレンドと変化の兆候を早期に把握し、今後の戦略立案や技術選定に役立てることができます。",
+  "defer_reason": "今後の動向を追うための予備知識として有用ですが、具体的なアクションを直ちに求める内容ではないため、緊急性が低い場合は後回しにできます。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "Rust",
+    "クラウド移行",
+    "メモリ高騰",
+    "サイバー攻撃"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:27:35.501609Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

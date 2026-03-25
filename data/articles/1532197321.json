@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1532197321,
+  "collection_id": 56182051,
+  "title": "「この時代に本を売るにはどうすればいいのか」を読んで一歩踏み出すために｜杉山博一（オシロ代表）",
+  "url": "https://comemo.nikkei.com/n/nc2bc98a56495",
+  "domain": "comemo.nikkei.com",
+  "created_at": "2026-01-09T02:07:11.424000Z",
+  "fetched_at": "2026-03-25T08:26:54.518130Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2601,
+  "content_hash": "sha256:2e63df0de9cfc69b31cbd612e6c85991820a4938c162445c0ef985231cdf8603",
+  "summary_input_type": "fulltext",
+  "topic": "読者コミュニティを活用した書籍販売促進の可能性と日本の事例",
+  "summary_3lines": [
+    "飯田一史氏の著書に触発され、欧米大手出版社の「読者コミュニティ」による書籍販売促進が、日本でも機能することを解説する記事。",
+    "自社サービスOSIROの事例として、「猫町倶楽部」などの読書会コミュニティが課題本の購買を促進していることを紹介。",
+    "コミュニティは単なる販促ではなく、読者との関係性を育む「資産」であり、日本の出版業界の変革のために専門家として支援すると提言する。"
+  ],
+  "priority": "high",
+  "read_now_reason": "書籍販売におけるコミュニティ活用の具体的な方法と、日本での成功事例を知ることで、今後のビジネス展開のヒントが得られるため。",
+  "defer_reason": "出版やコミュニティビジネスに直接関わる計画がない場合、基本的なアイデアは要約で十分理解できるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "読者コミュニティ",
+    "書籍販売",
+    "出版業界",
+    "OSIRO",
+    "読書会"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-25T08:27:02.717356Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

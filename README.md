@@ -82,6 +82,8 @@ pip install -e ".[dev]"
 
 ### 4. 環境変数の設定
 
+#### ローカル実行の場合
+
 ```bash
 cp .env.example .env
 ```
@@ -96,7 +98,19 @@ LLM_API_KEY=your-llm-api-key
 LLM_MODEL=gemini-2.5-flash
 ```
 
-> `.env` は `.gitignore` に含まれているため、リポジトリにコミットされません。
+> `.env` はリポジトリにコミットしないでください。
+
+#### GitHub Actions の場合
+
+リポジトリの Settings → Secrets and variables → Actions → Repository secrets に以下を設定:
+
+| Secret 名 | 値 |
+|---|---|
+| `RAINDROP_TOKEN` | Raindrop.io API テストトークン |
+| `RAINDROP_COLLECTION_ID` | 対象コレクション ID |
+| `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` |
+| `LLM_API_KEY` | LLM の API キー |
+| `LLM_MODEL` | モデル名（例: `gemini-2.5-flash`） |
 
 ### 5. 動作確認
 
@@ -165,21 +179,15 @@ python -m src reprocess-failed
 
 ### 1. GitHub Secrets の設定
 
-リポジトリの Settings → Secrets and variables → Actions で以下を設定:
-
-| Secret 名 | 値 |
-|---|---|
-| `RAINDROP_TOKEN` | Raindrop.io API テストトークン |
-| `RAINDROP_COLLECTION_ID` | 対象コレクション ID |
-| `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` |
-| `LLM_API_KEY` | LLM の API キー |
-| `LLM_MODEL` | モデル名（例: `gemini-2.5-flash`） |
+セットアップの「4. 環境変数の設定 → GitHub Actions の場合」を参照してください。
 
 ### 2. GitHub Pages の有効化
 
 Settings → Pages → Source を **Deploy from a branch** に設定:
 - Branch: `main`
 - Folder: `/docs`
+
+> プライベートリポジトリで GitHub Pages を使うには **GitHub Pro** 以上が必要です。
 
 ### 3. 実行スケジュール
 
