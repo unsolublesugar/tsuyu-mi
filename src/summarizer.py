@@ -124,14 +124,17 @@ def summarize_fallback(
 
 
 def _call_and_parse(provider: LLMProvider, prompt: str) -> SummaryResult | None:
-    """LLM を呼び出し、レスポンスを SummaryResult にパースする。リトライ 1 回。"""
+    """LLM を呼び出し、レスポンスを SummaryResult にパースする。リトライ 1 回（待機付き）。"""
+    import time
+
     for attempt in range(2):
         try:
             raw = provider.generate(prompt)
             return _parse_response(raw)
         except Exception as e:
             if attempt == 0:
-                logger.warning(f"LLM 呼び出し/パース失敗、リトライします: {e}")
+                logger.warning(f"LLM 呼び出し/パース失敗、5秒後にリトライします: {e}")
+                time.sleep(5)
             else:
                 logger.error(f"LLM 呼び出し/パース失敗（リトライ後）: {e}")
     return None
