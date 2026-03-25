@@ -81,6 +81,7 @@ def run(dry_run: bool, verbose: bool) -> None:
         console.print("[green]新規記事なし。終了します。[/green]")
         state.mark_run_completed()
         state.save()
+        _build_html(config, repo, state)
         return
 
     # 3. 各記事を処理
