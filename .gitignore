@@ -20,6 +20,9 @@ env/
 # data/
 # state/
 
+# Claude Code (local settings)
+.claude/settings.local.json
+
 # IDE
 .vscode/
 .idea/
