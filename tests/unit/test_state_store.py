@@ -31,15 +31,16 @@ class TestStateStore:
             assert new[0].raindrop_id == 2  # newest first
             assert new[1].raindrop_id == 3
 
-    def test_overflow_becomes_pending(self):
+    def test_overflow_not_registered(self):
+        """上限超過分は state に登録されない（次回再検出される）。"""
         with tempfile.TemporaryDirectory() as tmpdir:
             store = StateStore(state_dir=tmpdir)
             raindrops = [_make_raindrop(1, 5), _make_raindrop(2, 0), _make_raindrop(3, 3)]
             store.get_new_articles(raindrops, max_count=2)
-            assert "1" in store.index.items
-            assert store.index.items["1"].status == ArticleState.pending
+            assert "1" not in store.index.items
 
-    def test_skips_existing(self):
+    def test_skips_summarized(self):
+        """要約済みの記事はスキップされる。"""
         with tempfile.TemporaryDirectory() as tmpdir:
             store = StateStore(state_dir=tmpdir)
             store.update_status(1, ArticleState.summarized)
@@ -47,6 +48,24 @@ class TestStateStore:
             new = store.get_new_articles(raindrops, max_count=10)
             assert len(new) == 1
             assert new[0].raindrop_id == 2
+
+    def test_pending_retried(self):
+        """pending 状態の記事は再検出される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            store = StateStore(state_dir=tmpdir)
+            store.update_status(1, ArticleState.pending)
+            raindrops = [_make_raindrop(1), _make_raindrop(2)]
+            new = store.get_new_articles(raindrops, max_count=10)
+            assert len(new) == 2
+
+    def test_failed_retried(self):
+        """failed 状態の記事は再検出される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            store = StateStore(state_dir=tmpdir)
+            store.update_status(1, ArticleState.failed)
+            raindrops = [_make_raindrop(1), _make_raindrop(2)]
+            new = store.get_new_articles(raindrops, max_count=10)
+            assert len(new) == 2
 
     def test_update_status(self):
         with tempfile.TemporaryDirectory() as tmpdir:

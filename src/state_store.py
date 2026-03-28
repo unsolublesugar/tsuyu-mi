@@ -40,16 +40,15 @@ class StateStore:
     def get_new_articles(
         self, raindrops: list[RaindropItem], max_count: int = 30
     ) -> list[RaindropItem]:
-        """未処理の新規記事を抽出する。created_at の新しい順、上限 max_count 件。"""
-        existing_ids = set(self.index.items.keys())
-        new_items = [r for r in raindrops if str(r.raindrop_id) not in existing_ids]
-        new_items.sort(key=lambda r: r.created_at, reverse=True)
+        """未要約の記事を抽出する。created_at の新しい順、上限 max_count 件。"""
+        summarized_ids = {
+            rid for rid, entry in self.index.items.items()
+            if entry.status == ArticleState.summarized
+        }
+        unsummarized = [r for r in raindrops if str(r.raindrop_id) not in summarized_ids]
+        unsummarized.sort(key=lambda r: r.created_at, reverse=True)
 
-        # 上限を超えた分は pending として登録
-        for item in new_items[max_count:]:
-            self._set_entry(str(item.raindrop_id), ArticleState.pending)
-
-        return new_items[:max_count]
+        return unsummarized[:max_count]
 
     def get_failed_ids(self) -> list[str]:
         """status が failed のエントリの ID リストを返す。"""
