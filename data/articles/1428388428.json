@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1428388428,
+  "collection_id": 56182051,
+  "title": "ITエンジニアの転職学は誰のための本か？｜赤川 朗",
+  "url": "https://note.com/redribabarn/n/n2db9f909fb75",
+  "domain": "note.com",
+  "created_at": "2025-11-10T08:49:09.619000Z",
+  "fetched_at": "2026-03-28T23:47:43.957645Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2782,
+  "content_hash": "sha256:b3de9eaaa74787edc331f4a133a8f1243ec42ca1dce494861679c6f01976381b",
+  "summary_input_type": "fulltext",
+  "topic": "ITエンジニア向け書籍『ITエンジニアの転職学』の対象読者と内容解説",
+  "summary_3lines": [
+    "著者が自身の新刊「ITエンジニアの転職学」について、どのような読者層に向けて何を意図して書いたかを説明しています。",
+    "転職活動中の実践的なノウハウから、転職を考え始めた人のキャリア戦略、年収の壁の超え方までを網羅しています。",
+    "現職エンジニアや不測の事態に備える人、あらゆる業態のITエンジニアに対し、普遍的かつ長期的なキャリア戦略を提供しています。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "ITエンジニアとして自身のキャリアや転職を具体的に検討している場合、書籍の内容が自身の状況に合致するかを判断するための情報が得られるから。",
+  "defer_reason": "現時点でITエンジニアとしてのキャリア形成や転職に具体的な関心がない場合、今すぐ読む緊急性は低い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ITエンジニア",
+    "転職",
+    "キャリア戦略",
+    "年収",
+    "転職ノウハウ"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:47:50.793416Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

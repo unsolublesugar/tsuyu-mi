@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1428691176,
+  "collection_id": 56182051,
+  "title": "AI時代にエンジニアは時間外に勉強すべきなのか？",
+  "url": "https://note.com/rk611/n/n11a022e8e58d",
+  "domain": "note.com",
+  "created_at": "2025-11-10T12:45:59.308000Z",
+  "fetched_at": "2026-03-28T23:47:36.430804Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4236,
+  "content_hash": "sha256:1ffecfb88b46537d06e29747aa6ab8d702d4a9ac6b476d9154c3d645c70907f9",
+  "summary_input_type": "fulltext",
+  "topic": "AI時代におけるエンジニアの時間外学習の意義とキャリアの自己責任",
+  "summary_3lines": [
+    "AI時代にエンジニアが時間外に勉強すべきかという問いに対し、若手とベテランの間でキャリア観の世代間ギャップが存在すると指摘。",
+    "終身雇用が崩壊し、企業から個人へキャリア責任が移行した現代において、学習は未来への先行投資であり、自身のキャリアは自身で決めるべきと説く。",
+    "特定の会社に依存しないプロフェッショナルとして生き抜くために学び、その責任は個人が負うべきであり、ベテランは「楽しいぞ」と示すべきだと提言する。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AI時代における自身のキャリア形成と学習の意義について、若手とベテラン双方の視点から深く考察されており、現代のエンジニアにとって示唆に富む内容だから。",
+  "defer_reason": "キャリアや学習の方向性について現状明確な課題感がなく、より緊急性の高い他の記事を優先する場合。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI時代",
+    "エンジニア",
+    "キャリア形成",
+    "時間外学習",
+    "自己責任"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:47:41.435842Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

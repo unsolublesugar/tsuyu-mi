@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1358868845,
+  "collection_id": 56182051,
+  "title": "『銀河特急 ミルキー☆サブウェイ』生みの親・亀山陽平が明かす制作裏「限りあるリソースを嘆かずに“上手く”やる」 - エンジニアtype | 転職type",
+  "url": "https://type.jp/et/feature/29301/",
+  "domain": "type.jp",
+  "created_at": "2025-09-26T08:21:13.109000Z",
+  "fetched_at": "2026-03-28T23:48:02.810786Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4300,
+  "content_hash": "sha256:5f23858c42ac726a45b1774221c200c8d4fef18209def7b1e04febcb45240d45",
+  "summary_input_type": "fulltext",
+  "topic": "『銀河特急 ミルキー☆サブウェイ』制作者・亀山陽平が語る個人制作と3DCGアニメの裏側",
+  "summary_3lines": [
+    "『銀河特急 ミルキー☆サブウェイ』は、監督・亀山陽平氏がほぼ一人で制作し、日本で受け入れられる3DCG表現と自然な会話劇で人気を集めた。",
+    "限られたリソースの中、舞台を列車内に絞り、1話3分半に設定するなど工夫を凝らし、コミュニケーションコストの低さも小規模制作の利点と語る。",
+    "今後のアニメ制作では、AIの活用に不安を抱えつつも、クリエイティブ部分は自身で行い、シミュレーションなどの工数のかかる作業で活用したい意向を示した。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "個人で世界市場に挑むクリエイターの制作秘話や、限られたリソースでの工夫、AIとの向き合い方について学ぶことができるため。",
+  "defer_reason": "アニメ制作の技術論やクリエイターの個人的な制作スタイルに特化した内容であり、急を要する情報ではないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "銀河特急ミルキー☆サブウェイ",
+    "亀山陽平",
+    "3DCGアニメーション",
+    "個人制作",
+    "AI活用"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:48:11.044054Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
