@@ -446,12 +446,13 @@ def _cleanup_removed_articles(
     current_ids = {str(r.raindrop_id) for r in raindrops}
     saved_articles = repo.list_all()
     removed = 0
+    log = logging.getLogger("raindrop_summarizer")
     for article in saved_articles:
         rid = str(article.raindrop_id)
         if rid not in current_ids:
             repo.delete(article.raindrop_id)
             state.remove_entry(rid)
-            logger.info(f"クリーンアップ: {article.title} (ID: {rid})")
+            log.info(f"クリーンアップ: {article.title} (ID: {rid})")
             removed += 1
     if removed:
         state.save()
