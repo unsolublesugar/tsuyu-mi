@@ -79,6 +79,11 @@ def run(dry_run: bool, verbose: bool) -> None:
 
     repo = ArticleRepository(config.data_dir)
 
+    # コレクションから除外された記事をクリーンアップ
+    removed = _cleanup_removed_articles(raindrops, repo, state)
+    if removed:
+        console.print(f"  クリーンアップ: {removed} 件（コレクションから除外済み）")
+
     if not targets:
         console.print("[green]新規記事なし。終了します。[/green]")
         state.mark_run_completed()
@@ -432,6 +437,25 @@ def _process_article(
 
     repo.save(article)
     return article
+
+
+def _cleanup_removed_articles(
+    raindrops: list, repo: ArticleRepository, state: StateStore
+) -> int:
+    """コレクションから除外された記事を削除する。削除件数を返す。"""
+    current_ids = {str(r.raindrop_id) for r in raindrops}
+    saved_articles = repo.list_all()
+    removed = 0
+    for article in saved_articles:
+        rid = str(article.raindrop_id)
+        if rid not in current_ids:
+            repo.delete(article.raindrop_id)
+            state.remove_entry(rid)
+            logger.info(f"クリーンアップ: {article.title} (ID: {rid})")
+            removed += 1
+    if removed:
+        state.save()
+    return removed
 
 
 def _build_html(config: Config, repo: ArticleRepository, state: StateStore):
