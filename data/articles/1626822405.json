@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1626822405,
+  "collection_id": 56182051,
+  "title": "DeepWikiのDeepWikiを見る",
+  "url": "https://zenn.dev/churadata/articles/b2274a8868188f",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-03T01:49:15.900000Z",
+  "fetched_at": "2026-03-28T23:15:20.300397Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2864,
+  "content_hash": "sha256:faea7e1255a7dcd198984bfcfb60df9514d445eef2a10d85777325d44a874b9a",
+  "summary_input_type": "fulltext",
+  "topic": "「DeepWiki」を模倣したOSSクローンを使ったGitHubリポジトリのドキュメント自動生成ツールの紹介とセキュリティ検証",
+  "summary_3lines": [
+    "GitHubリポジトリのURLから自動でドキュメントを生成する「DeepWiki」のOSSクローンについて、その利用方法と生成能力を紹介。",
+    "セキュリティ面では、対象がpublicリポジトリのみでローカル処理されるものの、機密情報のリポジトリでの利用は避けるべきと指摘。",
+    "記事の検証対象がDevin提供の本家DeepWikiではなく、その模倣OSSである点がDiscussionで明かされており、注意が必要である。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "GitHubリポジトリのドキュメント自動生成ツールの利便性とセキュリティリスクを評価しつつ、記事が扱うツールの正確な情報を把握できるため。",
+  "defer_reason": "記事が扱う「DeepWiki」が本家と異なる模倣OSSであるため、本家DeepWikiの情報を求めている場合は優先度が下がる可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ドキュメント自動生成",
+    "GitHub",
+    "DeepWiki",
+    "セキュリティ",
+    "OSS"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:15:30.467372Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

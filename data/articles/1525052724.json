@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1525052724,
+  "collection_id": 56182051,
+  "title": "Agent Skillsを業務プロダクトに導入してはいけない",
+  "url": "https://zenn.dev/ncdc/articles/206fbad44d1dba",
+  "domain": "zenn.dev",
+  "created_at": "2026-01-04T12:25:45.861000Z",
+  "fetched_at": "2026-03-28T23:15:44.610371Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4096,
+  "content_hash": "sha256:eb24aa4511e552f684685d3e982cab43d7b5f76dd9a9e773ebfe3dbf6aae5fa5",
+  "summary_input_type": "fulltext",
+  "topic": "Agent Skillsの業務プロダクトへの導入におけるセキュリティ上の懸念と課題",
+  "summary_3lines": [
+    "Agent Skillsの業務プロダクトへの安易な導入は、プロンプトインジェクションによるセキュリティリスクが高く推奨されないと筆者は主張。",
+    "これはAgent Skillsが動的にLLMに注入されるプロンプトであり、有効活用には強い実行権限が必要なため、悪意あるユーザーの攻撃が容易になるため。",
+    "従来のツールやMCPと異なり実行権限の分離が困難であることから、現時点では開発用途に留まるべきだと結論付け、安全な活用方法を問いかける。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Agent Skillsを業務プロダクトに導入する際の具体的なセキュリティリスクとその回避策の限界が示されており、導入検討中の開発者にとって重要な情報であるため。",
+  "defer_reason": "Agent Skillsの業務プロダクトへの導入を現時点で検討しておらず、セキュリティの専門知識が求められる内容に関心がない場合は後回しでよい。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Agent Skills",
+    "プロンプトインジェクション",
+    "セキュリティ",
+    "業務プロダクト",
+    "LLM"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:15:50.758126Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

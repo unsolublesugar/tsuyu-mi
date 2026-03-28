@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1628559119,
+  "collection_id": 56182051,
+  "title": "skill-creatorから学ぶSkill設計と、Orchestration Skillの作り方",
+  "url": "https://nyosegawa.github.io/posts/skill-creator-and-orchestration-skill/",
+  "domain": "nyosegawa.github.io",
+  "created_at": "2026-03-04T10:33:44.978000Z",
+  "fetched_at": "2026-03-28T23:15:13.806237Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 15764,
+  "content_hash": "sha256:33cf218ec97834f95d67520fc91aa9757a7302b8f5ebc7dcbd073dc62d2deee4",
+  "summary_input_type": "fulltext",
+  "topic": "Anthropic公式の「skill-creator」から学ぶAgent Skills設計とオーケストレーション手法",
+  "summary_3lines": [
+    "Anthropicのメタスキル「skill-creator」は、Agent Skillsのベストプラクティスの宝庫であり、SKILL.mdをオーケストレーターとし、専門処理をサブエージェントやスクリプトに委譲する設計が特徴です。",
+    "Progressive Disclosure、スキーマ契約、Why-driven設計、description最適化、Human-in-the-LoopのUI生成など、実践的な設計原則が示されています。",
+    "複数の処理を制御するオーケストレーションスキルには、並列処理向きの「Sub-agent型」と、順序性のあるパイプライン向きの「Skill Chain型」があり、タスクに応じた使い分けが重要です。"
+  ],
+  "priority": "high",
+  "read_now_reason": "LLMエージェントやAgent Skillsの開発に携わる、または関心のある読者にとって、具体的な設計パターンやベストプラクティス、将来的な開発指針を深く理解できるため、非常に価値のある内容です。",
+  "defer_reason": "Agent SkillsやLLMエージェントの具体的な開発を行う予定がない場合、この高度な設計パターンは現時点での直接的な必要性が低い可能性があります。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Agent Skills",
+    "skill-creator",
+    "オーケストレーション",
+    "LLMエージェント",
+    "スキル設計"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:15:17.902369Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

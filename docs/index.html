@@ -31,8 +31,8 @@
 
   <header>
     <div class="stats">
-      <span id="stats-count">5 / 5 件</span>
-      <span>最終実行: 2026-03-29 08:04</span>
+      <span id="stats-count">15 / 15 件</span>
+      <span>最終実行: 2026-03-29 08:16</span>
     </div>
     <div class="filters">
       <button class="filter-btn active" data-filter="high">High</button>
@@ -223,6 +223,411 @@
 
       </article>
       
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">nyosegawa.github.io</span>
+          <span class="date">2026-03-04 19:33</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://nyosegawa.github.io/posts/skill-creator-and-orchestration-skill/" target="_blank" rel="noopener">skill-creatorから学ぶSkill設計と、Orchestration Skillの作り方</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Anthropicのメタスキル「skill-creator」は、Agent Skillsのベストプラクティスの宝庫であり、SKILL.mdをオーケストレーターとし、専門処理をサブエージェントやスクリプトに委譲する設計が特徴です。</li>
+          
+          <li>Progressive Disclosure、スキーマ契約、Why-driven設計、description最適化、Human-in-the-LoopのUI生成など、実践的な設計原則が示されています。</li>
+          
+          <li>複数の処理を制御するオーケストレーションスキルには、並列処理向きの「Sub-agent型」と、順序性のあるパイプライン向きの「Skill Chain型」があり、タスクに応じた使い分けが重要です。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> LLMエージェントやAgent Skillsの開発に携わる、または関心のある読者にとって、具体的な設計パターンやベストプラクティス、将来的な開発指針を深く理解できるため、非常に価値のある内容です。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> Agent SkillsやLLMエージェントの具体的な開発を行う予定がない場合、この高度な設計パターンは現時点での直接的な必要性が低い可能性があります。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Agent Skills</span>
+          
+          <span class="keyword">skill-creator</span>
+          
+          <span class="keyword">オーケストレーション</span>
+          
+          <span class="keyword">LLMエージェント</span>
+          
+          <span class="keyword">スキル設計</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">techblog.lycorp.co.jp</span>
+          <span class="date">2026-01-23 21:14</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://techblog.lycorp.co.jp/ja/20260122a" target="_blank" rel="noopener">Claude Code × MCPで実現するPRレビュー準備の自動化 ——週6時間のレビュー工数を削減した実践例——</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>育休復帰後のエンジニアが、大規模レガシープロジェクトのコードレビュー負荷軽減のためAI活用に着手。</li>
+          
+          <li>Claude CodeとMCPを組み合わせ、PR URLから関連情報自動収集し、テンプレートで高品質なレビューサマリを生成する仕組みを構築。</li>
+          
+          <li>週6時間の業務削減に加え、レビュー品質向上と心理的負担軽減を実現し、AIが「増幅器」となる可能性を示した。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AIを活用した具体的な業務改善事例として、コードレビューの効率化と品質向上の両立方法が示されており、開発現場での実践に役立つ示唆が得られるため。
+            </div>
+            
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude Code</span>
+          
+          <span class="keyword">MCP</span>
+          
+          <span class="keyword">コードレビュー自動化</span>
+          
+          <span class="keyword">業務効率化</span>
+          
+          <span class="keyword">AI駆動開発</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2026-01-04 21:25</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/ncdc/articles/206fbad44d1dba" target="_blank" rel="noopener">Agent Skillsを業務プロダクトに導入してはいけない</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Agent Skillsの業務プロダクトへの安易な導入は、プロンプトインジェクションによるセキュリティリスクが高く推奨されないと筆者は主張。</li>
+          
+          <li>これはAgent Skillsが動的にLLMに注入されるプロンプトであり、有効活用には強い実行権限が必要なため、悪意あるユーザーの攻撃が容易になるため。</li>
+          
+          <li>従来のツールやMCPと異なり実行権限の分離が困難であることから、現時点では開発用途に留まるべきだと結論付け、安全な活用方法を問いかける。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> Agent Skillsを業務プロダクトに導入する際の具体的なセキュリティリスクとその回避策の限界が示されており、導入検討中の開発者にとって重要な情報であるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> Agent Skillsの業務プロダクトへの導入を現時点で検討しておらず、セキュリティの専門知識が求められる内容に関心がない場合は後回しでよい。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Agent Skills</span>
+          
+          <span class="keyword">プロンプトインジェクション</span>
+          
+          <span class="keyword">セキュリティ</span>
+          
+          <span class="keyword">業務プロダクト</span>
+          
+          <span class="keyword">LLM</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">note.com</span>
+          <span class="date">2026-01-03 22:42</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://note.com/make_a_change/n/ncd3791d6a01d" target="_blank" rel="noopener">「AI駆動PM」と「SDD（仕様駆動開発）」で要件定義書・設計書の精度を劇的に向上させる方法｜MAKE A CHANGE, inc</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>AI駆動PMとSDD（仕様駆動開発）を組み合わせることで、要件定義書や設計書の精度を劇的に向上させる方法が提案されています。</li>
+          
+          <li>SDDで作成したドラフトを、複数の異なる大規模言語モデル（LLM）に並列でレビューさせ、95点以上になるまで修正を繰り返すのが具体的な手順です。</li>
+          
+          <li>この手法により要件の抜け漏れや曖昧さが激減し、後工程での手戻りが大幅に削減されるほか、特に既存システムへの機能追加でコードベースをコンテキストにするメリットが大きいと述べられています。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AIを活用した要件定義・設計書の品質向上に課題を感じている場合、すぐに実践可能な具体的な手法と効果が示されているため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 現状の開発プロセスに満足しており、AI活用による改善の優先度が低い場合。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">AI駆動PM</span>
+          
+          <span class="keyword">仕様駆動開発(SDD)</span>
+          
+          <span class="keyword">LLMレビュー</span>
+          
+          <span class="keyword">要件定義書</span>
+          
+          <span class="keyword">設計書</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">codezine.jp</span>
+          <span class="date">2025-11-28 00:16</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://codezine.jp/article/detail/22510" target="_blank" rel="noopener">必要なのは”エンジニアにとどまらない”プロセス改善──AIが活きる組織とは</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>AIツール導入の焦点が、個々のツールから組織全体の開発プロセス改善やコミュニケーションへと移行している。</li>
+          
+          <li>GitHubやログラスではAIを活用した開発フロー変革や全社的な試行錯誤が進み、エンジニア以外の職種も巻き込む。</li>
+          
+          <li>大企業では導入プロセスに違いがあるが、迅速な意思決定と現場の声の重要性が指摘され、デモによる合意形成が有効とされる。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AIツールを組織全体で活用・導入する際の具体的な課題、各社の取り組み事例、および効果的な意思決定プロセスについて最新の知見が得られるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> AIツールの個別利用に関する情報は多く含まれておらず、組織的な導入戦略に焦点を当てているため、そのテーマへの関心が低い場合は後回しでよい。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">AIツール</span>
+          
+          <span class="keyword">プロセス改善</span>
+          
+          <span class="keyword">組織導入</span>
+          
+          <span class="keyword">開発プロセス</span>
+          
+          <span class="keyword">意思決定</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">type.jp</span>
+          <span class="date">2025-11-28 00:16</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://type.jp/et/feature/29732/" target="_blank" rel="noopener">「社員よりAIを守る国、アメリカ」Z世代のMLエンジニアonoderaが見た“AIの国”の働き方 - エンジニアtype | 転職type</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Z世代のMLエンジニアonodera氏によると、アメリカではAI導入により労働環境が激変し、残業増加やリストラが加速、企業は「社員よりAIを守る」姿勢が鮮明化している。</li>
+          
+          <li>AI活用による生産性への期待値が高まり、就職環境は厳しく平均年収も低下する一方、Metaでは「AIによる成果」が評価対象になると報じられた。</li>
+          
+          <li>米国Z世代は不況下でも大企業への安定を求めず、スタートアップへの挑戦や会社に依存しないフリーランス的な働き方を志向している。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AIによる社会・労働環境の変化の最先端を知ることができ、今後のキャリアやビジネス戦略を考える上で示唆に富むため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 特になし。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">アメリカの働き方</span>
+          
+          <span class="keyword">AIと雇用</span>
+          
+          <span class="keyword">Z世代</span>
+          
+          <span class="keyword">機械学習エンジニア</span>
+          
+          <span class="keyword">リストラ</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">note.com</span>
+          <span class="date">2025-11-27 19:30</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://note.com/yuichiro826/n/n285026b11564?sub_rt=share_pb" target="_blank" rel="noopener">生成AIで上がらなかった開発組織の生産性？！ - AI駆動開発の実現に向けて取り組むべきこと｜山田裕一朗（CEO at Findy Inc.）</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Findy社は生成AIを開発組織に無制限で導入したものの、現場の生産性向上実感とは裏腹に、データ上は組織全体の生産性が横ばいであることが判明しました。</li>
+          
+          <li>詳細分析の結果、AIを使いこなせるハイスキル層は生産性が向上する一方で、基礎知識が不足するジュニア層では生産性が低下する「二極化」が顕著に見られました。</li>
+          
+          <li>今後は、ハイスキル層の「AI疲れ」やジュニア層の知識習得支援、そしてAI活用の効果を正確に把握するための「可視化」の重要性を認識し、組織全体の生産性向上を目指します。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> 生成AIを開発組織に導入する際の具体的な課題と、データに基づく生産性の二極化という現実的な知見が共有されており、今後のAI活用戦略を考える上で非常に参考になるため。
+            </div>
+            
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">生成AI</span>
+          
+          <span class="keyword">開発生産性</span>
+          
+          <span class="keyword">二極化</span>
+          
+          <span class="keyword">Findy Team+</span>
+          
+          <span class="keyword">AI駆動開発</span>
+          
+        </div>
+        
+
+      </article>
+      
       <article class="card priority-medium" data-priority="medium">
         <div class="card-header">
           <span class="priority-badge priority-medium">MEDIUM</span>
@@ -341,9 +746,143 @@
 
       </article>
       
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-header">
+          <span class="priority-badge priority-medium">MEDIUM</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2026-03-03 10:49</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/churadata/articles/b2274a8868188f" target="_blank" rel="noopener">DeepWikiのDeepWikiを見る</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>GitHubリポジトリのURLから自動でドキュメントを生成する「DeepWiki」のOSSクローンについて、その利用方法と生成能力を紹介。</li>
+          
+          <li>セキュリティ面では、対象がpublicリポジトリのみでローカル処理されるものの、機密情報のリポジトリでの利用は避けるべきと指摘。</li>
+          
+          <li>記事の検証対象がDevin提供の本家DeepWikiではなく、その模倣OSSである点がDiscussionで明かされており、注意が必要である。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> GitHubリポジトリのドキュメント自動生成ツールの利便性とセキュリティリスクを評価しつつ、記事が扱うツールの正確な情報を把握できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 記事が扱う「DeepWiki」が本家と異なる模倣OSSであるため、本家DeepWikiの情報を求めている場合は優先度が下がる可能性があるため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">ドキュメント自動生成</span>
+          
+          <span class="keyword">GitHub</span>
+          
+          <span class="keyword">DeepWiki</span>
+          
+          <span class="keyword">セキュリティ</span>
+          
+          <span class="keyword">OSS</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-header">
+          <span class="priority-badge priority-medium">MEDIUM</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2025-11-25 08:16</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/heku/books/claude-code-guide" target="_blank" rel="noopener">Claude Code完全ガイド</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>本記事は、膨大で多言語にわたるClaude Codeの公式ドキュメントやブログ情報を集約し、カテゴリ別に整理したガイドブックを紹介している。</li>
+          
+          <li>日本語情報の更新が遅い現状に対し、最新情報を含む全ての関連リソースをまとめており、辞書的に利用することを推奨している。</li>
+          
+          <li>Claude Codeをこれから始める人、利用中の人、理解を深めたい開発者が効率的に情報にアクセスできるよう作成されている。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> Claude Codeに関する広範な公式情報源を効率的に把握したい場合、このガイドブックは情報収集の手間を大幅に削減できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 現時点でClaude Codeの利用予定がない場合や、すでに必要な情報源を把握している場合は、後で参照しても問題ないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude Code</span>
+          
+          <span class="keyword">ドキュメント集約</span>
+          
+          <span class="keyword">ガイドブック</span>
+          
+          <span class="keyword">Anthropic</span>
+          
+          <span class="keyword">情報源</span>
+          
+        </div>
+        
+
+      </article>
+      
     </section>
     
 
+    
+    <section class="skipped-section">
+      <details>
+        <summary>スキップ・未処理 (1 件)</summary>
+        
+        <div class="skipped-item">
+          <a href="https://youtube.com/watch?v=v5e-VGZiXyY&amp;si=ojG6-FfSOmCLBQsk" target="_blank" rel="noopener">AI時代に問われる「人間らしさ」の正体｜精神性と身体性の再定義【深井龍之介×神野元基×羽根田卓也×瀧口友里奈】</a>
+          <span class="domain">youtube.com</span>
+          
+          <span class="badge video">動画</span>
+          
+          <span class="badge skip-reason">unsupported_video</span>
+        </div>
+        
+      </details>
+    </section>
     
   </main>
 

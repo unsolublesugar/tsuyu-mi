@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1449677473,
+  "collection_id": 56182051,
+  "title": "Claude Code完全ガイド",
+  "url": "https://zenn.dev/heku/books/claude-code-guide",
+  "domain": "zenn.dev",
+  "created_at": "2025-11-24T23:16:43.855000Z",
+  "fetched_at": "2026-03-28T23:16:28.802249Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 1464,
+  "content_hash": "sha256:423b9e9280b89439638def3fbb7e540cc2a12b99dc53188f7f0c54586e172eec",
+  "summary_input_type": "shorttext",
+  "topic": "Claude Code関連の公式情報を集約したガイドブックの紹介",
+  "summary_3lines": [
+    "本記事は、膨大で多言語にわたるClaude Codeの公式ドキュメントやブログ情報を集約し、カテゴリ別に整理したガイドブックを紹介している。",
+    "日本語情報の更新が遅い現状に対し、最新情報を含む全ての関連リソースをまとめており、辞書的に利用することを推奨している。",
+    "Claude Codeをこれから始める人、利用中の人、理解を深めたい開発者が効率的に情報にアクセスできるよう作成されている。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "Claude Codeに関する広範な公式情報源を効率的に把握したい場合、このガイドブックは情報収集の手間を大幅に削減できるため。",
+  "defer_reason": "現時点でClaude Codeの利用予定がない場合や、すでに必要な情報源を把握している場合は、後で参照しても問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "ドキュメント集約",
+    "ガイドブック",
+    "Anthropic",
+    "情報源"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T23:16:33.802076Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
