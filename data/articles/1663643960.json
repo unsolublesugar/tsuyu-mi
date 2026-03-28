@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1663643960,
+  "collection_id": 56182051,
+  "title": "Claude Code新機能：「/init」が大幅進化！ユーザーインタビューモードでスキル・フックを自動セットアップ可能になりました",
+  "url": "https://zenn.dev/truestar/articles/455e5b54f3368e",
+  "domain": "zenn.dev",
+  "created_at": "2026-03-28T16:43:11.973000Z",
+  "fetched_at": "2026-03-28T22:10:18.034480Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 10039,
+  "content_hash": "sha256:ea60002f2f69695629126865124333f7760955177ff68461d75a7cdf9d656953",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeの新機能「/init」による対話型プロジェクト初期設定",
+  "summary_3lines": [
+    "AnthropicのClaude Codeに新機能「/init」が追加され、ユーザーインタビュー形式でプロジェクトのスキルやフック設定を自動化する。",
+    "プロジェクトの目的、技術スタック、習熟度、コミュニケーションスタイルなどの質問に答えることで、最適な初期構成を生成。",
+    "CLAUDE.md、スキル（/verify, /setup-env）、フック（フォーマットオンエディット）、.gitignoreなどが自動生成され、具体的な内容が詳しく紹介されている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Codeユーザーにとって、最新の効率的なプロジェクト初期設定方法を把握するために今すぐ確認すべき内容だからです。",
+  "defer_reason": "Claude Codeを現在利用しておらず、今後も利用予定がない場合は後回しで良いでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "/init",
+    "プロジェクトセットアップ",
+    "AIアシスタント",
+    "開発ワークフロー"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T22:10:21.675986Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

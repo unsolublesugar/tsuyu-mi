@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1664078546,
+  "collection_id": 56182051,
+  "title": "ClaudeのためのSkills構築の完全ガイド (非公式日本語訳版)",
+  "url": "https://x.com/ysk_en/status/2017479252573356035?s=12",
+  "domain": "x.com",
+  "created_at": "2026-03-28T21:58:58.787000Z",
+  "fetched_at": "2026-03-28T22:10:10.577802Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "fallback",
+  "fetch_status": "ok",
+  "extract_method": "x_api",
+  "content_chars": 0,
+  "content_hash": "",
+  "summary_input_type": "metadata",
+  "topic": "Claude AIのためのスキル構築に関する非公式日本語訳ガイド",
+  "summary_3lines": [
+    "Claude AIに独自のスキルを構築するための完全ガイドの非公式日本語訳版が提供されています。",
+    "オリジナル版から画像の一部が省略されているものの、詳細な内容が日本語で解説されていると推測されます。",
+    "Figma Slidesでの閲覧も可能で、Claudeの機能拡張に関心のあるユーザーや開発者にとって有用な情報源となりえます。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "Claude AIのスキル開発に興味がある場合、その方法を詳細に理解するための最新かつ日本語のガイドとして即座に役立つ可能性があるため。",
+  "defer_reason": "Claude AIのスキル開発に関心がなければ、直接的な恩恵は少ないため、後回しにしても問題ありません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude",
+    "AIスキル",
+    "開発ガイド",
+    "日本語訳",
+    "AI機能拡張"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-28T22:10:15.634461Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
