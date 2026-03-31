@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1230895007,
+  "collection_id": 56182051,
+  "title": "プロンプトエンジニアリング超入門 – プロンプトエンジニアリングは本当に死んだのか？ - Qiita",
+  "url": "https://qiita.com/tamura__246/items/bd5d62b1213610618f20",
+  "domain": "qiita.com",
+  "created_at": "2025-07-08T04:28:31.710000Z",
+  "fetched_at": "2026-03-31T22:15:51.977916Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8650,
+  "content_hash": "sha256:b8c67440d63c16c5531170e0de1b4fd77bd22afa8ea5a60916a4388f67c9c4d5",
+  "summary_input_type": "fulltext",
+  "topic": "プロンプトエンジニアリングの進化と今後の必要性",
+  "summary_3lines": [
+    "2025年現在、「プロンプトエンジニアリングは死んだ」という議論がある中、生成AIの進化に伴いその役割が変化しているかについて検証しています。",
+    "AIの高度化により、初期の「黒魔術的」なプロンプト手法は不要となり、一般ユーザーのスキルも向上しましたが、画像生成AIでは依然として専門性が求められると筆者は指摘します。",
+    "プロンプトエンジニアリングは職種としては変化しつつも、AIから望ましい情報を引き出し活用するスキルとして、あらゆる分野で基礎的な重要性が増していくと予測されています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "生成AIの活用が日常的になる中、プロンプトエンジニアリングの現状と将来的な重要性を理解することは、多くのビジネスパーソンやエンジニアにとって喫緊の課題であるためです。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "プロンプトエンジニアリング",
+    "生成AI",
+    "LLM",
+    "画像生成AI",
+    "AI活用スキル"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-31T22:16:03.326070Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

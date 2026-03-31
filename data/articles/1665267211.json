@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1665267211,
+  "collection_id": 56182051,
+  "title": "Explore the .claude directory - Claude Code Docs",
+  "url": "https://code.claude.com/docs/en/claude-directory",
+  "domain": "code.claude.com",
+  "created_at": "2026-03-30T00:34:19.925000Z",
+  "fetched_at": "2026-03-31T22:15:36.118110Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4033,
+  "content_hash": "sha256:fc49423f8175a24848196c80e5829759ff81c68089b0cad3219c6a9c976153d6",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Code Assistantの`.claude`ディレクトリと設定ファイル",
+  "summary_3lines": [
+    "Claude Code Assistantは、ユーザーのホームディレクトリの`~/.claude`やプロジェクトルートの`.claude/`に構成ファイルを保存する。",
+    "これらのファイルは、指示、設定、スキル、ルール、サブエージェントなどを定義し、グローバルとプロジェクトのスコープで適用される。",
+    "設定には優先順位があり、CLIコマンド（例: `/context`）で現在の読み込み状況を確認できる。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Code Assistantを効果的に利用し、カスタマイズするために、設定ファイルの構造と役割を理解することは不可欠であるため。",
+  "defer_reason": "Claude Code Assistantをまだ利用していない、または基本的な機能のみを使用している場合、この詳細な設定ファイルの知識は現時点では不要な可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code Assistant",
+    ".claudeディレクトリ",
+    "設定ファイル",
+    "CLAUDE.md",
+    "スキル"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-31T22:15:40.751231Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

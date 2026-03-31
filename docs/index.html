@@ -32,7 +32,7 @@
   <header>
     <div class="stats">
       <span id="stats-count">24 / 24 件</span>
-      <span>最終実行: 2026-03-29 08:49</span>
+      <span>最終実行: 2026-04-01 07:16</span>
     </div>
     <div class="filters">
       <button class="filter-btn active" data-filter="high">High</button>
@@ -50,22 +50,22 @@
         <div class="card-header">
           <span class="priority-badge priority-high">HIGH</span>
           
-          <span class="domain">speakerdeck.com</span>
-          <span class="date">2026-03-29 07:09</span>
+          <span class="domain">workspaceupdates.googleblog.com</span>
+          <span class="date">2026-03-31 14:43</span>
         </div>
 
         <h2 class="card-title">
-          <a href="https://speakerdeck.com/tsubakimoto_s/yasasiitokokarashi-merugithubripozitorinosekiyuritei" target="_blank" rel="noopener">やさしいとこから始めるGitHubリポジトリのセキュリティ</a>
+          <a href="https://workspaceupdates.googleblog.com/2026/03/ransomware-detection-and-file-restoration-for-Google-Drive-now-generally-available.html" target="_blank" rel="noopener">Google Workspace Updates: Ransomware detection and file restoration for Google Drive now generally available</a>
         </h2>
 
         
         <ul class="summary">
           
-          <li>本記事は、GitHubリポジトリのセキュリティを「設定とGHAS」「リポジトリファイルでの管理」「GitHub Actionsのワークフロー管理」の3つの観点から解説する。</li>
+          <li>Google Driveのランサムウェア検知とファイル復元機能が、Workspaceユーザーおよび個人アカウント向けに一般提供が開始されました。</li>
           
-          <li>GitHub Advanced Security (GHAS) のCode scanningやSecret protection、Push protectionの有効化、さらに<code>dependabot.yml</code>や<code>SECURITY.md</code>などのファイル活用を提示。</li>
+          <li>ランサムウェアを検知すると、Drive for desktopのファイル同期を停止し、ユーザーと管理者に通知・アラートを表示します。</li>
           
-          <li>GitHub Actionsにおいては、検証済みアクションの使用、コミットSHAでのピン留め、OpenID Connectによる安全なクラウド接続を推奨している。</li>
+          <li>ユーザーは感染前の状態にファイルを一括復元でき、管理者はAdmin consoleからこれらの機能を組織単位で設定可能です。</li>
           
         </ul>
         
@@ -75,12 +75,12 @@
           <div class="reasons">
             
             <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> GitHubリポジトリのセキュリティ対策を「やさしいところから」学びたい、または既存の設定を見直したい開発者にとって、具体的な機能と設定方法が体系的にまとめられておりすぐに役立つため。
+              <span class="reason-label">今読む理由:</span> Google Driveのセキュリティ対策に関する重要なアップデートであり、組織のデータ保護と運用に直結するため、確認が必要です。
             </div>
             
             
             <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> GitHubを現在利用していない、またはリポジトリのセキュリティに現時点で特別な関心がない場合には、情報の優先度が低い可能性があるため。
+              <span class="reason-label">後回し理由:</span> Google Workspaceを導入しておらず、Google Driveを業務利用していない場合は、緊急性は低い可能性があります。
             </div>
             
             
@@ -90,15 +90,194 @@
         
         <div class="keywords">
           
-          <span class="keyword">GitHub</span>
+          <span class="keyword">Google Drive</span>
+          
+          <span class="keyword">ランサムウェア検知</span>
+          
+          <span class="keyword">ファイル復元</span>
+          
+          <span class="keyword">Google Workspace</span>
           
           <span class="keyword">セキュリティ</span>
           
-          <span class="keyword">リポジトリ</span>
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
           
-          <span class="keyword">GHAS</span>
+          <span class="domain">code.claude.com</span>
+          <span class="date">2026-03-30 09:34</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://code.claude.com/docs/en/context-window" target="_blank" rel="noopener">Explore the context window - Claude Code Docs</a>
+        </h2>
+
+        
+        <ul class="summary">
           
-          <span class="keyword">GitHub Actions</span>
+          <li>Claude Codeのコンテキストウィンドウは、作業の段階に応じてCLAUDE.md、ファイル、ルール、フックなどを自動的にロードする。</li>
+          
+          <li>サブエージェントによる調査は別コンテキストで行われ、結果のみがメインに戻り、<code>/compact</code>で会話は構造化された要約に置き換えられる。</li>
+          
+          <li><code>/context</code>コマンドで現在のコンテキスト使用状況と最適化提案を確認でき、効率的なコンテキスト管理のためのリソースも紹介されている。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> Claude Codeのユーザーがコンテキストウィンドウの動作を理解し、効率的な利用法を学ぶ上で直接役立つ情報だからです。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 現在Claude Codeを利用していない場合や、コンテキスト管理について基本的な知識が既にある場合は、後から参照しても良いでしょう。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude Code</span>
+          
+          <span class="keyword">コンテキストウィンドウ</span>
+          
+          <span class="keyword">トークン管理</span>
+          
+          <span class="keyword">サブエージェント</span>
+          
+          <span class="keyword">CLAUDE.md</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">code.claude.com</span>
+          <span class="date">2026-03-30 09:34</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://code.claude.com/docs/en/claude-directory" target="_blank" rel="noopener">Explore the .claude directory - Claude Code Docs</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Claude Code Assistantは、ユーザーのホームディレクトリの<code>~/.claude</code>やプロジェクトルートの<code>.claude/</code>に構成ファイルを保存する。</li>
+          
+          <li>これらのファイルは、指示、設定、スキル、ルール、サブエージェントなどを定義し、グローバルとプロジェクトのスコープで適用される。</li>
+          
+          <li>設定には優先順位があり、CLIコマンド（例: <code>/context</code>）で現在の読み込み状況を確認できる。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> Claude Code Assistantを効果的に利用し、カスタマイズするために、設定ファイルの構造と役割を理解することは不可欠であるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> Claude Code Assistantをまだ利用していない、または基本的な機能のみを使用している場合、この詳細な設定ファイルの知識は現時点では不要な可能性があるため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude Code Assistant</span>
+          
+          <span class="keyword">.claudeディレクトリ</span>
+          
+          <span class="keyword">設定ファイル</span>
+          
+          <span class="keyword">CLAUDE.md</span>
+          
+          <span class="keyword">スキル</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">docswell.com</span>
+          <span class="date">2026-03-30 09:34</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://www.docswell.com/s/fumiya-kume/K2746V-2026-03-27-205311" target="_blank" rel="noopener">Ghosttyの凄さを 技術的に深ぼってく | ドクセル</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>Ghosttyは高速でネイティブに動作するターミナルエミュレータであり、その「速さ」の秘密が技術的に深掘りされている。</li>
+          
+          <li>レンダリングはShaderを利用し、ゲームやUIフレームワークで一般的なRender ThreadとI/O Threadを持つマルチスレッドアーキテクチャを採用している。</li>
+          
+          <li>テキスト表示は、Core Textでグリフ列に変換後、CPUで画像化し、複数のグリフをまとめてGPUで描画するSpriteのような手法で最適化されている。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> 高性能なターミナルエミュレータの内部実装や、描画高速化のための具体的な技術的アプローチについて深く知ることができるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> ターミナルエミュレータや描画エンジンの詳細な技術に関心が薄い場合、要点把握で十分である。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Ghostty</span>
+          
+          <span class="keyword">ターミナルエミュレータ</span>
+          
+          <span class="keyword">レンダリング</span>
+          
+          <span class="keyword">高速化</span>
+          
+          <span class="keyword">グリフ</span>
+          
+          <span class="keyword">Sprite</span>
           
         </div>
         
@@ -158,65 +337,6 @@
           <span class="keyword">AI開発</span>
           
           <span class="keyword">ワークフロー自動化</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-high" data-priority="high">
-        <div class="card-header">
-          <span class="priority-badge priority-high">HIGH</span>
-          
-          <span class="domain">zenn.dev</span>
-          <span class="date">2026-03-29 01:43</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://zenn.dev/truestar/articles/455e5b54f3368e" target="_blank" rel="noopener">Claude Code新機能：「/init」が大幅進化！ユーザーインタビューモードでスキル・フックを自動セットアップ可能になりました</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>AnthropicのClaude Codeに新機能「/init」が追加され、ユーザーインタビュー形式でプロジェクトのスキルやフック設定を自動化する。</li>
-          
-          <li>プロジェクトの目的、技術スタック、習熟度、コミュニケーションスタイルなどの質問に答えることで、最適な初期構成を生成。</li>
-          
-          <li>CLAUDE.md、スキル（/verify, /setup-env）、フック（フォーマットオンエディット）、.gitignoreなどが自動生成され、具体的な内容が詳しく紹介されている。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> Claude Codeユーザーにとって、最新の効率的なプロジェクト初期設定方法を把握するために今すぐ確認すべき内容だからです。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> Claude Codeを現在利用しておらず、今後も利用予定がない場合は後回しで良いでしょう。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">Claude Code</span>
-          
-          <span class="keyword">/init</span>
-          
-          <span class="keyword">プロジェクトセットアップ</span>
-          
-          <span class="keyword">AIアシスタント</span>
-          
-          <span class="keyword">開発ワークフロー</span>
           
         </div>
         
@@ -400,65 +520,6 @@
         <div class="card-header">
           <span class="priority-badge priority-high">HIGH</span>
           
-          <span class="domain">note.com</span>
-          <span class="date">2026-01-03 22:42</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://note.com/make_a_change/n/ncd3791d6a01d" target="_blank" rel="noopener">「AI駆動PM」と「SDD（仕様駆動開発）」で要件定義書・設計書の精度を劇的に向上させる方法｜MAKE A CHANGE, inc</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>AI駆動PMとSDD（仕様駆動開発）を組み合わせることで、要件定義書や設計書の精度を劇的に向上させる方法が提案されています。</li>
-          
-          <li>SDDで作成したドラフトを、複数の異なる大規模言語モデル（LLM）に並列でレビューさせ、95点以上になるまで修正を繰り返すのが具体的な手順です。</li>
-          
-          <li>この手法により要件の抜け漏れや曖昧さが激減し、後工程での手戻りが大幅に削減されるほか、特に既存システムへの機能追加でコードベースをコンテキストにするメリットが大きいと述べられています。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> AIを活用した要件定義・設計書の品質向上に課題を感じている場合、すぐに実践可能な具体的な手法と効果が示されているため。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> 現状の開発プロセスに満足しており、AI活用による改善の優先度が低い場合。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">AI駆動PM</span>
-          
-          <span class="keyword">仕様駆動開発(SDD)</span>
-          
-          <span class="keyword">LLMレビュー</span>
-          
-          <span class="keyword">要件定義書</span>
-          
-          <span class="keyword">設計書</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-high" data-priority="high">
-        <div class="card-header">
-          <span class="priority-badge priority-high">HIGH</span>
-          
           <span class="domain">codezine.jp</span>
           <span class="date">2025-11-28 00:16</span>
         </div>
@@ -508,179 +569,6 @@
           <span class="keyword">開発プロセス</span>
           
           <span class="keyword">意思決定</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-high" data-priority="high">
-        <div class="card-header">
-          <span class="priority-badge priority-high">HIGH</span>
-          
-          <span class="domain">type.jp</span>
-          <span class="date">2025-11-28 00:16</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://type.jp/et/feature/29732/" target="_blank" rel="noopener">「社員よりAIを守る国、アメリカ」Z世代のMLエンジニアonoderaが見た“AIの国”の働き方 - エンジニアtype | 転職type</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>Z世代のMLエンジニアonodera氏によると、アメリカではAI導入により労働環境が激変し、残業増加やリストラが加速、企業は「社員よりAIを守る」姿勢が鮮明化している。</li>
-          
-          <li>AI活用による生産性への期待値が高まり、就職環境は厳しく平均年収も低下する一方、Metaでは「AIによる成果」が評価対象になると報じられた。</li>
-          
-          <li>米国Z世代は不況下でも大企業への安定を求めず、スタートアップへの挑戦や会社に依存しないフリーランス的な働き方を志向している。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> AIによる社会・労働環境の変化の最先端を知ることができ、今後のキャリアやビジネス戦略を考える上で示唆に富むため。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> 特になし。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">アメリカの働き方</span>
-          
-          <span class="keyword">AIと雇用</span>
-          
-          <span class="keyword">Z世代</span>
-          
-          <span class="keyword">機械学習エンジニア</span>
-          
-          <span class="keyword">リストラ</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-high" data-priority="high">
-        <div class="card-header">
-          <span class="priority-badge priority-high">HIGH</span>
-          
-          <span class="domain">note.com</span>
-          <span class="date">2025-11-27 19:30</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://note.com/yuichiro826/n/n285026b11564?sub_rt=share_pb" target="_blank" rel="noopener">生成AIで上がらなかった開発組織の生産性？！ - AI駆動開発の実現に向けて取り組むべきこと｜山田裕一朗（CEO at Findy Inc.）</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>Findy社は生成AIを開発組織に無制限で導入したものの、現場の生産性向上実感とは裏腹に、データ上は組織全体の生産性が横ばいであることが判明しました。</li>
-          
-          <li>詳細分析の結果、AIを使いこなせるハイスキル層は生産性が向上する一方で、基礎知識が不足するジュニア層では生産性が低下する「二極化」が顕著に見られました。</li>
-          
-          <li>今後は、ハイスキル層の「AI疲れ」やジュニア層の知識習得支援、そしてAI活用の効果を正確に把握するための「可視化」の重要性を認識し、組織全体の生産性向上を目指します。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> 生成AIを開発組織に導入する際の具体的な課題と、データに基づく生産性の二極化という現実的な知見が共有されており、今後のAI活用戦略を考える上で非常に参考になるため。
-            </div>
-            
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">生成AI</span>
-          
-          <span class="keyword">開発生産性</span>
-          
-          <span class="keyword">二極化</span>
-          
-          <span class="keyword">Findy Team+</span>
-          
-          <span class="keyword">AI駆動開発</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-high" data-priority="high">
-        <div class="card-header">
-          <span class="priority-badge priority-high">HIGH</span>
-          
-          <span class="domain">note.com</span>
-          <span class="date">2025-11-10 21:45</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://note.com/rk611/n/n11a022e8e58d" target="_blank" rel="noopener">AI時代にエンジニアは時間外に勉強すべきなのか？</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>AI時代にエンジニアが時間外に勉強すべきかという問いに対し、若手とベテランの間でキャリア観の世代間ギャップが存在すると指摘。</li>
-          
-          <li>終身雇用が崩壊し、企業から個人へキャリア責任が移行した現代において、学習は未来への先行投資であり、自身のキャリアは自身で決めるべきと説く。</li>
-          
-          <li>特定の会社に依存しないプロフェッショナルとして生き抜くために学び、その責任は個人が負うべきであり、ベテランは「楽しいぞ」と示すべきだと提言する。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> AI時代における自身のキャリア形成と学習の意義について、若手とベテラン双方の視点から深く考察されており、現代のエンジニアにとって示唆に富む内容だから。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> キャリアや学習の方向性について現状明確な課題感がなく、より緊急性の高い他の記事を優先する場合。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">AI時代</span>
-          
-          <span class="keyword">エンジニア</span>
-          
-          <span class="keyword">キャリア形成</span>
-          
-          <span class="keyword">時間外学習</span>
-          
-          <span class="keyword">自己責任</span>
           
         </div>
         
@@ -750,22 +638,22 @@
         <div class="card-header">
           <span class="priority-badge priority-high">HIGH</span>
           
-          <span class="domain">note.com</span>
-          <span class="date">2025-09-21 00:48</span>
+          <span class="domain">qiita.com</span>
+          <span class="date">2025-07-08 13:28</span>
         </div>
 
         <h2 class="card-title">
-          <a href="https://note.com/tokuriki/n/ndf10cf44888f" target="_blank" rel="noopener">なぜ「鬼滅の刃」は世界同時ヒットを成し遂げられたのか。いよいよ日本のアニメが世界を食らう。｜徳力基彦（tokuriki）</a>
+          <a href="https://qiita.com/tamura__246/items/bd5d62b1213610618f20" target="_blank" rel="noopener">プロンプトエンジニアリング超入門 – プロンプトエンジニアリングは本当に死んだのか？ - Qiita</a>
         </h2>
 
         
         <ul class="summary">
           
-          <li>「劇場版『鬼滅の刃』無限城編 第一章」が全世界興行収入680億円を突破し、北米で初週100億円超えを記録するなど、海外興行収入が日本を上回る快挙を達成しました。</li>
+          <li>2025年現在、「プロンプトエンジニアリングは死んだ」という議論がある中、生成AIの進化に伴いその役割が変化しているかについて検証しています。</li>
           
-          <li>この世界同時ヒットは、動画配信サービスを通じたファン層の拡大と、ソニーグループ（ソニーピクチャーズ、Crunchyroll）による周到な海外配給戦略やプロモーション活動が主な要因です。</li>
+          <li>AIの高度化により、初期の「黒魔術的」なプロンプト手法は不要となり、一般ユーザーのスキルも向上しましたが、画像生成AIでは依然として専門性が求められると筆者は指摘します。</li>
           
-          <li>本作は「日本アニメが世界を食らう」という予測を具現化する象徴的な現象であり、今後も中国公開や続編を通じてさらなる興行収入の伸びが期待され、日本アニメの世界的位置づけを大きく変える可能性を秘めています。</li>
+          <li>プロンプトエンジニアリングは職種としては変化しつつも、AIから望ましい情報を引き出し活用するスキルとして、あらゆる分野で基礎的な重要性が増していくと予測されています。</li>
           
         </ul>
         
@@ -775,12 +663,67 @@
           <div class="reasons">
             
             <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> 日本アニメの世界市場における影響力拡大を示す「鬼滅の刃」の具体的な成功要因とビジネス戦略が詳細に分析されており、現在のエンタメ業界の潮流を理解する上で非常に示唆に富むため。
+              <span class="reason-label">今読む理由:</span> 生成AIの活用が日常的になる中、プロンプトエンジニアリングの現状と将来的な重要性を理解することは、多くのビジネスパーソンやエンジニアにとって喫緊の課題であるためです。
+            </div>
+            
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">プロンプトエンジニアリング</span>
+          
+          <span class="keyword">生成AI</span>
+          
+          <span class="keyword">LLM</span>
+          
+          <span class="keyword">画像生成AI</span>
+          
+          <span class="keyword">AI活用スキル</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2025-07-08 07:03</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/gatechnologies/articles/5780de81709e97" target="_blank" rel="noopener">実務で使っているClaude Codeの開発環境の紹介</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>記事では、GA technologiesの中坂氏が実務でClaude Codeを活用する際の、複数プロダクト・リポジトリを横断する開発環境の構築方法を紹介しています。</li>
+          
+          <li>関連リポジトリを同一ワークスペースに集約し、CLAUDE.mdでの詳細な指示、.claude/ディレクトリでのプロンプト・カスタムコマンド・一時ファイル管理、安全なパーミッション設定などが構築のポイントです。</li>
+          
+          <li>これによりClaude Codeが効率的に複数のプロダクトを参照・操作できるようになり、複雑な調査や横断的な実装タスクでの生産性向上が期待されますが、レビュー時間や人間の負荷増大という課題も示唆されています。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> Claude Codeを実務で導入検討している開発者にとって、具体的な環境構築手順と注意点、利点・課題が網羅的に解説されており、今すぐ実践できるノウハウが得られるため。
             </div>
             
             
             <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> 記事内容は「鬼滅の刃」の興行収入や世界ヒットの分析であり、最新の速報性を極めて重視するものではないため、後でじっくり読んでも内容の価値は変わりません。
+              <span class="reason-label">後回し理由:</span> Claude Codeや類似のAIコーディングツールの導入予定がない場合や、単一リポジトリでの利用を想定している場合は、この記事の具体的な構築内容は現時点での必要性が低い可能性があるため。
             </div>
             
             
@@ -790,15 +733,129 @@
         
         <div class="keywords">
           
-          <span class="keyword">鬼滅の刃</span>
+          <span class="keyword">Claude Code</span>
           
-          <span class="keyword">世界同時ヒット</span>
+          <span class="keyword">開発環境</span>
           
-          <span class="keyword">日本アニメ</span>
+          <span class="keyword">マルチリポジトリ</span>
           
-          <span class="keyword">ソニーグループ</span>
+          <span class="keyword">AIコーディング</span>
           
-          <span class="keyword">動画配信サービス</span>
+          <span class="keyword">生産性向上</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">type.jp</span>
+          <span class="date">2025-07-07 08:09</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://type.jp/et/feature/28725/" target="_blank" rel="noopener">PMは消滅する！？ 在シリコンバレー19年の曽根原 春樹が警鐘、AI時代に生き残るPMの条件 - エンジニアtype | 転職type</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>AIの進化に伴い、シリコンバレーではPM職もレイオフの対象となり、職種問わず「どんな価値を出せるか」が問われる時代に変化している。</li>
+          
+          <li>生成AIは人間の能力を指数関数的に拡張し、PMの業務を従来の「足し算」から「掛け算」の世界へと変革させている。</li>
+          
+          <li>これにより、少人数で高成果を出す「フルスタックビルダー」が求められ、PMの需給バランスは買い手市場へと移行しつつある。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AIによる職務変化の最前線にあるシリコンバレーのPMが直面する現実と、今後のキャリアを考える上で示唆に富むため、今読むべきである。
+            </div>
+            
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">プロダクトマネージャー</span>
+          
+          <span class="keyword">AI</span>
+          
+          <span class="keyword">シリコンバレー</span>
+          
+          <span class="keyword">市場価値</span>
+          
+          <span class="keyword">フルスタックビルダー</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">note.com</span>
+          <span class="date">2025-07-05 10:06</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://note.com/rk611/n/nefec9e63cea0?sub_rt=share_pw" target="_blank" rel="noopener">IVSレポ2：生成AIは進化が早く、未来はもっと良くなるという久ぶりの楽観的な空気感が広がっている｜片山良平＠paiza代表</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>IVS参加レポートとして、生成AIが政治、技術、ビジネスなど広範囲に影響を与えている現状が多角的に議論された。</li>
+          
+          <li>LLMの学習データ枯渇懸念や次世代技術への期待、日本のAI戦略、そして技術進化の速さが理解を超えるフェーズであると指摘。</li>
+          
+          <li>「未来はもっと良くなる」という楽観的な空気感が広がり、インターネット黎明期のようなビジネスチャンス拡大と変革への期待が語られている。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> 生成AIの現状と将来に関する幅広い視点、特に現場の「楽観的な空気感」やスタートアップエコシステムの活気をリアルタイムで把握できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 生成AIの技術動向や具体的な活用事例は日々更新されるため、より詳細な情報が必要な場合は別の専門記事を参照してもよい。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">生成AI</span>
+          
+          <span class="keyword">IVS</span>
+          
+          <span class="keyword">スタートアップ</span>
+          
+          <span class="keyword">未来予測</span>
+          
+          <span class="keyword">ビジネスインパクト</span>
           
         </div>
         
@@ -1104,124 +1161,6 @@
         <div class="card-header">
           <span class="priority-badge priority-medium">MEDIUM</span>
           
-          <span class="domain">vivivi.kaonavi.jp</span>
-          <span class="date">2025-10-30 14:52</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://vivivi.kaonavi.jp/articles/ataka-doi-250917/" target="_blank" rel="noopener">裁量と挑戦が人を育てる。PdMとして成長できるカオナビの土壌とは｜kaonavi vivivi</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>カオナビでは、PdMが裁量を持って挑戦できる環境があり、ディレクターからマネージャーへの明確なキャリアパスが用意されている。</li>
-          
-          <li>顧客との距離が非常に近く、ニーズや課題を直接深く理解し、要望の背景にある真の課題を見極めることがPdMの重要な役割となっている。</li>
-          
-          <li>「やります」と手を挙げればチャンスが与えられ、相互補完しながら成長できる文化があり、再上場を見据えた変革期において“ゲームチェンジャー”を求めている。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> カオナビのPdM職の働き方や成長環境、キャリア形成に関心がある方にとって参考になる情報が含まれているため。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> カオナビの企業文化やプロダクトマネージャーのキャリアに特化した内容のため、普遍的なビジネス知識を優先する場合は後回しにできる。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">カオナビ</span>
-          
-          <span class="keyword">プロダクトマネージャー (PdM)</span>
-          
-          <span class="keyword">キャリアパス</span>
-          
-          <span class="keyword">裁量と挑戦</span>
-          
-          <span class="keyword">顧客志向</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-medium" data-priority="medium">
-        <div class="card-header">
-          <span class="priority-badge priority-medium">MEDIUM</span>
-          
-          <span class="domain">type.jp</span>
-          <span class="date">2025-09-26 17:21</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="https://type.jp/et/feature/29301/" target="_blank" rel="noopener">『銀河特急 ミルキー☆サブウェイ』生みの親・亀山陽平が明かす制作裏「限りあるリソースを嘆かずに“上手く”やる」 - エンジニアtype | 転職type</a>
-        </h2>
-
-        
-        <ul class="summary">
-          
-          <li>『銀河特急 ミルキー☆サブウェイ』は、監督・亀山陽平氏がほぼ一人で制作し、日本で受け入れられる3DCG表現と自然な会話劇で人気を集めた。</li>
-          
-          <li>限られたリソースの中、舞台を列車内に絞り、1話3分半に設定するなど工夫を凝らし、コミュニケーションコストの低さも小規模制作の利点と語る。</li>
-          
-          <li>今後のアニメ制作では、AIの活用に不安を抱えつつも、クリエイティブ部分は自身で行い、シミュレーションなどの工数のかかる作業で活用したい意向を示した。</li>
-          
-        </ul>
-        
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> 個人で世界市場に挑むクリエイターの制作秘話や、限られたリソースでの工夫、AIとの向き合い方について学ぶことができるため。
-            </div>
-            
-            
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> アニメ制作の技術論やクリエイターの個人的な制作スタイルに特化した内容であり、急を要する情報ではないため。
-            </div>
-            
-            
-          </div>
-        </details>
-
-        
-        <div class="keywords">
-          
-          <span class="keyword">銀河特急ミルキー☆サブウェイ</span>
-          
-          <span class="keyword">亀山陽平</span>
-          
-          <span class="keyword">3DCGアニメーション</span>
-          
-          <span class="keyword">個人制作</span>
-          
-          <span class="keyword">AI活用</span>
-          
-        </div>
-        
-
-      </article>
-      
-      <article class="card priority-medium" data-priority="medium">
-        <div class="card-header">
-          <span class="priority-badge priority-medium">MEDIUM</span>
-          
           <span class="domain">forest.watch.impress.co.jp</span>
           <span class="date">2025-07-25 09:42</span>
         </div>
@@ -1399,22 +1338,22 @@
         <div class="card-header">
           <span class="priority-badge priority-medium">MEDIUM</span>
           
-          <span class="domain">zenn.dev</span>
-          <span class="date">2025-07-10 08:55</span>
+          <span class="domain">type.jp</span>
+          <span class="date">2025-07-07 08:09</span>
         </div>
 
         <h2 class="card-title">
-          <a href="https://zenn.dev/json_hardcoder/articles/5bb2ab37c7bbde" target="_blank" rel="noopener">VScode で Prettierを用いているのにフォーマット整形されない問題</a>
+          <a href="https://type.jp/et/feature/28819/" target="_blank" rel="noopener">アメリカで続くエンジニア受難。税制がもたらす影響と“AI以降”のエンジニア像を考える【西田宗千佳】 - エンジニアtype | 転職type</a>
         </h2>
 
         
         <ul class="summary">
           
-          <li>VS CodeでPrettierによる保存時の自動フォーマットが効かない場合の対処法を解説しています。</li>
+          <li>アメリカのテック業界では2022年以降37万人以上がレイオフされ、特にソフトウェア開発者の求人件数は2023年第1四半期から70%以上減少しています。</li>
           
-          <li>主な原因は、<code>Editor : Default Formatter</code>が設定されていないことや<code>editor.formatOnSave</code>が<code>false</code>になっていることです。</li>
+          <li>この減少率はホワイトカラー職全体の2倍以上で、「ソフトウェアエンジニア受難の時代」の到来が懸念されており、新卒・若手エンジニアのキャリア形成への影響も指摘されています。</li>
           
-          <li><code>editor.defaultFormatter</code>に<code>esbenp.prettier-vscode</code>を設定し、<code>editor.formatOnSave</code>を<code>true</code>にすることで解決できます。</li>
+          <li>背景にはソフトウェア開発におけるAI活用の拡大があり、税制の影響も要因の一つとして挙げられています。</li>
           
         </ul>
         
@@ -1424,12 +1363,12 @@
           <div class="reasons">
             
             <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> VS CodeとPrettierの組み合わせで自動フォーマットが機能せず困っている場合、すぐに問題解決に役立つ情報が得られます。
+              <span class="reason-label">今読む理由:</span> アメリカのソフトウェアエンジニア市場の現状と主要な背景要因について、最新のデータを基に概要を把握できるため。
             </div>
             
             
             <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> 現在VS CodeでPrettierのフォーマットに問題が発生していない場合、急いで読む必要はありません。
+              <span class="reason-label">後回し理由:</span> 記事が途中で中断されており、税制の影響や“AI以降”のエンジニア像に関する詳しい分析が読めないため、完全な内容を求める場合は続報を待つ方が良いでしょう。
             </div>
             
             
@@ -1439,15 +1378,74 @@
         
         <div class="keywords">
           
-          <span class="keyword">VS Code</span>
+          <span class="keyword">アメリカ</span>
           
-          <span class="keyword">Prettier</span>
+          <span class="keyword">ソフトウェアエンジニア</span>
           
-          <span class="keyword">フォーマット</span>
+          <span class="keyword">レイオフ</span>
           
-          <span class="keyword">settings.json</span>
+          <span class="keyword">求人減少</span>
           
-          <span class="keyword">トラブルシューティング</span>
+          <span class="keyword">AI活用</span>
+          
+        </div>
+        
+
+      </article>
+      
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-header">
+          <span class="priority-badge priority-medium">MEDIUM</span>
+          
+          <span class="domain">note.com</span>
+          <span class="date">2025-07-06 07:39</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://note.com/no_company/n/n2c3ad6197816" target="_blank" rel="noopener">2025年1～3月にSNS上で注目されていた企業と採用広報とは？【THINK for HR NEWS】</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>No Companyが2025年1～3月のSNSデータを分析し、企業や社員に関する記事のエンゲージメントを調査しました。</li>
+          
+          <li>特に注目を集めたのは、「女性や若手の活躍機会」をアピールする採用広報記事でした。</li>
+          
+          <li>具体的な企業事例として、社員インタビューを通じて若手の裁量権や女性リーダーのキャリア、挑戦的な企業文化を伝え、読み手の共感や転職検討を促す効果が示唆されています。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> 採用広報戦略やSNSコンテンツ作成のヒントとして、具体的な成功事例とトレンドを把握できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 特定の期間のSNS分析レポートであり、緊急性は高くないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">採用広報</span>
+          
+          <span class="keyword">SNSエンゲージメント</span>
+          
+          <span class="keyword">女性活躍</span>
+          
+          <span class="keyword">若手活躍</span>
+          
+          <span class="keyword">社員インタビュー</span>
           
         </div>
         

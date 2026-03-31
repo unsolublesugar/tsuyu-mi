@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1229939104,
+  "collection_id": 56182051,
+  "title": "実務で使っているClaude Codeの開発環境の紹介",
+  "url": "https://zenn.dev/gatechnologies/articles/5780de81709e97",
+  "domain": "zenn.dev",
+  "created_at": "2025-07-07T22:03:14.927000Z",
+  "fetched_at": "2026-03-31T22:16:05.892526Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8330,
+  "content_hash": "sha256:73b4458f6ad8984f192c5bc295c78962c60c7b78587c46e64ab1231da5d33fcd",
+  "summary_input_type": "fulltext",
+  "topic": "実務におけるClaude Codeの複数プロダクト・リポジトリ横断開発環境構築と活用法",
+  "summary_3lines": [
+    "記事では、GA technologiesの中坂氏が実務でClaude Codeを活用する際の、複数プロダクト・リポジトリを横断する開発環境の構築方法を紹介しています。",
+    "関連リポジトリを同一ワークスペースに集約し、CLAUDE.mdでの詳細な指示、.claude/ディレクトリでのプロンプト・カスタムコマンド・一時ファイル管理、安全なパーミッション設定などが構築のポイントです。",
+    "これによりClaude Codeが効率的に複数のプロダクトを参照・操作できるようになり、複雑な調査や横断的な実装タスクでの生産性向上が期待されますが、レビュー時間や人間の負荷増大という課題も示唆されています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Codeを実務で導入検討している開発者にとって、具体的な環境構築手順と注意点、利点・課題が網羅的に解説されており、今すぐ実践できるノウハウが得られるため。",
+  "defer_reason": "Claude Codeや類似のAIコーディングツールの導入予定がない場合や、単一リポジトリでの利用を想定している場合は、この記事の具体的な構築内容は現時点での必要性が低い可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "開発環境",
+    "マルチリポジトリ",
+    "AIコーディング",
+    "生産性向上"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-03-31T22:16:16.836020Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
