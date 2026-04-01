@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-03-31T22:16:57.919250Z",
+  "last_run_at": "2026-04-01T22:17:02.746417Z",
   "items": {
     "1628559119": {
       "status": "summarized",
@@ -345,11 +345,11 @@
       "updated_at": "2026-03-25T09:30:37.597644Z"
     },
     "1205741265": {
-      "status": "pending",
-      "content_hash": null,
+      "status": "summarized",
+      "content_hash": "sha256:ec79cb0cbe014726c38bc06c9f8c6bcf8b110ec28d3e4441d1f791871fb92148",
       "reason": null,
-      "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597648Z"
+      "summarized_at": "2026-04-01T22:16:25.367754Z",
+      "updated_at": "2026-04-01T22:16:25.367752Z"
     },
     "1204040475": {
       "status": "pending",
@@ -359,18 +359,18 @@
       "updated_at": "2026-03-25T09:30:37.597652Z"
     },
     "1204039535": {
-      "status": "pending",
+      "status": "skipped",
       "content_hash": null,
-      "reason": null,
+      "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf",
       "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597656Z"
+      "updated_at": "2026-04-01T22:16:29.361295Z"
     },
     "1192347971": {
-      "status": "pending",
-      "content_hash": null,
+      "status": "summarized",
+      "content_hash": "sha256:3580c51a66339750c7423a3020f8c3a0696402e0e485708af3a4d6a6ca1f4118",
       "reason": null,
-      "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597659Z"
+      "summarized_at": "2026-04-01T22:16:38.957785Z",
+      "updated_at": "2026-04-01T22:16:38.957783Z"
     },
     "1192232382": {
       "status": "pending",
@@ -422,11 +422,11 @@
       "updated_at": "2026-03-25T09:30:37.597686Z"
     },
     "1161187912": {
-      "status": "pending",
-      "content_hash": null,
+      "status": "summarized",
+      "content_hash": "sha256:ad915cfa4d7485097ec8904f466917be88f42738fc77d035bca5146ad7e0ffb6",
       "reason": null,
-      "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597690Z"
+      "summarized_at": "2026-04-01T22:16:45.356924Z",
+      "updated_at": "2026-04-01T22:16:45.356922Z"
     },
     "1161187321": {
       "status": "pending",
@@ -436,11 +436,11 @@
       "updated_at": "2026-03-25T09:30:37.597695Z"
     },
     "1161186809": {
-      "status": "pending",
-      "content_hash": null,
+      "status": "summarized",
+      "content_hash": "sha256:431a8638ed5c4c5919f23b95496a042b6f53bf793e68c34944027ea36d9029b1",
       "reason": null,
-      "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597698Z"
+      "summarized_at": "2026-04-01T22:16:54.169766Z",
+      "updated_at": "2026-04-01T22:16:54.169763Z"
     },
     "1161176593": {
       "status": "pending",
@@ -457,11 +457,11 @@
       "updated_at": "2026-03-25T09:30:37.597702Z"
     },
     "1142795683": {
-      "status": "pending",
-      "content_hash": null,
+      "status": "summarized",
+      "content_hash": "sha256:ee6ce9da4c27459ed42a0a90fa61e5c99f093502f5fdfa61ced34dc29772121f",
       "reason": null,
-      "summarized_at": null,
-      "updated_at": "2026-03-25T09:30:37.597704Z"
+      "summarized_at": "2026-04-01T22:17:02.743810Z",
+      "updated_at": "2026-04-01T22:17:02.743808Z"
     },
     "1142747565": {
       "status": "pending",

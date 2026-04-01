@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1192347971,
+  "collection_id": 56182051,
+  "title": "コードの90%をAIが書く世界で何が待っているのか / What awaits us in a world where 90% of the code is written by AI",
+  "url": "https://speakerdeck.com/rkaga/what-awaits-us-in-a-world-where-90-percent-of-the-code-is-written-by-ai",
+  "domain": "speakerdeck.com",
+  "created_at": "2025-06-25T05:16:10.004000Z",
+  "fetched_at": "2026-04-01T22:16:31.932103Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 737,
+  "content_hash": "sha256:3580c51a66339750c7423a3020f8c3a0696402e0e485708af3a4d6a6ca1f4118",
+  "summary_input_type": "shorttext",
+  "topic": "AIがコードの大部分を生成する未来におけるプログラミングと開発者の役割",
+  "summary_3lines": [
+    "AIがコードの9割を書く未来において、ソフトウェア開発者の仕事がすぐになくなるわけではないと指摘。",
+    "これはプログラミング自体の終焉ではなく、現在知られているプログラミングの形が変わる転換期であると主張。",
+    "開発者はAIという大きなトレンドを恐れることなく、新しい形でプログラミングを楽しむべきだという前向きな姿勢を示している。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "AIによる開発の未来に対する一般的な懸念に対し、前向きな視点を提供しているため。",
+  "defer_reason": "本文は簡潔な意見表明に留まっており、詳細な議論や具体的な事例の提示はないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI",
+    "プログラミング",
+    "開発者",
+    "仕事の未来",
+    "技術トレンド"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-01T22:16:38.957763Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
