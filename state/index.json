@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-01T22:17:02.746417Z",
+  "last_run_at": "2026-04-04T22:11:10.543822Z",
   "items": {
     "1628559119": {
       "status": "summarized",
@@ -35,13 +35,6 @@
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597433Z"
-    },
-    "1557816890": {
-      "status": "summarized",
-      "content_hash": "sha256:e4e0919ae6f4fd3c21803f6415daa8e85ead03e1b1dd7f1850a1e9b9ef7eb337",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:15:40.144205Z",
-      "updated_at": "2026-03-28T23:15:40.144203Z"
     },
     "1532197321": {
       "status": "pending",
@@ -91,13 +84,6 @@
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597474Z"
-    },
-    "1525052724": {
-      "status": "summarized",
-      "content_hash": "sha256:eb24aa4511e552f684685d3e982cab43d7b5f76dd9a9e773ebfe3dbf6aae5fa5",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:15:50.758145Z",
-      "updated_at": "2026-03-28T23:15:50.758143Z"
     },
     "1515090610": {
       "status": "pending",
@@ -162,41 +148,6 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597521Z"
     },
-    "1454378238": {
-      "status": "summarized",
-      "content_hash": "sha256:e12c1a2d674c87d4fb09035f114d3750770ea69d9c81d52999f6499ec5f5d2ec",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:16:09.988987Z",
-      "updated_at": "2026-03-28T23:16:09.988985Z"
-    },
-    "1449677473": {
-      "status": "summarized",
-      "content_hash": "sha256:423b9e9280b89439638def3fbb7e540cc2a12b99dc53188f7f0c54586e172eec",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:16:33.802093Z",
-      "updated_at": "2026-03-28T23:16:33.802091Z"
-    },
-    "1428388428": {
-      "status": "summarized",
-      "content_hash": "sha256:b3de9eaaa74787edc331f4a133a8f1243ec42ca1dce494861679c6f01976381b",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:47:50.793435Z",
-      "updated_at": "2026-03-28T23:47:50.793433Z"
-    },
-    "1350906036": {
-      "status": "summarized",
-      "content_hash": "sha256:ef4e3ce1d0a87d0ba93558b61be970cf490460df6fc6f0bb64d09a0a8e23f023",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:48:20.804848Z",
-      "updated_at": "2026-03-28T23:48:20.804846Z"
-    },
-    "1267324490": {
-      "status": "summarized",
-      "content_hash": "sha256:3ebe30025ee5c764832843e4a806d326efa8032c17c692744d7060f1dba27842",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:48:39.536796Z",
-      "updated_at": "2026-03-28T23:48:39.536794Z"
-    },
     "1250770168": {
       "status": "pending",
       "content_hash": null,
@@ -211,26 +162,12 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597570Z"
     },
-    "1243270371": {
-      "status": "summarized",
-      "content_hash": "sha256:5393c39406c294567fe030d178baf93bf5deacddb731da63ea729e266ae026f9",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:48:48.738480Z",
-      "updated_at": "2026-03-28T23:48:48.738478Z"
-    },
     "1240473000": {
       "status": "pending",
       "content_hash": null,
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597577Z"
-    },
-    "1240455152": {
-      "status": "summarized",
-      "content_hash": "sha256:af01fc36268a50b180f78e9bd779f12e23779ff74797fc2ab6da1bd2eefa142f",
-      "reason": null,
-      "summarized_at": "2026-03-28T23:48:55.174010Z",
-      "updated_at": "2026-03-28T23:48:55.174008Z"
     },
     "1240449472": {
       "status": "pending",
@@ -260,13 +197,6 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597600Z"
     },
-    "1230895007": {
-      "status": "summarized",
-      "content_hash": "sha256:b8c67440d63c16c5531170e0de1b4fd77bd22afa8ea5a60916a4388f67c9c4d5",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:03.326088Z",
-      "updated_at": "2026-03-31T22:16:03.326085Z"
-    },
     "1230894820": {
       "status": "pending",
       "content_hash": null,
@@ -295,47 +225,12 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597619Z"
     },
-    "1229939104": {
-      "status": "summarized",
-      "content_hash": "sha256:73b4458f6ad8984f192c5bc295c78962c60c7b78587c46e64ab1231da5d33fcd",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:16.836037Z",
-      "updated_at": "2026-03-31T22:16:16.836035Z"
-    },
-    "1225370670": {
-      "status": "summarized",
-      "content_hash": "sha256:53a9724fa4e8e70eb16d5643843fa6f94ff6bc4ca7d7419e9a2c9304819d39b6",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:29.540077Z",
-      "updated_at": "2026-03-31T22:16:29.540075Z"
-    },
-    "1225370134": {
-      "status": "summarized",
-      "content_hash": "sha256:174a9613357c3a5ce8627fcac7ca833448d16736af6954661f8e1e8216f9c373",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:38.311875Z",
-      "updated_at": "2026-03-31T22:16:38.311872Z"
-    },
-    "1222207640": {
-      "status": "summarized",
-      "content_hash": "sha256:7ba8bf5451ef5ccfda12b111a685d41ec4b0f9125aabdca9efe0513d028aa8f0",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:46.323922Z",
-      "updated_at": "2026-03-31T22:16:46.323920Z"
-    },
     "1220641249": {
       "status": "pending",
       "content_hash": null,
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597637Z"
-    },
-    "1219275069": {
-      "status": "summarized",
-      "content_hash": "sha256:08f0e7ca8e626e4c03405dfa6d0c2a246e72f12a7afbf85af66068777ecc03c5",
-      "reason": null,
-      "summarized_at": "2026-03-31T22:16:57.916661Z",
-      "updated_at": "2026-03-31T22:16:57.916659Z"
     },
     "1219229816": {
       "status": "pending",
@@ -344,33 +239,12 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597644Z"
     },
-    "1205741265": {
-      "status": "summarized",
-      "content_hash": "sha256:ec79cb0cbe014726c38bc06c9f8c6bcf8b110ec28d3e4441d1f791871fb92148",
-      "reason": null,
-      "summarized_at": "2026-04-01T22:16:25.367754Z",
-      "updated_at": "2026-04-01T22:16:25.367752Z"
-    },
     "1204040475": {
       "status": "pending",
       "content_hash": null,
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597652Z"
-    },
-    "1204039535": {
-      "status": "skipped",
-      "content_hash": null,
-      "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf",
-      "summarized_at": null,
-      "updated_at": "2026-04-01T22:16:29.361295Z"
-    },
-    "1192347971": {
-      "status": "summarized",
-      "content_hash": "sha256:3580c51a66339750c7423a3020f8c3a0696402e0e485708af3a4d6a6ca1f4118",
-      "reason": null,
-      "summarized_at": "2026-04-01T22:16:38.957785Z",
-      "updated_at": "2026-04-01T22:16:38.957783Z"
     },
     "1192232382": {
       "status": "pending",
@@ -421,26 +295,12 @@
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597686Z"
     },
-    "1161187912": {
-      "status": "summarized",
-      "content_hash": "sha256:ad915cfa4d7485097ec8904f466917be88f42738fc77d035bca5146ad7e0ffb6",
-      "reason": null,
-      "summarized_at": "2026-04-01T22:16:45.356924Z",
-      "updated_at": "2026-04-01T22:16:45.356922Z"
-    },
     "1161187321": {
       "status": "pending",
       "content_hash": null,
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597695Z"
-    },
-    "1161186809": {
-      "status": "summarized",
-      "content_hash": "sha256:431a8638ed5c4c5919f23b95496a042b6f53bf793e68c34944027ea36d9029b1",
-      "reason": null,
-      "summarized_at": "2026-04-01T22:16:54.169766Z",
-      "updated_at": "2026-04-01T22:16:54.169763Z"
     },
     "1161176593": {
       "status": "pending",
@@ -455,13 +315,6 @@
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597702Z"
-    },
-    "1142795683": {
-      "status": "summarized",
-      "content_hash": "sha256:ee6ce9da4c27459ed42a0a90fa61e5c99f093502f5fdfa61ced34dc29772121f",
-      "reason": null,
-      "summarized_at": "2026-04-01T22:17:02.743810Z",
-      "updated_at": "2026-04-01T22:17:02.743808Z"
     },
     "1142747565": {
       "status": "pending",
@@ -483,20 +336,6 @@
       "reason": null,
       "summarized_at": null,
       "updated_at": "2026-03-25T09:30:37.597709Z"
-    },
-    "1664081739": {
-      "status": "summarized",
-      "content_hash": "sha256:5e3d20c03bf7e2399d15ed25d7c2d3355ad75f5bab6aa2776771facf02bdeb49",
-      "reason": null,
-      "summarized_at": "2026-03-28T22:10:08.226357Z",
-      "updated_at": "2026-03-28T22:10:08.226354Z"
-    },
-    "1664078546": {
-      "status": "summarized",
-      "content_hash": null,
-      "reason": null,
-      "summarized_at": "2026-03-28T22:10:15.634482Z",
-      "updated_at": "2026-03-28T22:10:15.634479Z"
     },
     "1664085205": {
       "status": "summarized",
@@ -532,6 +371,55 @@
       "reason": null,
       "summarized_at": "2026-03-31T22:15:49.523112Z",
       "updated_at": "2026-03-31T22:15:49.523109Z"
+    },
+    "1672507133": {
+      "status": "summarized",
+      "content_hash": "sha256:bc54e30fccf732f97759b4bd668fdeea52d9ab63926613dacebcf5a0de526da4",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:10:17.635000Z",
+      "updated_at": "2026-04-04T22:10:17.634998Z"
+    },
+    "1672506884": {
+      "status": "summarized",
+      "content_hash": "sha256:7275187f35d64f0027ec39f551c4394d0ea3c7aa1cb6936f385f3a0595a08907",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:10:27.027928Z",
+      "updated_at": "2026-04-04T22:10:27.027926Z"
+    },
+    "1670194897": {
+      "status": "summarized",
+      "content_hash": "sha256:e0139031bd7eb2987e321099cd8cc9786fea0c077d67fd8b487e8c933d7d5275",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:10:33.976879Z",
+      "updated_at": "2026-04-04T22:10:33.976877Z"
+    },
+    "1669449993": {
+      "status": "summarized",
+      "content_hash": "sha256:7168d59610c26b3b7ee982c8435df8f267c60b126cf1ffbeefe1d65fc7f3fa2b",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:10:45.024061Z",
+      "updated_at": "2026-04-04T22:10:45.024059Z"
+    },
+    "1669449923": {
+      "status": "summarized",
+      "content_hash": "sha256:8b8e7e2d07aa43bc13e9cc419712c59559560c9ef085ccfdc95dbc858529eab4",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:10:54.072345Z",
+      "updated_at": "2026-04-04T22:10:54.072344Z"
+    },
+    "1669443356": {
+      "status": "summarized",
+      "content_hash": "sha256:dc99f420f5cd9696c1cb3c67610da955daa1021b43f5ad79912adc65333c6577",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:11:02.427713Z",
+      "updated_at": "2026-04-04T22:11:02.427711Z"
+    },
+    "1668757326": {
+      "status": "summarized",
+      "content_hash": "sha256:4c4b1caa19d165dfa9f4753bd59f3acd1d963bf18afba9a8cc66333b770e0b32",
+      "reason": null,
+      "summarized_at": "2026-04-04T22:11:10.540989Z",
+      "updated_at": "2026-04-04T22:11:10.540987Z"
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1668757326,
+  "collection_id": 56182051,
+  "title": "Claude Codeのエージェントスキルで実装計画のレビューループを自動化する",
+  "url": "https://zenn.dev/avaintelligence/articles/codex-review-skill-automation",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-02T00:20:40.899000Z",
+  "fetched_at": "2026-04-04T22:11:05.114653Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 20440,
+  "content_hash": "sha256:4c4b1caa19d165dfa9f4753bd59f3acd1d963bf18afba9a8cc66333b770e0b32",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeのエージェントスキルによる実装計画レビューループの自動化",
+  "summary_3lines": [
+    "この記事は、Claude Codeで作成した実装計画のレビューと修正のループを自動化するエージェントスキル「codex-review」を紹介しています。",
+    "Codex CLIでのレビュー実行、JSON形式での結果パース、不要な指摘の自動除外、停滞検出、人間トリアージ、情報源のエビデンス検証などを統合しています。",
+    "手動で行っていた定型作業を削減し、レビュー品質を向上させることで、AIを活用した開発プロセスの効率化と信頼性向上に寄与します。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIを活用した開発プロセスの効率化と品質向上に直結する具体的な手法とツールの詳細が解説されており、すぐに実践に役立つ情報だから。",
+  "defer_reason": "Claude CodeやCodex CLIを現在利用していない場合、またはAIコーディングの効率化に喫緊の課題がない場合は、後回しにしてもよいでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Codex CLI",
+    "エージェントスキル",
+    "実装計画レビュー",
+    "自動化"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-04T22:11:10.540972Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

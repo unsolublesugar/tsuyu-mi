@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1672506884,
+  "collection_id": 56182051,
+  "title": "ハーネスエンジニアリングの先へ — VSDD × CoDDで「実装品質」と「変更時の整合性」を両立させてみた",
+  "url": "https://zenn.dev/sc30gsw/articles/bbb8b3c2fff1f6",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-04T20:48:08.114000Z",
+  "fetched_at": "2026-04-04T22:10:20.367574Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 17020,
+  "content_hash": "sha256:7275187f35d64f0027ec39f551c4394d0ea3c7aa1cb6936f385f3a0595a08907",
+  "summary_input_type": "fulltext",
+  "topic": "AI支援開発における実装品質と変更時の整合性維持のための新手法「VCSDD」",
+  "summary_3lines": [
+    "AI生成コードの品質問題「AIスロップ」と、変更時の整合性維持の課題を解決するため、VSDDとCoDDを融合したVCSDDを提案。",
+    "VCSDDは、AIによる敵対的レビュー（VSDD）で実装品質を担保しつつ、CoDDの整合性追跡エンジンを開発ワークフローに統合し自動的に強制。",
+    "実際のアプリ開発で検証し、Adversaryが仕様の穴やバグを発見し、CoDDが仕様変更時の影響範囲を自動特定できることを実証した。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIを活用したソフトウェア開発における品質と保守性の課題解決に向けた具体的な手法と実践例が詳細に解説されており、新規性と実用性が高いため。",
+  "defer_reason": "記事が長く、詳細なコマンドや内部実装の説明が含まれるため、ある程度の時間を確保して読むのが望ましい。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI支援開発",
+    "ハーネスエンジニアリング",
+    "VCSDD",
+    "CoDD",
+    "ソフトウェア品質"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-04T22:10:27.027909Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

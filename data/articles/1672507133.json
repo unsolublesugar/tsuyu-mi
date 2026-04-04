@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1672507133,
+  "collection_id": 56182051,
+  "title": "Claude Code 完全リファレンス — 全機能網羅+意外と知らない便利機能トップ10 - Qiita",
+  "url": "https://qiita.com/nogataka/items/5e64037cc452c5d497fa",
+  "domain": "qiita.com",
+  "created_at": "2026-04-04T20:48:51.564000Z",
+  "fetched_at": "2026-04-04T22:10:13.636707Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 19163,
+  "content_hash": "sha256:bc54e30fccf732f97759b4bd668fdeea52d9ab63926613dacebcf5a0de526da4",
+  "summary_input_type": "fulltext",
+  "topic": "Anthropic公式CLIエージェント「Claude Code」の全機能リファレンスと意外と知らない便利機能トップ10",
+  "summary_3lines": [
+    "Claude CodeはAnthropic公式のCLIエージェントで、ターミナルからコード生成・編集・デバッグ・Git操作などを一気通貫で行えます。",
+    "この記事は2026年4月時点の全機能をカテゴリ別に整理し、特に知られざる便利機能として/btw、Ctrl+S、/loop、!コマンドなどを紹介しています。",
+    "日常のワークフローに取り入れることで作業効率を大きく向上させる機能が多数解説されており、CLIフラグやHooks、カスタムスキルなども網羅されています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Codeの効率的な利用法が網羅されており、特に紹介されている便利機能は日常の開発ワークフロー改善にすぐに役立つため。",
+  "defer_reason": "すでにClaude Codeを使いこなしており、最新の機能アップデート情報に定期的に触れている場合は、今すぐ読む必要性は低いでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "CLIエージェント",
+    "AI開発支援",
+    "プロンプトテクニック",
+    "開発効率化"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-04T22:10:17.634979Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
