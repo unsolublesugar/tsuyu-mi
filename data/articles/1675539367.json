@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1675539367,
+  "collection_id": 56182051,
+  "title": "GitHub Copilot は自ら学ぶ: Copilot Memory 入門",
+  "url": "https://zenn.dev/microsoft/articles/50863342150992",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-07T07:23:17.442000Z",
+  "fetched_at": "2026-04-07T22:18:01.382274Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8483,
+  "content_hash": "sha256:85405bf2a2a04b84c44055cb263a672fec90bb98a434123f84f8bd19022f7af4",
+  "summary_input_type": "fulltext",
+  "topic": "GitHub Copilotのメモリ機能の全体像と種類、用語整理",
+  "summary_3lines": [
+    "GitHub Copilotには、人間が教える知識とは別に、Copilot自身が学びセッションを越えて記憶する「メモリ機能」が存在する。",
+    "メモリは保存場所（ローカル/クラウド）と共有範囲（ユーザー/リポジトリ/セッション）で分類され、特にクラウド保存型の「Copilot Memory」が重要である。",
+    "Copilot MemoryはGitHubクラウドにリポジトリ単位で保存され、自動学習やリアルタイム検証、クロスエージェント共有により開発体験を向上させる。"
+  ],
+  "priority": "high",
+  "read_now_reason": "GitHub Copilotの新しい重要な機能である「メモリ機能」の全体像と主要な種類が整理されており、今後の開発効率向上に直結する可能性が高いから。",
+  "defer_reason": "この記事はシリーズの第1回であり、具体的な操作方法は次回以降の記事で解説されるため、詳細な利用方法を知りたい場合は次の記事を待ってからまとめて読んでも良いから。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "GitHub Copilot",
+    "Copilot Memory",
+    "AIエージェント",
+    "メモリ機能",
+    "開発支援"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-07T22:18:09.072713Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

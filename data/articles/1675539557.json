@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1675539557,
+  "collection_id": 56182051,
+  "title": "AIがコードを書くほど、要件定義は上に移動する――Spec・Context・Harness三層設計",
+  "url": "https://zenn.dev/gvatech_blog/articles/30f79910d111bb",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-07T07:23:34.911000Z",
+  "fetched_at": "2026-04-07T22:17:49.459323Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 23934,
+  "content_hash": "sha256:78fda100376dee64a65748109fa0c305d59baf87b118bd4e5c7793ecaaecd158",
+  "summary_input_type": "fulltext",
+  "topic": "AIコード生成時代の要件定義の進化と3つの新概念に基づくプロセス設計",
+  "summary_3lines": [
+    "AIによるコード生成が普及する中で、要件定義は「何を作るか」を定義する上位工程へと重要性が移動している。",
+    "「バイブコーディング」や従来の仕様駆動開発（SDD）の課題に対し、新たなプロセス設計の必要性が提示される。",
+    "「Context Engineering」「Harness Engineering」「Humans on the Loop」の3概念が、AIを効果的に活用する要件定義のあり方を示す。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIを活用したコード生成が広がる現代において、要件定義の役割の変化と、具体的なプロセス設計への最新の知見、実践的なガイドラインが詳細に解説されているため。",
+  "defer_reason": "本記事は前作の要件定義8ステップを知っているとより理解が深まるため、もし未読であればそちらを先に読む時間が必要な場合があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIコーディング",
+    "要件定義",
+    "仕様駆動開発",
+    "Context Engineering",
+    "Harness Engineering"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-07T22:17:58.899093Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
