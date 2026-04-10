@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1677288640,
+  "collection_id": 56182051,
+  "title": "GitHub Copilot CLI マスタークラス",
+  "url": "https://zenn.dev/microsoft/articles/github_copilot_cli_masterclass?ocid=AID3062894_TWITTER_oo_spl100010245427222",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-08T11:32:51.628000Z",
+  "fetched_at": "2026-04-10T22:16:08.614132Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 59019,
+  "content_hash": "sha256:193cd754042af9b1d5a9fd8460caa2fd19d8682260e2b174040ed58fe33dd089",
+  "summary_input_type": "fulltext",
+  "topic": "GitHub Copilot CLIのインストールから開発ワークフローへの統合、高度な活用法",
+  "summary_3lines": [
+    "GitHub Copilot CLIのインストールからログイン、セッション管理、そしてInteractive/Programmatic/Plan/Autopilotの4つのモードを解説。",
+    "コードレビュー、リファクタリング、デバッグ、テスト生成、Git統合といった開発ワークフローでの具体的な活用事例を紹介。",
+    "カスタムエージェント、スキル、プラグイン、MCPサーバー連携による拡張性と、これらを組み合わせたアプリ開発のEnd-to-Endワークフローを詳述。"
+  ],
+  "priority": "high",
+  "read_now_reason": "GitHub Copilot CLIの導入から高度な活用方法まで網羅されており、開発ワークフロー全体での生産性向上に直結する知識が得られるため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "GitHub Copilot CLI",
+    "開発ワークフロー",
+    "エージェント",
+    "スキル",
+    "MCP連携"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-10T22:16:13.544824Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
