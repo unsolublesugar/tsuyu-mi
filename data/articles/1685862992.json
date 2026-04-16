@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1685862992,
+  "collection_id": 56182051,
+  "title": "セキュリティ分析AIエージェント実装にみるハーネスエンジニアリング",
+  "url": "https://zenn.dev/ubie_dev/articles/sec-agent-harness-eng",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-16T08:23:26.559000Z",
+  "fetched_at": "2026-04-16T22:19:37.147506Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 14361,
+  "content_hash": "sha256:2268fb7bcbd2e7fd5737a03a34eb277f4c2588565c4c4910e91965202a10097d",
+  "summary_input_type": "fulltext",
+  "topic": "セキュリティ分析AIエージェント「Warren」におけるハーネスエンジニアリングの実践と課題解決",
+  "summary_3lines": [
+    "本記事は、セキュリティアラート分析AIエージェント「Warren」の実装におけるハーネスエンジニアリングの具体的な実践事例を紹介しています。",
+    "ハーネスエンジニアリングは、計測、実行設計、実行最適化の3観点から、LLMの不確実性をアーキテクチャやルールで制御する工夫全般を指します。",
+    "可観測性向上、フェーズ分割による制御、クレデンシャル隔離などの安全対策、Knowledge Reflectionによる学習とコスト最適化が詳述されています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェントの実践的な開発や運用における課題解決、特にLLMの不確実性への対処やセキュリティ対策に具体的なヒントが得られるため、即座に役立つ可能性が高いです。",
+  "defer_reason": "本記事で述べられている多くの技術的工夫は一般的なAIエージェント開発にも応用可能ですが、セキュリティ分析という特定のドメインに特化した詳細な内容が含まれるため、自身の開発領域と異なる場合は優先度を下げても良いかもしれません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "ハーネスエンジニアリング",
+    "セキュリティ分析",
+    "LLM活用",
+    "Warren"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:19:47.705954Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1684143722,
+  "collection_id": 56182051,
+  "title": "週間アクティブユーザー300万人にのぼるCodex、OpenAI Japanの瀬良氏に聞く「開発スタイル」の変化 | gihyo.jp",
+  "url": "https://gihyo.jp/article/2026/04/development-style-using-codex-in-spring-2026",
+  "domain": "gihyo.jp",
+  "created_at": "2026-04-14T06:47:01.360000Z",
+  "fetched_at": "2026-04-16T22:20:41.058985Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 3483,
+  "content_hash": "sha256:53c11d7666eccd812045f9e480a30051d0bc317cf2e213085cf140342880d1b2",
+  "summary_input_type": "fulltext",
+  "topic": "OpenAI Codexの利用拡大と、AIエージェントを主体とする新たな開発スタイルの変化",
+  "summary_3lines": [
+    "OpenAI Codexは週間アクティブユーザーが300万人に達し、AIが主体となり人間が監督する「オーケストレーション」型開発が主流に変化している。",
+    "Codexの定着には、簡単なタスクの並行処理から始め、チームでのツール連携やスキルの標準化、そして自律動作を支援するハーネスエンジニアリングが重要となる。",
+    "OpenAI社内ではCodex活用によりプルリクエストのマージ数が70%増加しており、開発者はコード詳細よりもAIが円滑に機能するためのシステム設計に注力する傾向にある。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェントを活用した最先端の開発スタイルや、組織への導入・定着に向けた具体的なステップが提示されており、今後の開発プロセスを検討する上で非常に参考になるため。",
+  "defer_reason": "現在、AIコーディング支援ツールの導入を検討していない場合や、具体的な導入計画が進行中でない場合は、後回しにしても情報としての緊急性は低いと考えられるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Codex",
+    "AIエージェント",
+    "開発スタイル",
+    "オーケストレーション",
+    "ハーネスエンジニアリング"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:20:49.964554Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

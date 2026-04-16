@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1684936368,
+  "collection_id": 56182051,
+  "title": "8 Tips for Writing Agent Skills ",
+  "url": "https://x.com/_philschmid/status/2043705157850951699",
+  "domain": "x.com",
+  "created_at": "2026-04-15T03:33:09.498000Z",
+  "fetched_at": "2026-04-16T22:20:08.407400Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "fallback",
+  "fetch_status": "ok",
+  "extract_method": "x_api",
+  "content_chars": 0,
+  "content_hash": "",
+  "summary_input_type": "metadata",
+  "topic": "エージェントスキルの効果的な開発と設計",
+  "summary_3lines": [
+    "エージェントにおけるスキルは重要な拡張ポイントであり、柔軟で作成・配布が容易であると述べられています。",
+    "しかし、その高い柔軟性が故に、効果的なスキルの見極めや設計が難しいという課題も指摘されています。",
+    "本記事は、この課題に対し、エージェントスキルをより良く記述するための8つのヒントを提供していると推測されます。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "エージェントのスキル開発に携わっている方や、効果的なスキルの定義方法に関心がある方にとって、実践的な知見が得られる可能性があります。",
+  "defer_reason": "現在エージェント技術やスキル開発に直接関わっていない場合、または関連情報を急いで必要としない場合は後回しにできます。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "エージェントスキル",
+    "AIエージェント",
+    "開発のヒント",
+    "スキル設計",
+    "ベストプラクティス"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:20:15.901163Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

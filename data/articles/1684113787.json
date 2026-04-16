@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1684113787,
+  "collection_id": 56182051,
+  "title": "DESIGN.md + 壊れたら気づくハーネス - AI向けデザインシステムを「維持できる仕組み」にした記録",
+  "url": "https://zenn.dev/tsubotax/articles/7f0d3693f70e2f",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-14T05:21:12.680000Z",
+  "fetched_at": "2026-04-16T22:20:52.427913Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6297,
+  "content_hash": "sha256:023bf420ada199d1b051f97ef245bad5b5772b788d8c3ce767f1a6026a826fdf",
+  "summary_input_type": "fulltext",
+  "topic": "AI向けデザインシステムの運用課題を解決する3層構造と自動検証の導入",
+  "summary_3lines": [
+    "AIエージェント向けデザインシステム「melta UI」は、旧来の1ファイル構成で運用上の課題（ルール分散、ドリフト、拡張性）を抱えていた。",
+    "これを解決するため、思想・原則を定める「DESIGN.md」、機械可読な仕様を構造化する「contracts/」、その整合性を自動検証する「harness」の3層構造を導入。",
+    "この仕組みにより、AI生成品質を維持しつつ、ドキュメントと実態の乖離や手動更新の問題を防ぎ、「壊れたら気づく」持続可能なデザインシステムを実現した。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIを活用した開発やデザインシステムの運用における具体的な課題と、それを解決する実践的な仕組みが示されており、自身のプロジェクトに適用できるヒントが多く得られるため。",
+  "defer_reason": "デザインシステムやAIを用いたUI生成に現時点で直接関わっていない場合、将来的な参考情報として後回しにしても良い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIデザインシステム",
+    "melta UI",
+    "デザインシステム運用",
+    "自動検証",
+    "DESIGN.md"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:21:13.860005Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

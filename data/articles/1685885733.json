@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1685885733,
+  "collection_id": 56182051,
+  "title": "「地味に大変」なタスクはAIの力を借りよう！ アトラシアンが提案する次世代のAI連携開発",
+  "url": "https://codezine.jp/article/detail/23624",
+  "domain": "codezine.jp",
+  "created_at": "2026-04-16T09:07:58.260000Z",
+  "fetched_at": "2026-04-16T22:19:16.135502Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 1576,
+  "content_hash": "sha256:0579886b22324e7ec64b0810927e20a5749cf048409dea87343d78394d8e225b",
+  "summary_input_type": "fulltext",
+  "topic": "「地味に大変」な開発タスクをアトラシアンのAI「Rovo Dev」が支援",
+  "summary_3lines": [
+    "ソフトウェアエンジニアが直面する「地味に大変」な作業負担に対し、アトラシアンがコーディングAI「Rovo Dev」を提案。",
+    "Rovo Devは、JiraやConfluenceと連携し、JavaScriptからTypeScriptへの変換やログ追加などの実装作業を自動化します。",
+    "AIによるコードレビューは、組織ルールや過去データも参照し、客観的かつ効率的なフィードバックを提供し、心理的負担も軽減します。"
+  ],
+  "priority": "high",
+  "read_now_reason": "ソフトウェア開発の効率化やAI導入に関心があるエンジニアにとって、アトラシアンの具体的なAI活用事例と新ツール「Rovo Dev」の機能を知る上で非常に有益な情報だから。",
+  "defer_reason": "アトラシアン製品やAIによる開発支援に関する最新情報をすでに追っている場合、既知の内容が含まれる可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Rovo Dev",
+    "アトラシアン",
+    "コーディングAI",
+    "ソフトウェア開発",
+    "コードレビュー"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:19:22.894351Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

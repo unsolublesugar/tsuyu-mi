@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1685867427,
+  "collection_id": 56182051,
+  "title": "AGENTS.mdをベストプラクティスに沿って自動更新する自作スキルとhook設定がいい感じ",
+  "url": "https://zenn.dev/ryonakae/articles/338f63fb030267",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-16T08:31:23.662000Z",
+  "fetched_at": "2026-04-16T22:19:25.340414Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4517,
+  "content_hash": "sha256:51cb0c834a16842b7db84336c908837e42f79b92071df124f511d5b8e0eefdd2",
+  "summary_input_type": "fulltext",
+  "topic": "Claude CodeのStop Hookと自作スキルによるAGENTS.md自動更新",
+  "summary_3lines": [
+    "AGENTS.mdの更新負担を軽減するため、Claude CodeのStop Hookと自作スキルを活用し自動更新する仕組みを構築。",
+    "エージェント実装完了時とコミット時にAIがドキュメント更新を判断し、ベストプラクティスに沿って自動生成・更新を行う。",
+    "StructuredOutputツールの利用、適切なモデル選択、doc-updaterスキルの詳細な設定が成功の鍵となる。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude Codeを使った開発でAGENTS.mdの更新に課題を感じている場合、実践的な解決策と詳細な設定例が示されており、すぐに役立つため。",
+  "defer_reason": "Claude CodeやAIエージェントを用いた開発を行っていない場合、直接的な関連性が低く、技術詳細の理解には時間を要するため後回しでよい。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "AGENTS.md",
+    "自動更新",
+    "Stop Hook",
+    "AIエージェント"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:19:34.627096Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

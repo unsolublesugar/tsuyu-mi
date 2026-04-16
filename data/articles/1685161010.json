@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1685161010,
+  "collection_id": 56182051,
+  "title": "ハーネスエンジニアリング、全員が違うことを言っている — 5社の解釈を並べてみた",
+  "url": "https://zenn.dev/kenimo49/articles/harness-engineering-interpretations-2026",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-15T10:11:50.148000Z",
+  "fetched_at": "2026-04-16T22:19:58.548705Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4753,
+  "content_hash": "sha256:50a022c76f3faa57bcf3a20b48d58c8eab8245e7a2de71d1ade9417f00d18897",
+  "summary_input_type": "fulltext",
+  "topic": "ハーネスエンジニアリングの各社における異なる解釈と比較",
+  "summary_3lines": [
+    "OpenAIの論文を機に広まったハーネスエンジニアリングの概念は、主要プレイヤー間でその定義や解釈が異なっている。",
+    "OpenAIは大規模プロジェクトの宣言的制約、Anthropicはコンテキスト管理、LangChainはモデル非依存のハーネス設計など、各社で出発点や力点が多様である。",
+    "実務者向けには、AGENTS.mdの作成、品質ゲートの自動化、フィードバックループの実践が推奨されており、各社の解釈の深堀りはその後で良いと結ばれている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェント開発における「ハーネスエンジニアリング」という重要な概念の多様な解釈を、主要プレイヤーごとに体系的に比較し、実践的な第一歩も提示しているため。",
+  "defer_reason": "AIエージェントやLLM開発の最新動向に関心が薄い、またはすぐに実践する予定がない場合は、後からでも内容を追うことは可能であるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "ハーネスエンジニアリング",
+    "AIエージェント",
+    "LLM開発",
+    "プロンプトエンジニアリング",
+    "コンテキスト管理"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:20:06.090230Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

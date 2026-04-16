@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1684822284,
+  "collection_id": 56182051,
+  "title": "Claude Codeソースコード流出から学ぶハーネスパターン10選 ── 50万行のTypeScriptが明かした設計思想 - Qiita",
+  "url": "https://qiita.com/nogataka/items/ebbbe74649eb441a34db",
+  "domain": "qiita.com",
+  "created_at": "2026-04-14T23:35:55.625000Z",
+  "fetched_at": "2026-04-16T22:20:26.564241Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 14599,
+  "content_hash": "sha256:11c08d18a4c3bd08ffec04cbd0c68dd629f78e70486370d515534828bf976bd7",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeのソースコード流出が明らかにした、AIエージェントのハーネス設計の重要性と具体的な10のパターン",
+  "summary_3lines": [
+    "Anthropic社のClaude Codeソースコードが流出し、約50万行のTypeScriptからAIエージェントにおける「ハーネス（制御層）」の設計思想が明らかになった。",
+    "流出コードからは、モデルの性能に依存せずプロダクト品質を決定するハーネスに基づいた、モデルと制御の分離や3層メモリ管理など10の具体的なパターンが特定された。",
+    "これらの設計は大規模運用で得られた知見の結晶であり、コード公開後もAnthropicの競争優位が揺るがない理由が解説され、個人開発者への応用も提示されている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェント開発におけるハーネス設計の重要性と具体的な10のパターンが詳細に解説されており、自身のプロジェクトにすぐ応用できる実践的な知見が豊富に含まれているため。",
+  "defer_reason": "本記事は非常に詳細かつ網羅的なため、特定のAIエージェント開発の課題に直面しているわけではない場合、情報量が多くて消化に時間がかかる可能性があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "AIエージェント",
+    "ハーネスパターン",
+    "ソースコード流出",
+    "TypeScript"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-04-16T22:20:38.736874Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
