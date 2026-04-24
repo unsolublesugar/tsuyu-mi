@@ -332,6 +332,28 @@ footer a:hover {
   text-decoration: underline;
 }
 
+footer .footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+footer .footer-icon-link:hover {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+}
+
+.icon-sm {
+  width: 1.1em;
+  height: 1.1em;
+}
+
 /* Responsive */
 
 @media (max-width: 600px) {
