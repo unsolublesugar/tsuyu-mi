@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1699803130,
+  "collection_id": 56182051,
+  "title": "AIに会社のGoogleアカウントを渡していませんか",
+  "url": "https://zenn.dev/finatext/articles/mcp-gateway-google-sa",
+  "domain": "zenn.dev",
+  "created_at": "2026-04-29T11:51:10.307000Z",
+  "fetched_at": "2026-05-01T22:21:36.885607Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4705,
+  "content_hash": "sha256:4bd503a44f2864d22873d15a48c54afed26d7bb7f9056f766548b6b896483661",
+  "summary_input_type": "fulltext",
+  "topic": "AIとGoogle Workspace連携におけるサービスアカウントを活用した安全な権限管理と監査設計",
+  "summary_3lines": [
+    "AIに会社のGoogleアカウントを連携する際、ユーザー権限をそのまま与えると機密情報漏洩や監査上の課題が生じる問題を指摘しています。",
+    "これに対し、ユーザーごとにAI専用のGoogleサービスアカウント（SA）を払い出し、ユーザーが明示的に共有したリソースのみAIがアクセスする方針を提示。",
+    "SAを活用することで認可と監査をGoogleに委ね、鍵レスかつ短命トークン発行により安全な権限管理を実現するMCPassの設計を解説しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AI活用が広がる中で、Google Workspace連携時のセキュリティリスクと、その具体的な解決策であるサービスアカウントを用いた安全な設計手法を深く理解できるため、今すぐ読む価値があります。",
+  "defer_reason": "Google WorkspaceとAI連携の具体的なセキュリティ設計にすぐ取り組む予定がない場合や、FinatextのMCPassアーキテクチャへの理解が不足している場合は、後から参照しても良いでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Google Workspace",
+    "サービスアカウント",
+    "AI連携",
+    "権限管理",
+    "セキュリティ"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-01T22:21:46.111274Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

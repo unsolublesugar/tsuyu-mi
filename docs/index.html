@@ -31,8 +31,8 @@
 
   <header>
     <div class="stats">
-      <span id="stats-count">16 / 16 件</span>
-      <span>最終実行: 2026-04-29 07:25</span>
+      <span id="stats-count">17 / 17 件</span>
+      <span>最終実行: 2026-05-02 07:21</span>
     </div>
     <div class="filters">
       <button class="filter-btn active" data-filter="high">High</button>
@@ -45,6 +45,65 @@
   <main>
     
     <section class="articles">
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2026-04-29 20:51</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/finatext/articles/mcp-gateway-google-sa" target="_blank" rel="noopener">AIに会社のGoogleアカウントを渡していませんか</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>AIに会社のGoogleアカウントを連携する際、ユーザー権限をそのまま与えると機密情報漏洩や監査上の課題が生じる問題を指摘しています。</li>
+          
+          <li>これに対し、ユーザーごとにAI専用のGoogleサービスアカウント（SA）を払い出し、ユーザーが明示的に共有したリソースのみAIがアクセスする方針を提示。</li>
+          
+          <li>SAを活用することで認可と監査をGoogleに委ね、鍵レスかつ短命トークン発行により安全な権限管理を実現するMCPassの設計を解説しています。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> AI活用が広がる中で、Google Workspace連携時のセキュリティリスクと、その具体的な解決策であるサービスアカウントを用いた安全な設計手法を深く理解できるため、今すぐ読む価値があります。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> Google WorkspaceとAI連携の具体的なセキュリティ設計にすぐ取り組む予定がない場合や、FinatextのMCPassアーキテクチャへの理解が不足している場合は、後から参照しても良いでしょう。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Google Workspace</span>
+          
+          <span class="keyword">サービスアカウント</span>
+          
+          <span class="keyword">AI連携</span>
+          
+          <span class="keyword">権限管理</span>
+          
+          <span class="keyword">セキュリティ</span>
+          
+        </div>
+        
+
+      </article>
       
       <article class="card priority-high" data-priority="high">
         <div class="card-header">
