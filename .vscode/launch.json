@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Raindrop 取得のみ",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["fetch-only"]
+        },
+        {
+            "name": "少数で要約を試す",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["run"],
+            "env": {
+                "MAX_SUMMARIZE_PER_RUN": "3"
+            }
+        },        {
+            "name": "フルパイプライン実行（取得 → 抽出 → 要約 → HTML 生成）",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["run"]
+        },
+        {
+            "name": "対象記事を確認だけ（処理はしない）",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["run", "--dry-run"]
+        },
+        {
+            "name": "詳細ログ付き実行",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["run", "--verbose"]
+        },
+        {
+            "name": "HTML 再生成",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["build-html"]
+        },
+        {
+            "name": "特定記事の再処理",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["reprocess", "--id", "123456789"]  // ここに再処理したい記事のIDを指定
+        },
+        {
+            "name": "失敗記事の一括再試行",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src",
+            "args": ["reprocess-failed"]
+        },
+    ]
+}
+
+
