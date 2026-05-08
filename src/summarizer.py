@@ -83,8 +83,20 @@ class OllamaProvider:
 
     def generate(self, prompt: str) -> str:
         response = self.client.chat(model=self.model, messages=[{"role": "user", "content": prompt}], stream=False)
-
         return response.message.content if response.message else ""
+
+class OpenCodeProvider(LLMProvider):
+    """OpenCode API プロバイダー（OpenAI 互換 API）。"""
+
+    def __init__(self, config: Config) -> None:
+        from opencode_ai import Opencode
+        self.client = Opencode(base_url=config.llm_host);
+        self.session = self.client.session.create(extra_body={"title": "raindrop_summarizer"});
+
+    def generate(self, prompt: str) -> str:
+        import httpx
+        response = self.client.post(f"/session/{self.session.id}/message", body={"parts": [{"type": "text", "text": prompt}]}, cast_to=httpx.Response);
+        return [x["text"] for x in response.json()["parts"] if x.get("type") == "text"][0] or ""
 
 def create_provider(config: Config) -> LLMProvider:
     """Config に基づき LLM プロバイダーを生成する。"""
@@ -97,6 +109,8 @@ def create_provider(config: Config) -> LLMProvider:
             return AnthropicProvider(config)
         case "ollama":
             return OllamaProvider(config)
+        case "opencode":
+            return OpenCodeProvider(config)
         case _:
             raise ValueError(f"未対応の LLM プロバイダー: {config.llm_provider}")
 

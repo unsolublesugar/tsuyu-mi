@@ -96,12 +96,19 @@ Obtain an API key from one of the following providers:
 1. Serve it by [`ollama run qwen3.5:9b`](https://docs.ollama.com/cli#run-a-model)
 2. You can use `dummy` as an API key if your server does not need any keys
 3. Recommanded model: `qwen3.5:9b` or better  
-    - Note: Summarization took ~70-300s/article on my Mac Mini M4 16GB. phi3 and llama3.2 sometimes struggled to output the correct JSON schema.
 4. You can specify the endpoint like `LLM_HOST=http://host.docker.internal:11434`.
 
-### 4. Configure environment variables
+> [!TIP]
+> Summarization took ~70-300s/article on my Mac Mini M4 16GB. phi3 and llama3.2 sometimes struggled to output the correct JSON schema.
 
-#### Local execution
+**Opencode**
+
+4. 接続先を指定できます (例: `LLM_HOST=http://localhost:4096`)
+
+1. Serve it by [`opencode serve`](https://opencode.ai/docs/ja/server)
+2. You can use `dummy` as an API key if your server does not need any keys
+3. Recommanded model: `opencode/big-pickle` or better  
+4. You can specify the endpoint like `LLM_HOST=http://localhost:4096`.
 
 ```bash
 cp .env.example .env

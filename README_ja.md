@@ -96,8 +96,17 @@ pip install -e ".[dev]"
 1. [`ollama run qwen3.5:9b`](https://docs.ollama.com/cli#run-a-model) のように起動しておきます。
 2. APIキーが不要なら `dummy`とでも指定しておきましょう。
 3. 推奨モデル: `qwen3.5:9b`  
-    - 要約速度は手元のMac Mini M4 16GBで約70〜300秒/記事でした。phi3、llama3.2はjson応答が期待した形にならないことがありました。
 4. 接続先を指定できます (例: `LLM_HOST=http://host.docker.internal:11434`)
+
+> [!TIP]
+> 要約速度は手元のMac Mini M4 16GBで約70〜300秒/記事でした。phi3、llama3.2はjson応答が期待した形にならないことがありました。
+
+**Opencode**
+
+1. [`opencode serve`](https://opencode.ai/docs/ja/server/) のように起動しておきます。
+2. APIキーが不要なら `dummy`とでも指定しておきましょう。
+3. 推奨モデル: `opencode/big-pickle`
+4. 接続先を指定できます (例: `LLM_HOST=http://localhost:4096`)
 
 ### 4. 環境変数の設定
 
