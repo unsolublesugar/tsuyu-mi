@@ -73,6 +73,18 @@ class AnthropicProvider:
         )
         return response.content[0].text if response.content else ""
 
+class OllamaProvider:
+    """Ollama API プロバイダー。"""
+
+    def __init__(self, config: Config) -> None:
+        import ollama
+        self.client = ollama.Client(host=config.llm_host)
+        self.model = config.llm_model
+
+    def generate(self, prompt: str) -> str:
+        response = self.client.chat(model=self.model, messages=[{"role": "user", "content": prompt}], stream=False)
+
+        return response.message.content if response.message else ""
 
 def create_provider(config: Config) -> LLMProvider:
     """Config に基づき LLM プロバイダーを生成する。"""
@@ -83,6 +95,8 @@ def create_provider(config: Config) -> LLMProvider:
             return GeminiProvider(config)
         case "anthropic":
             return AnthropicProvider(config)
+        case "ollama":
+            return OllamaProvider(config)
         case _:
             raise ValueError(f"未対応の LLM プロバイダー: {config.llm_provider}")
 
