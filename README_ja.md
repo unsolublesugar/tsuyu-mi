@@ -91,6 +91,23 @@ pip install -e ".[dev]"
 2. **Create Key** でキーを生成
 3. 推奨モデル: `claude-haiku-4-5-20251001`
 
+**ローカルLLM(Ollama)**
+
+1. [`ollama run qwen3.5:9b`](https://docs.ollama.com/cli#run-a-model) のように起動しておきます。
+2. APIキーが不要なら `dummy`とでも指定しておきましょう。
+3. 推奨モデル: `qwen3.5:9b`  
+4. 接続先を指定できます (例: `LLM_HOST=http://host.docker.internal:11434`)
+
+> [!TIP]
+> 要約速度は手元のMac Mini M4 16GBで約70〜300秒/記事でした。phi3、llama3.2はjson応答が期待した形にならないことがありました。
+
+**Opencode**
+
+1. [`opencode serve`](https://opencode.ai/docs/ja/server/) のように起動しておきます。
+2. APIキーが不要なら `dummy`とでも指定しておきましょう。
+3. 推奨モデル: `opencode/big-pickle`
+4. 接続先を指定できます (例: `LLM_HOST=http://localhost:4096`)
+
 ### 4. 環境変数の設定
 
 #### ローカル実行の場合
@@ -176,9 +193,10 @@ python -m src reprocess-failed
 |---|---|---|
 | `RAINDROP_TOKEN` | Raindrop.io API テストトークン | （必須） |
 | `RAINDROP_COLLECTION_ID` | 対象コレクション ID | （必須） |
-| `LLM_PROVIDER` | `openai` / `gemini` / `anthropic` | `openai` |
+| `LLM_PROVIDER` | `openai` / `gemini` / `anthropic`/`ollama` | `openai` |
 | `LLM_API_KEY` | LLM の API キー | （必須） |
 | `LLM_MODEL` | 使用するモデル名 | （必須） |
+| `LLM_HOST` | LLM(Ollama)の接続先 | `http://localhost:11434` |
 | `MAX_SUMMARIZE_PER_RUN` | 1 回の要約件数上限 | `10` |
 | `REQUEST_TIMEOUT_SECONDS` | HTTP リクエストタイムアウト | `20` |
 | `USER_AGENT` | HTTP リクエストの User-Agent | `Tsuyu-mi/0.1` |

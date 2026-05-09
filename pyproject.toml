@@ -17,6 +17,8 @@ dependencies = [
     "openai>=1.60",
     "google-genai>=1.5",
     "anthropic>=0.44",
+    "ollama>=0.6.2",
+    "opencode-ai>=0.1.0a36",
 ]
 
 [project.optional-dependencies]

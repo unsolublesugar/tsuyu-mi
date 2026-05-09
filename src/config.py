@@ -18,6 +18,7 @@ class Config(BaseSettings):
     data_dir: str = "data"
     state_dir: str = "state"
     log_level: str = "INFO"
+    llm_host: str = "http://localhost:11434"
 
     def validate_required(self) -> list[str]:
         """必須設定の未設定項目を返す。"""
