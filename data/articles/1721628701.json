@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1721628701,
+  "collection_id": 56182051,
+  "title": "Vibe Coding のトークン消費量の40-60%を占めることもある、Markdownファイルの読み込みトークン消費量を最大98%以上圧縮する markdown-query スキル - Qiita",
+  "url": "https://qiita.com/dahatake/items/ce9917268d8d18aa9b6c",
+  "domain": "qiita.com",
+  "created_at": "2026-05-18T00:41:54.263000Z",
+  "fetched_at": "2026-05-19T22:32:30.190056Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 9398,
+  "content_hash": "sha256:d9e0f41725e6268e1fedcb29e7e21fe242d3b3e1bc08055c72c14adf51f70c73",
+  "summary_input_type": "fulltext",
+  "topic": "AIエージェント利用時のMarkdown読み込みによるトークン消費を最大98%削減する『markdown-query』スキル",
+  "summary_3lines": [
+    "AIエージェントを用いたVibe Codingにおいて、Markdownファイルの読み込みがコンテキストウィンドウを圧迫し、トークン消費の大部分を占める課題が指摘されています。",
+    "『markdown-query』スキルは、Markdownファイルをローカルでインデックス化し、関連する見出し単位のチャンクのみを抽出してエージェントに渡すことでこの問題を解決します。",
+    "これにより、不要な情報を削減し、トークン消費量を最大98%以上圧縮することが可能となり、開発セッションの効率と応答品質の向上が期待されます。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェント（GitHub Copilot, Claude Codeなど）を日常的に利用し、大規模なMarkdownドキュメントを扱っている開発者にとって、トークン消費の課題と具体的な解決策が示されており、すぐに導入を検討する価値があるため。",
+  "defer_reason": "現在AIエージェントをあまり利用していない、またはMarkdownで大量のドキュメントを管理していない場合は、緊急性は低いかもしれません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "markdown-query",
+    "AIエージェント",
+    "トークン消費削減",
+    "Context Window",
+    "Vibe Coding"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-19T22:32:34.554461Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
