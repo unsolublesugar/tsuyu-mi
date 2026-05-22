@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1727930601,
+  "collection_id": 56182051,
+  "title": "検索窓も25年ぶり刷新 Google検索トップに聞く「AIとエージェントと検索」の現在地",
+  "url": "https://www.watch.impress.co.jp/docs/topic/2110631.html",
+  "domain": "watch.impress.co.jp",
+  "created_at": "2026-05-22T03:53:15.141000Z",
+  "fetched_at": "2026-05-22T22:27:46.755890Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6669,
+  "content_hash": "sha256:563b7c2bd09a9b5ad0200a9a4c713e25eeb6458121f055e67bde4255a098ebd2",
+  "summary_input_type": "fulltext",
+  "topic": "Google検索のAI化と検索窓刷新、エージェンティックAIとSEOの現在地",
+  "summary_3lines": [
+    "Google検索は25年ぶりに検索窓を刷新し、AIによる長文・画像を含めたマルチモーダル検索が基本となる「インテリジェントなAI検索ボックス」へと進化する。",
+    "Gemini Sparkを搭載したエージェンティックAIや、インタラクティブな「生成UI」が導入され、ユーザーはAIとの対話を通じて情報に触れる形へ移行する。",
+    "Googleの検索担当VPは、AI時代のSEOは「人々が読みたい価値あるコンテンツ」が重要であり、AI検索のエネルギー効率化も重視すると語る。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Google検索の今後の方向性やAI時代における情報検索、SEOに関する公式見解を把握できるため、多くのユーザーやビジネスにとって喫緊の関心事である。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Google検索",
+    "AI検索",
+    "エージェンティックAI",
+    "SEO",
+    "マルチモーダル検索"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-22T22:27:54.369192Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

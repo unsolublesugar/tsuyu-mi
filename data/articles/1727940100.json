@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1727940100,
+  "collection_id": 56182051,
+  "title": "グーグル公式「生成AI最適化」ドキュメント登場 ―― 生成AI検索にSEOはまだ有効か？【SEOまとめ】 | 海外&国内SEO情報ウォッチ| Web担当者Forum",
+  "url": "https://webtan.impress.co.jp/e/2026/05/22/52663",
+  "domain": "webtan.impress.co.jp",
+  "created_at": "2026-05-22T04:09:30.620000Z",
+  "fetched_at": "2026-05-22T22:27:20.355819Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6935,
+  "content_hash": "sha256:22ce8cd6574bddb23dc00d4268062d51f0cdd3083e4821bed2a6ad05db7e1cb9",
+  "summary_input_type": "fulltext",
+  "topic": "Googleの生成AI検索最適化とSEOの最新動向",
+  "summary_3lines": [
+    "Googleは生成AI検索の公式最適化ドキュメントを公開し、従来のSEOのベストプラクティス、特に高品質な「非コモディティコンテンツ」とテクニカルSEOが引き続き重要だと明言しました。",
+    "いわゆる「AEO」や「GEO」といったAI検索特化型のハックは効果がなく不要であるとし、AI検索機能の操作はスパム認定の対象となることを明確にしています。",
+    "Shopifyの調査によると、AI検索経由ユーザーはオーガニック検索経由よりコンバージョン率が約50%高く、購買前の比較検討が圧縮される傾向が見られます。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Googleの公式発表により、生成AI検索時代におけるSEOの最新かつ正確な方向性を把握できるため、SEO担当者やWeb担当者にとって即座に価値のある情報です。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "生成AI検索",
+    "SEO",
+    "Google公式",
+    "AEO/GEO",
+    "コンバージョン率"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-22T22:27:26.515362Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

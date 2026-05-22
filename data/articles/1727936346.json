@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1727936346,
+  "collection_id": 56182051,
+  "title": "「URLを誰にも教えてない」が通じない理由 — CTログを30分監視してみた",
+  "url": "https://zenn.dev/tkydev/articles/2026-05-21_ct_log",
+  "domain": "zenn.dev",
+  "created_at": "2026-05-22T04:03:10.111000Z",
+  "fetched_at": "2026-05-22T22:27:28.971218Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 7305,
+  "content_hash": "sha256:b0d214e2aea7e99be4412cb81299ae41b7c5112e1024389ccc4cd1aa4b31875b",
+  "summary_input_type": "fulltext",
+  "topic": "CTログ監視による新規ドメインの早期発見と「URLを誰にも教えていない」がセキュリティ対策にならない理由",
+  "summary_3lines": [
+    "HTTPS証明書を発行するとドメインが公開CTログに記録され、多数のボットが新規ドメインを即座にスキャンすることが実証されました。",
+    "30分間のCTログ監視では、新規ドメインの多くは未公開でしたが、稼働中のサイトはAI系SaaSが多く、セキュリティヘッダが未設定の傾向が見られました。",
+    "悪意あるドメインも等しく出現するため、URLを秘匿するだけではセキュリティ対策にならず、Web公開時には経路制限や認証が必須です。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Webサイトやアプリケーションを公開する個人開発者にとって、セキュリティに関する誤解を正し、適切な対策を講じるための重要な情報が含まれているためです。",
+  "defer_reason": "情報の緊急性が高く、Web公開のセキュリティ対策を検討する上で不可欠な内容のため、後回しにする理由は見当たりません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "CTログ",
+    "ウェブセキュリティ",
+    "個人開発",
+    "ドメイン監視",
+    "HTTPS"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-22T22:27:34.721891Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
