@@ -31,8 +31,8 @@
 
   <header>
     <div class="stats">
-      <span id="stats-count">24 / 24 件</span>
-      <span>最終実行: 2026-05-23 07:28</span>
+      <span id="stats-count">25 / 25 件</span>
+      <span>最終実行: 2026-05-26 07:27</span>
     </div>
     <div class="filters">
       <button class="filter-btn active" data-filter="high">High</button>
@@ -45,6 +45,65 @@
   <main>
     
     <section class="articles">
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-header">
+          <span class="priority-badge priority-high">HIGH</span>
+          
+          <span class="domain">zenn.dev</span>
+          <span class="date">2026-05-25 15:22</span>
+        </div>
+
+        <h2 class="card-title">
+          <a href="https://zenn.dev/rsugi/articles/19e0014a7040b3" target="_blank" rel="noopener">SaaSの権限管理設計を完全に理解した</a>
+        </h2>
+
+        
+        <ul class="summary">
+          
+          <li>SaaSの権限管理を「何ができるか」のPBACと「誰のリソースか」のReBACの2層に分け、従来のRBACの限界や場当たり的な実装の課題を解決。</li>
+          
+          <li>PBACではロールとプランに基づくポリシーをポリシークラスに集約し、ReBACではリソースとの関係性をDBで検証し、関係がなければ404を返す。</li>
+          
+          <li>この設計により、権限ロジックが一箇所に集約され、変更に強く、読みやすいコードが実現でき、マルチテナント環境のセキュリティと保守性を向上させる。</li>
+          
+        </ul>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む理由:</span> SaaS開発で複雑化する権限管理に課題を感じている場合、具体的な設計思想と実装例が示されており、現在のプロジェクトに役立つ知見が得られるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し理由:</span> 既存の権限管理システムが十分に機能しており、当面変更の予定がない場合は、設計指針として後からでも参照できるため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">SaaS</span>
+          
+          <span class="keyword">権限管理</span>
+          
+          <span class="keyword">PBAC</span>
+          
+          <span class="keyword">ReBAC</span>
+          
+          <span class="keyword">アクセスコントロール</span>
+          
+        </div>
+        
+
+      </article>
       
       <article class="card priority-high" data-priority="high">
         <div class="card-header">
