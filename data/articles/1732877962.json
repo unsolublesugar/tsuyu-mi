@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1732877962,
+  "collection_id": 56182051,
+  "title": "「最終判断は人間が行います」が嘘になるとき ― ICOが暴いた採用AIの実態 - Nothing ventured, nothing gained.",
+  "url": "https://takoratta.hatenablog.com/entry/2026/05/26/083000",
+  "domain": "takoratta.hatenablog.com",
+  "created_at": "2026-05-25T23:50:31.180000Z",
+  "fetched_at": "2026-05-28T22:36:34.380940Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 7915,
+  "content_hash": "sha256:0225e0e99336cdd48cca209054b1e18cd051e970b55736de5a8400ce1399319e",
+  "summary_input_type": "fulltext",
+  "topic": "英国ICOが指摘する採用AIにおける「形だけの人間関与」の実態と、意味のある関与に必要な要素、および国際的な規制動向",
+  "summary_3lines": [
+    "英国の情報コミッショナー事務所（ICO）は、採用AIに関する調査報告書で、多くの企業が説明する「人間による最終判断」が法的に無意味な形だけのものだと指摘した。",
+    "ICOは、真に意味のある人間の関与には、AIの判断を覆せる権限と専門性、全ての候補者への一貫したレビュー、アルゴリズムの論理理解の3要素が必須だと定義した。",
+    "英国DUAAやEU AI Act、米国各州でAI採用ツールの規制が進む中、日本企業も説明と実装の乖離をなくし、倫理的かつ公正なプロダクト設計が求められている。"
+  ],
+  "priority": "high",
+  "read_now_reason": "採用AIの倫理的・法的課題に関する最新の国際動向と、日本企業が直面する可能性のある実態について、深い洞察と具体的な指針が示されているため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "採用AI",
+    "ICO報告書",
+    "AI倫理",
+    "人間の関与",
+    "法規制"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-05-28T22:36:42.934472Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
