@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1741581522,
+  "collection_id": 56182051,
+  "title": "AIの成果物を、人類がレビューしない時代がくるのではないか？｜深津 貴之 (fladdict)",
+  "url": "https://note.com/fladdict/n/n700730fc0efb",
+  "domain": "note.com",
+  "created_at": "2026-06-02T00:22:01.933000Z",
+  "fetched_at": "2026-06-04T22:35:40.346148Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4595,
+  "content_hash": "sha256:15e954e16371e8f5ee398408ca24677ac32aeeeb6fd742c88b5c297bf62d44c2",
+  "summary_input_type": "fulltext",
+  "topic": "AIの成果物を人類がレビューしない時代における、AIとの関わり方とシステム設計の変化",
+  "summary_3lines": [
+    "AIの成果物の複雑さが人間の認知能力を超え、逐次レビューがボトルネックとなる時代が到来すると予測されている。",
+    "人間はAIの内部実装の完全理解を諦め、目的設定、権限設計、停止条件、責任分界の設計に注力すべきだと論じられている。",
+    "完璧な理解や制御ではなく、AIの確率的破綻を前提に、壊れても社会が耐えられる「レジリエンス設計」と「委任可能性」が重要となる。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIの高度化が進む現代において、人間とAIの協調関係、特にレビューと意思決定のあり方について、示唆に富む未来予測と具体的な設計思想が提示されているため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI",
+    "レビュー",
+    "レジリエンス設計",
+    "委任可能性",
+    "ブラックボックス"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-06-04T22:35:48.949030Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
