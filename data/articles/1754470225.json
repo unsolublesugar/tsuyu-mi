@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1754470225,
+  "collection_id": 56182051,
+  "title": "「Claude Code」を支える技術",
+  "url": "https://zenn.dev/knowledgesense/articles/7ce72924c0050f",
+  "domain": "zenn.dev",
+  "created_at": "2026-06-11T08:58:13.858000Z",
+  "fetched_at": "2026-06-13T22:28:05.413682Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 14862,
+  "content_hash": "sha256:109d7ac4342958fd5d4111db5f7fa2f9f2a252aaa5bd9d5102acb15b9134f7ce",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Codeのアーキテクチャと「ハーネス」によるAIエージェント制御の重要性",
+  "summary_3lines": [
+    "Claude Codeは、AIエージェントの賢さの大部分が、AIの思考部分（1.6%）ではなく、安全性やユーザー体験を向上させる「ハーネス」と呼ばれる周辺制御機構（98.4%）に依存している。",
+    "このハーネスは、パーミッション管理、段階的なコンテキスト圧縮、Markdownベースのメモリ管理、サブエージェントなどの多様な技術で構成され、AIに大きな裁量を与えつつも安全かつ効率的な運用を実現する。",
+    "本記事は、リークされたソースコード解析論文に基づき、AIエージェント開発において、賢いモデルが最大限に能力を発揮できる「環境作り」の重要性を強調している。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェントのアーキテクチャ設計における「ハーネス」の重要性と、その具体的な実装アプローチを深く理解できるため、AIプロダクト開発に携わる者にとって非常に実践的な知見が得られる。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "AIエージェント",
+    "ハーネス",
+    "コンテキスト管理",
+    "セキュリティ"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-06-13T22:28:16.271641Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
