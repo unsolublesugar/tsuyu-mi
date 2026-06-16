@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1759065036,
+  "collection_id": 56182051,
+  "title": "OSSの「AI社員だけの会社」OneManCompany を動かしてみる ~Microsoft Foundry のモデルで~",
+  "url": "https://zenn.dev/nomhiro/articles/omc-azure-foundry",
+  "domain": "zenn.dev",
+  "created_at": "2026-06-15T00:10:06.549000Z",
+  "fetched_at": "2026-06-16T22:42:51.530582Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 7983,
+  "content_hash": "sha256:72848cf13357cdf23d5788745b123c02aca596204e03ad33bc09390d44fd28ba",
+  "summary_input_type": "fulltext",
+  "topic": "OSSのAI会社運営システム「OneManCompany」をMicrosoft FoundryのLLMモデルで動かす手順と実証",
+  "summary_3lines": [
+    "AI社員が自律的に働くOSS「OneManCompany（OMC）」は、CEOのタスク指示に対し、AI社員が役割分担し、企画から成果物作成、報告まで会社運営を回す「一人会社のAI OS」です。",
+    "本記事では、OMCのLLMプロバイダをOpenRouterからAzureのMicrosoft Foundryにデプロイしたモデルに切り替える具体的な設定と手順を解説しています。",
+    "実際にFoundryモデルでタスクを投入した結果、AI社員がブログ記事ドラフトを自律的に命名・作成し、成果物をCEOに報告する一連のプロセスが成功裏に実行されました。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェントが自律的にタスクを遂行するOSSの具体的な導入・運用方法を、Microsoft Foundryとの連携例を通して詳細に解説しており、最新のAI技術を用いた組織運営に関心があるなら今すぐ読む価値があります。",
+  "defer_reason": "OneManCompanyやMicrosoft Foundryを使ったAIエージェントの具体的な実装・運用に直接的な関心がなければ、記事の要点把握で十分であり、後回しにしても良いでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "OneManCompany",
+    "AIエージェント",
+    "MicrosoftFoundry",
+    "OSS",
+    "LLM連携"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-06-16T22:42:58.666790Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

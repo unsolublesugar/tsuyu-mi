@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1760447694,
+  "collection_id": 56182051,
+  "title": "技術広報チームのマネージャーに贈る、経営層に説明できる評価軸 - 941::blog",
+  "url": "https://blog.kushii.net/archives/2026/06/15/163726",
+  "domain": "blog.kushii.net",
+  "created_at": "2026-06-16T12:03:45.984000Z",
+  "fetched_at": "2026-06-16T22:42:03.065938Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5800,
+  "content_hash": "sha256:55b741fc1953600f644e9bce4637247b8322fb3cac60114e9bacdfbabce9b018",
+  "summary_input_type": "fulltext",
+  "topic": "技術広報チームのマネージャーが経営層とメンバーに説明できる評価軸の提案",
+  "summary_3lines": [
+    "技術広報の成果は測りにくく、評価に悩むマネージャーやメンバーのために、再現性のある評価軸を提案。",
+    "「外部へのアウトプット」「内部のコミュニケーション」「仕組み化」の3軸を定量・定性で評価する具体例を提示。",
+    "これらをバランスよく回すことで、チーム全体の成長と個々のメンバーのキャリアアップ、ひいては業界への影響力に繋がるとしている。"
+  ],
+  "priority": "medium",
+  "read_now_reason": "技術広報の評価やマネジメントに課題を感じている場合、具体的な評価軸と運用方法が提示されており、すぐに実践に役立つため。",
+  "defer_reason": "自身の職務が技術広報やそのマネジメントに直接関わらない場合、現状の業務に緊急で必要な情報ではないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "技術広報",
+    "評価軸",
+    "マネジメント",
+    "キャリアアップ",
+    "アウトプット"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-06-16T22:42:06.483052Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

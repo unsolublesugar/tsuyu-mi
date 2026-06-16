@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1759455757,
+  "collection_id": 56182051,
+  "title": "AIエージェントはCloudflareに賭けろ",
+  "url": "https://zenn.dev/yusukebe/articles/ccb1f953e48ee1",
+  "domain": "zenn.dev",
+  "created_at": "2026-06-15T12:01:58.559000Z",
+  "fetched_at": "2026-06-16T22:42:20.720263Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 12220,
+  "content_hash": "sha256:78e222b171f532286083827b048734c462865a2c11e98e9f4288ed611894894f",
+  "summary_input_type": "fulltext",
+  "topic": "AIエージェント開発におけるCloudflareプラットフォームの優位性",
+  "summary_3lines": [
+    "AIエージェント開発においてCloudflareが最適なプラットフォームであるとし、推論モデル、サンドボックス、実行環境の3つの要素からその優位性を詳細に解説しています。",
+    "Workers AI、Sandboxes、Browser Run、Dynamic WorkersといったCloudflareの多様な技術が、AIエージェントの思考、安全なコード実行、状態の永続化に寄与すると説明されています。",
+    "AIが直接コードを生成・実行する「Code Mode」や、状態管理を容易にするAgents SDKの概念が紹介され、社内での実用事例も具体的に提示されています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIエージェント開発を検討している場合、Cloudflareの具体的なソリューションと強みを深く理解できるため、すぐに読む価値があります。",
+  "defer_reason": "CloudflareやAIエージェント技術に現在のところ直接的な関心がない場合、今後のトレンド把握として後回しにしても良いでしょう。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "Cloudflare",
+    "Workers AI",
+    "サンドボックス",
+    "Agents SDK"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-06-16T22:42:27.817064Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
