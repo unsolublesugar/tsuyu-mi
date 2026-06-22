@@ -211,7 +211,18 @@ Changes are auto-committed and pushed only when new content is generated.
 
 ```bash
 pytest
+ruff check src/ tests/
 ```
+
+### Contributing
+
+Contributions are welcome! A few things that help keep the project healthy:
+
+- Please make sure `pytest` passes before opening a pull request. PRs are merged once the test suite is green.
+- When you change or fix behavior, please add or update tests to cover it.
+- Running `ruff check src/ tests/` is appreciated — try not to add new lint warnings in the files you touch.
+
+The suite includes some regression tests that guard against previously-fixed bugs — for example, [`tests/unit/test_main_fallback.py`](tests/unit/test_main_fallback.py) covers the fallback summarization path (X/Twitter posts, articles where extraction failed). Please fix the underlying code rather than removing these if they fail.
 
 ## License
 
