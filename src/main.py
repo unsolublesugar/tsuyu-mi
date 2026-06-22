@@ -28,12 +28,10 @@ from src.raindrop_client import RaindropClient
 from src.state_store import StateStore
 from src.summarizer import (
     create_provider,
-    summarize_fallback,
     summarize_fulltext,
 )
 from src.utils.hashing import compute_content_hash
-from src.utils.text import is_video_content
-from src.utils.time import format_display, now_utc, to_iso
+from src.utils.time import format_display, now_utc
 
 console = Console()
 
@@ -91,7 +89,7 @@ def run(dry_run: bool, verbose: bool) -> None:
         _build_html(config, repo, state)
         return
 
-    # 3. 各記事を処理
+    # 3. 各記事を処理（バッチ）
     console.print(f"[bold]3/4 記事を処理中... (最大 {len(targets)} 件)[/bold]")
     provider = create_provider(config)
     stats = {"summarized": 0, "skipped": 0, "failed": 0}

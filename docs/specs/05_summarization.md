@@ -20,6 +20,8 @@ class LLMProvider(Protocol):
 - `OpenAIProvider`: openai SDK
 - `GeminiProvider`: google-generativeai SDK
 - `AnthropicProvider`: anthropic SDK
+- `OllamaProvider`: ollama SDK
+- `OpenCodeProvider`: openai SDK（OpenAI 互換 API）
 
 ### Factory
 
@@ -29,6 +31,8 @@ def create_provider(config: Config) -> LLMProvider:
         case "openai": return OpenAIProvider(config)
         case "gemini": return GeminiProvider(config)
         case "anthropic": return AnthropicProvider(config)
+        case "ollama": return OllamaProvider(config)
+        case "opencode": return OpenCodeProvider(config)
 ```
 
 ## プロンプト
