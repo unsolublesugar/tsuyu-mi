@@ -17,6 +17,12 @@ Python 3.11+ / httpx / pydantic / trafilatura / readability-lxml / jinja2 / clic
 - Test: `pytest`
 - Lint: `ruff check src/ tests/`
 
+## PR 受け入れ方針
+
+- **`pytest` が全て通らない PR は受け入れない（マージ不可）。** CI ではテストを実行していないため、レビュー時にローカルで `pytest` を実行して確認する。外部からの PR を取り込む際も同様。
+- 挙動を変更・修正する PR にはテストを追加する。回帰テスト（例: `tests/unit/test_main_fallback.py`）は削除・骨抜きにしない。
+- 詳細は `.claude/rules/git-workflow.md` の「PR 受け入れ基準」を参照。
+
 ## References
 
 - 詳細ルール: `.claude/rules/` (自動読み込み)
