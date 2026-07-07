@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1782624332,
+  "collection_id": 56182051,
+  "title": "Generative UIとそれを実現するOpenUIのイメージを掴む！",
+  "url": "https://zenn.dev/peishim/articles/37ff4d894f8fbc",
+  "domain": "zenn.dev",
+  "created_at": "2026-07-06T12:05:27.115000Z",
+  "fetched_at": "2026-07-07T22:27:25.670146Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 16353,
+  "content_hash": "sha256:aacd604f7874ba4f514fe4b832499c276a5bae30482c4fc77fcd470c29759c3e",
+  "summary_input_type": "fulltext",
+  "topic": "Generative UIの概念とOpenUIフレームワークを用いた実現方法",
+  "summary_3lines": [
+    "Generative UIはAIがUI設計まで行う技術で、マークダウンでは困難な操作性の高いUI生成を可能にする。",
+    "OpenUIは、LLMが効率的にUIを生成するためのOpenUI Langと、定義済みコンポーネントを基盤とするフレームワークである。",
+    "コンポーネントを組み合わせる宣言型と、HTML/CSS/JSをAIに生成させるオープンエンド型の両アプローチをOpenUIで実現・検証できる。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Generative UIの概念からOpenUIを用いた具体的な実装方法まで、実例を交えて体系的に理解できるため、最新技術のキャッチアップに役立つ。",
+  "defer_reason": "特になし。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Generative UI",
+    "OpenUI",
+    "LLM",
+    "UI生成",
+    "宣言型UI"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-07-07T22:27:33.695862Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

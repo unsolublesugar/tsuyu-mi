@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-04T22:22:05.522829Z",
+  "last_run_at": "2026-07-07T22:27:47.365385Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -370,7 +370,35 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-07-04T22:22:05.520497Z"
+      "updated_at": "2026-07-07T22:27:47.363114Z"
+    },
+    "1783046248": {
+      "status": "summarized",
+      "content_hash": "sha256:a349238277bd737ce72f5e7246ead9c934c015692bcb396dc70a67d0cdd69a1b",
+      "reason": null,
+      "summarized_at": "2026-07-07T22:27:23.100114Z",
+      "updated_at": "2026-07-07T22:27:23.100112Z"
+    },
+    "1782624332": {
+      "status": "summarized",
+      "content_hash": "sha256:aacd604f7874ba4f514fe4b832499c276a5bae30482c4fc77fcd470c29759c3e",
+      "reason": null,
+      "summarized_at": "2026-07-07T22:27:33.695879Z",
+      "updated_at": "2026-07-07T22:27:33.695877Z"
+    },
+    "1782624130": {
+      "status": "skipped",
+      "content_hash": null,
+      "reason": "fetch_failed: HTTP 403",
+      "summarized_at": null,
+      "updated_at": "2026-07-07T22:27:35.869689Z"
+    },
+    "1782623982": {
+      "status": "summarized",
+      "content_hash": "sha256:6854cda27947ab767a771e550fa4669b0e470d5152ff4dfd50b1df901f5d46a5",
+      "reason": null,
+      "summarized_at": "2026-07-07T22:27:44.633455Z",
+      "updated_at": "2026-07-07T22:27:44.633452Z"
     }
   }
 }
