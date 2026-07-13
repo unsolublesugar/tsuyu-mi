@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1786565369,
+  "collection_id": 56182051,
+  "title": "デザイナー以外でも、Claude Codeでデザインを作れるために取り組んだこと｜坪田 朋",
+  "url": "https://blog.tsubotax.com/n/n53863aa059ff",
+  "domain": "blog.tsubotax.com",
+  "created_at": "2026-07-10T01:02:47.111000Z",
+  "fetched_at": "2026-07-13T22:22:12.035786Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5064,
+  "content_hash": "sha256:04563685145b895378efbf77123a889091e549334459cd495c31aef71df03b15",
+  "summary_input_type": "fulltext",
+  "topic": "デザイナー以外がClaude Codeを活用し、デザインシステムに沿ったUIデザインを生成・運用する「ハーネス」の取り組み",
+  "summary_3lines": [
+    "クラシルの坪田氏は、Claude Codeを用いて非デザイナーがデザインシステムに準拠したUIを生成できる「ハーネス」という仕組みを開発しました。",
+    "ハーネスは、AIがデザインシステムから逸脱しないよう「文脈」「制約」「検証」「フィードバック」の4層で構成され、高品質なUI生成を支援します。",
+    "この仕組みにより、自然言語でのUIプロトタイプ作成が可能になり、デザインと実装の乖離を防ぎつつ、人間の判断とAIの実行を分担し品質を維持しています。"
+  ],
+  "priority": "high",
+  "read_now_reason": "AIを活用したデザインシステムの自動化と品質担保の具体的なアプローチが詳細に解説されており、プロダクト開発におけるAI活用の最先端事例として学ぶべき点が多いからです。",
+  "defer_reason": "AIやデザインシステムの専門知識がない場合、内容の理解に時間がかかり、具体的な導入を検討していない場合は優先度が低いかもしれません。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "デザインシステム",
+    "ハーネス",
+    "UIデザイン",
+    "AI活用"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-07-13T22:22:21.022142Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
