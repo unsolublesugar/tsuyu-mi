@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1792730870,
+  "collection_id": 56182051,
+  "title": "GitHub に漏洩したシークレットの自動隔離という諸刃の剣",
+  "url": "https://zenn.dev/carenet/articles/ca0659238bc19b",
+  "domain": "zenn.dev",
+  "created_at": "2026-07-16T23:08:27.328000Z",
+  "fetched_at": "2026-07-19T22:21:17.597577Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 9176,
+  "content_hash": "sha256:a7b0b152b94723d0feb8b8da3ca938369b46e1a7baf018730d07d027df2e2ffb",
+  "summary_input_type": "fulltext",
+  "topic": "GitHubシークレットスキャンとクラウドプロバイダーによる認証情報自動隔離の仕組み、リスク、および根本的対策",
+  "summary_3lines": [
+    "GitHubのシークレットスキャンと連携したAWS、Google Cloud、Azureの認証情報自動隔離機能は、不正利用防止に有効です。",
+    "しかし、隔離の方式や単位は各クラウドで異なり、予期せぬサービス停止や、攻撃者が意図的に隔離を誘発する可用性攻撃のリスクがあります。",
+    "本質的な対策は、長期的なシークレットへの依存をなくし、ワークロードアイデンティティと短期認証情報へ移行することです。"
+  ],
+  "priority": "high",
+  "read_now_reason": "クラウド環境におけるシークレット管理とセキュリティ対策の現状、各プロバイダーの具体的な挙動、および潜在的なリスクと対策が詳細に解説されており、セキュリティエンジニアや開発者にとって非常に有益な情報であるため。",
+  "defer_reason": "",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "シークレット隔離",
+    "GitHub Secret Scanning",
+    "クラウドセキュリティ",
+    "ワークロードアイデンティティ",
+    "短期認証情報"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-07-19T22:21:26.592827Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
