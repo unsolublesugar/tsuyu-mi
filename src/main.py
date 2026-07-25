@@ -317,6 +317,7 @@ def _process_article(
         if result:
             article.topic = result.topic
             article.summary_3lines = result.summary_3lines
+            article.scores = result.scores
             article.priority = result.priority
             article.read_now_reason = result.read_now_reason
             article.defer_reason = result.defer_reason
@@ -419,6 +420,7 @@ def _process_article(
     if result:
         article.topic = result.topic
         article.summary_3lines = result.summary_3lines
+        article.scores = result.scores
         article.priority = result.priority
         article.read_now_reason = result.read_now_reason
         article.defer_reason = result.defer_reason

@@ -74,7 +74,7 @@ Obtain an API key from one of the following providers:
 
 1. Go to [Google AI Studio](https://aistudio.google.com/apikey)
 2. **Create API Key** → **Create API key in new project**
-3. Recommended model: `gemini-2.5-flash`
+3. Recommended model: `gemini-3.5-flash-lite`
 
 > [!TIP]
 > You may need to link a Google Cloud billing account and [enable the Gemini API](https://console.cloud.google.com/apis/library/generativelanguage.googleapis.com).
@@ -83,13 +83,28 @@ Obtain an API key from one of the following providers:
 
 1. Go to [OpenAI API Keys](https://platform.openai.com/api-keys)
 2. **Create new secret key**
-3. Recommended model: `gpt-4.1-mini`
+3. Recommended model: `gpt-5.6-luna`
 
 **Anthropic**
 
 1. Go to [Anthropic Console](https://console.anthropic.com/settings/keys)
 2. **Create Key**
-3. Recommended model: `claude-haiku-4-5-20251001`
+3. Recommended model: `claude-haiku-4-5`
+
+#### Recommended models (as of July 2026)
+
+This tool does a 3-line summary plus 4-axis scoring, a few to a dozen articles per run. Expensive reasoning models are unnecessary, so the low-cost tier of each provider is recommended.
+
+| Provider | `LLM_MODEL` | Reference price (input / output, per 1M tokens) | Notes |
+|---|---|---|---|
+| `gemini` | `gemini-3.5-flash-lite` | $0.30 / $2.50 | **Recommended.** Has a free tier |
+| `openai` | `gpt-5.6-luna` | $1.00 / $6.00 | Cheapest tier of the GPT-5.6 family |
+| `anthropic` | `claude-haiku-4-5` | $1.00 / $5.00 | Cheapest Claude tier |
+
+For better triage quality, swap in a higher tier (`gemini-3.6-flash` / `gpt-5.6-terra` / `claude-sonnet-5`). Only `LLM_MODEL` changes — no code changes needed.
+
+> [!NOTE]
+> To cut costs further, Gemini also offers `gemini-2.5-flash-lite` ($0.10 / $0.40). Triage that requires reading full text and judging relatively tends to get coarse there, so validate with the recommended model first.
 
 ### 4. Configure environment variables
 
@@ -106,7 +121,7 @@ RAINDROP_TOKEN=your-raindrop-token
 RAINDROP_COLLECTION_ID=your-collection-id
 LLM_PROVIDER=gemini
 LLM_API_KEY=your-llm-api-key
-LLM_MODEL=gemini-2.5-flash
+LLM_MODEL=gemini-3.5-flash-lite
 ```
 
 > [!WARNING]
@@ -122,7 +137,7 @@ Add the following to your repository: Settings → Secrets and variables → Act
 | `RAINDROP_COLLECTION_ID` | Target collection ID |
 | `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` |
 | `LLM_API_KEY` | LLM API key |
-| `LLM_MODEL` | Model name (e.g. `gemini-2.5-flash`) |
+| `LLM_MODEL` | Model name (e.g. `gemini-3.5-flash-lite`) |
 
 ### 5. Verify
 
@@ -169,6 +184,34 @@ An article dashboard is generated at `docs/index.html`. Open it in a browser to 
 - Color-coded by priority (HIGH = red / MEDIUM = yellow / LOW = gray)
 - Filter buttons to narrow by priority
 - Each article shows a 3-line summary, read-now reason, defer reason, and keywords
+- A score (`8/12`) sits next to the priority badge; hover it for the per-axis breakdown
+
+## How priority is decided
+
+Asking the LLM to pick `high` / `medium` / `low` directly skews everything toward **high** — every article here was bookmarked, so all of them are at least somewhat interesting. Instead the LLM only scores four axes from 0 to 3, and the conversion to a priority happens deterministically in code ([`src/priority.py`](src/priority.py)).
+
+| Axis | What it measures |
+|---|---|
+| `novelty` | Is this a rehash of known material, or first-hand / original information? |
+| `relevance` | How close is the topic to day-to-day engineering work and writing? |
+| `depth` | Does the 3-line summary suffice, or is the full text needed? |
+| `actionability` | Are there concrete steps, settings, or numbers you can use as-is? |
+
+The 0–12 total maps to a priority with these thresholds:
+
+| Priority | Condition |
+|---|---|
+| `high` | Total ≥ 10 **and** `depth` ≥ 2 |
+| `medium` | Total 5–9 |
+| `low` | Total ≤ 4 |
+| Drop candidate | Total ≤ 2 |
+
+The `depth` condition means an article can be novel and highly relevant yet still land in `medium` if the summary already covers it.
+
+To make triage stricter or looser, tune the threshold constants in [`src/priority.py`](src/priority.py) (`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`) rather than editing the prompt.
+
+> [!NOTE]
+> Older data without `scores`, or a response where the LLM failed to emit them, falls back to the `priority` the LLM returned.
 
 ## Configuration
 
@@ -176,7 +219,7 @@ An article dashboard is generated at `docs/index.html`. Open it in a browser to 
 |---|---|---|
 | `RAINDROP_TOKEN` | Raindrop.io API test token | (required) |
 | `RAINDROP_COLLECTION_ID` | Target collection ID | (required) |
-| `LLM_PROVIDER` | `openai` / `gemini` / `anthropic` | `openai` |
+| `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` | `gemini` |
 | `LLM_API_KEY` | LLM API key | (required) |
 | `LLM_MODEL` | Model name | (required) |
 | `MAX_SUMMARIZE_PER_RUN` | Max articles to summarize per run | `10` |

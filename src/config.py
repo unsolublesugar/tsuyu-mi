@@ -8,7 +8,8 @@ class Config(BaseSettings):
 
     raindrop_token: str = ""
     raindrop_collection_id: int = 0
-    llm_provider: str = "openai"
+    # 無料枠があり本用途（要約 + 仕分け）に十分なため gemini を既定にする
+    llm_provider: str = "gemini"
     llm_api_key: str = ""
     llm_model: str = ""
     max_summarize_per_run: int = 10

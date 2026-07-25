@@ -74,7 +74,7 @@ pip install -e ".[dev]"
 
 1. [Google AI Studio](https://aistudio.google.com/apikey) にアクセス
 2. **Create API Key** → **Create API key in new project** を選択
-3. 推奨モデル: `gemini-2.5-flash`
+3. 推奨モデル: `gemini-3.5-flash-lite`
 
 > [!TIP]
 > Google Cloud の請求先アカウントの紐づけと [Gemini API の有効化](https://console.cloud.google.com/apis/library/generativelanguage.googleapis.com) が必要な場合があります。
@@ -83,13 +83,28 @@ pip install -e ".[dev]"
 
 1. [OpenAI API Keys](https://platform.openai.com/api-keys) にアクセス
 2. **Create new secret key** でキーを生成
-3. 推奨モデル: `gpt-4.1-mini`
+3. 推奨モデル: `gpt-5.6-luna`
 
 **Anthropic**
 
 1. [Anthropic Console](https://console.anthropic.com/settings/keys) にアクセス
 2. **Create Key** でキーを生成
-3. 推奨モデル: `claude-haiku-4-5-20251001`
+3. 推奨モデル: `claude-haiku-4-5`
+
+#### 推奨モデル一覧（2026年7月時点）
+
+本ツールの処理は「記事本文の 3 行要約 + 4 軸スコアリング」で、1 回の実行あたり数件〜十数件のバッチ処理です。高価な推論モデルは不要なので、各プロバイダーの低コスト帯を推奨します。
+
+| プロバイダー | `LLM_MODEL` | 参考料金（入力 / 出力, 1M トークン） | 備考 |
+|---|---|---|---|
+| `gemini` | `gemini-3.5-flash-lite` | $0.30 / $2.50 | **推奨。** 無料枠あり |
+| `openai` | `gpt-5.6-luna` | $1.00 / $6.00 | GPT-5.6 系の最安ティア |
+| `anthropic` | `claude-haiku-4-5` | $1.00 / $5.00 | Claude の最安ティア |
+
+判定の質を上げたい場合は上位モデル（`gemini-3.6-flash` / `gpt-5.6-terra` / `claude-sonnet-5`）に差し替えられます。`LLM_MODEL` を変えるだけで、コード変更は不要です。
+
+> [!NOTE]
+> より安く済ませたい場合、Gemini は `gemini-2.5-flash-lite`（$0.10 / $0.40）も使えます。ただし本文の読み込みと相対評価を伴う仕分けでは判定が粗くなりやすいので、まずは推奨モデルで運用結果を確認してください。
 
 ### 4. 環境変数の設定
 
@@ -106,7 +121,7 @@ RAINDROP_TOKEN=your-raindrop-token
 RAINDROP_COLLECTION_ID=your-collection-id
 LLM_PROVIDER=gemini
 LLM_API_KEY=your-llm-api-key
-LLM_MODEL=gemini-2.5-flash
+LLM_MODEL=gemini-3.5-flash-lite
 ```
 
 > [!WARNING]
@@ -122,7 +137,7 @@ LLM_MODEL=gemini-2.5-flash
 | `RAINDROP_COLLECTION_ID` | 対象コレクション ID |
 | `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` |
 | `LLM_API_KEY` | LLM の API キー |
-| `LLM_MODEL` | モデル名（例: `gemini-2.5-flash`） |
+| `LLM_MODEL` | モデル名（例: `gemini-3.5-flash-lite`） |
 
 ### 5. 動作確認
 
@@ -169,6 +184,34 @@ python -m src reprocess-failed
 - 優先度ごとに色分け（HIGH=赤 / MEDIUM=黄 / LOW=灰）
 - フィルタボタンで優先度別に絞り込み可能
 - 各記事に 3 行要約・今読む理由・後回し理由・キーワードを表示
+- 優先度バッジの横にスコア（`8/12` 形式）を表示。ホバーで軸ごとの内訳が見られます
+
+## 優先度の決まり方
+
+LLM に `high` / `medium` / `low` を直接選ばせると、ブックマーク済みの記事はどれも多少は興味を引くため判定が **high に偏ります**。そこで LLM には次の 4 軸を 0〜3 で採点させ、優先度への変換はコード側（[`src/priority.py`](src/priority.py)）で決定論的に行っています。
+
+| 軸 | 見るもの |
+|---|---|
+| `novelty` | 新規性。既知の再掲か、初出・独自の情報や視点があるか |
+| `relevance` | 関心の近さ。実務・制作・技術発信にどれだけ近いテーマか |
+| `depth` | 読む必要性。3 行要約で足りるか、本文まで読む必要があるか |
+| `actionability` | 活用度。手順・設定・数値など、そのまま使える具体性があるか |
+
+合計 0〜12 点から、次の閾値で優先度を決めます。
+
+| 優先度 | 条件 |
+|---|---|
+| `high` | 合計 10 点以上 **かつ** `depth` が 2 以上 |
+| `medium` | 合計 5〜9 点 |
+| `low` | 合計 4 点以下 |
+| ドロップ候補 | 合計 2 点以下 |
+
+`depth` の条件があるため、新規性や関心が高くても「要約で足りる」記事は `high` に上がらず `medium` に落ちます。
+
+仕分けの厳しさを変えたい場合は、プロンプトではなく [`src/priority.py`](src/priority.py) の閾値定数（`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`）を調整してください。
+
+> [!NOTE]
+> `scores` を含まない旧データや、LLM が `scores` を返せなかった場合は、LLM が返した `priority` をそのまま使うフォールバック動作になります。
 
 ## 設定
 
@@ -176,7 +219,7 @@ python -m src reprocess-failed
 |---|---|---|
 | `RAINDROP_TOKEN` | Raindrop.io API テストトークン | （必須） |
 | `RAINDROP_COLLECTION_ID` | 対象コレクション ID | （必須） |
-| `LLM_PROVIDER` | `openai` / `gemini` / `anthropic` | `openai` |
+| `LLM_PROVIDER` | `gemini` / `openai` / `anthropic` | `gemini` |
 | `LLM_API_KEY` | LLM の API キー | （必須） |
 | `LLM_MODEL` | 使用するモデル名 | （必須） |
 | `MAX_SUMMARIZE_PER_RUN` | 1 回の要約件数上限 | `10` |

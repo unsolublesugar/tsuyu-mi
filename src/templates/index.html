@@ -72,6 +72,9 @@
       <article class="card priority-{{ article.priority.value }}{% if article.drop_candidate %} drop-candidate{% endif %}" data-priority="{{ article.priority.value }}">
         <div class="card-header">
           <span class="priority-badge priority-{{ article.priority.value }}">{{ article.priority.value | upper }}</span>
+{%- if article.scores %}
+          <span class="priority-score" title="新規性 {{ article.scores.novelty }} / 関心の近さ {{ article.scores.relevance }} / 読む必要性 {{ article.scores.depth }} / 活用度 {{ article.scores.actionability }}">{{ article.scores.total }}/12</span>
+{%- endif %}
           {% if article.drop_candidate %}<span class="drop-badge">DROP</span>{% endif %}
           <span class="domain">{{ article.domain }}</span>
           <span class="date">{{ format_display(article.created_at) }}</span>

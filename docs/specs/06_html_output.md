@@ -20,6 +20,7 @@ Jinja2
 - 3 行要約
 - 主題（topic）
 - 優先度バッジ（high / medium / low）
+- 優先度スコア（`合計/12` 表記。`title` 属性に 4 軸の内訳。`scores` がある記事のみ表示）
 - 今読む理由（read_now_reason）
 - 後回し理由（defer_reason）
 - ドロップ候補かどうか
