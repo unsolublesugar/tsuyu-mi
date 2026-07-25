@@ -183,6 +183,7 @@ An article dashboard is generated at `docs/index.html`. Open it in a browser to 
 | `REQUEST_TIMEOUT_SECONDS` | HTTP request timeout (seconds) | `20` |
 | `USER_AGENT` | HTTP User-Agent header | `Tsuyu-mi/0.1` |
 | `OUTPUT_DIR` | HTML output directory | `docs` |
+| `SITE_URL` | Public site URL used for absolute OGP URLs | `https://unsolublesugar.github.io/tsuyu-mi/` |
 | `DATA_DIR` | Data storage directory | `data` |
 | `STATE_DIR` | State management directory | `state` |
 | `LOG_LEVEL` | Log level | `INFO` |

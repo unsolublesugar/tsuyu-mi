@@ -463,7 +463,7 @@ def _build_html(config: Config, repo: ArticleRepository, state: StateStore):
     """HTML を生成する。"""
     articles = repo.list_all()
     last_run = format_display(state.index.last_run_at) if state.index.last_run_at else ""
-    builder = HtmlBuilder(config.output_dir)
+    builder = HtmlBuilder(config.output_dir, site_url=config.site_url)
     return builder.build(articles, last_run_at=last_run)
 
 
