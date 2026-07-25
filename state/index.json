@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-25T18:20:11.291841Z",
+  "last_run_at": "2026-07-25T18:50:30.321760Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -370,7 +370,7 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-07-25T18:20:11.278651Z"
+      "updated_at": "2026-07-25T18:50:30.319321Z"
     },
     "1783046248": {
       "status": "summarized",
