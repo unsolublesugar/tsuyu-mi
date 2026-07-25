@@ -5,7 +5,7 @@
   "url": "https://zenn.dev/arufian/articles/4676070054c347",
   "domain": "zenn.dev",
   "created_at": "2026-07-19T12:30:51.230000Z",
-  "fetched_at": "2026-07-19T22:20:51.624693Z",
+  "fetched_at": "2026-07-25T18:55:05.235596Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,33 @@
   "content_chars": 8098,
   "content_hash": "sha256:3b5557f97e02ff7d009b7029a607e9014a476da675b2e1f2356f0d06cfa56bc7",
   "summary_input_type": "fulltext",
-  "topic": "Claude Codeのスキルとサブエージェントによる開発ワークフロー自動化とデリバリー速度向上",
+  "topic": "Claude Codeのスキルとサブエージェントを活用した開発ワークフローの自動化手法",
   "summary_3lines": [
-    "Claude Codeのスキルをオーケストレーター、サブエージェントを専門タスクのペルソナとして開発ワークフロー全体を自動化する仕組みを構築した。",
-    "設計からデプロイまでを標準化し、委譲ルール、ナレッジベース連携、成果物のファイル強制などの工夫で一貫性と品質を確保した。",
-    "運用を通じてハルシネーション対策や工程省略の防止策を導入し、結果としてデリバリー速度が約3倍に向上した事例が紹介されている。"
+    "Claude Codeのスキルとサブエージェントを組み合わせて開発プロセス全体をオーケストレーションする手法を解説している。",
+    "設計からデプロイまでの流れを自動化し、成果物の均一化や手戻りの削減によってデリバリー速度を3倍に向上させた。",
+    "運用を通じて得たナレッジベースによるハルシネーション対策やガードレールの実装など、実践的な改善プロセスを紹介している。"
   ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 3,
+    "depth": 2,
+    "actionability": 3
+  },
   "priority": "high",
-  "read_now_reason": "Claude Codeを用いたAI駆動開発の具体的なアーキテクチャ設計、運用課題とその解決策、さらにデリバリー速度向上の実績が詳細に解説されており、LLMを活用した開発プロセス改善に関心がある方にとって実践的な知見が豊富に含まれているため。",
-  "defer_reason": "Claude Codeの利用経験が少ない場合や、LLMを活用した開発プロセスの自動化を現時点で検討していない場合は、記事の詳細な技術的側面を理解し活用するのが難しい可能性があるため。",
+  "read_now_reason": "AI駆動開発におけるClaude Codeの具体的なワークフロー構築手法や実践的な設計パターンが詳細に解説されているため。",
+  "defer_reason": "現在のプロジェクトでClaude CodeやAIエージェントによる開発自動化を導入する予定がない場合は後回しでもよい。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "Claude Code",
     "AI駆動開発",
-    "開発ワークフロー自動化",
     "サブエージェント",
+    "ワークフロー自動化",
     "オーケストレーション"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-19T22:20:57.339609Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:06.598825Z",
   "manual_status": "untriaged",
   "notes": ""
 }

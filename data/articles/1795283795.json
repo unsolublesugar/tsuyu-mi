@@ -5,37 +5,43 @@
   "url": "https://zenn.dev/berry_blog/articles/39392e1da7ca71",
   "domain": "zenn.dev",
   "created_at": "2026-07-19T12:27:15.433000Z",
-  "fetched_at": "2026-07-19T22:21:08.044267Z",
+  "fetched_at": "2026-07-25T18:55:12.824586Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
   "content_status": "ok",
   "fetch_status": "ok",
   "extract_method": "trafilatura",
-  "content_chars": 15465,
-  "content_hash": "sha256:e6a749f4d21228128d9c54410a2062e3a12030a4a61e50f8af2231df82bfeb7c",
+  "content_chars": 16679,
+  "content_hash": "sha256:f6576da6c861bf09311cddc6db838f342e1ee78969e5bea87eb790b69ba989c2",
   "summary_input_type": "fulltext",
-  "topic": "PlaywrightによるE2Eテストの高速化・安定化とGitHub Actionsでの実践事例",
+  "topic": "PlaywrightとGitHub Actionsを活用したE2Eテスト高速化とCIチューニングの実践",
   "summary_3lines": [
-    "QMS SaaS開発チームが、約140テストケースのE2EテストをPRごとのCIで6〜8分で完走させる運用を実現した事例を紹介。",
-    "Playwrightの並列実行を前提としたテスト構造設計に加え、GitHub ActionsのRunnerとインフラ（PostgREST/Kong）の綿密なチューニングが核。",
-    "flakyテスト対策の「Iron Law」徹底とAIエージェントによる運用支援、影響範囲のみ実行するImpact Testsにより、高速かつ信頼性の高いE2Eテストサイクルを確立している。"
+    "テストのデータ独立設計とPlaywrightの並列化により、E2Eテストを6〜8分で完走させる仕組みを構築した。",
+    "GitHub ActionsのRunnerチューニングやPostgREST・Kongのインフラ課題への対策を詳細に解説している。",
+    "AIエージェントスキルや「Iron Law」を用いたflakyテスト防止策により、実務で運用可能な品質を維持している。"
   ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 3,
+    "actionability": 3
+  },
   "priority": "high",
-  "read_now_reason": "PlaywrightとGitHub Actionsを用いたE2Eテストの高速化・安定化に関する具体的な技術的課題とその解決策、運用ノウハウが詳細に解説されており、自身のプロジェクトにすぐ応用できる知見が豊富にあるため。",
-  "defer_reason": "",
+  "read_now_reason": "CIでのE2Eテスト高速化やインフラのボトルネック解消に関する具体的な設定・計測手法が詳細に書かれているため。",
+  "defer_reason": "E2Eテストの導入やCIチューニングを直近で行う予定がない場合は、実装時のリファレンスとして後回しでもよい。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "Playwright",
     "GitHub Actions",
     "E2Eテスト",
-    "並列化",
-    "flakyテスト"
+    "CI/CD",
+    "パフォーマンスチューニング"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-19T22:21:15.131262Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:14.208984Z",
   "manual_status": "untriaged",
   "notes": ""
 }

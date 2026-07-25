@@ -5,37 +5,43 @@
   "url": "https://qiita.com/kenimo49/items/d1151389d17e50ad5564",
   "domain": "qiita.com",
   "created_at": "2026-07-06T23:49:58.058000Z",
-  "fetched_at": "2026-07-07T22:27:16.426209Z",
+  "fetched_at": "2026-07-25T18:55:25.194586Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
   "content_status": "ok",
   "fetch_status": "ok",
   "extract_method": "trafilatura",
-  "content_chars": 5288,
-  "content_hash": "sha256:a349238277bd737ce72f5e7246ead9c934c015692bcb396dc70a67d0cdd69a1b",
+  "content_chars": 5394,
+  "content_hash": "sha256:79c0daef368ff178481ad417be5e739daaff7ba88f90219f25c32f3b026ef76a",
   "summary_input_type": "fulltext",
-  "topic": "1Passwordがマスターパスワードをサーバーに送信せずに認証するセキュリティ設計",
+  "topic": "1Passwordが採用するマスターパスワードを送信しない認証と暗号化の仕組み",
   "summary_3lines": [
-    "1Passwordは、ログイン時にマスターパスワードをサーバーに一度も送信せず、高いセキュリティとスムーズなUXを両立しています。",
-    "これは、ユーザー固有のSecret Keyを加味したTwo Secret Key Derivation (2SKD)と、秘密を明かさずに証明するSRPプロトコルによって実現されます。",
-    "結果として、サーバー侵害時にもオフラインでの総当たり攻撃が極めて困難となり、LastPassのインシデントのような大規模被害を防ぐ設計となっています。"
+    "1Passwordはログイン時にマスターパスワードをサーバへ送信せず、認証を行っている。",
+    "マスターパスワードと固有のSecret Keyを組み合わせる2SKDにより、サーバ側でのオフライン総当たり攻撃を防いでいる。",
+    "SRP-6aプロトコルを用いることで、パスワード等の秘密情報をネットワークに流さずに認証を成立させている。"
   ],
-  "priority": "high",
-  "read_now_reason": "パスワードマネージャーのセキュリティに関する誤解を解消し、より安全なツールの選定基準を理解できるため、すぐに読む価値があります。",
-  "defer_reason": "既にパスワードマネージャーの高度なセキュリティ設計について詳しい知識がある場合は、後回しでも良いでしょう。",
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 0
+  },
+  "priority": "medium",
+  "read_now_reason": "パスワードマネージャーの安全性を支える具体的な暗号化プロトコルや認証設計の仕組みを深く理解できるため。",
+  "defer_reason": "既存のセキュリティホワイトペーパーの内容を噛み砕いた解説であり、今すぐ実務での設定や実装に直結するものではないため。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "1Password",
-    "セキュリティ",
-    "マスターパスワード",
+    "パスワードマネージャー",
     "Secret Key",
-    "SRP"
+    "SRP",
+    "2SKD"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-07T22:27:23.100093Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:26.505607Z",
   "manual_status": "untriaged",
   "notes": ""
 }

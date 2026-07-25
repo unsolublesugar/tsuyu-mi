@@ -5,7 +5,7 @@
   "url": "https://zenn.dev/peishim/articles/37ff4d894f8fbc",
   "domain": "zenn.dev",
   "created_at": "2026-07-06T12:05:27.115000Z",
-  "fetched_at": "2026-07-07T22:27:25.670146Z",
+  "fetched_at": "2026-07-25T18:55:28.793380Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,33 @@
   "content_chars": 16353,
   "content_hash": "sha256:aacd604f7874ba4f514fe4b832499c276a5bae30482c4fc77fcd470c29759c3e",
   "summary_input_type": "fulltext",
-  "topic": "Generative UIの概念とOpenUIフレームワークを用いた実現方法",
+  "topic": "Generative UIフレームワーク「OpenUI」の仕組みと実装手順の解説",
   "summary_3lines": [
-    "Generative UIはAIがUI設計まで行う技術で、マークダウンでは困難な操作性の高いUI生成を可能にする。",
-    "OpenUIは、LLMが効率的にUIを生成するためのOpenUI Langと、定義済みコンポーネントを基盤とするフレームワークである。",
-    "コンポーネントを組み合わせる宣言型と、HTML/CSS/JSをAIに生成させるオープンエンド型の両アプローチをOpenUIで実現・検証できる。"
+    "AIがUIの構造まで考えて出力するGenerative UIと、それを実現するフレームワーク「OpenUI」の概要を解説している。",
+    "コンポーネントを組み合わせる宣言型と、HTML等を直接生成するオープンエンド型の2つの生成アプローチを実例で比較している。",
+    "OpenUIを用いたカスタムコンポーネントの定義方法やプロンプト設定、セキュリティ対策の実装手順を紹介している。"
   ],
-  "priority": "high",
-  "read_now_reason": "Generative UIの概念からOpenUIを用いた具体的な実装方法まで、実例を交えて体系的に理解できるため、最新技術のキャッチアップに役立つ。",
-  "defer_reason": "特になし。",
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "Generative UIの具体的な実装手法やコード例が詳細に解説されており、実際に動かして試すためのイメージが掴みやすいため。",
+  "defer_reason": "現在のプロジェクトでGenerative UIやOpenUIを直ちに導入する予定がない場合は、後回しにしても支障がないため。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "Generative UI",
     "OpenUI",
+    "React",
     "LLM",
-    "UI生成",
-    "宣言型UI"
+    "フロントエンド"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-07T22:27:33.695862Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:30.154306Z",
   "manual_status": "untriaged",
   "notes": ""
 }

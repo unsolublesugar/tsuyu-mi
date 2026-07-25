@@ -5,7 +5,7 @@
   "url": "https://blog.tsubotax.com/n/n53863aa059ff",
   "domain": "blog.tsubotax.com",
   "created_at": "2026-07-10T01:02:47.111000Z",
-  "fetched_at": "2026-07-13T22:22:12.035786Z",
+  "fetched_at": "2026-07-25T18:55:21.401170Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,33 @@
   "content_chars": 5064,
   "content_hash": "sha256:04563685145b895378efbf77123a889091e549334459cd495c31aef71df03b15",
   "summary_input_type": "fulltext",
-  "topic": "デザイナー以外がClaude Codeを活用し、デザインシステムに沿ったUIデザインを生成・運用する「ハーネス」の取り組み",
+  "topic": "非デザイナーでもClaude Codeでデザインシステムに沿ったUIを作成するための「ハーネス」運用の取り組み",
   "summary_3lines": [
-    "クラシルの坪田氏は、Claude Codeを用いて非デザイナーがデザインシステムに準拠したUIを生成できる「ハーネス」という仕組みを開発しました。",
-    "ハーネスは、AIがデザインシステムから逸脱しないよう「文脈」「制約」「検証」「フィードバック」の4層で構成され、高品質なUI生成を支援します。",
-    "この仕組みにより、自然言語でのUIプロトタイプ作成が可能になり、デザインと実装の乖離を防ぎつつ、人間の判断とAIの実行を分担し品質を維持しています。"
+    "デザイナーではないPdMやエンジニアがClaude Codeでデザインシステムに沿ったUIを作成できる環境「ハーネス」を構築し運用している。",
+    "ハーネスは文脈・制約・検証・フィードバックの4層構造で構成され、AIが迷わない環境と品質担保を実現している。",
+    "Figmaでの管理からコードベースでの一元管理へ移行し、人間が判断（What/Why、視覚品質の確認）に集中する分業体制をとっている。"
   ],
-  "priority": "high",
-  "read_now_reason": "AIを活用したデザインシステムの自動化と品質担保の具体的なアプローチが詳細に解説されており、プロダクト開発におけるAI活用の最先端事例として学ぶべき点が多いからです。",
-  "defer_reason": "AIやデザインシステムの専門知識がない場合、内容の理解に時間がかかり、具体的な導入を検討していない場合は優先度が低いかもしれません。",
+  "scores": {
+    "novelty": 2,
+    "relevance": 3,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "AIを活用したUIデザインのワークフロー構築において、具体的な「ハーネス」の仕組みや4層構造の実践知が得られるため。",
+  "defer_reason": "AIによるコード生成やデザインシステムの運用を直ちに行う予定がない場合は、後回しにしても差し支えないため。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "Claude Code",
+    "UIデザイン",
     "デザインシステム",
     "ハーネス",
-    "UIデザイン",
-    "AI活用"
+    "AIワークフロー"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-13T22:22:21.022142Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:22.900256Z",
   "manual_status": "untriaged",
   "notes": ""
 }

@@ -5,7 +5,7 @@
   "url": "https://newspicks.com/news/17130078/body/?from=twitter&invoker=share_twitter_uid120850&ref=user_120850",
   "domain": "newspicks.com",
   "created_at": "2026-07-21T00:01:34.008000Z",
-  "fetched_at": "2026-07-22T22:25:12.151251Z",
+  "fetched_at": "2026-07-25T18:55:01.273312Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,33 @@
   "content_chars": 3503,
   "content_hash": "sha256:62062c4bea4b5556cfe76fc3d97b9a2f37b9172cf54f289990d523eb3bfa2c75",
   "summary_input_type": "fulltext",
-  "topic": "AI時代のエンジニア採用市場と需要変化の実態",
+  "topic": "AI駆動開発時代におけるエンジニア採用の実態と求められるスキルの変化",
   "summary_3lines": [
-    "「エンジニア不要論」が一部で囁かれる中、ファインディの企業アンケートでは4割以上の企業が2026年度のエンジニア採用を増やすと回答しました。",
-    "企業はAIを「脅威」ではなく「機会」と捉え、8割以上がAI活用でアウトプット増を実感するものの、「大きく増えた」は3割弱に留まり、AIを使いこなすエンジニアの重要性が高まっています。",
-    "採用ではシニア・ミドル層の需要が増加する一方、ジュニア層の需要は減少傾向にあり、AI活用が当たり前となった今、コンピューターサイエンスの深い知識が改めて求められています。"
+    "ファインディの調査によると、AI活用により8割以上の企業で開発のアウトプットが増加し、43.3%がエンジニアの採用を増やす計画である。",
+    "シニア・ミドル層の需要が伸びる一方、ジュニア層の需要は低下しており、AIツールの活用やCSの基礎知識が選考で重視されるようになっている。",
+    "単にAIが使えるだけでなく、AIを駆使してプロダクトを実装できるスキルが求められるなど、採用市場の二極化が進んでいる。"
   ],
-  "priority": "high",
-  "read_now_reason": "AI時代のエンジニア需要や採用動向に関する最新の企業調査結果が示されており、キャリアや採用戦略を考える上で即座に役立つ情報だから。",
-  "defer_reason": "",
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "medium",
+  "read_now_reason": "AI時代のエンジニア採用に関する具体的な調査データと求められるスキルの変化トレンドをいち早く把握できるため。",
+  "defer_reason": "マクロな採用動向や意識調査が中心であり、今すぐ個人の開発実務に直結するノウハウが得られるわけではないため。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
     "エンジニア採用",
-    "AI活用",
-    "IT人材需要",
-    "エンジニア不要論",
+    "AI駆動開発",
+    "Findy",
+    "ジュニア需要減少",
     "コンピューターサイエンス"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-22T22:25:17.398690Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:02.795845Z",
   "manual_status": "untriaged",
   "notes": ""
 }

@@ -5,7 +5,7 @@
   "url": "https://zenn.dev/hashiiiii/articles/2efea432e7e5bf",
   "domain": "zenn.dev",
   "created_at": "2026-07-19T12:28:20.189000Z",
-  "fetched_at": "2026-07-19T22:20:59.767072Z",
+  "fetched_at": "2026-07-25T18:55:08.874393Z",
   "source_language": "",
   "output_language": "ja",
   "content_type": "article",
@@ -15,27 +15,33 @@
   "content_chars": 4416,
   "content_hash": "sha256:2e8873fadb728f626c0a9c945963ee0349cae9a40b780a3ee4163ffccbadb16b",
   "summary_input_type": "fulltext",
-  "topic": "UnityYAML AssetsのGitHubレビューを効率化するOSS「PrefabLens」の紹介",
+  "topic": "UnityYAMLアセットのGitHubレビューを快適にするOSS「PrefabLens」の開発",
   "summary_3lines": [
-    "UnityのPrefabやSceneなどのYAMLアセットのGitHub上でのレビューを容易にするOSS「PrefabLens」がプレリリースされました。",
-    "本ツールは、Chrome拡張、Unityプラグイン、CLIで構成され、差分を人間が読みやすい形で表示し、オブジェクト参照も解決します。",
-    "これにより、GitHubでのレビュー負荷の軽減、Unity Editor内でのセルフチェック、AI連携による効率的な変更確認を目指します。"
+    "UnityYAML形式のPrefabやSceneの差分を人間が読める形で表示するツール群「PrefabLens」がプレリリースされた。",
+    "Zig製のコアを採用し、Chrome拡張機能、Unityプラグイン、CLIの3つのインターフェースを提供する。",
+    "オブジェクト参照の解決や任意のref比較に対応し、レビューコストの削減やセルフチェックを可能にしている。"
   ],
-  "priority": "high",
-  "read_now_reason": "Unityアセットのレビューにおける長年の課題を解決し、開発効率を大幅に向上させる可能性のある革新的なツールだからです。",
-  "defer_reason": "まだPre-release段階であり、正式版リリースやGHES対応を待ってから詳細な導入を検討することも可能です。",
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "Unity開発におけるYAMLファイルのレビュー難という実務上の課題に対する具体的なOSSツール群の全貌が把握できるため。",
+  "defer_reason": "公式のプレリリース記事であり、実際の導入や詳細な設定はプロジェクトの状況に応じて後からでも十分に確認できるため。",
   "drop_candidate": false,
   "drop_reason": "",
   "keywords": [
-    "Unity",
     "PrefabLens",
-    "YAML",
+    "Unity",
+    "UnityYAML",
     "GitHub",
-    "コードレビュー"
+    "OSS"
   ],
   "model_provider": "gemini",
-  "model_name": "gemini-2.5-flash",
-  "summarized_at": "2026-07-19T22:21:05.679395Z",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-25T18:55:10.212968Z",
   "manual_status": "untriaged",
   "notes": ""
 }
