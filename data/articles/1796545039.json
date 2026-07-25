@@ -27,7 +27,7 @@
     "depth": 2,
     "actionability": 1
   },
-  "priority": "medium",
+  "priority": "low",
   "read_now_reason": "AI時代のエンジニア採用に関する具体的な調査データと求められるスキルの変化トレンドをいち早く把握できるため。",
   "defer_reason": "マクロな採用動向や意識調査が中心であり、今すぐ個人の開発実務に直結するノウハウが得られるわけではないため。",
   "drop_candidate": false,

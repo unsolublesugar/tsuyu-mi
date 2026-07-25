@@ -27,7 +27,7 @@
     "depth": 2,
     "actionability": 1
   },
-  "priority": "medium",
+  "priority": "low",
   "read_now_reason": "Godot Engineの商用利用やコンソール移植の現実的な課題、運営体制について当事者の見解が詳細に語られているため。",
   "defer_reason": "具体的な技術実装の手順やコード解説が含まれているわけではないため、今すぐ作業に直結するわけではない。",
   "drop_candidate": false,

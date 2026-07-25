@@ -27,7 +27,7 @@
     "depth": 2,
     "actionability": 0
   },
-  "priority": "medium",
+  "priority": "low",
   "read_now_reason": "パスワードマネージャーの安全性を支える具体的な暗号化プロトコルや認証設計の仕組みを深く理解できるため。",
   "defer_reason": "既存のセキュリティホワイトペーパーの内容を噛み砕いた解説であり、今すぐ実務での設定や実装に直結するものではないため。",
   "drop_candidate": false,

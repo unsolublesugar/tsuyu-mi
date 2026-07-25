@@ -27,7 +27,7 @@
     "depth": 2,
     "actionability": 1
   },
-  "priority": "medium",
+  "priority": "low",
   "read_now_reason": "AI開発や設計手法のパラダイムシフトについて独自の視点が得られるため。",
   "defer_reason": "抽象的な議論が中心であり、具体的な開発手法や手順が即座に得られるわけではないため。",
   "drop_candidate": false,
