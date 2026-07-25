@@ -5,7 +5,7 @@ from datetime import UTC, datetime
 
 from markupsafe import Markup
 
-from src.html_builder import HtmlBuilder, _render_inline_code
+from src.html_builder import DEFAULT_SITE_URL, HtmlBuilder, _render_inline_code
 from src.models import ContentType, Priority, ProcessedArticle, SummaryInputType
 
 
@@ -113,6 +113,42 @@ class TestHtmlBuilder:
             assert "drop-candidate" in html
             assert "DROP" in html
             assert "価値薄い" in html
+
+    def test_ogp_meta_tags(self):
+        """OGP / Twitter Card のメタタグが絶対 URL で出力される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            path = builder.build([_make_article(1)])
+            html = path.read_text()
+
+            assert '<meta name="description"' in html
+            assert '<meta property="og:type" content="website">' in html
+            assert '<meta property="og:title" content="Tsuyu-mi">' in html
+            assert f'<meta property="og:url" content="{DEFAULT_SITE_URL}">' in html
+            assert f'<meta property="og:image" content="{DEFAULT_SITE_URL}og.png">' in html
+            assert '<meta property="og:image:width" content="1200">' in html
+            assert '<meta property="og:image:height" content="630">' in html
+            assert '<meta name="twitter:card" content="summary_large_image">' in html
+            assert f'<meta name="twitter:image" content="{DEFAULT_SITE_URL}og.png">' in html
+            assert f'<link rel="canonical" href="{DEFAULT_SITE_URL}">' in html
+
+    def test_favicon_links(self):
+        """favicon 各種の link タグが出力される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            html = builder.build([]).read_text()
+            assert '<link rel="icon" type="image/svg+xml" href="favicon.svg">' in html
+            assert '<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">' in html
+            assert '<link rel="apple-touch-icon" href="apple-touch-icon.png">' in html
+
+    def test_custom_site_url_normalized(self):
+        """site_url を差し替えると OGP の絶対 URL に反映され、末尾スラッシュが正規化される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir, site_url="https://example.com/mysite")
+            html = builder.build([]).read_text()
+            assert '<meta property="og:url" content="https://example.com/mysite/">' in html
+            assert '<meta property="og:image" content="https://example.com/mysite/og.png">' in html
+            assert DEFAULT_SITE_URL not in html
 
     def test_inline_code_in_summary(self):
         with tempfile.TemporaryDirectory() as tmpdir:

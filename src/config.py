@@ -15,6 +15,8 @@ class Config(BaseSettings):
     request_timeout_seconds: int = 20
     user_agent: str = "Tsuyu-mi/0.1"
     output_dir: str = "docs"
+    # OGP の絶対 URL 生成に使う公開サイト URL（フォーク時は SITE_URL で上書きする）
+    site_url: str = "https://unsolublesugar.github.io/tsuyu-mi/"
     data_dir: str = "data"
     state_dir: str = "state"
     log_level: str = "INFO"

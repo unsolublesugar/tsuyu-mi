@@ -62,3 +62,41 @@ HTML のヘッダーに以下を表示:
 - 要約済み件数
 - スキップ件数
 - 最終実行日時
+
+## OGP / favicon
+
+SNS・チャットのカードビューでリンクを共有した際にサムネイルを表示するため、`<head>` に以下を出力する。
+
+### メタタグ
+
+- `meta name="description"` / `link rel="canonical"`
+- OGP: `og:type`(website) / `og:site_name` / `og:title` / `og:description` / `og:url` / `og:image` / `og:image:width`(1200) / `og:image:height`(630) / `og:image:alt` / `og:locale`(ja_JP)
+- Twitter Card: `twitter:card`(summary_large_image) / `twitter:title` / `twitter:description` / `twitter:image`
+
+`og:url` / `og:image` は絶対 URL が必須。基点となる公開サイト URL は `Config.site_url`（環境変数 `SITE_URL`、既定値 `https://unsolublesugar.github.io/tsuyu-mi/`）から取得し、`HtmlBuilder` が末尾スラッシュを正規化した上でテンプレートへ渡す。フォークして別ドメインに公開する場合は `SITE_URL` を上書きする。
+
+タイトル・説明文は `src/html_builder.py` の `SITE_TITLE` / `SITE_DESCRIPTION` 定数で定義する。
+
+### 静的アセット
+
+`docs/` 配下に配置し、GitHub Pages からそのまま配信する（`HtmlBuilder` は生成しない）。
+
+| ファイル | 用途 | サイズ |
+| --- | --- | --- |
+| `docs/og.png` | OGP 画像 | 1200×630 |
+| `docs/favicon.svg` | favicon（ベクタ） | 64×64 viewBox |
+| `docs/favicon-32.png` | favicon（PNG フォールバック） | 32×32 |
+| `docs/apple-touch-icon.png` | iOS ホーム画面アイコン | 180×180 |
+
+### OG 画像の更新手順
+
+デザイン原本はリポジトリルートの `og.html`（1200×630 固定レイアウト、配色は `docs/styles.css` に準拠）。
+編集後、ヘッドレスブラウザでレンダリングして `docs/og.png` を差し替える。
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless --disable-gpu --hide-scrollbars --virtual-time-budget=4000 \
+  --screenshot=docs/og.png --window-size=1200,630 "file://$PWD/og.html"
+```
+
+記事件数などの動的な値は焼き込まず、静的な 1 枚として運用する（CI に画像生成ステップを持たせない）。

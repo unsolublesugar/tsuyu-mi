@@ -183,6 +183,7 @@ python -m src reprocess-failed
 | `REQUEST_TIMEOUT_SECONDS` | HTTP リクエストタイムアウト | `20` |
 | `USER_AGENT` | HTTP リクエストの User-Agent | `Tsuyu-mi/0.1` |
 | `OUTPUT_DIR` | HTML 出力先ディレクトリ | `docs` |
+| `SITE_URL` | OGP の絶対 URL に使う公開サイト URL | `https://unsolublesugar.github.io/tsuyu-mi/` |
 | `DATA_DIR` | データ保存ディレクトリ | `data` |
 | `STATE_DIR` | 状態管理ディレクトリ | `state` |
 | `LOG_LEVEL` | ログレベル | `INFO` |
