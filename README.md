@@ -202,13 +202,15 @@ The 0–12 total maps to a priority with these thresholds:
 | Priority | Condition |
 |---|---|
 | `high` | Total ≥ 10 **and** `depth` ≥ 2 |
-| `medium` | Total 5–9 |
-| `low` | Total ≤ 4 |
+| `medium` | Total 8–9 |
+| `low` | Total ≤ 7 |
 | Drop candidate | Total ≤ 2 |
 
 The `depth` condition means an article can be novel and highly relevant yet still land in `medium` if the summary already covers it.
 
-To make triage stricter or looser, tune the threshold constants in [`src/priority.py`](src/priority.py) (`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`) rather than editing the prompt.
+The `medium` floor is 8 rather than the theoretical midpoint (6) because of measured behavior: the LLM gravitates to 2 on every axis, so real totals cluster in 5–10 instead of spreading across 0–12 (median 8 over 15 articles, per-axis mean 1.8–2.2). With the midpoint as the boundary, nothing ever landed in `low`.
+
+To make triage stricter or looser, tune the threshold constants in [`src/priority.py`](src/priority.py) (`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`) rather than editing the prompt. Changing the prompt's scoring rubric shifts the distribution too, so tune the two together.
 
 > [!NOTE]
 > Older data without `scores`, or a response where the LLM failed to emit them, falls back to the `priority` the LLM returned.
