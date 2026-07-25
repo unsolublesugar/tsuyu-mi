@@ -202,13 +202,15 @@ LLM に `high` / `medium` / `low` を直接選ばせると、ブックマーク�
 | 優先度 | 条件 |
 |---|---|
 | `high` | 合計 10 点以上 **かつ** `depth` が 2 以上 |
-| `medium` | 合計 5〜9 点 |
-| `low` | 合計 4 点以下 |
+| `medium` | 合計 8〜9 点 |
+| `low` | 合計 7 点以下 |
 | ドロップ候補 | 合計 2 点以下 |
 
 `depth` の条件があるため、新規性や関心が高くても「要約で足りる」記事は `high` に上がらず `medium` に落ちます。
 
-仕分けの厳しさを変えたい場合は、プロンプトではなく [`src/priority.py`](src/priority.py) の閾値定数（`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`）を調整してください。
+`medium` の下限が理論値の中間（6）ではなく 8 なのは実測に基づきます。LLM は各軸に 2 を付けたがるため、実際の合計は 0〜12 に散らず 5〜10 に固まります（15 件の実測で中央値 8、軸別平均 1.8〜2.2）。中間を境界にすると `low` が一件も出ませんでした。
+
+仕分けの厳しさを変えたい場合は、プロンプトではなく [`src/priority.py`](src/priority.py) の閾値定数（`HIGH_TOTAL_MIN` / `MEDIUM_TOTAL_MIN` / `HIGH_DEPTH_MIN` / `DROP_TOTAL_MAX`）を調整してください。プロンプトの採点基準を変えるとスコア分布も動くので、両者はセットで調整します。
 
 > [!NOTE]
 > `scores` を含まない旧データや、LLM が `scores` を返せなかった場合は、LLM が返した `priority` をそのまま使うフォールバック動作になります。

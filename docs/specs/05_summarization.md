@@ -94,13 +94,23 @@ LLM に `high` / `medium` / `low` を直接選ばせると、ブックマーク�
 |---|---|---|
 | `HIGH_TOTAL_MIN` | 10 | high の合計下限 |
 | `HIGH_DEPTH_MIN` | 2 | high に必要な `depth` の下限 |
-| `MEDIUM_TOTAL_MIN` | 5 | medium の合計下限 |
+| `MEDIUM_TOTAL_MIN` | 8 | medium の合計下限 |
 | `DROP_TOTAL_MAX` | 2 | ドロップ候補の合計上限 |
 
 - `high`: 合計 10 点以上 **かつ** `depth` >= 2（要約で足りる記事は high に上げない）
-- `medium`: 合計 5〜9 点
-- `low`: 合計 4 点以下
+- `medium`: 合計 8〜9 点
+- `low`: 合計 7 点以下
 - `drop_candidate`: 合計 2 点以下、または LLM が明示的に true を返した場合
+
+### 閾値のキャリブレーション
+
+`MEDIUM_TOTAL_MIN` は理論値の中間（6）ではなく実測に基づく 8 とする。
+
+LLM は各軸に 2 を付けたがるため、合計は 0〜12 に散らず 5〜10 に固まる（15 件の実測で最小 5 / 中央 8 / 最大 10、軸別平均 novelty 1.93 / relevance 2.20 / depth 2.07 / actionability 1.80）。理論値の中間を境界にすると `low` が一件も出なかった。
+
+同じ理由で `HIGH_DEPTH_MIN` のゲートと `DROP_TOTAL_MAX` は現状ほぼ発火しない（depth は 15 件中 14 件が 2、合計の最小が 5 のため）。スコアが下側に散るようになれば効き始める。
+
+プロンプトの採点基準を変えるとこの分布も動くため、閾値とプロンプトはセットで調整し、変更後は実データで分布を確認すること。
 
 ### フォールバック
 

@@ -33,16 +33,17 @@ class TestDecidePriority:
         [
             # 満点は high
             (_scores(3, 3, 3, 3), Priority.high),
-            # 合計 10 かつ depth 2 以上 → high
+            # 合計 10 かつ depth 2 以上 → high（high の下限）
             (_scores(3, 3, 2, 2), Priority.high),
             # 合計 9 は high に届かない
             (_scores(3, 3, 2, 1), Priority.medium),
-            # 平均的な記事（合計 5〜9）は medium
-            (_scores(2, 2, 1, 2), Priority.medium),
-            (_scores(1, 2, 1, 1), Priority.medium),
-            # 合計 4 以下は low
+            # 合計 8 は medium の下限
+            (_scores(2, 2, 2, 2), Priority.medium),
+            # 合計 7 は low に落ちる
+            (_scores(2, 2, 2, 1), Priority.low),
+            (_scores(2, 2, 1, 2), Priority.low),
+            # 低スコアはもちろん low
             (_scores(1, 1, 1, 1), Priority.low),
-            (_scores(1, 1, 0, 0), Priority.low),
             (_scores(0, 0, 0, 0), Priority.low),
         ],
     )
