@@ -17,9 +17,12 @@ class LLMProvider(Protocol):
 
 ### 実装
 
-- `OpenAIProvider`: openai SDK
-- `GeminiProvider`: google-generativeai SDK
-- `AnthropicProvider`: anthropic SDK
+- `OpenAIProvider`: openai SDK。`response_format={"type": "json_object"}` で JSON を強制する。
+  **`temperature` は渡さない** — GPT-5 系（推論モデル）は既定値以外を受け付けず 400 になる。
+- `GeminiProvider`: google-genai SDK。`response_mime_type="application/json"` で JSON を強制する。
+- `AnthropicProvider`: anthropic SDK。thinking が既定で有効なモデル（Claude Opus 5 など）では
+  `content[0]` が thinking ブロックになるため、**最初の `text` ブロックを探して返す**。
+  `stop_reason == "refusal"` は例外にしてリトライ経路へ流す。
 
 ### Factory
 
@@ -36,18 +39,20 @@ def create_provider(config: Config) -> LLMProvider:
 ### summarize_full.txt
 
 本文全文がある場合に使用。以下を要求:
+
 - topic: 主題
 - summary_3lines: 3 行要約（簡潔に、感想文にしない、事実ベース）
-- priority: high / medium / low
+- scores: 優先度判定の 4 軸スコア（novelty / relevance / depth / actionability、各 0〜3）
 - read_now_reason: 今読む価値の理由
 - defer_reason: 後回しでよい理由
 - drop_candidate: boolean
 - drop_reason: ドロップ候補の理由
 - keywords: キーワード 3〜5 個
+- priority: high / medium / low（scores から再計算されるためフォールバック用）
 
 ### summarize_fallback.txt
 
-メタデータのみの場合に使用。「本文未取得前提」であることを明示。
+メタデータのみの場合に使用。「本文未取得前提」であることを明示。scores は確信の持てない軸を低め（0〜1）に付けるよう追加で指示する。
 
 ## 出力フォーマット
 
@@ -61,26 +66,45 @@ JSON 固定。Pydantic の `SummaryResult` でバリデーション。
 - 英語記事でも直訳調にしすぎない
 - 事実不明な断定を避ける
 
-## 優先度判定基準
+## 優先度判定
 
-### high（今読む価値が高い）
+### 方式: スコアリング + 決定論的変換
 
-- 新規性が高い
-- 関心領域と近い
-- 今後の発信や調査に活かせる
-- 実務や制作に影響がある
-- 要約だけでは足りず、本文を読む価値がある
+LLM に `high` / `medium` / `low` を直接選ばせると、ブックマーク済みの記事はどれも多少は興味を引くため判定が **high に偏る**（実測で 15 件中 14 件が high）。そのため次の 2 段構成にする。
 
-### medium（時間があれば読む価値がある）
+1. LLM は 4 軸（`novelty` / `relevance` / `depth` / `actionability`）を **0〜3 で採点するだけ**
+2. `src/priority.py` がスコアから `priority` と `drop_candidate` を決定論的に導出する
 
-- 要点は短く把握できる
-- 深掘り前提でまとまった時間が必要
+閾値がコード側にあるため、仕分けの厳しさはプロンプトを触らずに調整でき、ユニットテストで保証できる。
 
-### low（要約把握で十分、後回しでよい）
+### 採点基準（プロンプト側）
 
-- 内容の重複度が高そう
-- 関心軸から遠い
-- 速報性が過ぎて後追い価値が低い
+| 点 | 意味 |
+|---|---|
+| 0 | 該当しない、またはむしろ逆 |
+| 1 | 少しは当てはまる（多くの記事はここ） |
+| 2 | 明確に当てはまる |
+| 3 | 例外的に強く当てはまる（滅多に付けない） |
+
+プロンプトでは「ブックマーク済みゆえに全体的に高く付けたくなる」ことを明示し、**相対評価**で平均的な記事を合計 5〜8 に収めるよう指示する。フォールバック（本文未取得）プロンプトでは、判断材料が乏しいため確信の持てない軸は低め（0〜1）に付けるよう追加で指示する。
+
+### 閾値（`src/priority.py`）
+
+| 定数 | 値 | 用途 |
+|---|---|---|
+| `HIGH_TOTAL_MIN` | 10 | high の合計下限 |
+| `HIGH_DEPTH_MIN` | 2 | high に必要な `depth` の下限 |
+| `MEDIUM_TOTAL_MIN` | 5 | medium の合計下限 |
+| `DROP_TOTAL_MAX` | 2 | ドロップ候補の合計上限 |
+
+- `high`: 合計 10 点以上 **かつ** `depth` >= 2（要約で足りる記事は high に上げない）
+- `medium`: 合計 5〜9 点
+- `low`: 合計 4 点以下
+- `drop_candidate`: 合計 2 点以下、または LLM が明示的に true を返した場合
+
+### フォールバック
+
+`scores` が無い場合（旧データ、LLM が出力できなかった場合）は、LLM が返した `priority` をそのまま採用する。プロンプトは互換のため `priority` フィールドも引き続き要求する。
 
 ## エラーハンドリング
 

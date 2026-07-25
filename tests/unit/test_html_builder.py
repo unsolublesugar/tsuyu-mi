@@ -6,7 +6,13 @@ from datetime import UTC, datetime
 from markupsafe import Markup
 
 from src.html_builder import DEFAULT_SITE_URL, HtmlBuilder, _render_inline_code
-from src.models import ContentType, Priority, ProcessedArticle, SummaryInputType
+from src.models import (
+    ContentType,
+    Priority,
+    PriorityScores,
+    ProcessedArticle,
+    SummaryInputType,
+)
 
 
 def _make_article(rid: int, priority: Priority = Priority.medium, **kwargs) -> ProcessedArticle:
@@ -157,3 +163,21 @@ class TestHtmlBuilder:
             path = builder.build(articles)
             html = path.read_text()
             assert "<code>cmux</code>" in html
+
+
+class TestPriorityScoreDisplay:
+    def test_renders_score_when_present(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            scores = PriorityScores(novelty=3, relevance=2, depth=2, actionability=1)
+            html = builder.build([_make_article(1, scores=scores)]).read_text()
+            assert "priority-score" in html
+            assert "8/12" in html
+            assert "新規性 3" in html
+
+    def test_omits_score_when_absent(self):
+        """scores を持たない旧データでもレンダリングできる。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            html = builder.build([_make_article(1)]).read_text()
+            assert "priority-score" not in html

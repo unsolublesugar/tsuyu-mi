@@ -7,6 +7,7 @@ from typing import Protocol
 
 from src.config import Config
 from src.models import SummaryResult
+from src.priority import decide_priority, is_drop_candidate
 
 logger = logging.getLogger("raindrop_summarizer")
 
@@ -30,10 +31,10 @@ class OpenAIProvider:
         self.model = config.llm_model
 
     def generate(self, prompt: str) -> str:
+        # temperature は GPT-5 系（推論モデル）では既定値以外を受け付けず 400 になるため渡さない
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.3,
             response_format={"type": "json_object"},
         )
         return response.choices[0].message.content or ""
@@ -52,6 +53,8 @@ class GeminiProvider:
         response = self.client.models.generate_content(
             model=self.model_name,
             contents=prompt,
+            # JSON モードを明示。コードブロックや前置きが混ざるのを防ぐ
+            config={"response_mime_type": "application/json"},
         )
         return response.text or ""
 
@@ -68,10 +71,17 @@ class AnthropicProvider:
     def generate(self, prompt: str) -> str:
         response = self.client.messages.create(
             model=self.model,
-            max_tokens=1024,
+            max_tokens=4096,
             messages=[{"role": "user", "content": prompt}],
         )
-        return response.content[0].text if response.content else ""
+        if response.stop_reason == "refusal":
+            raise RuntimeError("Anthropic API がリクエストを拒否しました (stop_reason=refusal)")
+        # thinking が既定で有効なモデルでは content[0] が thinking ブロックになるため、
+        # 先頭決め打ちではなく最初の text ブロックを探す
+        for block in response.content:
+            if getattr(block, "type", "") == "text":
+                return block.text
+        return ""
 
 
 def create_provider(config: Config) -> LLMProvider:
@@ -155,4 +165,12 @@ def _parse_response(raw: str) -> SummaryResult:
         text = text[start:end].strip()
 
     data = json.loads(text)
-    return SummaryResult.model_validate(data)
+    result = SummaryResult.model_validate(data)
+
+    # scores があれば priority / drop_candidate はコード側で決定論的に導出する。
+    # LLM が返した priority は scores を出力できなかった場合のフォールバック。
+    if result.scores is not None:
+        result.priority = decide_priority(result.scores)
+        result.drop_candidate = result.drop_candidate or is_drop_candidate(result.scores)
+
+    return result
