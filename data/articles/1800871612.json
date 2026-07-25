@@ -1,0 +1,41 @@
+{
+  "raindrop_id": 1800871612,
+  "collection_id": 56182051,
+  "title": "The new rules of context engineering for Claude 5 generation models | Claude by Anthropic",
+  "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+  "domain": "claude.com",
+  "created_at": "2026-07-25T02:29:02.605000Z",
+  "fetched_at": "2026-07-25T18:20:01.856272Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 9622,
+  "content_hash": "sha256:4304f97bfb6d386e6c6c9c3bf64d472cba0d45a8010deaf20e591fc8ba5b6041",
+  "summary_input_type": "fulltext",
+  "topic": "Claude 5世代モデル向けのコンテキストエンジニアリングにおける新しいベストプラクティス",
+  "summary_3lines": [
+    "Anthropicは、Claude 5世代モデル向けに、システムプロンプトの80%削減など、より効率的なコンテキストエンジニアリングの新ルールを発表しました。",
+    "新しいモデルは判断力が向上しているため、以前のモデルで必要だった過度な制約や繰り返し指示は不要となり、モデルに判断を委ねることが推奨されます。",
+    "コンテキストは必要な時にロードする「プログレッシブ開示」を活用し、ツールはインターフェース設計を重視し、CLAUDE.md、スキル、参照を最適化することが重要です。"
+  ],
+  "priority": "high",
+  "read_now_reason": "Claude 5世代モデルの効率的な利用方法が具体的に示されており、現在のコンテキストエンジニアリングを最適化するための即時適用可能なベストプラクティスが学べるため。",
+  "defer_reason": "特になし。Claudeユーザーであればすぐに読む価値があります。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude 5",
+    "コンテキストエンジニアリング",
+    "プロンプトエンジニアリング",
+    "プログレッシブ開示",
+    "システムプロンプト"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-2.5-flash",
+  "summarized_at": "2026-07-25T18:20:08.887165Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
