@@ -93,9 +93,6 @@
               <span class="domain">{{ article.domain }}</span>
               <span class="sep">·</span>
               <span class="date">{{ format_display(article.created_at) }}</span>
-{%- if article.scores %}
-              <span class="score-inline">スコア <strong>{{ article.scores.total }}</strong>/12</span>
-{%- endif %}
             </div>
 
             <h2 class="card-title">

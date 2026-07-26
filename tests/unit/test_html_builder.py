@@ -176,10 +176,10 @@ class TestPriorityScoreDisplay:
             builder = HtmlBuilder(output_dir=tmpdir)
             scores = PriorityScores(novelty=3, relevance=2, depth=2, actionability=1)
             html = builder.build([_make_article(1, scores=scores)]).read_text()
-            # 合計スコアはスコアパネル（PC）とメタ行（SP）の両方に出る
+            # 合計スコアはスコアパネル内の 1 箇所のみ（SP でも 4 軸パラメータの見出しとして出す）
             assert "score-panel" in html
-            assert "score-inline" in html
-            assert html.count("<strong>8</strong>") == 2
+            assert "score-inline" not in html
+            assert html.count("<strong>8</strong>") == 1
 
     def test_renders_four_axes_as_bars(self):
         """4 軸スコアは hover ではなくバー UI（.fill.sN）で常時表示される。"""

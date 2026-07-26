@@ -251,18 +251,6 @@ body {
   color: #a83a3a;
 }
 
-.score-inline {
-  display: none;
-  margin-left: auto;
-  font-size: 12px;
-}
-
-.score-inline strong {
-  font-size: 14px;
-  color: #16324a;
-  font-variant-numeric: tabular-nums;
-}
-
 .card-title {
   margin: 12px 0;
   font-size: 17.5px;
@@ -590,10 +578,6 @@ footer .footer-icon-link:hover {
     display: block;
   }
 
-  .score-inline {
-    display: inline;
-  }
-
   .card-title {
     font-size: 15.5px;
   }
@@ -612,8 +596,9 @@ footer .footer-icon-link:hover {
     padding-top: 12px;
   }
 
+  /* スコア合計はカード右上ではなく 4 軸パラメータの見出しとして置く */
   .score-total {
-    display: none;
+    margin-bottom: 10px;
   }
 
   /* 狭い画面では 2 列に、さらに狭ければ自動で 1 列へ落とす */
