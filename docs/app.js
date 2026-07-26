@@ -3,7 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
   const articles = document.querySelector(".articles");
   const statsCount = document.getElementById("stats-count");
+  const statsTotal = document.getElementById("stats-total");
   const totalCount = cards.length;
+
+  // タブごとの件数バッジを埋める
+  buttons.forEach((btn) => {
+    const filter = btn.dataset.filter;
+    const count = filter === "all"
+      ? totalCount
+      : document.querySelectorAll(`.card[data-priority="${filter}"]`).length;
+    const badge = btn.querySelector(".tab-count");
+    if (badge) badge.textContent = count;
+  });
+
+  if (statsTotal) statsTotal.textContent = totalCount;
 
   // フィルター結果が0件の場合に表示するメッセージ要素
   const emptyMsg = document.createElement("p");
@@ -22,11 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     emptyMsg.style.display = visibleCount === 0 ? "block" : "none";
-    if (statsCount) {
-      statsCount.textContent = filter === "all"
-        ? `${totalCount} 件`
-        : `${visibleCount} / ${totalCount} 件`;
-    }
+    if (statsCount) statsCount.textContent = visibleCount;
   }
 
   buttons.forEach((btn) => {
