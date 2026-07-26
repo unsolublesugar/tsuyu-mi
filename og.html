@@ -13,6 +13,11 @@
 
   配色は docs/styles.css のデザイントークンに揃えている
   （背景 #f2f5f9 / 主文字 #16324a / アクセント #1370b8 / 淡色の優先度チップ）。
+
+  レイアウトは「中央セーフゾーン」前提:
+  ブログ等のカードビューでは中央を基準に左右が見切れることが多いため、
+  ロゴ・コピー・チップなどの重要情報は中央 630px（1:1 クロップ相当）に収め、
+  左右端のミニカードは見切れてもよい装飾として扱う。
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,14 +39,22 @@
     border: 1px solid #e2e9f1;
     border-radius: 24px;
     box-shadow: 0 1px 2px rgba(16, 42, 67, 0.05);
-    padding: 44px 56px;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
   }
 
-  /* ---- ヘッダー ---- */
-  .head { display: flex; align-items: center; gap: 16px; }
-  .logo { width: 56px; height: 56px; flex: none; }
+  /* ---- 中央セーフゾーン（重要情報はすべてここに置く） ---- */
+  .center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 26px; /* フッター分の光学調整 */
+  }
+  .head { display: flex; align-items: center; gap: 14px; }
+  .logo { width: 50px; height: 50px; flex: none; }
   .brand-title {
     font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
     font-size: 30px;
@@ -51,28 +64,26 @@
   .brand-sub {
     font-size: 14px;
     color: #6d7f90;
-    margin-top: 3px;
+    margin-top: 12px;
   }
 
-  /* ---- 本体 ---- */
-  .body { flex: 1; display: flex; align-items: center; gap: 48px; margin-top: 4px; }
-  .lead { flex: 1.05; min-width: 0; }
   /* 見出しは OGP の縮小表示でも潰れないよう Noto Sans JP 900 を使う
      （Zen Kaku Gothic New 700 は線が細く視認性が落ちる） */
-  .lead h1 {
-    font-size: 46px;
+  .center h1 {
+    margin-top: 22px;
+    font-size: 50px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.34;
     letter-spacing: -0.02em;
   }
-  .lead h1 .accent { color: #1370b8; }
-  .lead p {
-    margin-top: 20px;
+  .center h1 .accent { color: #1370b8; }
+  .center p {
+    margin-top: 16px;
     font-size: 18px;
     line-height: 1.75;
     color: #3d4f60;
   }
-  .chips { display: flex; gap: 10px; margin-top: 26px; }
+  .chips { display: flex; gap: 10px; margin-top: 24px; justify-content: center; }
   .chip {
     display: inline-flex;
     align-items: center;
@@ -91,8 +102,17 @@
   .chip.low { background: #edf1f4; color: #5b6b7a; }
   .chip.low .dot { background: #93a3b2; }
 
-  /* ---- 右カラム: 記事カードのミニチュア ---- */
-  .preview { flex: 0.95; display: flex; flex-direction: column; gap: 14px; }
+  /* ---- 左右端の装飾: 記事カードのミニチュア（見切れてよい） ---- */
+  .deco {
+    position: absolute;
+    top: 50%;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .deco.left { left: -84px; transform: translateY(-50%) rotate(-5deg); }
+  .deco.right { right: -84px; transform: translateY(-50%) rotate(5deg); }
   .mini {
     background: #fff;
     border: 1px solid #e2e9f1;
@@ -144,106 +164,123 @@
   }
   .mini.low .bar span { background: #8fb4d4; }
 
-  /* ---- フッター ---- */
+  /* ---- フッター（中央 1 行。セーフゾーン内に収める） ---- */
   .foot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 34px;
+    text-align: center;
     font-size: 14px;
     color: #93a3b2;
   }
+  .foot .sep { margin: 0 10px; color: #cfdae6; }
 </style>
 </head>
 <body>
 <div class="card">
 
-  <div class="head">
-    <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
-      <defs>
-        <linearGradient id="drop" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#2CD4ED"/>
-          <stop offset="55%" stop-color="#0DB4E2"/>
-          <stop offset="100%" stop-color="#3169FF"/>
-        </linearGradient>
-      </defs>
-      <rect width="64" height="64" rx="14" fill="url(#drop)"/>
-      <path d="M32 12c0 0 2.5 6 9.4 15.4 3.8 5.2 5.6 8.8 5.6 12.1C47 47.5 40.3 53.5 32 53.5S17 47.5 17 39.5c0-3.3 1.8-6.9 5.6-12.1C29.5 18 32 12 32 12z" fill="#fff" opacity="0.97"/>
-      <circle cx="25.8" cy="40.5" r="4.4" fill="#0DB4E2" opacity="0.3"/>
-    </svg>
-    <div>
-      <div class="brand-title">Tsuyu-mi</div>
-      <div class="brand-sub">Raindrop.io &times; AI 要約ダッシュボード</div>
+  <div class="deco left">
+    <div class="mini high">
+      <div class="mini-main">
+        <div class="mini-head">
+          <span class="mini-badge"><span class="dot"></span>HIGH</span>
+          <span class="mini-domain">zenn.dev</span>
+        </div>
+        <div class="mini-title" style="width: 86%"></div>
+        <div class="mini-line" style="width: 96%"></div>
+        <div class="mini-line" style="width: 78%"></div>
+      </div>
+      <div class="mini-axes">
+        <div class="bar"><span style="width: 100%"></span></div>
+        <div class="bar"><span style="width: 67%"></span></div>
+        <div class="bar"><span style="width: 100%"></span></div>
+        <div class="bar"><span style="width: 67%"></span></div>
+      </div>
+    </div>
+    <div class="mini medium">
+      <div class="mini-main">
+        <div class="mini-head">
+          <span class="mini-badge"><span class="dot"></span>MEDIUM</span>
+          <span class="mini-domain">github.com</span>
+        </div>
+        <div class="mini-title" style="width: 72%"></div>
+        <div class="mini-line" style="width: 92%"></div>
+        <div class="mini-line" style="width: 64%"></div>
+      </div>
+      <div class="mini-axes">
+        <div class="bar"><span style="width: 67%"></span></div>
+        <div class="bar"><span style="width: 100%"></span></div>
+        <div class="bar"><span style="width: 33%"></span></div>
+        <div class="bar"><span style="width: 67%"></span></div>
+      </div>
     </div>
   </div>
 
-  <div class="body">
-    <div class="lead">
-      <h1>「あとで読む」を、<br><span class="accent">読む前に</span>仕分ける。</h1>
-      <p>Raindrop.io に溜めた記事を AI が 3 行要約し、<br>優先度付きの一覧に自動更新。</p>
-      <div class="chips">
-        <span class="chip high"><span class="dot"></span>HIGH</span>
-        <span class="chip medium"><span class="dot"></span>MEDIUM</span>
-        <span class="chip low"><span class="dot"></span>LOW</span>
+  <div class="deco right">
+    <div class="mini medium">
+      <div class="mini-main">
+        <div class="mini-head">
+          <span class="mini-badge"><span class="dot"></span>MEDIUM</span>
+          <span class="mini-domain">speakerdeck.com</span>
+        </div>
+        <div class="mini-title" style="width: 78%"></div>
+        <div class="mini-line" style="width: 90%"></div>
+        <div class="mini-line" style="width: 70%"></div>
+      </div>
+      <div class="mini-axes">
+        <div class="bar"><span style="width: 100%"></span></div>
+        <div class="bar"><span style="width: 67%"></span></div>
+        <div class="bar"><span style="width: 67%"></span></div>
+        <div class="bar"><span style="width: 33%"></span></div>
       </div>
     </div>
+    <div class="mini low">
+      <div class="mini-main">
+        <div class="mini-head">
+          <span class="mini-badge"><span class="dot"></span>LOW</span>
+          <span class="mini-domain">note.com</span>
+        </div>
+        <div class="mini-title" style="width: 80%"></div>
+        <div class="mini-line" style="width: 70%"></div>
+      </div>
+      <div class="mini-axes">
+        <div class="bar"><span style="width: 33%"></span></div>
+        <div class="bar"><span style="width: 33%"></span></div>
+        <div class="bar"></div>
+        <div class="bar"><span style="width: 33%"></span></div>
+      </div>
+    </div>
+  </div>
 
-    <div class="preview">
-      <div class="mini high">
-        <div class="mini-main">
-          <div class="mini-head">
-            <span class="mini-badge"><span class="dot"></span>HIGH</span>
-            <span class="mini-domain">zenn.dev</span>
-          </div>
-          <div class="mini-title" style="width: 86%"></div>
-          <div class="mini-line" style="width: 96%"></div>
-          <div class="mini-line" style="width: 78%"></div>
-        </div>
-        <div class="mini-axes">
-          <div class="bar"><span style="width: 100%"></span></div>
-          <div class="bar"><span style="width: 67%"></span></div>
-          <div class="bar"><span style="width: 100%"></span></div>
-          <div class="bar"><span style="width: 67%"></span></div>
-        </div>
-      </div>
-      <div class="mini medium">
-        <div class="mini-main">
-          <div class="mini-head">
-            <span class="mini-badge"><span class="dot"></span>MEDIUM</span>
-            <span class="mini-domain">github.com</span>
-          </div>
-          <div class="mini-title" style="width: 72%"></div>
-          <div class="mini-line" style="width: 92%"></div>
-          <div class="mini-line" style="width: 64%"></div>
-        </div>
-        <div class="mini-axes">
-          <div class="bar"><span style="width: 67%"></span></div>
-          <div class="bar"><span style="width: 100%"></span></div>
-          <div class="bar"><span style="width: 33%"></span></div>
-          <div class="bar"><span style="width: 67%"></span></div>
-        </div>
-      </div>
-      <div class="mini low">
-        <div class="mini-main">
-          <div class="mini-head">
-            <span class="mini-badge"><span class="dot"></span>LOW</span>
-            <span class="mini-domain">note.com</span>
-          </div>
-          <div class="mini-title" style="width: 80%"></div>
-          <div class="mini-line" style="width: 70%"></div>
-        </div>
-        <div class="mini-axes">
-          <div class="bar"><span style="width: 33%"></span></div>
-          <div class="bar"><span style="width: 33%"></span></div>
-          <div class="bar"></div>
-          <div class="bar"><span style="width: 33%"></span></div>
-        </div>
-      </div>
+  <div class="center">
+    <div class="head">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="drop" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2CD4ED"/>
+            <stop offset="55%" stop-color="#0DB4E2"/>
+            <stop offset="100%" stop-color="#3169FF"/>
+          </linearGradient>
+        </defs>
+        <rect width="64" height="64" rx="14" fill="url(#drop)"/>
+        <path d="M32 12c0 0 2.5 6 9.4 15.4 3.8 5.2 5.6 8.8 5.6 12.1C47 47.5 40.3 53.5 32 53.5S17 47.5 17 39.5c0-3.3 1.8-6.9 5.6-12.1C29.5 18 32 12 32 12z" fill="#fff" opacity="0.97"/>
+        <circle cx="25.8" cy="40.5" r="4.4" fill="#0DB4E2" opacity="0.3"/>
+      </svg>
+      <div class="brand-title">Tsuyu-mi</div>
     </div>
+    <h1>「あとで読む」を、<br><span class="accent">読む前に</span>仕分ける。</h1>
+    <p>Raindrop.io に溜めた記事を AI が 3 行要約し、<br>優先度付きの一覧に自動更新。</p>
+    <div class="chips">
+      <span class="chip high"><span class="dot"></span>HIGH</span>
+      <span class="chip medium"><span class="dot"></span>MEDIUM</span>
+      <span class="chip low"><span class="dot"></span>LOW</span>
+    </div>
+    <div class="brand-sub">Raindrop.io &times; AI 要約ダッシュボード</div>
   </div>
 
   <div class="foot">
-    <span>unsolublesugar.github.io/tsuyu-mi</span>
-    <span>@unsoluble_sugar</span>
+    <span>unsolublesugar.github.io/tsuyu-mi</span><span class="sep">|</span><span>@unsoluble_sugar</span>
   </div>
 
 </div>
