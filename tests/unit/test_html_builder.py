@@ -100,8 +100,13 @@ class TestHtmlBuilder:
             ]
             path = builder.build(articles, last_run_at="2026-03-25 08:00")
             html = path.read_text()
-            assert "2 件" in html
+            # ヘッダーの「N / M 件を表示」はカード（要約済み）件数が基準。
+            # スキップ記事は別セクションで数えるため分母に含めない（2 件中 1 件が要約済み）。
+            assert '<strong id="stats-count">1</strong>' in html
+            assert '<span id="stats-total">1</span> 件を表示' in html
             assert "2026-03-25 08:00" in html
+            # スキップ側は別セクションの件数として出る
+            assert "スキップ・未処理 (1 件)" in html
 
     def test_empty(self):
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -171,13 +176,61 @@ class TestPriorityScoreDisplay:
             builder = HtmlBuilder(output_dir=tmpdir)
             scores = PriorityScores(novelty=3, relevance=2, depth=2, actionability=1)
             html = builder.build([_make_article(1, scores=scores)]).read_text()
-            assert "priority-score" in html
-            assert "8/12" in html
-            assert "新規性 3" in html
+            # 合計スコアはスコアパネル（PC）とメタ行（SP）の両方に出る
+            assert "score-panel" in html
+            assert "score-inline" in html
+            assert html.count("<strong>8</strong>") == 2
+
+    def test_renders_four_axes_as_bars(self):
+        """4 軸スコアは hover ではなくバー UI（.fill.sN）で常時表示される。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            scores = PriorityScores(novelty=3, relevance=2, depth=1, actionability=0)
+            html = builder.build([_make_article(1, scores=scores)]).read_text()
+            for label in ("新規性", "関心の近さ", "読む必要性", "活用度"):
+                assert f'<span class="axis-label">{label}</span>' in html
+            for level in ("s3", "s2", "s1", "s0"):
+                assert f'<span class="fill {level}"></span>' in html
 
     def test_omits_score_when_absent(self):
         """scores を持たない旧データでもレンダリングできる。"""
         with tempfile.TemporaryDirectory() as tmpdir:
             builder = HtmlBuilder(output_dir=tmpdir)
             html = builder.build([_make_article(1)]).read_text()
-            assert "priority-score" not in html
+            assert "score-panel" not in html
+            assert "score-inline" not in html
+            assert "axis-label" not in html
+
+
+class TestPriorityFilter:
+    def test_filter_tabs_rendered(self):
+        """優先度フィルタは すべて/High/Medium/Low の 4 タブ、初期 active は high。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            html = builder.build([_make_article(1)]).read_text()
+            for f in ("all", "high", "medium", "low"):
+                assert f'data-filter="{f}"' in html
+            assert '<button class="filter-btn active" data-filter="high">' in html
+            # 件数バッジは app.js が埋める空要素
+            assert html.count('<span class="tab-count"></span>') == 4
+
+    def test_cards_carry_priority_dataset(self):
+        """カードの data-priority が JS フィルタの対象になる。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            articles = [_make_article(1, Priority.high), _make_article(2, Priority.low)]
+            html = builder.build(articles).read_text()
+            assert 'data-priority="high"' in html
+            assert 'data-priority="low"' in html
+
+
+class TestReasonsToggle:
+    def test_reasons_are_in_details_toggle(self):
+        """判定理由は <details> の中に折りたたまれる。"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            builder = HtmlBuilder(output_dir=tmpdir)
+            html = builder.build([_make_article(1)]).read_text()
+            assert '<details class="reasons-toggle">' in html
+            assert "<summary>判定理由</summary>" in html
+            assert "今読む:" in html
+            assert "後回し:" in html

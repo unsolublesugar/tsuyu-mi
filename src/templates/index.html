@@ -27,91 +27,102 @@
   <meta name="twitter:description" content="{{ site_description }}">
   <meta name="twitter:image" content="{{ og_image_url }}">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="https://app.raindrop.io/" target="_blank" rel="noopener" class="raindrop-link" title="Raindrop.io を開く">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="28" height="28">
-      <defs>
-        <path id="icon_raw-a" d="M12,0 C18.627417,0 24,5.372583 24,12 L24,12 L24,24 L12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z"/>
-        <path id="icon_raw-c" d="M0,24 L0,12 L0.00379985776,11.6950252 C0.165607248,5.20854437 5.47454326,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 L12,24 L0,24 Z"/>
-      </defs>
-      <g fill="none" fill-rule="evenodd" transform="translate(0 5)">
-        <path fill="#0B7ED0" d="M35.3137085,4.6862915 C41.5620972,10.9346802 41.5620972,21.0653198 35.3137085,27.3137085 C35.1048567,27.5225603 34.8916675,27.7244313 34.674431,27.9193214 L24,38 L13.325569,27.9193214 C13.1083325,27.7244313 12.8951433,27.5225603 12.6862915,27.3137085 C6.43790283,21.0653198 6.43790283,10.9346802 12.6862915,4.6862915 C18.9346802,-1.56209717 29.0653198,-1.56209717 35.3137085,4.6862915 Z"/>
-        <g transform="translate(0 14)">
-          <mask id="icon_raw-b" fill="#fff"><use xlink:href="#icon_raw-a"/></mask>
-          <use fill="#2CD4ED" xlink:href="#icon_raw-a"/>
-          <path fill="#0DB4E2" d="M35.3137085,-9.3137085 C41.5620972,-3.06531983 41.5620972,7.06531983 35.3137085,13.3137085 C35.1048567,13.5225603 34.8916675,13.7244313 34.674431,13.9193214 L24,24 L13.325569,13.9193214 C13.1083325,13.7244313 12.8951433,13.5225603 12.6862915,13.3137085 C6.43790283,7.06531983 6.43790283,-3.06531983 12.6862915,-9.3137085 C18.9346802,-15.5620972 29.0653198,-15.5620972 35.3137085,-9.3137085 Z" mask="url(#icon_raw-b)"/>
-        </g>
-        <g transform="translate(24 14)">
-          <mask id="icon_raw-d" fill="#fff"><use xlink:href="#icon_raw-c"/></mask>
-          <use fill="#3169FF" xlink:href="#icon_raw-c"/>
-          <path fill="#3153FF" d="M11.3137085,-9.3137085 C17.5620972,-3.06531983 17.5620972,7.06531983 11.3137085,13.3137085 C11.1048567,13.5225603 10.8916675,13.7244313 10.674431,13.9193214 L2.61250577e-10,24 L-10.674431,13.9193214 C-10.8916675,13.7244313 -11.1048567,13.5225603 -11.3137085,13.3137085 C-17.5620972,7.06531983 -17.5620972,-3.06531983 -11.3137085,-9.3137085 C-5.06531983,-15.5620972 5.06531983,-15.5620972 11.3137085,-9.3137085 Z" mask="url(#icon_raw-d)"/>
-        </g>
-      </g>
-    </svg>
-  </a>
-
-  <header>
-    <div class="stats">
-      <span id="stats-count">{{ total }} / {{ total }} 件</span>
-      {% if last_run_at %}<span>最終実行: {{ last_run_at }}</span>{% endif %}
-    </div>
-    <div class="filters">
-      <button class="filter-btn active" data-filter="high">High</button>
-      <button class="filter-btn" data-filter="medium">Medium</button>
-      <button class="filter-btn" data-filter="low">Low</button>
-      <button class="filter-btn" data-filter="all">All</button>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-row">
+        <div class="brand">
+          <img src="favicon.svg" alt="" width="34" height="34">
+          <div class="brand-text">
+            <div class="site-name">{{ site_title }}</div>
+            <div class="tagline">「あとで読む」を、読む前に仕分ける</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="stats">
+            <div class="stats-count"><strong id="stats-count">{{ summarized_count }}</strong> / <span id="stats-total">{{ summarized_count }}</span> 件を表示</div>
+            {% if last_run_at %}<div class="stats-sub">最終実行 {{ last_run_at }}</div>{% endif %}
+          </div>
+          <a href="https://app.raindrop.io/" target="_blank" rel="noopener" class="raindrop-link" title="Raindrop.io を開く">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="22" height="22">
+              <defs>
+                <path id="icon_raw-a" d="M12,0 C18.627417,0 24,5.372583 24,12 L24,12 L24,24 L12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z"/>
+                <path id="icon_raw-c" d="M0,24 L0,12 L0.00379985776,11.6950252 C0.165607248,5.20854437 5.47454326,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 L12,24 L0,24 Z"/>
+              </defs>
+              <g fill="none" fill-rule="evenodd" transform="translate(0 5)">
+                <path fill="#0B7ED0" d="M35.3137085,4.6862915 C41.5620972,10.9346802 41.5620972,21.0653198 35.3137085,27.3137085 C35.1048567,27.5225603 34.8916675,27.7244313 34.674431,27.9193214 L24,38 L13.325569,27.9193214 C13.1083325,27.7244313 12.8951433,27.5225603 12.6862915,27.3137085 C6.43790283,21.0653198 6.43790283,10.9346802 12.6862915,4.6862915 C18.9346802,-1.56209717 29.0653198,-1.56209717 35.3137085,4.6862915 Z"/>
+                <g transform="translate(0 14)">
+                  <mask id="icon_raw-b" fill="#fff"><use xlink:href="#icon_raw-a"/></mask>
+                  <use fill="#2CD4ED" xlink:href="#icon_raw-a"/>
+                  <path fill="#0DB4E2" d="M35.3137085,-9.3137085 C41.5620972,-3.06531983 41.5620972,7.06531983 35.3137085,13.3137085 C35.1048567,13.5225603 34.8916675,13.7244313 34.674431,13.9193214 L24,24 L13.325569,13.9193214 C13.1083325,13.7244313 12.8951433,13.5225603 12.6862915,13.3137085 C6.43790283,7.06531983 6.43790283,-3.06531983 12.6862915,-9.3137085 C18.9346802,-15.5620972 29.0653198,-15.5620972 35.3137085,-9.3137085 Z" mask="url(#icon_raw-b)"/>
+                </g>
+                <g transform="translate(24 14)">
+                  <mask id="icon_raw-d" fill="#fff"><use xlink:href="#icon_raw-c"/></mask>
+                  <use fill="#3169FF" xlink:href="#icon_raw-c"/>
+                  <path fill="#3153FF" d="M11.3137085,-9.3137085 C17.5620972,-3.06531983 17.5620972,7.06531983 11.3137085,13.3137085 C11.1048567,13.5225603 10.8916675,13.7244313 10.674431,13.9193214 L2.61250577e-10,24 L-10.674431,13.9193214 C-10.8916675,13.7244313 -11.1048567,13.5225603 -11.3137085,13.3137085 C-17.5620972,7.06531983 -17.5620972,-3.06531983 -11.3137085,-9.3137085 C-5.06531983,-15.5620972 5.06531983,-15.5620972 11.3137085,-9.3137085 Z" mask="url(#icon_raw-d)"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="filters">
+        <button class="filter-btn" data-filter="all">すべて <span class="tab-count"></span></button>
+        <button class="filter-btn active" data-filter="high">High <span class="tab-count"></span></button>
+        <button class="filter-btn" data-filter="medium">Medium <span class="tab-count"></span></button>
+        <button class="filter-btn" data-filter="low">Low <span class="tab-count"></span></button>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main class="container">
     {% if articles %}
     <section class="articles">
       {% for article in articles %}
       <article class="card priority-{{ article.priority.value }}{% if article.drop_candidate %} drop-candidate{% endif %}" data-priority="{{ article.priority.value }}">
-        <div class="card-header">
-          <span class="priority-badge priority-{{ article.priority.value }}">{{ article.priority.value | upper }}</span>
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-{{ article.priority.value }}"><span class="dot"></span>{{ article.priority.value | upper }}</span>
+              {% if article.drop_candidate %}<span class="drop-badge">DROP</span>{% endif %}
+              <span class="domain">{{ article.domain }}</span>
+              <span class="sep">·</span>
+              <span class="date">{{ format_display(article.created_at) }}</span>
 {%- if article.scores %}
-          <span class="priority-score" title="新規性 {{ article.scores.novelty }} / 関心の近さ {{ article.scores.relevance }} / 読む必要性 {{ article.scores.depth }} / 活用度 {{ article.scores.actionability }}">{{ article.scores.total }}/12</span>
+              <span class="score-inline">スコア <strong>{{ article.scores.total }}</strong>/12</span>
 {%- endif %}
-          {% if article.drop_candidate %}<span class="drop-badge">DROP</span>{% endif %}
-          <span class="domain">{{ article.domain }}</span>
-          <span class="date">{{ format_display(article.created_at) }}</span>
-        </div>
-
-        <h2 class="card-title">
-          <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-        </h2>
-
-        {% if article.summary_3lines %}
-        <ul class="summary">
-          {% for line in article.summary_3lines %}
-          <li>{{ line | inline_code }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-
-        <details class="reasons-toggle">
-          <summary>判定理由</summary>
-          <div class="reasons">
-            {% if article.read_now_reason %}
-            <div class="reason read-now">
-              <span class="reason-label">今読む理由:</span> {{ article.read_now_reason | inline_code }}
             </div>
-            {% endif %}
-            {% if article.defer_reason %}
-            <div class="reason defer">
-              <span class="reason-label">後回し理由:</span> {{ article.defer_reason | inline_code }}
-            </div>
-            {% endif %}
-            {% if article.drop_candidate %}
-            <div class="reason drop">
-              <span class="reason-label">ドロップ理由:</span> {{ article.drop_reason if article.drop_reason else "該当" }}
-            </div>
+
+            <h2 class="card-title">
+              <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+            </h2>
+
+            {% if article.summary_3lines %}
+            <ul class="summary">
+              {% for line in article.summary_3lines %}
+              <li>{{ line | inline_code }}</li>
+              {% endfor %}
+            </ul>
             {% endif %}
           </div>
-        </details>
+
+{%- if article.scores %}
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>{{ article.scores.total }}</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s{{ article.scores.novelty }}"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s{{ article.scores.relevance }}"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s{{ article.scores.depth }}"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s{{ article.scores.actionability }}"></span></span></div>
+            </div>
+          </div>
+{%- endif %}
+        </div>
 
         {% if article.keywords %}
         <div class="keywords">
@@ -120,6 +131,27 @@
           {% endfor %}
         </div>
         {% endif %}
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            {% if article.read_now_reason %}
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> {{ article.read_now_reason | inline_code }}
+            </div>
+            {% endif %}
+            {% if article.defer_reason %}
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> {{ article.defer_reason | inline_code }}
+            </div>
+            {% endif %}
+            {% if article.drop_candidate %}
+            <div class="reason drop">
+              <span class="reason-label">ドロップ:</span> {{ article.drop_reason if article.drop_reason else "該当" }}
+            </div>
+            {% endif %}
+          </div>
+        </details>
 
       </article>
       {% endfor %}
@@ -132,16 +164,18 @@
     <section class="skipped-section">
       <details>
         <summary>スキップ・未処理 ({{ skipped_count }} 件)</summary>
-        {% for article in skipped %}
-        <div class="skipped-item">
-          <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title if article.title else article.url }}</a>
-          <span class="domain">{{ article.domain }}</span>
-          {% if article.content_type.value == "video" %}
-          <span class="badge video">動画</span>
-          {% endif %}
-          <span class="badge skip-reason">{{ article.content_status if article.content_status else "未処理" }}</span>
+        <div class="skipped-list">
+          {% for article in skipped %}
+          <div class="skipped-item">
+            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title if article.title else article.url }}</a>
+            <span class="domain">{{ article.domain }}</span>
+            {% if article.content_type.value == "video" %}
+            <span class="badge video">動画</span>
+            {% endif %}
+            <span class="badge skip-reason">{{ article.content_status if article.content_status else "未処理" }}</span>
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </details>
     </section>
     {% endif %}

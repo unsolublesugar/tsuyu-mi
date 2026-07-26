@@ -7,132 +7,150 @@
   ヘッドレスブラウザで 1200x630 のビューポートで開き、スクリーンショットを撮る:
 
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-      --headless --disable-gpu --hide-scrollbars \
+      --headless=new --disable-gpu --hide-scrollbars \
       --screenshot=docs/og.png --window-size=1200,630 \
-      --default-background-color=00000000 og.html
+      --virtual-time-budget=5000 og.html
 
-  配色は docs/styles.css（優先度カラー・背景グラデーション）に揃えている。
+  配色は docs/styles.css のデザイントークンに揃えている
+  （背景 #f2f5f9 / 主文字 #16324a / アクセント #1370b8 / 淡色の優先度チップ）。
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1200px; height: 630px; overflow: hidden; }
   body {
-    background:
-      radial-gradient(ellipse at 20% 0%, rgba(200, 220, 240, 0.5) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 20%, rgba(195, 218, 238, 0.6) 0%, transparent 50%),
-      radial-gradient(ellipse at 40% 80%, rgba(220, 235, 248, 0.4) 0%, transparent 55%),
-      linear-gradient(150deg, #e6ecf4 0%, #eef2f7 50%, #f6f8fa 100%);
+    background: #f2f5f9;
     font-family: 'Noto Sans JP', 'Hiragino Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #1a202c;
+    color: #16324a;
     -webkit-font-smoothing: antialiased;
   }
 
   .card {
     position: absolute;
-    inset: 40px;
+    inset: 36px;
     background: #fff;
-    border-radius: 28px;
-    box-shadow: 0 8px 30px rgba(26, 32, 44, 0.10);
+    border: 1px solid #e2e9f1;
+    border-radius: 24px;
+    box-shadow: 0 1px 2px rgba(16, 42, 67, 0.05);
     padding: 44px 56px;
     display: flex;
     flex-direction: column;
   }
 
   /* ---- ヘッダー ---- */
-  .head { display: flex; align-items: center; gap: 18px; }
-  .logo { width: 60px; height: 60px; flex: none; }
-  .brand-label {
-    font-size: 13px;
-    letter-spacing: 0.26em;
-    color: #a0aec0;
-    font-weight: 700;
-  }
+  .head { display: flex; align-items: center; gap: 16px; }
+  .logo { width: 56px; height: 56px; flex: none; }
   .brand-title {
+    font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
     font-size: 30px;
-    font-weight: 900;
-    letter-spacing: -0.01em;
-    margin-top: 1px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .brand-sub {
+    font-size: 14px;
+    color: #6d7f90;
+    margin-top: 3px;
   }
 
   /* ---- 本体 ---- */
-  .body { flex: 1; display: flex; align-items: center; gap: 44px; margin-top: 6px; }
+  .body { flex: 1; display: flex; align-items: center; gap: 48px; margin-top: 4px; }
   .lead { flex: 1.05; min-width: 0; }
+  /* 見出しは OGP の縮小表示でも潰れないよう Noto Sans JP 900 を使う
+     （Zen Kaku Gothic New 700 は線が細く視認性が落ちる） */
   .lead h1 {
     font-size: 46px;
     font-weight: 900;
-    line-height: 1.32;
+    line-height: 1.36;
     letter-spacing: -0.02em;
   }
-  .lead h1 .accent { color: #2f7fd0; }
+  .lead h1 .accent { color: #1370b8; }
   .lead p {
-    margin-top: 18px;
-    font-size: 19px;
-    line-height: 1.7;
-    color: #6b7280;
-    font-weight: 500;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #3d4f60;
   }
-  .chips { display: flex; gap: 10px; margin-top: 24px; }
+  .chips { display: flex; gap: 10px; margin-top: 26px; }
   .chip {
-    padding: 6px 16px;
-    border-radius: 4px;
-    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 14px;
+    border-radius: 6px;
+    font-size: 14px;
     font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
   }
-  .chip.high { background: #e53e3e; }
-  .chip.medium { background: #d69e2e; }
-  .chip.low { background: #a0aec0; }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+  .chip.high { background: #faeae7; color: #b3372c; }
+  .chip.high .dot { background: #c9483b; }
+  .chip.medium { background: #f8f0dc; color: #93661a; }
+  .chip.medium .dot { background: #c9992e; }
+  .chip.low { background: #edf1f4; color: #5b6b7a; }
+  .chip.low .dot { background: #93a3b2; }
 
   /* ---- 右カラム: 記事カードのミニチュア ---- */
   .preview { flex: 0.95; display: flex; flex-direction: column; gap: 14px; }
   .mini {
     background: #fff;
-    border: 1px solid #edf1f6;
-    border-left: 5px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(26, 32, 44, 0.07);
-    padding: 14px 18px;
+    border: 1px solid #e2e9f1;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(16, 42, 67, 0.05);
+    padding: 16px 20px;
+    display: flex;
+    gap: 18px;
   }
-  .mini.high { border-left-color: #e53e3e; }
-  .mini.medium { border-left-color: #d69e2e; }
-  .mini.low { border-left-color: #a0aec0; opacity: 0.85; }
+  .mini.low { opacity: 0.93; }
+  .mini-main { flex: 1; min-width: 0; }
   .mini-head { display: flex; align-items: center; gap: 8px; }
   .mini-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     padding: 2px 8px;
-    border-radius: 3px;
+    border-radius: 6px;
     font-size: 10px;
     font-weight: 700;
-    color: #fff;
+    letter-spacing: 0.06em;
   }
-  .mini.high .mini-badge { background: #e53e3e; }
-  .mini.medium .mini-badge { background: #d69e2e; }
-  .mini.low .mini-badge { background: #a0aec0; }
-  .mini-domain { font-size: 11px; color: #a0aec0; font-weight: 500; }
-  .mini-title {
-    height: 11px;
-    border-radius: 3px;
-    background: #cbd5e0;
-    margin-top: 10px;
+  .mini-badge .dot { width: 5px; height: 5px; border-radius: 50%; display: inline-block; }
+  .mini.high .mini-badge { background: #faeae7; color: #b3372c; }
+  .mini.high .mini-badge .dot { background: #c9483b; }
+  .mini.medium .mini-badge { background: #f8f0dc; color: #93661a; }
+  .mini.medium .mini-badge .dot { background: #c9992e; }
+  .mini.low .mini-badge { background: #edf1f4; color: #5b6b7a; }
+  .mini.low .mini-badge .dot { background: #93a3b2; }
+  .mini-domain { font-size: 11px; color: #93a3b2; }
+  .mini-title { height: 10px; border-radius: 3px; background: #cfdae6; margin-top: 11px; }
+  .mini-line { height: 6px; border-radius: 3px; background: #eaeff5; margin-top: 8px; }
+
+  /* ミニカード右の 4 軸スコアバー */
+  .mini-axes {
+    width: 54px;
+    flex: none;
+    border-left: 1px solid #eef2f7;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
   }
-  .mini-line {
-    height: 7px;
-    border-radius: 3px;
-    background: #e8edf3;
-    margin-top: 8px;
+  .bar { height: 4px; border-radius: 2px; background: #e3e9f0; position: relative; }
+  .bar span {
+    position: absolute; top: 0; bottom: 0; left: 0;
+    border-radius: 2px; background: #1370b8;
   }
+  .mini.low .bar span { background: #8fb4d4; }
 
   /* ---- フッター ---- */
   .foot {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    color: #a0aec0;
-    font-weight: 600;
+    font-size: 14px;
+    color: #93a3b2;
   }
 </style>
 </head>
@@ -148,13 +166,13 @@
           <stop offset="100%" stop-color="#3169FF"/>
         </linearGradient>
       </defs>
-      <rect width="64" height="64" rx="18" fill="url(#drop)"/>
+      <rect width="64" height="64" rx="14" fill="url(#drop)"/>
       <path d="M32 12c0 0 2.5 6 9.4 15.4 3.8 5.2 5.6 8.8 5.6 12.1C47 47.5 40.3 53.5 32 53.5S17 47.5 17 39.5c0-3.3 1.8-6.9 5.6-12.1C29.5 18 32 12 32 12z" fill="#fff" opacity="0.97"/>
       <circle cx="25.8" cy="40.5" r="4.4" fill="#0DB4E2" opacity="0.3"/>
     </svg>
     <div>
-      <div class="brand-label">RAINDROP DIGEST</div>
       <div class="brand-title">Tsuyu-mi</div>
+      <div class="brand-sub">Raindrop.io &times; AI 要約ダッシュボード</div>
     </div>
   </div>
 
@@ -163,38 +181,62 @@
       <h1>「あとで読む」を、<br><span class="accent">読む前に</span>仕分ける。</h1>
       <p>Raindrop.io に溜めた記事を AI が 3 行要約し、<br>優先度付きの一覧に自動更新。</p>
       <div class="chips">
-        <span class="chip high">HIGH</span>
-        <span class="chip medium">MEDIUM</span>
-        <span class="chip low">LOW</span>
+        <span class="chip high"><span class="dot"></span>HIGH</span>
+        <span class="chip medium"><span class="dot"></span>MEDIUM</span>
+        <span class="chip low"><span class="dot"></span>LOW</span>
       </div>
     </div>
 
     <div class="preview">
       <div class="mini high">
-        <div class="mini-head">
-          <span class="mini-badge">HIGH</span>
-          <span class="mini-domain">zenn.dev</span>
+        <div class="mini-main">
+          <div class="mini-head">
+            <span class="mini-badge"><span class="dot"></span>HIGH</span>
+            <span class="mini-domain">zenn.dev</span>
+          </div>
+          <div class="mini-title" style="width: 86%"></div>
+          <div class="mini-line" style="width: 96%"></div>
+          <div class="mini-line" style="width: 78%"></div>
         </div>
-        <div class="mini-title" style="width: 86%"></div>
-        <div class="mini-line" style="width: 96%"></div>
-        <div class="mini-line" style="width: 78%"></div>
+        <div class="mini-axes">
+          <div class="bar"><span style="width: 100%"></span></div>
+          <div class="bar"><span style="width: 67%"></span></div>
+          <div class="bar"><span style="width: 100%"></span></div>
+          <div class="bar"><span style="width: 67%"></span></div>
+        </div>
       </div>
       <div class="mini medium">
-        <div class="mini-head">
-          <span class="mini-badge">MEDIUM</span>
-          <span class="mini-domain">github.com</span>
+        <div class="mini-main">
+          <div class="mini-head">
+            <span class="mini-badge"><span class="dot"></span>MEDIUM</span>
+            <span class="mini-domain">github.com</span>
+          </div>
+          <div class="mini-title" style="width: 72%"></div>
+          <div class="mini-line" style="width: 92%"></div>
+          <div class="mini-line" style="width: 64%"></div>
         </div>
-        <div class="mini-title" style="width: 72%"></div>
-        <div class="mini-line" style="width: 92%"></div>
-        <div class="mini-line" style="width: 64%"></div>
+        <div class="mini-axes">
+          <div class="bar"><span style="width: 67%"></span></div>
+          <div class="bar"><span style="width: 100%"></span></div>
+          <div class="bar"><span style="width: 33%"></span></div>
+          <div class="bar"><span style="width: 67%"></span></div>
+        </div>
       </div>
       <div class="mini low">
-        <div class="mini-head">
-          <span class="mini-badge">LOW</span>
-          <span class="mini-domain">note.com</span>
+        <div class="mini-main">
+          <div class="mini-head">
+            <span class="mini-badge"><span class="dot"></span>LOW</span>
+            <span class="mini-domain">note.com</span>
+          </div>
+          <div class="mini-title" style="width: 80%"></div>
+          <div class="mini-line" style="width: 70%"></div>
         </div>
-        <div class="mini-title" style="width: 80%"></div>
-        <div class="mini-line" style="width: 70%"></div>
+        <div class="mini-axes">
+          <div class="bar"><span style="width: 33%"></span></div>
+          <div class="bar"><span style="width: 33%"></span></div>
+          <div class="bar"></div>
+          <div class="bar"><span style="width: 33%"></span></div>
+        </div>
       </div>
     </div>
   </div>
