@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-26T04:13:53.869569Z",
+  "last_run_at": "2026-07-28T22:25:20.173965Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -363,7 +363,7 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-07-26T04:13:53.867185Z"
+      "updated_at": "2026-07-28T22:25:20.172004Z"
     },
     "1783046248": {
       "status": "summarized",
@@ -427,6 +427,41 @@
       "reason": null,
       "summarized_at": "2026-07-25T18:54:58.276214Z",
       "updated_at": "2026-07-25T18:54:58.276212Z"
+    },
+    "1803565161": {
+      "status": "summarized",
+      "content_hash": "sha256:bc295f23e97824930afc218daf323c4bc7ade92596d0919ead430fe11328a99b",
+      "reason": null,
+      "summarized_at": "2026-07-28T22:25:00.652613Z",
+      "updated_at": "2026-07-28T22:25:00.652611Z"
+    },
+    "1802908432": {
+      "status": "summarized",
+      "content_hash": "sha256:bc3214c73f3d5d83570b30b3228a06b6ba5a7a8565f4d213ae9aabe1dbd2bec6",
+      "reason": null,
+      "summarized_at": "2026-07-28T22:25:04.836950Z",
+      "updated_at": "2026-07-28T22:25:04.836948Z"
+    },
+    "1802878086": {
+      "status": "summarized",
+      "content_hash": "sha256:bde4d606141fa622e53fbe92cca5c1f61648b63a285da21ac5f16e5fd4dd2212",
+      "reason": null,
+      "summarized_at": "2026-07-28T22:25:08.649871Z",
+      "updated_at": "2026-07-28T22:25:08.649869Z"
+    },
+    "1801898071": {
+      "status": "summarized",
+      "content_hash": "sha256:f562fddbc6d8053c8353bd0dc00261a069f3767f1a636da73278460276c7a869",
+      "reason": null,
+      "summarized_at": "2026-07-28T22:25:12.748633Z",
+      "updated_at": "2026-07-28T22:25:12.748631Z"
+    },
+    "1801394344": {
+      "status": "summarized",
+      "content_hash": "sha256:8f7a12b6325479c1cc6cf6197fd851771f32e71f79b01f85640bb2131b6eb49e",
+      "reason": null,
+      "summarized_at": "2026-07-28T22:25:17.011322Z",
+      "updated_at": "2026-07-28T22:25:17.011321Z"
     }
   }
 }

@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1801898071,
+  "collection_id": 56182051,
+  "title": "自社のレビュー履歴からAIコードレビュアーをつくる方法",
+  "url": "https://zenn.dev/estie/articles/f0f114389662ba",
+  "domain": "zenn.dev",
+  "created_at": "2026-07-26T06:00:21.641000Z",
+  "fetched_at": "2026-07-28T22:25:11.164535Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6940,
+  "content_hash": "sha256:f562fddbc6d8053c8353bd0dc00261a069f3767f1a636da73278460276c7a869",
+  "summary_input_type": "fulltext",
+  "topic": "自社の過去のレビュー履歴とAIを活用した独自コードレビュアーの構築方法",
+  "summary_3lines": [
+    "estie社が創業来7年分のPRレビュー履歴を集約・分析し、自社特有の規約を抽出してAIレビュアーを構築した事例を紹介している。",
+    "データ収集、傾向分析、規約への蒸留、複数の役割に分けたAIによるレビュー実行という4つの具体的なステップを解説している。",
+    "CodeRabbitなどの汎用AIツールとの比較や、実運用における限界と継続的な改善の重要性についても正直に述べられている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "自社の過去のレビュー履歴をAIエージェントを活用して資産化し、特化型レビュアーを構築する具体的な手法と手順が詳細に解説されているため。",
+  "defer_reason": "汎用AIコードレビューツールの導入や評価を現在検討していない場合は、すぐに実践する必要性が薄いため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIコードレビュー",
+    "Claude Code",
+    "開発文化",
+    "GitHub API",
+    "コード品質"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-28T22:25:12.748616Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

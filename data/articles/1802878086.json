@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1802878086,
+  "collection_id": 56182051,
+  "title": "Opus5が思考が浅いように感じる問題への対策",
+  "url": "https://zenn.dev/u1/articles/claude5-rules-collapse-and-fix",
+  "domain": "zenn.dev",
+  "created_at": "2026-07-27T08:57:42.721000Z",
+  "fetched_at": "2026-07-28T22:25:07.327045Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8464,
+  "content_hash": "sha256:bde4d606141fa622e53fbe92cca5c1f61648b63a285da21ac5f16e5fd4dd2212",
+  "summary_input_type": "fulltext",
+  "topic": "Claude CodeのモデルをOpus 5に切り替えた際に思考が浅くなる原因と対策",
+  "summary_3lines": [
+    "Opus 5世代で本体システムプロンプトが大きく削減され、従来のrulesが機能しなくなったことが原因であると判明した。",
+    "対策として、本体プロンプトの原文を名指しして優先を宣言し、禁止ではなく望ましい動きを定義する方法にrulesを書き直した。",
+    "さらに、行動の直前に指示を届かせるためにUserPromptSubmit hookを活用するアプローチが有効であると示した。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 3,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "Claude Codeのモデル更新に伴うプロンプト挙動の変化と具体的な対策が実体験ベースで詳細に解説されているため。",
+  "defer_reason": "Claude Codeを日常的に利用していない場合は、すぐに実践する機会がないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Opus 5",
+    "システムプロンプト",
+    "CLAUDE.md",
+    "プロンプトエンジニアリング"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-28T22:25:08.649854Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

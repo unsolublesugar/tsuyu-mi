@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1802908432,
+  "collection_id": 56182051,
+  "title": "Cursor・Manus・Spotifyの「ハーネス」を読み比べた",
+  "url": "https://zenn.dev/tak3/articles/2686517823d1e7",
+  "domain": "zenn.dev",
+  "created_at": "2026-07-27T09:59:48.486000Z",
+  "fetched_at": "2026-07-28T22:25:03.233233Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 12748,
+  "content_hash": "sha256:bc3214c73f3d5d83570b30b3228a06b6ba5a7a8565f4d213ae9aabe1dbd2bec6",
+  "summary_input_type": "fulltext",
+  "topic": "Cursor・Manus・Spotifyなど6社のAIエージェントハーネス設計の比較分析",
+  "summary_3lines": [
+    "CursorやManusなど6社のエンジニアリングブログを「ループ」「コンテキスト管理」など6要素で比較している。",
+    "各社が注力する要素はバラバラで、それがそのまま各プロダクトの武器や設計思想の違いに直結していることを分析している。",
+    "検証ゲートやJIT命令など、実務のエージェント開発にすぐ応用できる具体的な設計パターンを多数抽出している。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "トップ企業のAIエージェント実装における具体的な設計思想とノウハウが体系的に比較されており、実務の設計に直結する知見が得られるため。",
+  "defer_reason": "内容はエージェント設計の基礎と各社事例の整理が中心であり、今すぐ自分の手を動かす直前でなくてもキャッチアップ可能であるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "ハーネス",
+    "Cursor",
+    "コンテキスト管理",
+    "検証ループ"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-28T22:25:04.836932Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

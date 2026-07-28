@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1801394344,
+  "collection_id": 56182051,
+  "title": "PMBOK第8版をゼロから理解する - Qiita",
+  "url": "https://qiita.com/iwashiMadai/items/f4630743e2d8c60dfb2b",
+  "domain": "qiita.com",
+  "created_at": "2026-07-25T13:42:49.688000Z",
+  "fetched_at": "2026-07-28T22:25:15.695750Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5298,
+  "content_hash": "sha256:8f7a12b6325479c1cc6cf6197fd851771f32e71f79b01f85640bb2131b6eb49e",
+  "summary_input_type": "fulltext",
+  "topic": "プロジェクトマネジメント知識体系の標準ガイド「PMBOK第8版」の構造と変更点の解説",
+  "summary_3lines": [
+    "PMBOKの概念や発行団体PMIの概要、過去の版からの変遷を整理している。",
+    "第8版では6原則・7パフォーマンス領域・40プロセスに再編され、ITTOフレームワークが復活した。",
+    "AI活用やPMO、調達領域の拡充が行われ、PMP受験や学習のルートが解説されている。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 1,
+    "depth": 1,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "PMBOK第8版の構成や変更点の全体像を短時間で把握できるため。",
+  "defer_reason": "PMP試験を受験する予定や第8版の具体的な学習が必要になるタイミングまで後回しでも問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "PMBOK",
+    "PMI",
+    "プロジェクトマネジメント",
+    "PMP",
+    "第8版"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-28T22:25:17.011306Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
