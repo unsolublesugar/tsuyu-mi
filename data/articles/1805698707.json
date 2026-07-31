@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1805698707,
+  "collection_id": 56182051,
+  "title": "AIを使うと頭が悪くなる？「脳の疲弊」を防いでより賢くなるための正しい付き合い方 | Forbes JAPAN 公式サイト（フォーブス ジャパン）",
+  "url": "https://forbesjapan.com/articles/detail/94246?n=1&e=101752",
+  "domain": "forbesjapan.com",
+  "created_at": "2026-07-30T23:39:45.453000Z",
+  "fetched_at": "2026-07-31T22:24:18.742436Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 1639,
+  "content_hash": "sha256:1e2b829685af7d5c463736b4633ce02adeb59f905c94368c9c50adf72d5ebcdb",
+  "summary_input_type": "fulltext",
+  "topic": "AIの過度な利用や監督業務がもたらす脳の疲弊と、その対策について",
+  "summary_3lines": [
+    "AIツールの多用は労働者の集中力を低下させ、精神的疲労や情報過多を増加させる研究結果がある。",
+    "AIのアウトプットを常に監督する精神的負担や、処理待ちの隙間時間におけるタスク切り替えが思考力を奪う。",
+    "AIの処理中はタスクを切り替えずに休息を取り、監督の範囲を明確に線引きすることが重要である。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 1,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "AIツールを多用する日常において、自身の集中力低下の原因と具体的な対策を短時間で確認できるため。",
+  "defer_reason": "一般的な心構えや注意点の指摘が中心であり、緊急性の高い実務的なノウハウではないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI",
+    "脳の疲弊",
+    "マルチタスク",
+    "生産性",
+    "集中力"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-31T22:24:20.152237Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

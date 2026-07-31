@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1805102565,
+  "collection_id": 56182051,
+  "title": "AI エージェント時代のデジタルアイデンティティ",
+  "url": "https://speakerdeck.com/fujie/ai-ezientoshi-dai-nodezitaruaidenteitei",
+  "domain": "speakerdeck.com",
+  "created_at": "2026-07-30T01:31:42.086000Z",
+  "fetched_at": "2026-07-31T22:24:22.556819Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8797,
+  "content_hash": "sha256:35ffb6ac34b29f20ecdd587ef663b0e85c979d424fcef1ea3e7b78fd32fd9f88",
+  "summary_input_type": "fulltext",
+  "topic": "AIエージェント時代のデジタルアイデンティティ管理とセキュリティ設計に関する解説",
+  "summary_3lines": [
+    "AIエージェントの普及により匿名性の前提が崩れ、誰の意図と権限で動くかの管理が不可欠になっている。",
+    "従来のNHIとは異なり自律的なエージェントには、最小権限、Token Exchange、委任チェーンの検証が必要とされる。",
+    "OAuth/OIDCなどの標準技術をレイヤーごとに適用し、技術・契約・運用のトラストフレームワークを構築することが求められる。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "AIエージェントを活用したシステム開発において必須となる、アイデンティティ管理や認可設計の最新動向を把握できるため。",
+  "defer_reason": "概念やフレームワークの解説が中心であり、即座に具体的な設定やコードを実装する必要がない場合は後回しでも問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "デジタルアイデンティティ",
+    "OAuth",
+    "Token Exchange",
+    "トラストフレームワーク"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-07-31T22:24:23.964007Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
