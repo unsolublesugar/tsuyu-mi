@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1810871142,
+  "collection_id": 56182051,
+  "title": "AIエージェント向けのツールを、MCPではなくCLIとして作った — 設計の3原則",
+  "url": "https://zenn.dev/codatum/articles/80b99faba75704",
+  "domain": "zenn.dev",
+  "created_at": "2026-08-05T00:51:24.617000Z",
+  "fetched_at": "2026-08-07T22:14:31.513075Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 11812,
+  "content_hash": "sha256:ac4a91d3a2495a0d0ec506f079f684952782cad686616a8d384f859d743e351a",
+  "summary_input_type": "fulltext",
+  "topic": "AIエージェント向けツールをMCPではなくCLIとして設計した理由と3原則",
+  "summary_3lines": [
+    "データ分析プラットフォームのAIエージェント連携において、MCPではなくファイルを中間表現にできるCLIを採用した経緯を解説している。",
+    "CLI設計の3原則として、コンテキストの浪費回避、エラーから自己修正できる仕組み、シンプルで一本道なワークフローの構築を挙げている。",
+    "LLMが苦手な処理はツール側で引き受け、人間と共通のドキュメントを用いて自律的に動ける設計にする重要性を説いている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "AIエージェント向けのツール設計におけるMCPとCLIの比較や、実践的な設計原則が具体的に解説されているため。",
+  "defer_reason": "一般的な開発実務で直ちにCLIを作る予定がない場合は、後回しにしても問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "CLI",
+    "MCP",
+    "ツール設計",
+    "Codatum"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-07T22:14:33.049270Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

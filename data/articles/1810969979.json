@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1810969979,
+  "collection_id": 56182051,
+  "title": "Claude Code／Codexに中～大規模開発を任せるためのタスク管理 - Qiita",
+  "url": "https://qiita.com/Y-Y-dev/items/d526fb7cdbe35a3f9384",
+  "domain": "qiita.com",
+  "created_at": "2026-08-05T04:49:29.172000Z",
+  "fetched_at": "2026-08-07T22:14:12.145818Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 11448,
+  "content_hash": "sha256:cfc360fb5add498e66bb040fa2e1a2eceb6ec221909bb142508c6a52a0fef5f8",
+  "summary_input_type": "fulltext",
+  "topic": "Claude CodeやCodexなどのAIコーディングエージェントに中〜大規模開発を任せるためのタスク管理手法",
+  "summary_3lines": [
+    "「task-list.md」を唯一の正本としてタスクの進捗、依存関係、完了条件を明確に管理する手法を解説している。",
+    "進行中のタスクを1件に限定し、目的、変更範囲、禁止事項、停止条件を明文化することでAIの暴走を防ぐ。",
+    "AIの自己申告ではなく、コード差分、テスト結果、実環境の証拠に基づいて完了を判定する重要性を説いている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 3,
+    "depth": 2,
+    "actionability": 3
+  },
+  "priority": "high",
+  "read_now_reason": "AIコーディングエージェントを実務の大規模開発に導入し、破綻させずに運用するための具体的なテンプレートやチェックリストが網羅されているため。",
+  "defer_reason": "小規模な開発やAIを補助的にしか使わない場合は、現在の業務にすぐ適用する必要性が低いため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Codex",
+    "タスク管理",
+    "AIコーディング",
+    "開発プロセス"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-07T22:14:13.540603Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1810955941,
+  "collection_id": 56182051,
+  "title": "『汎用AIがあるのになぜ機械学習を学ぶのか』を図解と実践で理解する",
+  "url": "https://zenn.dev/headwaters/articles/68d7502efc3073",
+  "domain": "zenn.dev",
+  "created_at": "2026-08-05T04:00:19.932000Z",
+  "fetched_at": "2026-08-07T22:14:19.884742Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 15605,
+  "content_hash": "sha256:5f45b9dafb1dcefb6addc78ac11ed64f4a38ab0dce1090c88d7d857fb87d22f6",
+  "summary_input_type": "fulltext",
+  "topic": "汎用AI全盛の時代にあえて機械学習の基礎や自前モデルの構築を学ぶ意義と仕組みの解説",
+  "summary_3lines": [
+    "汎用AI（LLM）のAPI利用が普及する中、模倣されにくい差別化資産として自前モデルの構築や機械学習の知識を学ぶ意義を解説している。",
+    "タイタニック号のデータセットを用いた実践例を通し、欠損値補完やカテゴリ変数のエンコード、ColumnTransformerによる前処理パイプラインの構築手順を図解している。",
+    "モデルの自動更新の仕組みや、データ改善・モデル・ハイパーパラメータの順で行う精度向上の優先順位について説明している。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "low",
+  "read_now_reason": "scikit-learnを用いた前処理やパイプラインの具体的なコード例と図解が含まれており、実務での機械学習の基礎を短時間で確認できるため。",
+  "defer_reason": "機械学習の基礎的なパイプライン構築や汎用AIとの比較論であり、すでに機械学習の実装経験がある場合は急いで読む必要はないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "機械学習",
+    "汎用AI",
+    "scikit-learn",
+    "Pipeline",
+    "特徴量エンジニアリング"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-07T22:14:21.460581Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

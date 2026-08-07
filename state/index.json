@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-04T22:26:41.639434Z",
+  "last_run_at": "2026-08-07T22:14:35.876840Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -363,7 +363,7 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-08-04T22:26:41.636932Z"
+      "updated_at": "2026-08-07T22:14:35.874499Z"
     },
     "1783046248": {
       "status": "summarized",
@@ -483,6 +483,55 @@
       "reason": null,
       "summarized_at": "2026-07-31T22:24:28.150607Z",
       "updated_at": "2026-07-31T22:24:28.150605Z"
+    },
+    "1812814698": {
+      "status": "summarized",
+      "content_hash": "sha256:71a6a93a341e3c6beae4fc2ec5fdec2b3d3f0b9064fbd133cb44c1fe19dae8b1",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:09.711931Z",
+      "updated_at": "2026-08-07T22:14:09.711930Z"
+    },
+    "1810969979": {
+      "status": "summarized",
+      "content_hash": "sha256:cfc360fb5add498e66bb040fa2e1a2eceb6ec221909bb142508c6a52a0fef5f8",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:13.540623Z",
+      "updated_at": "2026-08-07T22:14:13.540621Z"
+    },
+    "1810969859": {
+      "status": "summarized",
+      "content_hash": "sha256:73277d8ddc58c0a283319a3d3a70816bd9f7b7059411498b4e4bf5b8d53f0a1c",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:17.359355Z",
+      "updated_at": "2026-08-07T22:14:17.359353Z"
+    },
+    "1810955941": {
+      "status": "summarized",
+      "content_hash": "sha256:5f45b9dafb1dcefb6addc78ac11ed64f4a38ab0dce1090c88d7d857fb87d22f6",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:21.460600Z",
+      "updated_at": "2026-08-07T22:14:21.460598Z"
+    },
+    "1810955862": {
+      "status": "summarized",
+      "content_hash": "sha256:1cb4cf06aa9aea728dcf67cbfdc49f5556c1e4216dc0025548f12f593bd8ec25",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:25.216300Z",
+      "updated_at": "2026-08-07T22:14:25.216298Z"
+    },
+    "1810955585": {
+      "status": "summarized",
+      "content_hash": "sha256:da4a4c6c0943b49346edde6f2aa7f367f6b52139d1dceac7ad9a9acf8e7efa70",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:29.088853Z",
+      "updated_at": "2026-08-07T22:14:29.088851Z"
+    },
+    "1810871142": {
+      "status": "summarized",
+      "content_hash": "sha256:ac4a91d3a2495a0d0ec506f079f684952782cad686616a8d384f859d743e351a",
+      "reason": null,
+      "summarized_at": "2026-08-07T22:14:33.049288Z",
+      "updated_at": "2026-08-07T22:14:33.049286Z"
     }
   }
 }

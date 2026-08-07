@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1810969859,
+  "collection_id": 56182051,
+  "title": "OpenCode × Amazon Bedrock で好きなモデルを選べる AI コーディング環境を構築する！",
+  "url": "https://zenn.dev/aws_japan/articles/opencode-bedrock-lab",
+  "domain": "zenn.dev",
+  "created_at": "2026-08-05T04:48:54.290000Z",
+  "fetched_at": "2026-08-07T22:14:16.024003Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 15700,
+  "content_hash": "sha256:73277d8ddc58c0a283319a3d3a70816bd9f7b7059411498b4e4bf5b8d53f0a1c",
+  "summary_input_type": "fulltext",
+  "topic": "OpenCodeをAmazon Bedrockに接続し、マルチモデルなAIコーディング環境を構築・検証した記事",
+  "summary_3lines": [
+    "オープンソースのコーディングエージェント「OpenCode」をAmazon Bedrockのバックエンドとして動作させる手順とIAM設定を解説している。",
+    "Bedrock経由でもプロンプトキャッシュが正常に機能し、高いコスト削減効果があることを実測データで示している。",
+    "モデル切り替えの利便性やキャッシュTTL、権限設定における注意点など、実務導入に向けた検証結果をまとめている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "OpenCodeとAmazon Bedrockを組み合わせた具体的な設定手順やプロンプトキャッシュの実測値が詳細に検証されているため。",
+  "defer_reason": "特定のAIコーディングツールやAWS環境を利用していない場合は、すぐに実践する内容ではないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "OpenCode",
+    "Amazon Bedrock",
+    "AIコーディングエージェント",
+    "プロンプトキャッシュ",
+    "IAM"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-07T22:14:17.359337Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

@@ -45,8 +45,8 @@
         </div>
         <div class="header-right">
           <div class="stats">
-            <div class="stats-count"><strong id="stats-count">22</strong> / <span id="stats-total">22</span> 件を表示</div>
-            <div class="stats-sub">最終実行 2026-08-05 07:26</div>
+            <div class="stats-count"><strong id="stats-count">29</strong> / <span id="stats-total">29</span> 件を表示</div>
+            <div class="stats-sub">最終実行 2026-08-08 07:14</div>
           </div>
           <a href="https://app.raindrop.io/" target="_blank" rel="noopener" class="raindrop-link" title="Raindrop.io を開く">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="22" height="22">
@@ -83,6 +83,79 @@
   <main class="container">
     
     <section class="articles">
+      
+      <article class="card priority-high" data-priority="high">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-high"><span class="dot"></span>HIGH</span>
+              
+              <span class="domain">qiita.com</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 13:49</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://qiita.com/Y-Y-dev/items/d526fb7cdbe35a3f9384" target="_blank" rel="noopener">Claude Code／Codexに中～大規模開発を任せるためのタスク管理 - Qiita</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>「task-list.md」を唯一の正本としてタスクの進捗、依存関係、完了条件を明確に管理する手法を解説している。</li>
+              
+              <li>進行中のタスクを1件に限定し、目的、変更範囲、禁止事項、停止条件を明文化することでAIの暴走を防ぐ。</li>
+              
+              <li>AIの自己申告ではなく、コード差分、テスト結果、実環境の証拠に基づいて完了を判定する重要性を説いている。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>10</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s3"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s3"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude Code</span>
+          
+          <span class="keyword">Codex</span>
+          
+          <span class="keyword">タスク管理</span>
+          
+          <span class="keyword">AIコーディング</span>
+          
+          <span class="keyword">開発プロセス</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> AIコーディングエージェントを実務の大規模開発に導入し、破綻させずに運用するための具体的なテンプレートやチェックリストが網羅されているため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> 小規模な開発やAIを補助的にしか使わない場合は、現在の業務にすぐ適用する必要性が低いため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
       
       <article class="card priority-high" data-priority="high">
         <div class="card-body">
@@ -222,6 +295,225 @@
             
             <div class="reason defer">
               <span class="reason-label">後回し:</span> E2Eテストの導入やCIチューニングを直近で行う予定がない場合は、実装時のリファレンスとして後回しでもよい。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-medium"><span class="dot"></span>MEDIUM</span>
+              
+              <span class="domain">zenn.dev</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 13:48</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://zenn.dev/aws_japan/articles/opencode-bedrock-lab" target="_blank" rel="noopener">OpenCode × Amazon Bedrock で好きなモデルを選べる AI コーディング環境を構築する！</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>オープンソースのコーディングエージェント「OpenCode」をAmazon Bedrockのバックエンドとして動作させる手順とIAM設定を解説している。</li>
+              
+              <li>Bedrock経由でもプロンプトキャッシュが正常に機能し、高いコスト削減効果があることを実測データで示している。</li>
+              
+              <li>モデル切り替えの利便性やキャッシュTTL、権限設定における注意点など、実務導入に向けた検証結果をまとめている。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>8</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s2"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">OpenCode</span>
+          
+          <span class="keyword">Amazon Bedrock</span>
+          
+          <span class="keyword">AIコーディングエージェント</span>
+          
+          <span class="keyword">プロンプトキャッシュ</span>
+          
+          <span class="keyword">IAM</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> OpenCodeとAmazon Bedrockを組み合わせた具体的な設定手順やプロンプトキャッシュの実測値が詳細に検証されているため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> 特定のAIコーディングツールやAWS環境を利用していない場合は、すぐに実践する内容ではないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-medium"><span class="dot"></span>MEDIUM</span>
+              
+              <span class="domain">zenn.dev</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 13:00</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://zenn.dev/benjuwan/articles/c2ba48e7662f92" target="_blank" rel="noopener">Microsoft 謹製 デスクトップアプリ「Skill Recorder」で業務効率化スキル（SKILL.md）の作成が捗る？</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>Microsoftの「Skill Recorder」は、PC操作の画面録画と音声解説からAI用スキル（SKILL.md）を自動生成するデスクトップアプリである。</li>
+              
+              <li>ローカルでの画面キャプチャやWhisperによる音声文字起こし、GitHub Copilotを通じた解析・言語化の仕組みを持つ。</li>
+              
+              <li>利用にはNode.js 24やGitHubアカウントに加え、十分な活用にはMicrosoft 365の契約が必要となる。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>8</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s2"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Skill Recorder</span>
+          
+          <span class="keyword">SKILL.md</span>
+          
+          <span class="keyword">GitHub Copilot</span>
+          
+          <span class="keyword">業務効率化</span>
+          
+          <span class="keyword">AIエージェント</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> Microsoftの最新AIツール「Skill Recorder」の導入手順や実際の使用感、前提条件を具体的に把握できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> Microsoft 365環境が必須であるため、手元ですぐに検証できない場合は後回しにしても問題ないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-medium" data-priority="medium">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-medium"><span class="dot"></span>MEDIUM</span>
+              
+              <span class="domain">zenn.dev</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 09:51</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://zenn.dev/codatum/articles/80b99faba75704" target="_blank" rel="noopener">AIエージェント向けのツールを、MCPではなくCLIとして作った — 設計の3原則</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>データ分析プラットフォームのAIエージェント連携において、MCPではなくファイルを中間表現にできるCLIを採用した経緯を解説している。</li>
+              
+              <li>CLI設計の3原則として、コンテキストの浪費回避、エラーから自己修正できる仕組み、シンプルで一本道なワークフローの構築を挙げている。</li>
+              
+              <li>LLMが苦手な処理はツール側で引き受け、人間と共通のドキュメントを用いて自律的に動ける設計にする重要性を説いている。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>8</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s2"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">AIエージェント</span>
+          
+          <span class="keyword">CLI</span>
+          
+          <span class="keyword">MCP</span>
+          
+          <span class="keyword">ツール設計</span>
+          
+          <span class="keyword">Codatum</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> AIエージェント向けのツール設計におけるMCPとCLIの比較や、実践的な設計原則が具体的に解説されているため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> 一般的な開発実務で直ちにCLIを作る予定がない場合は、後回しにしても問題ないため。
             </div>
             
             
@@ -1169,6 +1461,225 @@
             
             <div class="reason defer">
               <span class="reason-label">後回し:</span> 内容はリスクの啓発と基本的な対策が中心であり、急ぎの作業に直接影響しないため後回しでも問題ないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-low" data-priority="low">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-low"><span class="dot"></span>LOW</span>
+              
+              <span class="domain">speakerdeck.com</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-07 09:03</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kuroda" target="_blank" rel="noopener">事業価値と Engineering 2026年度版</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>AIにより開発コストが下がる時代において、生産性は開発量（アウトプット）ではなく事業価値（アウトカム）の面積で評価されるべきであると説いています。</li>
+              
+              <li>アウトプットからアウトカムまでの距離は開発の種類によって異なり、事業の文脈に応じた適切な開発手法の選択が求められます。</li>
+              
+              <li>コード総量の増加や技術的負債、オーバーエンジニアリングを防ぎつつ、価値あるコードの濃度を上げ、システムを持続可能に動かす重要性が示されています。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>5</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s1"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s1"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s1"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">事業価値</span>
+          
+          <span class="keyword">エンジニアリング</span>
+          
+          <span class="keyword">生産性</span>
+          
+          <span class="keyword">技術的負債</span>
+          
+          <span class="keyword">AI時代</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> AI時代の開発においてエンジニアが注力すべき事業視点や生産性の本質を再定義しているため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> 抽象的な概念やフレームワークの解説が中心で、具体的なコードや開発プロセスの手順が含まれていないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-low" data-priority="low">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-low"><span class="dot"></span>LOW</span>
+              
+              <span class="domain">zenn.dev</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 13:00</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://zenn.dev/headwaters/articles/68d7502efc3073" target="_blank" rel="noopener">『汎用AIがあるのになぜ機械学習を学ぶのか』を図解と実践で理解する</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>汎用AI（LLM）のAPI利用が普及する中、模倣されにくい差別化資産として自前モデルの構築や機械学習の知識を学ぶ意義を解説している。</li>
+              
+              <li>タイタニック号のデータセットを用いた実践例を通し、欠損値補完やカテゴリ変数のエンコード、ColumnTransformerによる前処理パイプラインの構築手順を図解している。</li>
+              
+              <li>モデルの自動更新の仕組みや、データ改善・モデル・ハイパーパラメータの順で行う精度向上の優先順位について説明している。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>7</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s1"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s2"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">機械学習</span>
+          
+          <span class="keyword">汎用AI</span>
+          
+          <span class="keyword">scikit-learn</span>
+          
+          <span class="keyword">Pipeline</span>
+          
+          <span class="keyword">特徴量エンジニアリング</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> scikit-learnを用いた前処理やパイプラインの具体的なコード例と図解が含まれており、実務での機械学習の基礎を短時間で確認できるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> 機械学習の基礎的なパイプライン構築や汎用AIとの比較論であり、すでに機械学習の実装経験がある場合は急いで読む必要はないため。
+            </div>
+            
+            
+          </div>
+        </details>
+
+      </article>
+      
+      <article class="card priority-low" data-priority="low">
+        <div class="card-body">
+          <div class="card-main">
+            <div class="card-header">
+              <span class="priority-badge priority-low"><span class="dot"></span>LOW</span>
+              
+              <span class="domain">makeuseof.com</span>
+              <span class="sep">·</span>
+              <span class="date">2026-08-05 12:59</span>
+            </div>
+
+            <h2 class="card-title">
+              <a href="https://www.makeuseof.com/claude-edit-photos-makes-darktable-like-lightroom/" target="_blank" rel="noopener">Claude can edit your photos now — and it makes Darktable feel like Lightroom</a>
+            </h2>
+
+            
+            <ul class="summary">
+              
+              <li>筆者はAdobe Lightroomのサブスクリプションから脱却するため、オープンソースのRAW現像ソフト「Darktable」とClaudeを連携させるMCPサーバーを自作した。</li>
+              
+              <li>作成した「darktable-mcp」により、ターミナル経由でDarktableを操作し、自然言語の指示で画像の一括処理や編集が可能になった。</li>
+              
+              <li>複雑なDarktableの操作をAIが補助することで、初心者でも迷わず高度な現像処理を行える新しいワークフローを実現している。</li>
+              
+            </ul>
+            
+          </div>
+          <div class="score-panel">
+            <div class="score-total">スコア <strong>7</strong><span>/12</span></div>
+            <div class="axes">
+              <div class="axis"><span class="axis-label">新規性</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">関心の近さ</span><span class="bar"><span class="fill s2"></span></span></div>
+              <div class="axis"><span class="axis-label">読む必要性</span><span class="bar"><span class="fill s1"></span></span></div>
+              <div class="axis"><span class="axis-label">活用度</span><span class="bar"><span class="fill s2"></span></span></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="keywords">
+          
+          <span class="keyword">Claude</span>
+          
+          <span class="keyword">Darktable</span>
+          
+          <span class="keyword">MCP</span>
+          
+          <span class="keyword">Lightroom</span>
+          
+          <span class="keyword">AI画像編集</span>
+          
+        </div>
+        
+
+        <details class="reasons-toggle">
+          <summary>判定理由</summary>
+          <div class="reasons">
+            
+            <div class="reason read-now">
+              <span class="reason-label">今読む:</span> AI（Claude）とデスクトップアプリ（Darktable）をMCPで連携させる具体的な実践例が分かるため。
+            </div>
+            
+            
+            <div class="reason defer">
+              <span class="reason-label">後回し:</span> Adobeのサブスクリプションに不満がなく、オープンソースのRAW現像環境に興味がなければ後回しで問題ない。
             </div>
             
             
