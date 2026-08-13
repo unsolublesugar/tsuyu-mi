@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1817620043,
+  "collection_id": 56182051,
+  "title": "AIエージェント統制は「IDの層」と「コンテンツの層」に分かれた｜BoxとOktaの発表を読み解く | CloudNative BLOGs",
+  "url": "https://blog.cloudnative.co.jp/articles/ai-agent-governance-id-content/",
+  "domain": "blog.cloudnative.co.jp",
+  "created_at": "2026-08-11T23:34:59.991000Z",
+  "fetched_at": "2026-08-13T22:17:26.561552Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 13897,
+  "content_hash": "sha256:7fe0d7503dd58dae5a5955e49d7750ee03f7b1bec335846282ec4452fbe5727c",
+  "summary_input_type": "fulltext",
+  "topic": "BoxとOktaの発表から読み解くAIエージェント統制の実装アプローチ（ID層とコンテンツ層）",
+  "summary_3lines": [
+    "BoxとOktaの新機能発表をもとに、AIエージェント統制が「ID層」と「コンテンツ層」の二層に分かれることを解説している。",
+    "Oktaはサービス間の接続や認証を統制するID層を、Boxはデータアクセスやプロンプト検査などコンテンツ層の制御を担う。",
+    "実務では製品導入の前に、エージェントの台帳化や認証情報の所在把握、データの重心の特定から始めることが推奨されている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "AIエージェントのガバナンスにおける具体的な二層構造と、実務担当者が今すぐ着手すべきステップが網羅されているため。",
+  "defer_reason": "紹介されている機能の多くは提供目標が先であり、自社の契約プランや環境によっては今すぐ具体的な設定作業に移れないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "ガバナンス",
+    "Box",
+    "Okta",
+    "ID層とコンテンツ層"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-13T22:17:28.349772Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
