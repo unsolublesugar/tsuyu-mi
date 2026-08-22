@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1827791000,
+  "collection_id": 56182051,
+  "title": "AI エージェントの「認可疲れ」に効く処方箋 : 理論から実装まで",
+  "url": "https://zenn.dev/aws_japan/articles/2b62886aa8735e",
+  "domain": "zenn.dev",
+  "created_at": "2026-08-21T03:07:30.608000Z",
+  "fetched_at": "2026-08-22T22:05:53.656071Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 31273,
+  "content_hash": "sha256:db5eefa24a96eedbc2c1918597287980f32a7bd7ebf71ce7b4b01924ae681b25",
+  "summary_input_type": "fulltext",
+  "topic": "AIエージェントにおける認可疲れを解消するOBO（On-Behalf-Of）によるトークン交換の実装と設計",
+  "summary_3lines": [
+    "AIエージェントが複数サービスと連携する際の都度認可（認可疲れ）に対し、OBO（トークン交換）を用いた一度の認証による解決策を解説している。",
+    "認可サーバーに必要な要件や、AWS（Amazon Bedrock AgentCore）を活用した具体的な実装例、設定手順を提示している。",
+    "なりすましや権限昇格を防ぐためのセキュリティ対策や、本番環境における署名鍵の運用および監視設計についてまとめている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 3,
+    "actionability": 3
+  },
+  "priority": "high",
+  "read_now_reason": "AIエージェントの外部サービス連携における認可課題に対し、プロトコルレベルの解決策とAWSを用いた具体的な実装手順が詳細に解説されているため。",
+  "defer_reason": "現在AIエージェントやOIDC/OAuthの認可基盤の設計・実装に直面していない場合は、必要になったタイミングで読んでも問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AIエージェント",
+    "OAuth 2.0",
+    "Token Exchange",
+    "Amazon Bedrock",
+    "認証・認可"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-22T22:05:55.419072Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

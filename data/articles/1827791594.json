@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1827791594,
+  "collection_id": 56182051,
+  "title": "首掛け型ウェアラブル THINKLET と OpenAI Realtime API で「目の前を一緒に見ながら相談できる相方」を作る",
+  "url": "https://zenn.dev/yujif/articles/90696ac3f098e2",
+  "domain": "zenn.dev",
+  "created_at": "2026-08-21T03:09:30.496000Z",
+  "fetched_at": "2026-08-22T22:05:45.670980Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 5054,
+  "content_hash": "sha256:368a9a9077eb7d1d855ce6d20d99b989c76125dbef5cbf2d680c1769f938641d",
+  "summary_input_type": "fulltext",
+  "topic": "首掛け型ウェアラブル端末とOpenAI Realtime APIを組み合わせた音声・映像対話アプリの制作事例",
+  "summary_3lines": [
+    "首掛け型ウェアラブル端末「THINKLET」のカメラとマイクをOpenAI Realtime APIに接続するAndroidアプリを実装した。",
+    "約2秒ごとの静止画送信やAPI料金の上限自動停止機能などを備え、料理ナビや英語練習の用途で検証を行っている。",
+    "コストを抑える工夫や、現場で分かったスピーカーの音量・センサー判定などの課題と対策が具体的に紹介されている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "ウェアラブルデバイスとOpenAI Realtime APIを連携させた実践的なシステム構成やコスト削減の工夫が具体的に学べるため。",
+  "defer_reason": "現在ウェアラブルAIデバイスやRealtime APIを使った開発の予定がなければ、急いで読む必要はないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "THINKLET",
+    "OpenAI Realtime API",
+    "Android",
+    "ウェアラブル",
+    "音声対話AI"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-08-22T22:05:47.102855Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
