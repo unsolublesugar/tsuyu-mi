@@ -46,6 +46,11 @@ line-length = 100
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]
 
+[tool.ruff.format]
+# ruff format のデフォルト（ダブルクォート・スペースインデント）を明示
+quote-style = "double"
+indent-style = "space"
+
 [tool.ruff.lint.per-file-ignores]
 # main.py は import より前に warnings.filterwarnings() を置く必要があるため E402 を除外
 "src/main.py" = ["E402"]

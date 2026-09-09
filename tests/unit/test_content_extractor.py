@@ -37,8 +37,11 @@ class TestClassifyLength:
 class TestBuildFallbackInput:
     def test_with_all_fields(self):
         item = _make_raindrop(
-            title="Test", excerpt="Excerpt", url="https://example.com",
-            domain="example.com", tags=["python"],
+            title="Test",
+            excerpt="Excerpt",
+            url="https://example.com",
+            domain="example.com",
+            tags=["python"],
         )
         fb = _build_fallback_input(item, og_description="OG desc")
         assert fb["title"] == "Test"

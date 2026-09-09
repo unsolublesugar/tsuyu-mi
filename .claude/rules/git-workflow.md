@@ -17,8 +17,8 @@ description: Git 運用規範（daily-tech-news 準拠）
 
 ## PR 受け入れ基準（必須）
 
-- **`pytest` が全て通らない PR は受け入れない（マージ不可）。** レビュー時は必ずローカルで `pytest` を実行し、結果を確認する（CI ではテストを実行していないため、ローカル確認が必須）。
-- `ruff check src/ tests/` を実行し、**`All checks passed!` になること**（main は lint クリーンを維持している）。
+- **`pytest` が全て通らない PR は受け入れない（マージ不可）。** CI（`.github/workflows/ci.yml`）で `pytest` / `ruff check` / `ruff format --check` を実行しているが、レビュー時はローカルでも `pytest` を実行して結果を確認する。
+- `ruff check src/ tests/` と `ruff format --check src/ tests/` が両方通ること（main は lint / format クリーンを維持している）。
 - 挙動を変更・修正する PR には、その挙動を保証するテストを必ず追加する。
 - 既存の回帰テスト（例: `tests/unit/test_main_fallback.py` — フォールバック要約経路の保証）を、変更を通すために削除・骨抜きにしない。落ちる場合は原因コード側を直す。
 - 外部から来た PR をレビュー・取り込む際も、上記を満たしているかを必ず検証してからマージ判断する。
