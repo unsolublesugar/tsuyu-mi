@@ -91,17 +91,20 @@ Obtain an API key from one of the following providers:
 2. **Create Key**
 3. Recommended model: `claude-haiku-4-5`
 
-#### Recommended models (as of July 2026)
+#### Recommended models (as of September 2026)
 
 This tool does a 3-line summary plus 4-axis scoring, a few to a dozen articles per run. Expensive reasoning models are unnecessary, so the low-cost tier of each provider is recommended.
 
 | Provider | `LLM_MODEL` | Reference price (input / output, per 1M tokens) | Notes |
 |---|---|---|---|
 | `gemini` | `gemini-3.5-flash-lite` | $0.30 / $2.50 | **Recommended.** Has a free tier |
-| `openai` | `gpt-5.6-luna` | $1.00 / $6.00 | Cheapest tier of the GPT-5.6 family |
-| `anthropic` | `claude-haiku-4-5` | $1.00 / $5.00 | Cheapest Claude tier |
+| `openai` | `gpt-5.6-luna` | $0.20 / $1.20 | Cheapest tier of the GPT-5.6 family |
+| `anthropic` | `claude-haiku-4-5` | $1.00 / $5.00 | Cheapest Claude tier. Oldest model in the current lineup (retirement not sooner than 2026-10-15); switch to `claude-sonnet-5` ($2.00 / $10.00) once a retirement notice is published |
 
-For better triage quality, swap in a higher tier (`gemini-3.6-flash` / `gpt-5.6-terra` / `claude-sonnet-5`). Only `LLM_MODEL` changes — no code changes needed.
+For better triage quality, swap in a higher tier (`gemini-3.8-flash` / `gpt-5.6-terra` / `claude-sonnet-5`). Only `LLM_MODEL` changes — no code changes needed.
+
+> [!NOTE]
+> `gemini-3.8-flash` (released 2026-09-02) is priced at $0.75 / $3.75 through 2026-12-31 and $1.50 / $7.50 from 2027-01-01. Thinking is on by default (`thinking_level: medium`) and thinking tokens are billed as output, so the actual cost per article is higher than the list price suggests. `gemini-3.7-flash` remains supported at the same price.
 
 > [!NOTE]
 > To cut costs further, Gemini also offers `gemini-2.5-flash-lite` ($0.10 / $0.40). Triage that requires reading full text and judging relatively tends to get coarse there, so validate with the recommended model first.

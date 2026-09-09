@@ -8,14 +8,18 @@
 
 ### モデル選定方針
 
-処理は「3 行要約 + 4 軸スコアリング」のバッチで、高価な推論モデルは不要。各プロバイダーの低コスト帯を既定とする（2026 年 7 月時点: `gemini-3.5-flash-lite` / `gpt-5.6-luna` / `claude-haiku-4-5`）。モデル名はコードに埋め込まず `LLM_MODEL` で切り替える。
+処理は「3 行要約 + 4 軸スコアリング」のバッチで、高価な推論モデルは不要。各プロバイダーの低コスト帯を既定とする（2026 年 9 月時点: `gemini-3.5-flash-lite` / `gpt-5.6-luna` / `claude-haiku-4-5`。上位は `gemini-3.8-flash` / `gpt-5.6-terra` / `claude-sonnet-5`）。モデル名はコードに埋め込まず `LLM_MODEL` で切り替える。
 
 ### プロバイダー実装時の注意
 
 - **OpenAI**: GPT-5 系は `temperature` / `top_p` の既定値以外を受け付けず 400 になる。渡さないこと。
 - **Anthropic**: thinking が既定で有効なモデルでは `content[0]` が thinking ブロックになる。
   先頭決め打ちではなく最初の `text` ブロックを探す。`stop_reason == "refusal"` も扱う。
+  Python SDK v1.0 以降は `temperature` / `top_p` / `top_k` が削除済み（渡すと `TypeError`）。
 - **Gemini**: `response_mime_type="application/json"` で JSON を強制する。
+  Gemini 3.x Flash（3.8 など）は `temperature` / `top_p` / `top_k` / `candidate_count` / `thinking_budget` を
+  受け付けない（`thinking_budget` は `thinking_level` に置換済み）。サンプリング系パラメータは渡さない。
+  thinking が既定で有効なため、thinking トークンも出力として課金される。
 - モデルを追加・更新する際は、SDK の破壊的変更（パラメータの削除など）を公式ドキュメントで確認する。
 
 ## プロンプト設計方針
