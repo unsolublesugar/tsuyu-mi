@@ -275,7 +275,12 @@ def reprocess_failed(verbose: bool) -> None:
 
 
 def _process_article(
-    raindrop, config, provider, state, repo, logger,
+    raindrop,
+    config,
+    provider,
+    state,
+    repo,
+    logger,
 ) -> ProcessedArticle | None:
     """1 記事を処理する。fetch → extract → summarize → save。"""
     rid = raindrop.raindrop_id
@@ -410,8 +415,11 @@ def _process_article(
     # AI 要約
     if extraction.text:
         result = summarize_fulltext(
-            provider, extraction.text,
-            title=raindrop.title, url=raindrop.url, domain=raindrop.domain,
+            provider,
+            extraction.text,
+            title=raindrop.title,
+            url=raindrop.url,
+            domain=raindrop.domain,
         )
     else:
         result = summarize_fallback(provider, extraction.fallback_input)
@@ -440,9 +448,7 @@ def _process_article(
     return article
 
 
-def _cleanup_removed_articles(
-    raindrops: list, repo: ArticleRepository, state: StateStore
-) -> int:
+def _cleanup_removed_articles(raindrops: list, repo: ArticleRepository, state: StateStore) -> int:
     """コレクションから除外された記事を削除する。削除件数を返す。"""
     current_ids = {str(r.raindrop_id) for r in raindrops}
     saved_articles = repo.list_all()
@@ -498,11 +504,13 @@ def _print_summary(
     console.print()
     minutes, seconds = divmod(int(elapsed), 60)
     time_str = f"{minutes}分{seconds}秒" if minutes else f"{seconds}秒"
-    console.print(f"[bold]完了[/bold] — 対象: {total} 件 | "
-                  f"[green]要約: {stats['summarized']}[/green] | "
-                  f"[yellow]スキップ: {stats['skipped']}[/yellow] | "
-                  f"[red]失敗: {stats['failed']}[/red] | "
-                  f"処理時間: {time_str}")
+    console.print(
+        f"[bold]完了[/bold] — 対象: {total} 件 | "
+        f"[green]要約: {stats['summarized']}[/green] | "
+        f"[yellow]スキップ: {stats['skipped']}[/yellow] | "
+        f"[red]失敗: {stats['failed']}[/red] | "
+        f"処理時間: {time_str}"
+    )
 
 
 if __name__ == "__main__":

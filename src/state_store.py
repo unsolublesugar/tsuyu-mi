@@ -42,7 +42,8 @@ class StateStore:
     ) -> list[RaindropItem]:
         """未要約の記事を抽出する。created_at の新しい順、上限 max_count 件。"""
         summarized_ids = {
-            rid for rid, entry in self.index.items.items()
+            rid
+            for rid, entry in self.index.items.items()
             if entry.status == ArticleState.summarized
         }
         unsummarized = [r for r in raindrops if str(r.raindrop_id) not in summarized_ids]
@@ -53,9 +54,7 @@ class StateStore:
     def get_failed_ids(self) -> list[str]:
         """status が failed のエントリの ID リストを返す。"""
         return [
-            rid
-            for rid, entry in self.index.items.items()
-            if entry.status == ArticleState.failed
+            rid for rid, entry in self.index.items.items() if entry.status == ArticleState.failed
         ]
 
     def update_status(

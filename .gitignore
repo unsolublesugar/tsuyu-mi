@@ -27,7 +27,9 @@ data/raw/
 .claude/settings.local.json
 
 # IDE
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 .idea/
 *.swp
 *.swo

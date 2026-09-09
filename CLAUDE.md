@@ -16,6 +16,7 @@ Python 3.11+ / httpx / pydantic / trafilatura / readability-lxml / jinja2 / clic
 - Run: `python -m src.main run`
 - Test: `pytest`
 - Lint: `ruff check src/ tests/`
+- Format: `ruff format src/ tests/`（CI では `ruff format --check` で検証）
 
 ## PR 受け入れ方針
 

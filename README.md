@@ -261,7 +261,19 @@ Changes are auto-committed and pushed only when new content is generated.
 ```bash
 pytest
 ruff check src/ tests/
+ruff format --check src/ tests/
 ```
+
+The same checks run in CI (`.github/workflows/ci.yml`) on every push and pull request.
+
+To run them automatically before each commit, install the pre-commit hooks:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+If you use VS Code, the bundled `.vscode/settings.json` enables format-on-save with the recommended [Ruff extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
 
 ### Contributing
 
@@ -269,7 +281,7 @@ Contributions are welcome! A few things that help keep the project healthy:
 
 - Please make sure `pytest` passes before opening a pull request. PRs are merged once the test suite is green.
 - When you change or fix behavior, please add or update tests to cover it.
-- Please run `ruff check src/ tests/` and keep it clean — `main` currently passes with no warnings.
+- Please run `ruff check src/ tests/` and `ruff format src/ tests/` before pushing — `main` is kept lint- and format-clean, and CI will fail otherwise.
 
 The suite includes some regression tests that guard against previously-fixed bugs — for example, [`tests/unit/test_main_fallback.py`](tests/unit/test_main_fallback.py) covers the fallback summarization path (X/Twitter posts, articles where extraction failed). Please fix the underlying code rather than removing these if they fail.
 

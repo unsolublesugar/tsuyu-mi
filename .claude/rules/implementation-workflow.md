@@ -11,7 +11,7 @@ description: 実装ワークフローのルール
 3. 実装する
 4. `/update-specs` で仕様書との乖離をチェックし、必要なら更新する
 5. Test plan の項目をローカルで実行し、動作確認する
-6. **`pytest` と `ruff check src/ tests/` を実行し、すべて green であることを確認する（通らない変更は PR にしない）**
+6. **`pytest`・`ruff check src/ tests/`・`ruff format --check src/ tests/` を実行し、すべて green であることを確認する（通らない変更は PR にしない）**。`pre-commit install` しておけばコミット時に自動でチェック・整形される
 7. コミット・プッシュ → PR 作成（確認済みの結果を PR に記載）
 8. マージ後、main に戻って次のステップへ
 

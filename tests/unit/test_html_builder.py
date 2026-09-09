@@ -92,7 +92,8 @@ class TestHtmlBuilder:
             articles = [
                 _make_article(1),
                 ProcessedArticle(
-                    raindrop_id=2, collection_id=100,
+                    raindrop_id=2,
+                    collection_id=100,
                     created_at=datetime(2026, 3, 20, tzinfo=UTC),
                     content_type=ContentType.video,
                     content_status="unsupported_video",
