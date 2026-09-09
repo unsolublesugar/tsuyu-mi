@@ -8,6 +8,7 @@ from src.config import Config
 from src.models import Priority, SummaryResult
 from src.summarizer import (
     AnthropicProvider,
+    GeminiProvider,
     OpenAIProvider,
     _load_prompt,
     _parse_response,
@@ -201,6 +202,17 @@ class TestAnthropicProvider:
     def test_empty_content_returns_empty(self):
         assert _anthropic_provider(_AnthropicResponse([])).generate("p") == ""
 
+    def test_does_not_send_sampling_params(self):
+        """SDK v1.0 以降は temperature / top_p / top_k が削除済み（TypeError）のため送らない。"""
+        stub = _StubMessages(_AnthropicResponse([_Block("text", text="{}")]))
+        provider = object.__new__(AnthropicProvider)
+        provider.client = type("Client", (), {"messages": stub})()
+        provider.model = "claude-haiku-4-5"
+
+        assert provider.generate("p") == "{}"
+        for key in ("temperature", "top_p", "top_k"):
+            assert key not in stub.last_kwargs
+
 
 class TestOpenAIProvider:
     def test_does_not_send_temperature(self):
@@ -219,6 +231,23 @@ class TestOpenAIProvider:
         assert provider.generate("p") == "{}"
         assert "temperature" not in stub.last_kwargs
         assert stub.last_kwargs["response_format"] == {"type": "json_object"}
+
+
+class TestGeminiProvider:
+    def test_does_not_send_sampling_params(self):
+        """Gemini 3.x Flash は temperature / thinking_budget 等を受け付けないため送らない。"""
+        stub = _StubMessages(type("Response", (), {"text": "{}"})())
+        provider = object.__new__(GeminiProvider)
+        provider.client = type(
+            "Client", (), {"models": type("Models", (), {"generate_content": stub.create})()}
+        )()
+        provider.model_name = "gemini-3.8-flash"
+
+        assert provider.generate("p") == "{}"
+        assert stub.last_kwargs["config"] == {"response_mime_type": "application/json"}
+        assert stub.last_kwargs["model"] == "gemini-3.8-flash"
+        for key in ("temperature", "top_p", "top_k", "thinking_budget"):
+            assert key not in stub.last_kwargs
 
 
 class TestPromptsRequestScores:

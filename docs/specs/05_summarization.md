@@ -20,9 +20,12 @@ class LLMProvider(Protocol):
 - `OpenAIProvider`: openai SDK。`response_format={"type": "json_object"}` で JSON を強制する。
   **`temperature` は渡さない** — GPT-5 系（推論モデル）は既定値以外を受け付けず 400 になる。
 - `GeminiProvider`: google-genai SDK。`response_mime_type="application/json"` で JSON を強制する。
+  **`temperature` / `top_p` / `top_k` / `thinking_budget` は渡さない** — Gemini 3.x Flash（3.8 など）は
+  これらを受け付けない（`thinking_budget` は `thinking_level` に置換済み）。
 - `AnthropicProvider`: anthropic SDK。thinking が既定で有効なモデル（Claude Opus 5 など）では
   `content[0]` が thinking ブロックになるため、**最初の `text` ブロックを探して返す**。
   `stop_reason == "refusal"` は例外にしてリトライ経路へ流す。
+  **`temperature` 等は渡さない** — Python SDK v1.0 以降は削除済みで `TypeError` になる。
 
 ### Factory
 
