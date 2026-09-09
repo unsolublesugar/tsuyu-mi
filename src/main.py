@@ -9,13 +9,13 @@ warnings.filterwarnings("ignore", message="urllib3.*doesn't match a supported ve
 
 import click
 from rich.console import Console
-from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn
+from rich.progress import BarColumn, Progress, SpinnerColumn, TaskProgressColumn, TextColumn
 from rich.table import Table
 
 from src.article_repository import ArticleRepository
 from src.config import Config
 from src.content_extractor import extract_body
-from src.content_fetcher import FetchResult, fetch_url, fetch_x_post, is_x_url, should_skip_url
+from src.content_fetcher import fetch_url, fetch_x_post, is_x_url, should_skip_url
 from src.html_builder import HtmlBuilder
 from src.logging_util import setup_logger
 from src.models import (
@@ -32,8 +32,7 @@ from src.summarizer import (
     summarize_fulltext,
 )
 from src.utils.hashing import compute_content_hash
-from src.utils.text import is_video_content
-from src.utils.time import format_display, now_utc, to_iso
+from src.utils.time import format_display, now_utc
 
 console = Console()
 

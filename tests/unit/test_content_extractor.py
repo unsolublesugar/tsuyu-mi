@@ -3,7 +3,6 @@
 from datetime import UTC, datetime
 
 from src.content_extractor import (
-    ExtractionResult,
     _build_fallback_input,
     _classify_length,
     extract_body,
