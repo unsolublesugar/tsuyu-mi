@@ -164,7 +164,9 @@ class TestHtmlBuilder:
     def test_inline_code_in_summary(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             builder = HtmlBuilder(output_dir=tmpdir)
-            articles = [_make_article(1, summary_3lines=["`cmux` はターミナルツール", "普通の行", "行3"])]
+            articles = [
+                _make_article(1, summary_3lines=["`cmux` はターミナルツール", "普通の行", "行3"])
+            ]
             path = builder.build(articles)
             html = path.read_text()
             assert "<code>cmux</code>" in html

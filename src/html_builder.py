@@ -54,7 +54,9 @@ class HtmlBuilder:
 
         # ソート: priority (high→medium→low) → created_at 新しい順
         priority_order = {Priority.high: 0, Priority.medium: 1, Priority.low: 2}
-        summarized.sort(key=lambda a: (priority_order.get(a.priority, 1), -a.created_at.timestamp()))
+        summarized.sort(
+            key=lambda a: (priority_order.get(a.priority, 1), -a.created_at.timestamp())
+        )
 
         template = self.env.get_template("index.html")
         html = template.render(
