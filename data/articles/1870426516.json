@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1870426516,
+  "collection_id": 56182051,
+  "title": "OpenAI DevDay 2026 発表まとめ",
+  "url": "https://zenn.dev/schroneko/articles/openai-devday-2026",
+  "domain": "zenn.dev",
+  "created_at": "2026-09-29T22:12:09.169000Z",
+  "fetched_at": "2026-10-01T22:14:14.409967Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 11706,
+  "content_hash": "sha256:33d374c5c6e21c35c27ba2ead4972a9d8f0618f7d500276f64c462cbbd80a04c",
+  "summary_input_type": "fulltext",
+  "topic": "OpenAI DevDay 2026での新機能・新モデル発表の網羅的なまとめ",
+  "summary_3lines": [
+    "24時間稼働のエージェント「dots」や高速化モデル「GPT-6.1 Sol」「Ultrafast」が発表された。",
+    "Codexのクラウド実行やセキュリティ機能、Agents APIのComputer Use対応などが拡充された。",
+    "ChatGPT SpaceやSign in with ChatGPT、新プラン「Pro 500」などのエコシステムも強化された。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 1,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "OpenAI DevDay 2026の大量の発表内容が日本語でコンパクトに整理されており、最新動向を素早く把握できるため。",
+  "defer_reason": "公式のリリースノートや個別の詳細ガイドが出揃っているため、特定の機能を使う段階になってから調べても問題ないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "OpenAI DevDay 2026",
+    "GPT-6.1 Sol",
+    "dots",
+    "Codex",
+    "Agents API"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-01T22:14:16.076250Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
