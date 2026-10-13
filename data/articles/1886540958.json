@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886540958,
+  "collection_id": 56182051,
+  "title": "若手エンジニアに必要だと感じた「AIを使う力」",
+  "url": "https://zenn.dev/muit_techblog/articles/6ea28887c79457",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:32:13.089000Z",
+  "fetched_at": "2026-10-13T22:12:36.792884Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 6330,
+  "content_hash": "sha256:c0f0ad3ee523809323267cbdc03d81515c700d192811bd502fb490a7235b7cc7",
+  "summary_input_type": "fulltext",
+  "topic": "若手エンジニアが業務でAIを使用する際に陥りやすい問題と必要な力",
+  "summary_3lines": [
+    "若手エンジニアがAIを活用する中で、人に聞く判断の遅れや、動くコードと良い設計の混同といった問題に直面した体験談を述べている。",
+    "AIは前提が誤っていれば誤った回答を生成するため、要件理解や問題の切り分け、適切な前提条件の整理が不可欠であると指摘している。",
+    "実践的なプロンプトの例を示し、AIを過信せず人間側が主体的に判断しコントロールする重要性を強調している。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "low",
+  "read_now_reason": "若手エンジニアがAI活用で陥りがちな罠と、それを防ぐ具体的なプロンプト設定が学べるため。",
+  "defer_reason": "一般的なAI利用の注意点や心構えが中心であり、急ぎの技術的課題解決には直結しないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "AI活用",
+    "若手エンジニア",
+    "設計判断",
+    "プロンプトエンジニアリング",
+    "要件定義"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:12:38.506364Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

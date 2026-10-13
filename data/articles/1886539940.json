@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886539940,
+  "collection_id": 56182051,
+  "title": "Claude Code Routines で Notion や Slack から AI に仕事を依頼できる仕組みを作った",
+  "url": "https://zenn.dev/terass_dev/articles/6e6562d54d5505",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:31:14.800000Z",
+  "fetched_at": "2026-10-13T22:12:40.971500Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 8617,
+  "content_hash": "sha256:2770999ba30136a8d1b753f16939c4cb8420d018f0b001d4234571441c17ee96",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Code Routinesと中継サーバーを組み合わせ、NotionやSlackからAI開発をサブスク枠で依頼する仕組みの構築事例",
+  "summary_3lines": [
+    "NotionやSlackから自然文やボタンでClaude Codeへ仕事を依頼できる仕組みをRoutinesと独自の中継サーバーで構築した。",
+    "利用者ごとのルーティンをクラウド上で起動し、会話履歴を中継サーバー経由で引き継ぐことでチーム運用を実現している。",
+    "API従量課金を避けサブスクリプション枠を活用することでコストを大幅に抑えつつ、バグ修正等の開発効率化に成功している。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "Claude Code Routinesをチームで実用的に活用するための具体的なアーキテクチャと運用知見が得られるため。",
+  "defer_reason": "自身のチームで同様のチャット連携やクラウドセッション自動化を直ちに導入する予定がない場合は後回しでも支障はないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Routines",
+    "Notion",
+    "Slack",
+    "AI開発"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:12:42.570391Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

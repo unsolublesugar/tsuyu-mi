@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886539886,
+  "collection_id": 56182051,
+  "title": "中国製オープンウェイトモデルに、自社サービスの脆弱性を探させた",
+  "url": "https://zenn.dev/neurogica/articles/ef9ebaa4f3e9bd",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:31:01.652000Z",
+  "fetched_at": "2026-10-13T22:12:44.957498Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4557,
+  "content_hash": "sha256:8648eb6d16dbea8efbe7161db9c5e153fcad4ca6bebbd5a83e92ee03809f3700",
+  "summary_input_type": "fulltext",
+  "topic": "中国製オープンウェイトモデルを用いた自社サービスの脆弱性探索の実験結果と考察",
+  "summary_3lines": [
+    "自社サービスのリリース前に、Altar-1、Qwen、GLM、DeepSeekの4つの中国製オープンウェイトモデルを使って脆弱性を探索した。",
+    "QwenとGLMがそれぞれ1件ずつ正しい指摘を行い、公開前に修正につながる不具合を発見できた。",
+    "AIを活用した脆弱性調査は有効である一方、誤検出や未完了の試行もあり、継続的な検証の必要性が示された。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "実際のオープンウェイトモデルを用いて脆弱性探索を行った具体的な検証データや結果が含まれており、開発現場におけるAI活用の参考になるため。",
+  "defer_reason": "具体的な脆弱性対策のコードや手順が詳細に解説されているわけではないため、今すぐ実務に直結する内容ではないから。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "オープンウェイトモデル",
+    "脆弱性診断",
+    "LLM",
+    "セキュリティ",
+    "AI"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:12:46.543602Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

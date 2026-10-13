@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886539273,
+  "collection_id": 56182051,
+  "title": "暗号技術入門",
+  "url": "https://zenn.dev/loglass/articles/f00a7408b2cf0b",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:29:59.563000Z",
+  "fetched_at": "2026-10-13T22:13:00.716412Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 12325,
+  "content_hash": "sha256:70b7fbec63c2875a8823d27c3dff7c13b11b7a309cad0b416d691f33e31e69cf",
+  "summary_input_type": "fulltext",
+  "topic": "エンタープライズSaaS開発に向けた暗号技術の基礎と脆弱性の実例解説",
+  "summary_3lines": [
+    "共通鍵暗号や公開鍵暗号、ハッシュ関数などデジタルセキュリティを支える暗号技術の基本概念を解説している。",
+    "AESのCBCモードにおける展性の脆弱性を突いたメッセージ改ざんの具体的な攻撃手法をコマンド例を交えて紹介している。",
+    "AI駆動開発の普及する現代において、エンジニア自身がセキュリティ上の判断を下しコードを評価する重要性を説いている。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "low",
+  "read_now_reason": "暗号技術の基礎から具体的な脆弱性の検証コードまで網羅されており、実装上のセキュリティ意識を高めるのに役立つため。",
+  "defer_reason": "基礎的な暗号理論の解説が多く、すでにセキュリティの基礎知識がある場合は新味に欠けるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "暗号技術",
+    "共通鍵暗号",
+    "公開鍵暗号",
+    "AES-CBC",
+    "デジタル署名"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:13:02.347173Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

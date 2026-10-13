@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886539685,
+  "collection_id": 56182051,
+  "title": "Mods で Claude Code のセッションごとに管理できるメモ帳を作った",
+  "url": "https://zenn.dev/yesodco/articles/da634d752874b2",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:30:46.868000Z",
+  "fetched_at": "2026-10-13T22:12:49.033345Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 12446,
+  "content_hash": "sha256:4e986427fd9cd83117f69dbd898b39b34cd6552bc023d7403ed4d56b852a41d2",
+  "summary_input_type": "fulltext",
+  "topic": "Claude CodeのMods機能を用いてセッションごとにMarkdownメモを管理するプラグインを自作した事例",
+  "summary_3lines": [
+    "Claude Codeのデスクトップアプリやターミナルで動く「Mods」を使い、セッションごとにTODOやメモをMarkdownで管理するプラグイン「session-memo」を開発した。",
+    "作業ディレクトリ配下にMarkdownファイルを作成し、入力欄の上の帯や専用ペインからTODOの切り替えやメモの追記・閲覧ができる仕組み。",
+    "プラグインのソースコード全文を掲載し、UI制限やファイルパスの制約など開発時の工夫点についても解説している。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "Claude Codeの拡張機能（Mods）の具体的な実装例とTypeScriptコードが公開されており、実用的なツールの作り方をすぐに学べるため。",
+  "defer_reason": "Claude Codeを日常的に使用していない場合は、プラグインの仕組みやコードの詳細を急いで読む必要性は低い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Code",
+    "Mods",
+    "TypeScript",
+    "Markdown",
+    "プラグイン開発"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:12:50.451937Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

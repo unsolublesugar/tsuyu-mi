@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1887265720,
+  "collection_id": 56182051,
+  "title": "CSSの`text-box`で文字を上下中央に揃えたい",
+  "url": "https://zenn.dev/chot/articles/be424332489e7a",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-13T02:47:05.026000Z",
+  "fetched_at": "2026-10-13T22:12:28.780404Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 4519,
+  "content_hash": "sha256:8401b3316f43cf5e54c41de48288478dd4a007f0b9a8d41b458f4111c0f05764",
+  "summary_input_type": "fulltext",
+  "topic": "CSSのtext-boxプロパティを用いた文字の上下中央揃えの仕組みと余白調整",
+  "summary_3lines": [
+    "ボタンなどの上下中央揃えで文字がズレて見えるのは、フォントメトリクスによる余白やベースラインが原因である。",
+    "CSSのtext-boxプロパティを使用すると、フォントの基準に合わせて上下の余白を削り、見た目のズレを調整できる。",
+    "欧文基準のほかCJK向けの基準も存在するが、ブラウザ対応やフォントの指定順による影響に注意が必要である。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "CSSの新しめのプロパティであるtext-boxを用いた正確な垂直中央揃えの実装方法が具体的に解説されているため。",
+  "defer_reason": "CJK向けの基準値のブラウザ実装がまだ揃っていないため、今すぐ実務で全面的に導入するには時期尚早な場合があるため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "CSS",
+    "text-box",
+    "フォントメトリクス",
+    "上下中央揃え",
+    "Webデザイン"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-13T22:12:30.423309Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
