@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1886538539,
+  "collection_id": 56182051,
+  "title": "【速報】Claude の新機能 Claude Motion 早速使ってみた",
+  "url": "https://zenn.dev/branbran/articles/047821d64590f0",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:29:43.131000Z",
+  "fetched_at": "2026-10-16T22:13:13.330701Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2173,
+  "content_hash": "sha256:3cb6210274387c66d4670e2019c8b615845a8bf5be21871c3551b801b0414fc8",
+  "summary_input_type": "fulltext",
+  "topic": "Anthropicがベータ公開したClaudeの新機能「Claude Motion」の機能概要と使用感のレビュー",
+  "summary_3lines": [
+    "Anthropicは2026年10月8日、コードで素材を動かして短い説明動画を作る新機能「Claude Motion」をベータ公開した。",
+    "動画生成AIとは異なり文字や数値が正確に保たれ、部分的な修正やエディタでの微調整が可能な点が特徴である。",
+    "TeamおよびEnterpriseプランで利用可能であり、現在はBGMの少なさやデザインがコード力に依存する課題がある。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 1,
+    "actionability": 2
+  },
+  "priority": "low",
+  "read_now_reason": "新機能の仕組みや具体的な使い方のコツ、実際の所感が簡潔にまとまっており、導入検討の参考になるため。",
+  "defer_reason": "ベータ版の基本機能や公式ヘルプに沿った内容が中心であり、詳細なコード実装や高度なハックを含まないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude",
+    "Claude Motion",
+    "Anthropic",
+    "動画生成",
+    "AIツール"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-16T22:13:15.425891Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

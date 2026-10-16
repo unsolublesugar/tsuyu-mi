@@ -1,0 +1,46 @@
+{
+  "raindrop_id": 1886538262,
+  "collection_id": 56182051,
+  "title": "Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した",
+  "url": "https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-12T12:29:11.610000Z",
+  "fetched_at": "2026-10-16T22:13:18.013347Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 7195,
+  "content_hash": "sha256:0c1e99693086b32b29d2c0a84ec4ca42b81c5b9fa726a1519dcc19ab86041a0a",
+  "summary_input_type": "fulltext",
+  "topic": "Claude Haiku 5.5の登場を機にしたLLMサブエージェントの役割見直しと定義の改善",
+  "summary_3lines": [
+    "Claude Haiku 5.5の価格改定と性能を踏まえ、サブエージェント（テスト実行・調査・実装）のモデル見直しを実施した。",
+    "テスト実行役はHaikuに移行し、実装役は判断力が必要なためSonnetを維持した。",
+    "調査役はプロンプト設計と呼び出し元の検証前提を変更することで、安価なHaikuの活用を可能にした。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "最新モデル（Haiku 5.5）の価格・性能特性を実務のAIエージェント運用にどう落とし込むかの具体的な検証とプロンプト改善の知見が得られるため。",
+  "defer_reason": "Claude Codeを用いた高度なエージェント運用を直接行っていない場合は、今すぐではなくてもよい内容だから。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Claude Haiku 5.5",
+    "Claude Code",
+    "サブエージェント",
+    "LLMプロンプト設計"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-16T22:13:19.582886Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
