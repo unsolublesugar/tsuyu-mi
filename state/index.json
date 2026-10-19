@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-16T22:13:28.642917Z",
+  "last_run_at": "2026-10-19T22:14:02.975633Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -335,7 +335,7 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-10-16T22:13:28.640421Z"
+      "updated_at": "2026-10-19T22:14:02.973601Z"
     },
     "1783046248": {
       "status": "summarized",
@@ -398,14 +398,14 @@
       "content_hash": null,
       "reason": "fetch_failed: HTTP 403",
       "summarized_at": null,
-      "updated_at": "2026-10-16T22:13:25.334846Z"
+      "updated_at": "2026-10-19T22:13:59.714492Z"
     },
     "1868690546": {
       "status": "skipped",
       "content_hash": null,
       "reason": "fetch_failed: HTTP 403",
       "summarized_at": null,
-      "updated_at": "2026-10-16T22:13:22.063739Z"
+      "updated_at": "2026-10-19T22:13:56.574542Z"
     },
     "1887266295": {
       "status": "summarized",
