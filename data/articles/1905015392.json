@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1905015392,
+  "collection_id": 56182051,
+  "title": "Flutter やめました。電話アプリを Native にした理由",
+  "url": "https://zenn.dev/ivry/articles/d155267331a3ca",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-28T10:54:57.061000Z",
+  "fetched_at": "2026-10-28T22:10:44.182270Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 3710,
+  "content_hash": "sha256:0bf50b944a80c9e77bc87e2102bc90fdd80eac018cc83c6131841e7ef8df0d63",
+  "summary_input_type": "fulltext",
+  "topic": "IVRyが音声通話アプリのFlutterからネイティブ（Swift/Kotlin）へ全面移行した理由と経緯",
+  "summary_3lines": [
+    "株式会社IVRyは、音声通話の品質向上とアーキテクチャのシンプル化を目的に、Flutter製アプリを完全ネイティブへ移行しました。",
+    "導入時は少数精鋭でのクロスプラットフォーム開発に合理性があったものの、通話SDKやWebView、プラットフォーム間のオーバーヘッドが課題となりました。",
+    "AIコーディングツールの進化により移行コストが大幅に軽減されたことも、今回のフルネイティブ化（Flutter Exit）を後押ししました。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "クロスプラットフォームからネイティブへの回帰という大きなアーキテクチャ変更のリアルな判断背景とAIコーディングツールの活用事例が学べるため。",
+  "defer_reason": "具体的なコードの書き方や移行手順ではなく意思決定のプロセスが中心のため、今すぐ手を止めて読む必要はないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "Flutter",
+    "ネイティブアプリ",
+    "アーキテクチャ",
+    "音声通話",
+    "AIコーディングツール"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-28T22:10:45.774558Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

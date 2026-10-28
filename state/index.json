@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-25T22:12:07.879374Z",
+  "last_run_at": "2026-10-28T22:10:53.726514Z",
   "items": {
     "1578146742": {
       "status": "pending",
@@ -335,7 +335,7 @@
       "content_hash": null,
       "reason": "fetch_failed: 非 HTML コンテンツ: application/pdf; charset=utf-8",
       "summarized_at": null,
-      "updated_at": "2026-10-25T22:12:07.877555Z"
+      "updated_at": "2026-10-28T22:10:53.723862Z"
     },
     "1783046248": {
       "status": "summarized",
@@ -398,14 +398,14 @@
       "content_hash": null,
       "reason": "fetch_failed: HTTP 403",
       "summarized_at": null,
-      "updated_at": "2026-10-25T22:12:05.078031Z"
+      "updated_at": "2026-10-28T22:10:51.127425Z"
     },
     "1868690546": {
       "status": "skipped",
       "content_hash": null,
       "reason": "fetch_failed: HTTP 403",
       "summarized_at": null,
-      "updated_at": "2026-10-25T22:12:01.907856Z"
+      "updated_at": "2026-10-28T22:10:47.828488Z"
     },
     "1887266295": {
       "status": "summarized",
@@ -490,6 +490,34 @@
       "reason": null,
       "summarized_at": "2026-10-16T22:13:19.582905Z",
       "updated_at": "2026-10-16T22:13:19.582903Z"
+    },
+    "1905015488": {
+      "status": "summarized",
+      "content_hash": "sha256:1f64ffe8c88b8863077d27bbfa03238e9314935ccbeba5e4ca854f423f5a653e",
+      "reason": null,
+      "summarized_at": "2026-10-28T22:10:33.329836Z",
+      "updated_at": "2026-10-28T22:10:33.329833Z"
+    },
+    "1905015448": {
+      "status": "summarized",
+      "content_hash": "sha256:9ec007390ac5b20d38125e57d18d7394c68e560df5234d422747e31f11a66731",
+      "reason": null,
+      "summarized_at": "2026-10-28T22:10:37.214136Z",
+      "updated_at": "2026-10-28T22:10:37.214134Z"
+    },
+    "1905015418": {
+      "status": "summarized",
+      "content_hash": "sha256:53813aad0b11aea21616e8d07ff59fedb4bb4872b45439be21f1dcad53342ab6",
+      "reason": null,
+      "summarized_at": "2026-10-28T22:10:41.678419Z",
+      "updated_at": "2026-10-28T22:10:41.678416Z"
+    },
+    "1905015392": {
+      "status": "summarized",
+      "content_hash": "sha256:0bf50b944a80c9e77bc87e2102bc90fdd80eac018cc83c6131841e7ef8df0d63",
+      "reason": null,
+      "summarized_at": "2026-10-28T22:10:45.774575Z",
+      "updated_at": "2026-10-28T22:10:45.774573Z"
     }
   }
 }

@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1905015448,
+  "collection_id": 56182051,
+  "title": "eMudhraの中間CA証明書の秘密鍵を求めてみる",
+  "url": "https://zenn.dev/herumi/articles/search_bad_emudhra_key",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-28T10:55:08.765000Z",
+  "fetched_at": "2026-10-28T22:10:35.815291Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 2514,
+  "content_hash": "sha256:9ec007390ac5b20d38125e57d18d7394c68e560df5234d422747e31f11a66731",
+  "summary_input_type": "fulltext",
+  "topic": "脆弱な秘密鍵を持つeMudhra中間CA証明書の公開鍵から、Pythonを用いて実際に秘密鍵を求めた検証記事",
+  "summary_3lines": [
+    "認証局eMudhraの中間CA証明書に脆弱な8ビット以下の秘密鍵が含まれていたという報告に基づき検証を行った。",
+    "OpenSSLコマンドで証明書から公開鍵を取り出し、Pythonの楕円曲線演算コードを用いて離散対数問題を解いた。",
+    "総当たりにより約0.4秒で秘密鍵が「156」であることを特定し、検証の正しさを確認した。"
+  ],
+  "scores": {
+    "novelty": 1,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 1
+  },
+  "priority": "low",
+  "read_now_reason": "実際の脆弱性のある証明書とPythonコードを用いて、離散対数問題の解読プロセスを具体的に確認できるため。",
+  "defer_reason": "特定の脆弱性事例の検証であり、暗号理論の基礎的な手続の域を出ないため、緊急度や実務への直結性は高くないため。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "eMudhra",
+    "中間CA証明書",
+    "楕円曲線暗号",
+    "離散対数問題",
+    "Python"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-28T22:10:37.214118Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}

@@ -1,0 +1,47 @@
+{
+  "raindrop_id": 1905015418,
+  "collection_id": 56182051,
+  "title": "新時代のE2Eテスト、TesterArmyのe2eをReact Nativeアプリに導入してみた",
+  "url": "https://zenn.dev/tellernovel_inc/articles/testerarmy-e2e-react-native",
+  "domain": "zenn.dev",
+  "created_at": "2026-10-28T10:55:02.450000Z",
+  "fetched_at": "2026-10-28T22:10:40.086403Z",
+  "source_language": "",
+  "output_language": "ja",
+  "content_type": "article",
+  "content_status": "ok",
+  "fetch_status": "ok",
+  "extract_method": "trafilatura",
+  "content_chars": 10351,
+  "content_hash": "sha256:53813aad0b11aea21616e8d07ff59fedb4bb4872b45439be21f1dcad53342ab6",
+  "summary_input_type": "fulltext",
+  "topic": "React Nativeアプリに対するAIを活用した新しいE2Eテストツール「e2e」の導入事例",
+  "summary_3lines": [
+    "TesterArmyのE2Eテストフレームワーク「e2e」をReact Nativeアプリに導入し、自然言語による操作とロケーターによる検証を併用している。",
+    "操作をAIに任せてキャッシュする仕組みにより、コストと実行時間を抑えつつ、動的なUIや外観の崩れなどもテストできる。",
+    "TypeScriptでの記述やCoding Agentとの連携、CI環境でのPRレビュー連携といった具体的な活用ノウハウが紹介されている。"
+  ],
+  "scores": {
+    "novelty": 2,
+    "relevance": 2,
+    "depth": 2,
+    "actionability": 2
+  },
+  "priority": "medium",
+  "read_now_reason": "AIを活用したE2Eテストの実務的な導入事例や、コード例・設定・キャッシュの仕組みが具体的に解説されているため。",
+  "defer_reason": "React NativeやモバイルアプリのE2Eテストに関心がない場合は、すぐに読む必要性は低い。",
+  "drop_candidate": false,
+  "drop_reason": "",
+  "keywords": [
+    "E2Eテスト",
+    "React Native",
+    "TesterArmy",
+    "AIテスト",
+    "TypeScript"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-3.5-flash-lite",
+  "summarized_at": "2026-10-28T22:10:41.678401Z",
+  "manual_status": "untriaged",
+  "notes": ""
+}
